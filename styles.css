@@ -1,1 +1,44 @@
-/* Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 16px;
+  background: #ffffff;
+  color: #111;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.tagline {
+  color: #555;
+  font-size: 14px;
+}
+
+.card {
+  border: 1px solid #eee;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.signal {
+  display: inline-block;
+  background: #0057ff;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.category {
+  font-size: 12px;
+  color: #0057ff;
+  margin-bottom: 8px;
+}
