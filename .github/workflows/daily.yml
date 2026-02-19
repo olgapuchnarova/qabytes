@@ -18,6 +18,14 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Configure git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+      - name: Pull latest changes
+        run: git pull --rebase origin main
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -31,13 +39,8 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python generate_feed.py
 
-      - name: Pull latest changes
-        run: git pull --rebase origin main
-
       - name: Commit updated feed
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
           git add data/feed.json
           git commit -m "Update feed" || echo "No changes to commit"
           git push origin main
