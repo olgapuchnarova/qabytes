@@ -29,12 +29,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
-          else
-            pip install feedparser requests beautifulsoup4 openai
-          fi
+        run: pip install feedparser requests beautifulsoup4 openai
 
       - name: Run generator
         env:
@@ -43,20 +38,19 @@ jobs:
 
       - name: Sync, Commit and Push
         run: |
-          # 1. Stage the changes (the new data/feed.json)
-          git add .
+          # Forcefully stage everything created by the script
+          git add -A
           
-          # 2. Stash them so the working directory is 'clean' for the pull
-          # We use '|| true' in case there are actually no changes to stash
+          # Temporarily stash them
           git stash || true
           
-          # 3. Pull the latest from the remote to avoid conflicts
-          git pull --rebase origin main
+          # Force the pull to overwrite the local state
+          git pull --rebase origin main -X ours
           
-          # 4. Bring the new feed changes back on top
-          git stash pop || echo "No stashed changes to apply"
+          # Bring your new feed back
+          git stash pop || echo "No changes to apply"
           
-          # 5. Finalize the commit
-          git add .
-          git commit -m "Update feed: $(date +'%Y-%m-%d %H:%M')" || exit 0
+          # Final commit and push
+          git add -A
+          git commit -m "Update feed: $(date)" || exit 0
           git push origin main
