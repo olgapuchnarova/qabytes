@@ -29,18 +29,23 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          # If you don't have a requirements.txt yet, 
+          # you can use: pip install feedparser requests beautifulsoup4 openai
+          pip install -r requirements.txt
+
+      # FIX: Pull BEFORE running the generator script
+      - name: Sync with remote
+        run: git pull --rebase origin main
 
       - name: Run generator
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python generate_feed.py
 
-      - name: Pull latest changes
-        run: git pull --rebase origin main
-
       - name: Commit updated feed
         run: |
           git add .
-          git commit -m "Update feed" || echo "No changes to commit"
+          # The "exit 0" or "echo" ensures the workflow doesn't fail if no new articles were found
+          git commit -m "Update feed: $(date +'%Y-%m-%d')" || echo "No changes to commit"
           git push origin main
