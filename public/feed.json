@@ -1,212 +1,197 @@
 [
   {
-    "title": "Ideological Resistance to Patents, Followed by Reluctant                Pragmatism",
-    "url": "https://martinfowler.com/articles/patents-reluctant-pragmatism.html",
-    "signal": 4,
-    "summary": "The article discusses the ideological discomfort surrounding software patents and the pragmatic necessity for startups to engage in defensive patenting. It highlights the challenges faced by innovators in a landscape where patents can hinder rather than help innovation.",
+    "title": "How Our AI Agents Found a Security Bug in Their Own Code",
+    "url": "https://dev.to/bridgeace/how-our-ai-agents-found-a-security-bug-in-their-own-code-268f",
+    "source": "devto",
+    "signal": 5,
+    "summary": "This article highlights a groundbreaking instance where AI agents autonomously conducted a security review of their own code, identifying and fixing critical vulnerabilities without human intervention. The multi-agent approach not only enhanced the accuracy of findings but also demonstrated the potential for continuous, proactive security measures in software development.",
     "key_points": [
-      "The author initially opposed patents, believing they hinder innovation.",
-      "Real-world experiences with patent aggression led to a shift in perspective.",
-      "Defensive patenting can serve as a protective measure for startups against larger competitors.",
-      "The patent filing process can clarify and refine innovative ideas.",
-      "Prior art searches can inspire new ideas and simplify existing concepts."
+      "AI agents self-organized a security review, identifying a command injection vulnerability and an idle-loop bug.",
+      "Two independent agents confirmed the same vulnerability, reducing false positives and increasing confidence in the findings.",
+      "The entire process from discovery to deployment occurred autonomously, showcasing the efficiency of AI in maintaining code quality."
     ],
-    "takeaway": "QA engineers and leaders should understand the implications of patents in the software industry and consider how defensive strategies can protect innovation while fostering a culture of open collaboration."
+    "takeaway": "Encourage the adoption of autonomous AI agents in your QA processes to enhance security reviews and improve overall code quality without relying on human initiation."
   },
   {
-    "title": "Humans and Agents in Software Engineering Loops",
-    "url": "https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html",
-    "signal": 4,
-    "summary": "The article discusses the evolving role of humans and AI agents in the software development process, emphasizing the importance of focusing on outcomes rather than micromanaging code quality. It highlights the potential for AI to handle the 'how loop' of development while humans concentrate on the 'why loop', ultimately leading to more efficient software delivery.",
+    "title": "How Our AI Agents Found a Security Bug in Their Own Code",
+    "url": "https://dev.to/bridgeace/how-our-ai-agents-found-a-security-bug-in-their-own-code-268f",
+    "source": "devto",
+    "signal": 5,
+    "summary": "The article showcases how AI agents autonomously conducted a security review of their own codebase, identifying and fixing a critical command injection vulnerability without human intervention. This highlights the potential of multi-agent systems in enhancing software security and efficiency in development processes.",
     "key_points": [
-      "Humans should manage the 'why loop' while AI handles the 'how loop' in software development.",
-      "Intermediate artifacts like code and tests are means to achieve desired outcomes, not ends in themselves.",
-      "External quality is prioritized over internal quality, as long as the software meets functional and operational requirements.",
-      "AI can generate code faster than humans can inspect it, which can create bottlenecks if humans are too involved.",
-      "Maintaining a clean codebase can still provide significant benefits, even when using AI for code generation."
+      "AI agents organized a bug hunt and identified a command injection vulnerability autonomously.",
+      "Two independent agents confirmed the same vulnerability, enhancing confidence in the findings.",
+      "The entire process from discovery to deployment occurred within minutes, demonstrating the efficiency of autonomous systems."
     ],
-    "takeaway": "QA engineers and leaders should embrace AI's role in the development process while ensuring that human oversight focuses on strategic outcomes rather than getting bogged down in code-level details."
-  },
-  {
-    "title": "Fragments: February 25",
-    "url": "https://martinfowler.com/fragments/2026-02-25.html",
-    "signal": 4,
-    "summary": "The article discusses the varying impacts of AI on organizations, emphasizing that AI acts as an amplifier of existing practices. It highlights the importance of structured approaches in AI implementation, particularly in software engineering, and introduces the concept of 'agent subconscious' for leveraging organizational knowledge.",
-    "key_points": [
-      "AI amplifies existing organizational practices, leading to varied experiences across companies.",
-      "The concept of 'agent subconscious' can help utilize latent knowledge from leadership to solve production issues.",
-      "Fine-scoped agents can enhance security and decision-making processes in AI applications.",
-      "Test-first development (Red/Green TDD) is crucial for ensuring the effectiveness of coding agents.",
-      "Dividing tasks into smaller, manageable chunks can improve the performance of AI systems."
-    ],
-    "takeaway": "QA engineers and leaders should focus on structured AI implementations that leverage existing knowledge while ensuring robust testing practices to mitigate risks."
-  },
-  {
-    "title": "Knowledge Priming",
-    "url": "https://martinfowler.com/articles/reduce-friction-ai/knowledge-priming.html",
-    "signal": 4,
-    "summary": "The article discusses the concept of Knowledge Priming, which involves providing AI coding assistants with curated project context to improve the relevance and quality of generated code. By treating project context as a form of infrastructure, teams can reduce the friction often experienced when using AI tools, leading to more efficient and contextually appropriate code generation.",
-    "key_points": [
-      "AI coding assistants often generate generic code that may not fit specific project needs.",
-      "Knowledge Priming involves sharing curated project context with AI before code generation.",
-      "This practice can significantly reduce the time spent on code corrections and revisions.",
-      "A well-structured priming document can guide AI to produce more relevant outputs.",
-      "The approach mirrors the onboarding process for new developers, emphasizing the importance of context."
-    ],
-    "takeaway": "QA engineers and leaders should consider implementing Knowledge Priming to enhance the effectiveness of AI coding assistants, ultimately improving code quality and team productivity."
+    "takeaway": "Consider implementing multi-agent AI systems in your development process to enhance security reviews and reduce the time from bug discovery to deployment."
   },
   {
     "title": "Set Safe Defaults for Flags",
     "url": "http://testing.googleblog.com/2026/03/set-safe-defaults-for-flags.html",
+    "source": "rss",
     "signal": 4,
-    "summary": "The article emphasizes the importance of setting safe defaults for command-line flags to prevent costly mistakes in production environments. By prioritizing safety in design choices, teams can minimize the risk of errors that lead to significant outages.",
+    "summary": "The article emphasizes the importance of setting safe defaults for command-line flags to prevent costly mistakes in production environments. By prioritizing safety in flag defaults, teams can minimize the risk of unintended consequences during critical operations.",
     "key_points": [
-      "Mistakes in production can have severe consequences.",
-      "Setting safe defaults for flags can prevent major issues.",
-      "Defaulting to a 'dry run' minimizes the risk of irreversible actions.",
+      "Defaulting to a 'dry run' can prevent irreversible mistakes in production.",
       "Documentation should reflect safe defaults to guide users effectively.",
-      "Safety in command execution is crucial for maintaining system integrity."
+      "Choosing the right default values is context-dependent and should consider potential risks."
     ],
-    "takeaway": "QA engineers and leaders should advocate for safe defaults in command-line tools to enhance operational safety and reduce the risk of human error."
-  },
-  {
-    "title": "Tech on the Toilet: Driving Software Excellence, One Bathroom Break at a Time",
-    "url": "http://testing.googleblog.com/2024/12/tech-on-toilet-driving-software.html",
-    "signal": 4,
-    "summary": "Tech on the Toilet (TotT) has evolved from a grassroots initiative focused on software testing to a broader publication that addresses various aspects of software development. By delivering concise, actionable insights in an unconventional setting, TotT fosters a culture of continuous learning and improvement among engineers at Google.",
-    "key_points": [
-      "TotT started as a response to costly bugs and rolled-back releases at Google.",
-      "The publication is authored by volunteers from all levels of the organization, promoting inclusivity.",
-      "It has become a trusted source for software development best practices, cited in code reviews and internal documents.",
-      "The initiative has successfully driven cultural change and improved software quality at Google.",
-      "Research has shown the positive impact of TotT on the adoption of internal tools and practices."
-    ],
-    "takeaway": "Encouraging a culture of knowledge sharing, even in unconventional spaces, can significantly enhance software quality and team collaboration."
-  },
-  {
-    "title": "Explainable AI Methods\u2026 Explained. How Modern Testing Uses AI for Good",
-    "url": "https://dev.to/dan_jacob_e3bbe28a58719fb/explainable-ai-methods-explained-how-modern-testing-uses-ai-for-good-h1g",
-    "signal": 4,
-    "summary": "The article discusses the importance of explainable AI methods in modern testing workflows, emphasizing how these techniques enhance the understanding and validation of AI-driven decisions. By providing insights into the factors influencing AI outcomes, QA teams can improve failure investigation, regression confidence, and compliance.",
-    "key_points": [
-      "Explainable AI methods help QA teams understand why tests pass or fail.",
-      "These methods improve failure investigation and regression confidence.",
-      "ContextQA aids in capturing AI-driven behavior for better analysis.",
-      "Explainability is crucial in regulated industries for audit readiness.",
-      "Testing teams can validate decision transparency and explanation accuracy."
-    ],
-    "takeaway": "Embracing explainable AI methods is essential for QA teams to enhance testing reliability and compliance in AI-driven systems."
-  },
-  {
-    "title": "I Automated 2,000 Tests Then Regretted Everything",
-    "url": "https://dev.to/shrinithi/i-automated-2000-tests-then-regretted-everything-16g",
-    "signal": 4,
-    "summary": "The article reflects on the pitfalls of excessive test automation, highlighting the importance of strategic prioritization in QA. It emphasizes that not all tests should be automated and that a disciplined approach is necessary for effective testing.",
-    "key_points": [
-      "Automating everything can lead to a high percentage of flaky tests.",
-      "Effective automation requires a clear strategy, strong architecture, and disciplined maintenance.",
-      "Flaky tests often indicate underlying system issues rather than flaws in the automation itself.",
-      "A shift from quantity to quality in test automation can improve coverage and reliability.",
-      "Automation should focus on stable, high-value tests rather than one-off validations or subjective UX assessments."
-    ],
-    "takeaway": "QA engineers and leaders should prioritize strategic automation over sheer volume to enhance test reliability and effectiveness."
-  },
-  {
-    "title": "How to Test AI Agents for Failure (Not Just Success)",
-    "url": "https://dev.to/askpatrick/how-to-test-ai-agents-for-failure-not-just-success-5a9c",
-    "signal": 4,
-    "summary": "The article emphasizes the importance of testing AI agents for graceful failure, not just success. It highlights that a resilient AI system should handle unexpected scenarios without crashing or providing incorrect data, which is crucial for production readiness.",
-    "key_points": [
-      "Testing for failure is as important as testing for success in AI agents.",
-      "Graceful failure should be built into the agent's configuration with explicit escalation rules.",
-      "Agents should surface uncertainty rather than hallucinate responses.",
-      "Failure handling sections in configurations are essential for robust AI systems.",
-      "A well-tested agent can operate reliably even under adverse conditions."
-    ],
-    "takeaway": "QA engineers should prioritize testing AI agents for graceful failure to ensure reliability and resilience in production environments."
-  },
-  {
-    "title": "A Test Automation Strategy That Actually Works",
-    "url": "https://dev.to/matthiasbruns/a-test-automation-strategy-that-actually-works-abf",
-    "signal": 4,
-    "summary": "The article emphasizes the importance of a well-rounded test automation strategy that prioritizes integration testing over mere unit test coverage. It advocates for a balanced approach to testing that maximizes confidence in software releases by addressing real-world interactions between components.",
-    "key_points": [
-      "Integration tests are often the weakest link in test suites, leading to production issues.",
-      "Mock dependencies at the boundary of your system, not internally, to catch real integration issues.",
-      "E2E tests are crucial for critical paths but should be managed to avoid maintenance burdens.",
-      "Parallelization and smart caching can significantly reduce CI times, enhancing developer confidence.",
-      "Focus on testing areas where past production bugs originated to build an effective test suite."
-    ],
-    "takeaway": "QA engineers and leaders should prioritize integration testing and adapt their strategies based on past production issues to enhance software reliability."
-  },
-  {
-    "title": "The Quality Revolution: How AI, Automation, and Dedicated Pods Are Reshaping SaaS Testing",
-    "url": "https://dev.to/saasblogs/the-quality-revolution-how-ai-automation-and-dedicated-pods-are-reshaping-saas-testing-2b24",
-    "signal": 4,
-    "summary": "The article discusses the transformative impact of AI, automation, and dedicated QA pods on SaaS testing, emphasizing the need for modern approaches to ensure software quality amidst increasing complexity. It highlights the limitations of traditional QA methods and presents a forward-looking view on how organizations can enhance their testing strategies.",
-    "key_points": [
-      "Traditional QA methods are insufficient for the complexities of modern SaaS environments.",
-      "AI enhances testing through intelligent test generation, predictive defect analysis, and self-healing automation scripts.",
-      "Automation is crucial for scalability and speed in testing processes.",
-      "QA pods foster collaboration between QA and development teams, leading to faster release cycles.",
-      "AI-driven cybersecurity testing is becoming essential for protecting sensitive customer information."
-    ],
-    "takeaway": "QA engineers and leaders should embrace AI and collaborative QA pods to enhance software quality and adapt to the evolving SaaS landscape."
-  },
-  {
-    "title": "\ud83d\udee1\ufe0f Introducing Guardio \u2014 Take Back Control of Your AI Agent's Actions",
-    "url": "https://dev.to/radoslawsz/introducing-guardio-take-back-control-of-your-ai-agents-actions-2mik",
-    "signal": 4,
-    "summary": "Guardio introduces a policy enforcement proxy for AI agents, addressing the reliability issues that arise when these agents interact with external systems. By allowing users to define rules and permissions, Guardio aims to enhance control over AI actions, reducing the risk of unintended consequences.",
-    "key_points": [
-      "Guardio acts as a middleware to enforce policies on AI agent actions.",
-      "It transforms the problem of managing AI permissions from a coding challenge to a configuration task.",
-      "Future features include per-agent permission scopes and a community plugin registry.",
-      "Simulation mode will allow testing of agent actions against policies before deployment.",
-      "Guardio's design is adaptable to various tech stacks, promoting flexibility."
-    ],
-    "takeaway": "QA engineers and leaders should consider tools like Guardio to enhance the reliability and safety of AI agents in their workflows."
+    "takeaway": "Always set command-line flags to safe defaults to reduce the risk of errors in production environments."
   },
   {
     "title": "Simplify Your Code: Functional Core, Imperative Shell",
     "url": "http://testing.googleblog.com/2025/10/simplify-your-code-functional-core.html",
-    "signal": 3,
-    "summary": "The article discusses the importance of separating business logic from side effects in code by adopting a functional core and imperative shell approach. This separation enhances testability and maintainability, making it easier for teams to adapt and extend their codebase.",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article emphasizes the importance of separating business logic from side effects in code, advocating for a functional core and imperative shell approach. This separation enhances testability and maintainability, allowing for easier modifications and feature additions.",
     "key_points": [
-      "Mixing business logic with side effects complicates testing and understanding of code.",
-      "A functional core contains pure, testable logic free from side effects.",
-      "An imperative shell handles side effects, allowing for easier modifications.",
-      "This pattern improves code maintainability and adaptability.",
-      "Adding new features becomes simpler by reusing existing functional core functions."
+      "Mixing business logic with side effects complicates testing and maintenance.",
+      "A functional core contains pure functions that operate on given data without side effects.",
+      "An imperative shell handles side effects, making it easier to modify or replace without affecting core logic."
     ],
-    "takeaway": "QA engineers should advocate for code structures that separate business logic from side effects to enhance testability and maintainability."
+    "takeaway": "Adopt the functional core and imperative shell pattern to improve code quality and facilitate easier testing and feature expansion."
   },
   {
-    "title": "Sort Lines in Source Code",
-    "url": "http://testing.googleblog.com/2025/09/sort-lines-in-source-code.html",
-    "signal": 3,
-    "summary": "The article discusses the importance of maintaining sorted lines in source code to enhance readability and prevent bugs. By using the keep-sorted tool, developers can easily identify conflicting configurations, as demonstrated with a two-player game feature.",
+    "title": "Tech on the Toilet: Driving Software Excellence, One Bathroom Break at a Time",
+    "url": "http://testing.googleblog.com/2024/12/tech-on-toilet-driving-software.html",
+    "source": "rss",
+    "signal": 4,
+    "summary": "Tech on the Toilet (TotT) has evolved from a niche publication focused on software testing to a broader initiative promoting software development best practices at Google. By leveraging a unique grassroots approach, it fosters a culture of continuous learning and improvement among engineers, making technical knowledge accessible in unexpected places.",
     "key_points": [
-      "Sorted lines in code improve readability and maintenance.",
-      "Using tools like keep-sorted can help spot bugs quickly.",
-      "Configuration errors can occur when flags are set multiple times.",
-      "Sorting can be customized with various options to fit specific needs.",
-      "Maintaining original order is crucial when it has intentional significance."
+      "TotT began as a grassroots effort to improve software testing culture at Google.",
+      "The initiative has expanded to cover a wide range of software development topics, fostering a culture of excellence.",
+      "Episodes are authored by engineers at all levels, promoting inclusivity and shared knowledge."
     ],
-    "takeaway": "Encourage the use of sorting tools in code to enhance clarity and reduce the likelihood of configuration errors."
+    "takeaway": "Encourage a culture of knowledge sharing in your organization by creating informal channels for disseminating best practices, similar to the TotT model."
   },
   {
-    "title": "Arrange Your Code to Communicate Data Flow",
-    "url": "http://testing.googleblog.com/2025/01/arrange-your-code-to-communicate-data.html",
-    "signal": 3,
-    "summary": "The article emphasizes the importance of arranging code to reflect data flow, which enhances readability and reduces cognitive load for developers. By organizing code logically, teams can improve collaboration and understanding among engineers, ultimately benefiting the overall quality of software development.",
+    "title": "Prioritizing Small Things",
+    "url": "https://automationpanda.com/2025/12/17/prioritizing-small-things/",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article draws a parallel between fixing a car's minor issues and addressing small problems in software projects. It emphasizes the importance of prioritizing seemingly trivial tasks that can significantly enhance overall quality and efficiency.",
     "key_points": [
-      "Code should be arranged to match the data flow for better readability.",
-      "Adjacent lines of code should be coherent to reduce cognitive load.",
-      "Using blank lines can visually separate related code blocks.",
-      "Extracting methods can improve clarity but may not always be applicable.",
-      "Ordering lines logically helps in scenarios where data is reused."
+      "Small issues can fester and lead to larger problems if not addressed promptly.",
+      "Prioritizing minor fixes can improve quality of life and project outcomes.",
+      "Knowledge and experience play a crucial role in identifying and resolving small issues effectively."
     ],
-    "takeaway": "Encourage your team to prioritize code readability and logical flow to enhance collaboration and maintainability."
+    "takeaway": "Encourage your team to regularly assess and prioritize small tasks that can enhance project quality and efficiency, as they often lead to significant improvements."
+  },
+  {
+    "title": "The Testing Skyscraper: A Modern Alternative to the Testing Pyramid",
+    "url": "https://automationpanda.com/2025/09/29/the-testing-skyscraper-a-modern-alternative-to-the-testing-pyramid/",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article critiques the traditional Testing Pyramid model, arguing that it is outdated and no longer reflects the complexities of modern software testing. Instead, it proposes the Testing Skyscraper as a more flexible and tailored approach, emphasizing the need for diverse testing strategies that adapt to specific project requirements.",
+    "key_points": [
+      "The Testing Pyramid is an antiquated model that does not account for the evolution of software development and testing practices.",
+      "The Testing Skyscraper represents a modern approach, allowing for unique testing strategies that can be customized based on project needs.",
+      "All test types are valuable for mitigating different risks, and the focus should be on creating robust feedback loops rather than adhering to rigid quotas."
+    ],
+    "takeaway": "Embrace a flexible testing strategy that prioritizes the unique needs of your project rather than conforming to traditional models."
+  },
+  {
+    "title": "Vibe coding while live streaming",
+    "url": "https://automationpanda.com/2025/08/20/vibe-coding-while-live-streaming/",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article discusses a recent workshop on Playwright where the author experimented with AI-assisted coding tools in a live streaming format. Despite facing challenges with the coding process, the session provided valuable insights into the strengths and weaknesses of AI in software development and testing.",
+    "key_points": [
+      "The author attempted vibe coding with AI tools during a workshop, leading to mixed results.",
+      "AI-assisted coding tools can enhance productivity but may also introduce unexpected challenges.",
+      "Engaging with attendees through honesty about the process fostered a positive learning environment."
+    ],
+    "takeaway": "Embrace the unpredictability of AI tools in workshops and use real-time challenges as learning opportunities for both yourself and your audience."
+  },
+  {
+    "title": "Ideological Resistance to Patents, Followed by Reluctant                Pragmatism",
+    "url": "https://martinfowler.com/articles/patents-reluctant-pragmatism.html",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article discusses the ideological discomfort with software patents and the practical necessity for startups to engage in defensive patenting to protect their innovations. It highlights the challenges faced by startups in an environment where patents can be weaponized by larger companies, ultimately leading to a reluctant acceptance of the patent system as a necessary evil.",
+    "key_points": [
+      "Patents are often used as roadblocks to innovation, particularly in the software industry.",
+      "Defensive patenting can serve as a protective measure for startups against larger competitors.",
+      "The patent filing process can lead to clearer articulation of ideas and inspire new innovations."
+    ],
+    "takeaway": "QA leaders should recognize the importance of protecting intellectual property and consider defensive strategies, including patents, to safeguard their innovations in a competitive landscape."
+  },
+  {
+    "title": "Humans and Agents in Software Engineering Loops",
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article explores the balance between human involvement and AI agents in the software development process, emphasizing the importance of focusing on outcomes rather than micromanaging code quality. It argues for a model where humans manage the 'why loop' of software creation while allowing AI to handle the 'how loop', potentially increasing efficiency and reducing bottlenecks.",
+    "key_points": [
+      "Humans should focus on the 'why loop' of software development, which involves turning ideas into outcomes.",
+      "AI agents can effectively manage the 'how loop', generating and testing code without human oversight.",
+      "Maintaining internal code quality is important, but it should not come at the expense of overall productivity."
+    ],
+    "takeaway": "QA leaders should consider redefining their roles to focus on strategic oversight and outcome management, allowing AI to handle more of the technical implementation."
+  },
+  {
+    "title": "Design-First Collaboration",
+    "url": "https://martinfowler.com/articles/reduce-friction-ai/design-first-collaboration.html",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article discusses the challenges posed by AI coding assistants in software development, particularly the tendency to skip essential design conversations and decisions. It emphasizes the importance of structured design discussions before implementation to avoid cognitive overload and misalignment in code.",
+    "key_points": [
+      "AI coding assistants often generate code without prior design discussions, leading to misaligned implementations.",
+      "The 'Implementation Trap' results in cognitive overload for engineers as they must evaluate multiple dimensions of code simultaneously.",
+      "Reconstructing whiteboarding conversations with AI can help surface design decisions and reduce technical debt."
+    ],
+    "takeaway": "Implement a structured design conversation process with AI tools, ensuring no code is generated until all design levels are approved."
+  },
+  {
+    "title": "Fragments: February 25",
+    "url": "https://martinfowler.com/fragments/2026-02-25.html",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article discusses the varying impacts of AI on organizations, emphasizing that AI acts as an amplifier of existing practices. It highlights the importance of structured approaches to AI integration, such as using agentic engineering patterns and the principle of least privilege to mitigate risks.",
+    "key_points": [
+      "AI amplifies organizational practices, leading to diverse outcomes in performance.",
+      "The concept of 'agent subconscious' can enhance incident management by leveraging collective knowledge.",
+      "Fine-scoped agents and task division can improve security and efficiency in AI applications."
+    ],
+    "takeaway": "Consider implementing structured AI integration strategies, such as agentic engineering patterns and the principle of least privilege, to enhance your team's effectiveness and security."
+  },
+  {
+    "title": "Where does the rigor go?",
+    "url": "https://www.thoughtworks.com/insights/blog/agile-engineering-practices/where-does-the-rigor-go",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article discusses the evolving role of code review in the context of AI-assisted development, emphasizing the need to redirect the rigor traditionally associated with code reviews. It highlights how teams are decomposing the functions of code review and focusing on upstream processes like specification and testing to maintain quality.",
+    "key_points": [
+      "Code review serves multiple functions: mentorship, consistency, correctness, and trust.",
+      "As AI-generated code becomes prevalent, teams are shifting their focus from code review to reviewing specifications and tests.",
+      "Test-driven development (TDD) enhances the effectiveness of AI coding agents by providing deterministic validation targets."
+    ],
+    "takeaway": "QA teams should prioritize improving specification writing and adopt test-driven development practices to enhance the reliability of AI-assisted coding."
+  },
+  {
+    "title": "So, you want to run OpenClaw?",
+    "url": "https://www.thoughtworks.com/insights/blog/security/want-run-openclaw",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article discusses the security implications of using OpenClaw, an open-source coding agent, highlighting the inherent trade-offs between accessibility and security. It provides practical steps for QA engineers and technologists to experiment with such agents while minimizing risks.",
+    "key_points": [
+      "OpenClaw's architecture exposes significant security risks due to its access to sensitive data and external communication.",
+      "The 'lethal trifecta' of untrusted input, sensitive data, and external communication increases the likelihood of prompt injection and data exfiltration.",
+      "Practical patterns for safer experimentation include prioritizing isolation, clamping down on network egress, and treating secrets as toxic waste."
+    ],
+    "takeaway": "When experimenting with high-permissioned agents like OpenClaw, prioritize isolation and implement strict network controls to mitigate security risks."
+  },
+  {
+    "title": "Rethinking go-to-market for the AI era",
+    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/rethinking-go-to-market-AI",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article discusses a paradigm shift in go-to-market strategies in the AI era, emphasizing the need to build internal capabilities for data intelligence rather than relying on generic SaaS tools. It highlights the importance of integrating AI engineers and GTM engineers to create a cohesive operating model that enhances marketing and sales functions.",
+    "key_points": [
+      "Rejecting a tool-first mindset in favor of building internal data capabilities.",
+      "Creating a bespoke data model to support AI applications and improve decision-making.",
+      "Establishing roles like AI engineers and GTM engineers to ensure effective execution of AI strategies."
+    ],
+    "takeaway": "QA teams should focus on building internal capabilities for data intelligence to enhance testing processes and outcomes, rather than relying solely on external tools."
   }
 ]
