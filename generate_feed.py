@@ -1,118 +1,156 @@
+import os
+import json
 import feedparser
 import requests
 from bs4 import BeautifulSoup
-import json
-import os
 from openai import OpenAI
-from datetime import datetime
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+
+OUTPUT_FILE = "public/feed.json"
 
 RSS_FEEDS = [
-    "https://www.ministryoftesting.com/articles.rss",
-    "https://www.stickyminds.com/rss.xml",
-    "https://www.utest.com/feed",
-    "https://testing.googleblog.com/feeds/posts/default",
+    "https://www.ministryoftesting.com/articles/rss",
     "https://martinfowler.com/feed.atom",
-    "https://netflixtechblog.com/feed",
-    "https://openai.com/blog/rss.xml",
-    "https://www.infoq.com/feed/"
+    "https://testing.googleblog.com/feeds/posts/default",
+    "https://dev.to/feed/tag/testing",
+    "https://dev.to/feed/tag/quality-assurance",
+    "https://dev.to/feed/tag/ai",
 ]
 
-def fetch_article_content(url):
+MAX_ARTICLES = 15
+
+
+def extract_text(url):
     try:
-        response = requests.get(url, timeout=10)
-        soup = BeautifulSoup(response.text, "html.parser")
+        r = requests.get(url, timeout=10)
+        soup = BeautifulSoup(r.text, "html.parser")
+
         paragraphs = soup.find_all("p")
         text = " ".join([p.get_text() for p in paragraphs])
-        return text[:8000]
-    except:
+
+        return text[:6000]
+
+    except Exception:
         return ""
 
-def analyze_article(title, content):
+
+def get_articles():
+    articles = []
+
+    for feed in RSS_FEEDS:
+        parsed = feedparser.parse(feed)
+
+        for entry in parsed.entries[:5]:
+            articles.append({
+                "title": entry.title,
+                "url": entry.link,
+                "source": feed
+            })
+
+    return articles
+
+
+def analyze_article(article, text):
 
     prompt = f"""
-You are the editorial engine behind QABytes.
+You are curating a **daily intelligence feed for QA engineers and QA leaders**.
 
-Audience:
-QA Engineers and QA Leads.
+The audience wants:
+- industry insights
+- testing culture
+- AI in software development
+- engineering leadership
+- modern development practices
+- lessons learned
 
-Your job:
-Analyze the article and return STRICT JSON.
+Avoid overly technical tutorials or code-heavy implementation guides.
 
-Rules:
-- Be sharp.
-- No buzzwords.
-- Penalize marketing fluff.
-- Reward strategic engineering shifts.
-- Score signal from 1-5 (integer only).
+ARTICLE TITLE:
+{article['title']}
 
-Return ONLY valid JSON:
+ARTICLE TEXT:
+{text}
+
+Return JSON with the following structure:
 
 {{
-"summary": "...",
-"why_this_matters": "...",
-"signal_score": 1,
-"category": "...",
-"actionable_takeaway": "..."
+ "signal": number from 1 to 5,
+ "summary": "2-3 sentence summary",
+ "key_points": ["bullet1","bullet2","bullet3","bullet4","bullet5"],
+ "takeaway": "one clear takeaway for QA engineers or leaders"
 }}
 
-Article Title:
-{title}
+SCORING RULES:
 
-Article Content:
-{content}
+5 = exceptional insight, industry trend, leadership or future of testing  
+4 = strong insight or thoughtful discussion  
+3 = useful but somewhat generic  
+2 = mostly technical tutorial  
+1 = irrelevant to QA / testing / engineering culture
+
+IMPORTANT:
+Use the full scale. Only a few articles should be 5.
+Many should be 2 or 3.
+
+Return ONLY JSON.
 """
 
     response = client.chat.completions.create(
         model="gpt-4o-mini",
-        messages=[
-            {"role": "system", "content": "You are a senior QA strategist."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=0.4
+        temperature=0.2,
+        messages=[{"role": "user", "content": prompt}]
     )
 
-    return response.choices[0].message.content
+    content = response.choices[0].message.content
 
-def main():
-    articles = []
+    try:
+        return json.loads(content)
+    except Exception:
+        return None
 
-    for feed_url in RSS_FEEDS:
-        feed = feedparser.parse(feed_url)
 
-        for entry in feed.entries[:3]:
-            title = entry.title
-            link = entry.link
-            content = fetch_article_content(link)
+def generate_feed():
 
-            if len(content) < 500:
-                continue
+    articles = get_articles()
 
-            try:
-                ai_response = analyze_article(title, content)
-                parsed = json.loads(ai_response)
+    processed = []
 
-                articles.append({
-                    "title": title,
-                    "link": link,
-                    "summary": parsed["summary"],
-                    "why_this_matters": parsed["why_this_matters"],
-                    "signal_score": parsed["signal_score"],
-                    "category": parsed["category"],
-                    "actionable_takeaway": parsed["actionable_takeaway"],
-                    "date": datetime.utcnow().isoformat()
-                })
+    for article in articles:
 
-            except Exception as e:
-                print("Error processing:", title)
+        text = extract_text(article["url"])
 
-    articles = sorted(articles, key=lambda x: x["signal_score"], reverse=True)
+        if not text:
+            continue
 
-    os.makedirs("data", exist_ok=True)
+        analysis = analyze_article(article, text)
 
-    with open("data/feed.json", "w") as f:
-        json.dump(articles[:15], f, indent=2)
+        if not analysis:
+            continue
+
+        if analysis["signal"] < 3:
+            continue
+
+        processed.append({
+            "title": article["title"],
+            "url": article["url"],
+            "signal": analysis["signal"],
+            "summary": analysis["summary"],
+            "key_points": analysis["key_points"],
+            "takeaway": analysis["takeaway"]
+        })
+
+    processed.sort(key=lambda x: x["signal"], reverse=True)
+
+    processed = processed[:MAX_ARTICLES]
+
+    os.makedirs("public", exist_ok=True)
+
+    with open(OUTPUT_FILE, "w") as f:
+        json.dump(processed, f, indent=2)
+
+    print(f"Generated {len(processed)} articles")
+
 
 if __name__ == "__main__":
-    main()
+    generate_feed()
