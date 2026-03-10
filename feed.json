@@ -1,0 +1,197 @@
+[
+  {
+    "title": "Tech on the Toilet: Driving Software Excellence, One Bathroom Break at a Time",
+    "url": "http://testing.googleblog.com/2024/12/tech-on-toilet-driving-software.html",
+    "source": "rss",
+    "signal": 5,
+    "summary": "Tech on the Toilet (TotT) is a unique initiative at Google that provides concise, actionable software development insights through one-page publications posted in bathrooms, fostering a culture of excellence and knowledge sharing among engineers.",
+    "key_points": [
+      "TotT started as Testing on the Toilet, focusing on software testing before expanding to broader software development topics.",
+      "The initiative is driven by volunteers and encourages contributions from all Google employees, making it a grassroots movement.",
+      "TotT episodes have become authoritative sources for best practices, influencing code reviews and standardizing tools across teams."
+    ],
+    "takeaway": "Leverage unconventional methods, like informal publications, to promote knowledge sharing and improve software practices in your organization."
+  },
+  {
+    "title": "Mercedes-Benz W203 Rear Subframe Rust",
+    "url": "https://automationpanda.com/2025/07/24/mercedes-benz-w203-rear-subframe-rust/",
+    "source": "rss",
+    "signal": 5,
+    "summary": "The article discusses a common issue with the rear subframe rusting in Mercedes-Benz W203 models, detailing a personal experience of a near-accident due to this defect and the challenges faced in seeking repairs.",
+    "key_points": [
+      "The rear subframe rust issue is prevalent in many Mercedes models, particularly W203 and W204.",
+      "Mercedes-Benz extended the warranty for some models but excluded the W203, leading to safety concerns.",
+      "A class-action lawsuit is ongoing regarding this defect, but it does not cover older models like the 2006 C-Class."
+    ],
+    "takeaway": "Owners of older Mercedes-Benz models should be aware of potential rear subframe rust issues and consider proactive inspections or repairs."
+  },
+  {
+    "title": "Stop the Noise: Auto PLaying Audio Control and ARIA Live Region Testing",
+    "url": "https://dev.to/laura-wissiak/stop-the-noise-auto-playing-audio-control-and-aria-live-region-testing-m8p",
+    "source": "devto",
+    "signal": 5,
+    "summary": "The article discusses the importance of testing auto-playing audio, moving content, and auto-updating information for accessibility, emphasizing the need for easily accessible controls and mechanisms to prevent sensory overload.",
+    "key_points": [
+      "Controls for auto-playing audio must be within the first three interactive elements.",
+      "Moving content requires a pause or stop mechanism if it lasts more than five seconds.",
+      "Auto-updating content must notify users, especially screen reader users, through accessible methods."
+    ],
+    "takeaway": "Ensure all interactive elements related to audio and visual content are easily accessible and compliant with accessibility standards to enhance user experience."
+  },
+  {
+    "title": "How Testing Has Evolved: Life Before Cypress, With Cypress Today, and the Future of Testing",
+    "url": "https://dev.to/john_chima_d8530cec771dc7/how-testing-has-evolved-life-before-cypress-with-cypress-today-and-the-future-of-testing-d3e",
+    "source": "devto",
+    "signal": 5,
+    "summary": "The article discusses the evolution of software testing, highlighting the impact of Cypress on the testing landscape and its future in the context of AI advancements.",
+    "key_points": [
+      "Cypress has transformed end-to-end testing by improving reliability and collaboration between developers and QA.",
+      "AI is set to enhance Cypress with features like self-healing tests and intelligent test optimization.",
+      "The role of QA engineers is evolving into Quality Engineering, with Cypress playing a crucial role in this transformation."
+    ],
+    "takeaway": "Embrace Cypress and its upcoming AI-driven features to enhance testing efficiency and collaboration in your development processes."
+  },
+  {
+    "title": "The New AI Stack Every Developer Should Understand",
+    "url": "https://dev.to/jaideepparashar/the-new-ai-stack-every-developer-should-understand-3ejl",
+    "source": "devto",
+    "signal": 5,
+    "summary": "The article discusses the emerging AI stack that developers need to understand, highlighting its importance in building reliable and scalable AI systems.",
+    "key_points": [
+      "The AI stack consists of multiple layers, including model, context, orchestration, tooling, evaluation, observability, and safety.",
+      "Each layer addresses specific challenges in AI system development, moving beyond simple API calls to more complex integrations.",
+      "Understanding the entire AI stack is essential for developers to create trustworthy and maintainable AI products."
+    ],
+    "takeaway": "Developers must grasp the AI stack to transition from basic experimentation to designing robust AI systems that integrate seamlessly with traditional software architectures."
+  },
+  {
+    "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
+    "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel/",
+    "source": "hn",
+    "signal": 5,
+    "summary": "Waymo has begun public road tests of its self-driving cars without a safety driver in Chandler, Arizona, marking a significant advancement in autonomous vehicle technology.",
+    "key_points": [
+      "Waymo is testing fully autonomous Chrysler Pacifica minivans on public roads with no safety driver.",
+      "The trials are conducted in Chandler, Arizona, allowing the vehicles to operate anywhere within the defined area.",
+      "Waymo plans to expand its service to the entire Phoenix metro area and eventually to the public."
+    ],
+    "takeaway": "QA engineers should consider the implications of fully autonomous systems in real-world environments, focusing on safety, reliability, and user experience."
+  },
+  {
+    "title": "Set Safe Defaults for Flags",
+    "url": "http://testing.googleblog.com/2026/03/set-safe-defaults-for-flags.html",
+    "source": "rss",
+    "signal": 4,
+    "summary": "Setting safe defaults for command-line flags can prevent costly mistakes in production environments.",
+    "key_points": [
+      "Always default to safer options, like dry runs, to minimize risks.",
+      "Documentation should reflect safe defaults to avoid accidental irreversible actions.",
+      "Consider user confirmation for critical commands to enhance safety."
+    ],
+    "takeaway": "When designing command-line utilities, prioritize safety by setting defaults that protect against unintended consequences."
+  },
+  {
+    "title": "Simplify Your Code: Functional Core, Imperative Shell",
+    "url": "http://testing.googleblog.com/2025/10/simplify-your-code-functional-core.html",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article emphasizes the importance of separating business logic from side effects in code to enhance testability and maintainability.",
+    "key_points": [
+      "Mixing business logic with side effects complicates testing and understanding of code.",
+      "A functional core should contain pure, testable logic without side effects.",
+      "An imperative shell handles side effects and interacts with the functional core."
+    ],
+    "takeaway": "Adopt the functional core and imperative shell pattern to improve code quality and facilitate feature additions."
+  },
+  {
+    "title": "Sort Lines in Source Code",
+    "url": "http://testing.googleblog.com/2025/09/sort-lines-in-source-code.html",
+    "source": "rss",
+    "signal": 4,
+    "summary": "Sorting lines in source code can help identify bugs and improve code readability.",
+    "key_points": [
+      "Duplicate configuration flags can lead to unexpected behavior.",
+      "Using keep-sorted can automatically organize lines of code.",
+      "Sorting can be customized with various options for different needs."
+    ],
+    "takeaway": "Implement keep-sorted in your workflow to catch configuration errors and enhance code maintenance."
+  },
+  {
+    "title": "Arrange Your Code to Communicate Data Flow",
+    "url": "http://testing.googleblog.com/2025/01/arrange-your-code-to-communicate-data.html",
+    "source": "rss",
+    "signal": 4,
+    "summary": "Organizing code to follow data flow enhances readability and reduces cognitive load.",
+    "key_points": [
+      "Adjacent lines of code should be coherent to improve understanding.",
+      "Ordering lines to match data flow can clarify code structure.",
+      "Using blank lines and method extraction can further enhance readability."
+    ],
+    "takeaway": "Arrange your code to reflect the data flow for better clarity and maintainability."
+  },
+  {
+    "title": "Prioritizing Small Things",
+    "url": "https://automationpanda.com/2025/12/17/prioritizing-small-things/",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article discusses the importance of addressing small issues in projects, drawing parallels between fixing a car oil leak and managing software projects.",
+    "key_points": [
+      "Small problems can fester and become larger issues if not addressed.",
+      "Prioritizing minor fixes can significantly improve overall quality of life and project health.",
+      "Knowledge and experience play a crucial role in resolving seemingly simple problems."
+    ],
+    "takeaway": "Don't overlook small issues in your projects; they may be easier to fix than you think and can lead to significant improvements."
+  },
+  {
+    "title": "The Testing Skyscraper: A Modern Alternative to the Testing Pyramid",
+    "url": "https://automationpanda.com/2025/09/29/the-testing-skyscraper-a-modern-alternative-to-the-testing-pyramid/",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article critiques the traditional Testing Pyramid and proposes the Testing Skyscraper as a modern alternative, emphasizing the need for a flexible and tailored testing strategy.",
+    "key_points": [
+      "The Testing Pyramid is considered outdated and misleading for modern testing needs.",
+      "The Testing Skyscraper represents a unique and adaptable approach to testing strategies, allowing for varying levels of tests based on specific requirements.",
+      "All types of tests are valuable for mitigating different risks, and the focus should be on creating robust feedback loops rather than adhering to strict quotas."
+    ],
+    "takeaway": "Embrace a flexible testing strategy that prioritizes the unique needs of your software rather than conforming to traditional models."
+  },
+  {
+    "title": "Ideological Resistance to Patents, Followed by Reluctant                Pragmatism",
+    "url": "https://martinfowler.com/articles/patents-reluctant-pragmatism.html",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article discusses the ideological discomfort with software patents and the practical necessity for startups to file defensive patents to protect their innovations in a legally asymmetric environment.",
+    "key_points": [
+      "Patents are often used as roadblocks to innovation, particularly in the software industry.",
+      "Defensive patenting can serve as a necessary shield for startups against larger companies with more legal resources.",
+      "The process of filing patents can lead to clearer articulation of ideas and inspire new innovations."
+    ],
+    "takeaway": "While the patent system is flawed, startups may need to engage in defensive patenting to safeguard their innovations and navigate the competitive landscape."
+  },
+  {
+    "title": "Humans and Agents in Software Engineering Loops",
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article discusses the balance between human involvement and AI agents in software development, emphasizing the importance of focusing on outcomes rather than micromanaging the coding process.",
+    "key_points": [
+      "Humans should manage the 'why loop' of software development while allowing AI to handle the 'how loop'.",
+      "Intermediate artefacts in software development are means to achieve desired outcomes, not ends in themselves.",
+      "While LLMs can generate code quickly, maintaining internal quality is still important for overall efficiency and effectiveness."
+    ],
+    "takeaway": "QA engineers should focus on external quality and outcomes while leveraging AI for code generation, ensuring that internal quality is maintained without becoming a bottleneck."
+  },
+  {
+    "title": "Design-First Collaboration",
+    "url": "https://martinfowler.com/articles/reduce-friction-ai/design-first-collaboration.html",
+    "source": "rss",
+    "signal": 4,
+    "summary": "The article discusses the importance of design-first collaboration in software development, particularly in the context of using AI coding assistants, which often skip crucial design discussions.",
+    "key_points": [
+      "AI coding assistants generate implementation code quickly, bypassing essential design conversations.",
+      "The 'Implementation Trap' leads to cognitive overload for engineers, as they must evaluate multiple dimensions of code simultaneously.",
+      "Reconstructing the whiteboarding process with progressive design levels can help clarify decisions before any code is written."
+    ],
+    "takeaway": "Implement a structured design conversation before coding when using AI tools to reduce misunderstandings and cognitive load."
+  }
+]
