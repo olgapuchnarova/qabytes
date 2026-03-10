@@ -3,7 +3,7 @@ try {
 const response = await fetch("feed.json");
 const data = await response.json();
 
-```
+
 if (!data || data.length === 0) {
   console.log("Feed empty");
   return;
