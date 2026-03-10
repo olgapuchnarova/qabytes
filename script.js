@@ -43,16 +43,33 @@ featuredContainer.innerHTML =
 // Remaining articles
 rest.forEach(function(article) {
 
-  const articleHTML =
-    "<div class='card'>" +
-      "<div class='signal'>Signal " + (article.signal || "-") + "/5</div>" +
-      "<h3>" + (article.title || "") + "</h3>" +
-      "<div class='category'>" + (article.source || "") + "</div>" +
-      "<p>" + (article.summary || "") + "</p>" +
-      "<a href='" + article.url + "' target='_blank'>Read →</a>" +
-    "</div>";
+let keyPointsHTML = "";
 
-  feedContainer.innerHTML += articleHTML;
+if (article.key_points && Array.isArray(article.key_points)) {
+keyPointsHTML += "Key points:";
+
+article.key_points.forEach(function(point) {
+  keyPointsHTML += "<li>" + point + "</li>";
+});
+
+keyPointsHTML += "</ul>";
+
+}
+
+const articleHTML =
+"" +
+"Signal " + (article.signal || "-") + "/5" +
+"" + (article.title || "") + "" +
+"" + (article.source || "") + "" +
+"" + (article.summary || "") + "" +
+keyPointsHTML +
+"Takeaway:" +
+"" + (article.takeaway || "") + "" +
+"Read original →" +
+"";
+
+feedContainer.innerHTML += articleHTML;
+
 });
 
 } catch (error) {
