@@ -1,12 +1,8 @@
-async function loadFeed() {
-try {
-const response = await fetch("feed.json");
-const data = await response.json();
+fetch('feed.json')
+.then(response => response.json())
+.then(data => {
 
-if (!data || data.length === 0) {
-  console.log("Feed empty");
-  return;
-}
+if (!data || data.length === 0) return;
 
 const featured = data[0];
 const rest = data.slice(1);
@@ -14,67 +10,52 @@ const rest = data.slice(1);
 const featuredContainer = document.getElementById("featured");
 const feedContainer = document.getElementById("feed");
 
-// Build key points safely
-let keyPointsHTML = "";
+function renderKeyPoints(points) {
+  if (!points || !Array.isArray(points)) return "";
 
-if (featured.key_points && Array.isArray(featured.key_points)) {
-  keyPointsHTML += "<strong>Key points:</strong><ul>";
+  let html = "<strong>Key points:</strong><ul>";
 
-  featured.key_points.forEach(function(point) {
-    keyPointsHTML += "<li>" + point + "</li>";
+  points.forEach(point => {
+    html += "<li>" + point + "</li>";
   });
 
-  keyPointsHTML += "</ul>";
+  html += "</ul>";
+
+  return html;
 }
 
-// Featured article
-featuredContainer.innerHTML =
-  "<div class='card'>" +
-    "<div class='signal'>Signal " + (featured.signal || "-") + "/5</div>" +
-    "<h2>" + (featured.title || "") + "</h2>" +
-    "<div class='category'>" + (featured.source || "") + "</div>" +
-    "<p>" + (featured.summary || "") + "</p>" +
-    keyPointsHTML +
-    "<strong>Takeaway:</strong>" +
-    "<p>" + (featured.takeaway || "") + "</p>" +
-    "<a href='" + featured.url + "' target='_blank'>Read original →</a>" +
-  "</div>";
+function renderCard(article, isFeatured = false) {
 
-// Remaining articles
-rest.forEach(function(article) {
+  const titleTag = isFeatured ? "h2" : "h3";
 
-let keyPointsHTML = "";
+  return `
+    <div class="card">
+      <div class="signal">Signal ${article.signal_score || article.signal || "-"}/5</div>
+      <${titleTag}>${article.title || ""}</${titleTag}>
+      <div class="category">${article.category || article.source || ""}</div>
 
-if (article.key_points && Array.isArray(article.key_points)) {
-keyPointsHTML += "Key points:";
+      <p>${article.summary || ""}</p>
 
-article.key_points.forEach(function(point) {
-  keyPointsHTML += "<li>" + point + "</li>";
-});
+      ${renderKeyPoints(article.key_points)}
 
-keyPointsHTML += "</ul>";
+      <strong>Takeaway:</strong>
+      <p>${article.takeaway || article.actionable_takeaway || ""}</p>
 
+      <a href="${article.link || article.url}" target="_blank">Read original →</a>
+    </div>
+  `;
 }
 
-const articleHTML =
-"" +
-"Signal " + (article.signal || "-") + "/5" +
-"" + (article.title || "") + "" +
-"" + (article.source || "") + "" +
-"" + (article.summary || "") + "" +
-keyPointsHTML +
-"Takeaway:" +
-"" + (article.takeaway || "") + "" +
-"Read original →" +
-"";
+// Render featured
+featuredContainer.innerHTML = renderCard(featured, true);
 
-feedContainer.innerHTML += articleHTML;
-
+// Render rest
+rest.forEach(article => {
+  feedContainer.innerHTML += renderCard(article, false);
 });
 
-} catch (error) {
+
+})
+.catch(error => {
 console.error("Feed load error:", error);
-}
-}
-
-loadFeed();
+});
