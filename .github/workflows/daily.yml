@@ -15,42 +15,31 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Configure git
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install feedparser requests beautifulsoup4 openai
+        run: |
+          pip install feedparser requests beautifulsoup4 openai
 
       - name: Run generator
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python generate_feed.py
 
-      - name: Sync, Commit and Push
+      - name: Commit and push if feed updated
         run: |
-          # Forcefully stage everything created by the script
-          git add -A
-          
-          # Temporarily stash them
-          git stash || true
-          
-          # Force the pull to overwrite the local state
-          git pull --rebase origin main -X ours
-          
-          # Bring your new feed back
-          git stash pop || echo "No changes to apply"
-          
-          # Final commit and push
-          git add -A
-          git commit -m "Update feed: $(date)" || exit 0
-          git push origin main
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add feed.json
+
+          if git diff --staged --quiet; then
+            echo "No feed changes"
+          else
+            git commit -m "Update QABytes feed"
+            git push
+          fi
