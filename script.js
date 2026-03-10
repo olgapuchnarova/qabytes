@@ -3,7 +3,6 @@ try {
 const response = await fetch("feed.json");
 const data = await response.json();
 
-
 if (!data || data.length === 0) {
   console.log("Feed empty");
   return;
@@ -55,7 +54,6 @@ rest.forEach(function(article) {
 
   feedContainer.innerHTML += articleHTML;
 });
-```
 
 } catch (error) {
 console.error("Feed load error:", error);
