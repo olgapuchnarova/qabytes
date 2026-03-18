@@ -1,12 +1,9 @@
-name: Daily QABytes Feed
+name: Daily Feed Update
 
 on:
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 7 * * *'
   workflow_dispatch:
-
-permissions:
-  contents: write
 
 jobs:
   build:
@@ -14,33 +11,35 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
-          pip install --upgrade pip
           pip install feedparser requests beautifulsoup4 openai
 
-      - name: Run generator
+      - name: Run feed generator
+        run: python generate_feed.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python generate_feed.py
 
-      - name: Commit and push if feed updated
+      - name: Debug feed
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          echo "Feed preview:"
+          cat public/feed.json | head -n 20
 
-          git add feed.json
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
 
-          if git diff --staged --quiet; then
-            echo "No feed changes"
-          else
-            git commit -m "Update QABytes feed"
-            git push
-          fi
+          git add public/feed.json public/raw_candidates.json
+
+          git diff --cached --quiet || git commit -m "Update feed"
+          git push
