@@ -324,7 +324,7 @@ def generate_feed():
         if not analysis:
             continue
 
-        if analysis["signal"] < 3:
+        if analysis["signal"] < 2:
             continue
 
         processed.append({
