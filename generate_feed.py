@@ -27,10 +27,6 @@ RSS_FEEDS = [
     "https://www.infoq.com/testing/rss/",
 ]
 
-# ---------------------------
-# TEXT EXTRACTION
-# ---------------------------
-
 def extract_text(url):
     try:
         r = requests.get(url, timeout=10)
@@ -41,58 +37,41 @@ def extract_text(url):
     except Exception:
         return ""
 
-
-# ---------------------------
-# SOURCES
-# ---------------------------
-
 def get_rss_articles():
     articles = []
-
     for feed in RSS_FEEDS:
         parsed = feedparser.parse(feed)
-
         for entry in parsed.entries[:5]:
             title = entry.title
-
             if len(title) < 20:
                 continue
-
             if "job" in title.lower():
                 continue
-
             articles.append({
                 "title": title,
                 "url": entry.link,
                 "source": "rss"
             })
-
     return articles
-
 
 def get_reddit_posts():
     subreddits = ["QualityAssurance", "softwaretesting", "TestAutomation"]
     headers = {"User-Agent": "qa-feed-bot"}
-
     posts = []
 
     for sub in subreddits:
         url = f"https://www.reddit.com/r/{sub}/new.json?limit=10"
-
         try:
             r = requests.get(url, headers=headers, timeout=10)
             data = r.json()
-
             for item in data["data"]["children"]:
                 post = item["data"]
                 title = post["title"]
 
                 if len(title) < 20:
                     continue
-
                 if "job" in title.lower():
                     continue
-
                 if title.strip().endswith("?"):
                     continue
 
@@ -102,12 +81,10 @@ def get_reddit_posts():
                     "text": post.get("selftext", ""),
                     "source": "reddit"
                 })
-
         except Exception:
             continue
 
     return posts
-
 
 def get_devto_articles():
     tags = ["testing", "quality-assurance", "ai", "devops"]
@@ -115,7 +92,6 @@ def get_devto_articles():
 
     for tag in tags:
         url = f"https://dev.to/api/articles?tag={tag}&per_page=10"
-
         try:
             r = requests.get(url, timeout=10)
             data = r.json()
@@ -125,10 +101,8 @@ def get_devto_articles():
 
                 if len(title) < 20:
                     continue
-
                 if "job" in title.lower():
                     continue
-
                 if "tutorial" in title.lower():
                     continue
 
@@ -137,12 +111,10 @@ def get_devto_articles():
                     "url": article["url"],
                     "source": "devto"
                 })
-
         except Exception:
             continue
 
     return articles
-
 
 def get_hn_articles():
     url = "https://hn.algolia.com/api/v1/search?query=testing"
@@ -158,7 +130,6 @@ def get_hn_articles():
 
             if not title or not link:
                 continue
-
             if len(title) < 20:
                 continue
 
@@ -167,12 +138,10 @@ def get_hn_articles():
                 "url": link,
                 "source": "hn"
             })
-
     except Exception:
         pass
 
     return articles
-
 
 def get_testing_weekly():
     url = "https://softwaretestingweekly.com/issues/"
@@ -181,7 +150,6 @@ def get_testing_weekly():
     try:
         r = requests.get(url, timeout=10)
         soup = BeautifulSoup(r.text, "html.parser")
-
         links = soup.select("article a")
 
         for link in links[:20]:
@@ -190,7 +158,6 @@ def get_testing_weekly():
 
             if not href:
                 continue
-
             if len(title) < 20:
                 continue
 
@@ -199,16 +166,10 @@ def get_testing_weekly():
                 "url": href,
                 "source": "testing-weekly"
             })
-
     except Exception:
         pass
 
     return articles
-
-
-# ---------------------------
-# AI ANALYSIS
-# ---------------------------
 
 def analyze_article(article, text):
 
@@ -221,7 +182,6 @@ Focus on:
 - engineering culture
 - lessons learned
 - testing strategy
-- leadership
 
 Avoid:
 - tutorials
@@ -266,11 +226,6 @@ Return ONLY JSON.
     except Exception:
         return None
 
-
-# ---------------------------
-# GENERATE FEED
-# ---------------------------
-
 def generate_feed():
 
     today_seed = datetime.utcnow().strftime("%Y-%m-%d")
@@ -287,7 +242,6 @@ def generate_feed():
 
     os.makedirs("public", exist_ok=True)
 
-    # Save raw candidates
     with open(RAW_FILE, "w") as f:
         json.dump(articles, f, indent=2)
 
@@ -308,7 +262,6 @@ def generate_feed():
         if not analysis:
             continue
 
-        # 🔥 TEMPORARY LOOSER FILTER
         if analysis["signal"] < 2:
             continue
 
@@ -328,14 +281,12 @@ def generate_feed():
     def score(article):
         return article["signal"] + random.uniform(0, 0.5)
 
-    # Group by source
     by_source = {}
     for article in processed:
         by_source.setdefault(article["source"], []).append(article)
 
     final_feed = []
 
-    # Ensure at least one per source
     for source, items in by_source.items():
         items.sort(key=score, reverse=True)
         final_feed.append(items[0])
@@ -355,8 +306,14 @@ def generate_feed():
 
     print("Final feed size:", len(final_feed))
 
+    # 🔥 Force change every run
+    final_output = {
+        "generated_at": datetime.utcnow().isoformat(),
+        "articles": final_feed
+    }
+
     with open(OUTPUT_FILE, "w") as f:
-        json.dump(final_feed, f, indent=2)
+        json.dump(final_output, f, indent=2)
 
     print("Feed generation complete")
 
