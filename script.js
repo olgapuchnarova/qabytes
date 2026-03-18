@@ -4,8 +4,10 @@ fetch('feed.json')
 
   if (!data || data.length === 0) return;
 
-  const featured = data[0];
-  const rest = data.slice(1);
+  const articles = data.articles;
+
+  const featured = articles[0];
+  const rest = articles.slice(1);
 
   const featuredContainer = document.getElementById("featured");
   const feedContainer = document.getElementById("feed");
