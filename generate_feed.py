@@ -14,10 +14,6 @@ RAW_FILE = "public/raw_candidates.json"
 
 MAX_ARTICLES = 30
 
-# ---------------------------
-# RSS SOURCES
-# ---------------------------
-
 RSS_FEEDS = [
     "https://www.ministryoftesting.com/articles/rss",
     "https://testing.googleblog.com/feeds/posts/default",
@@ -47,7 +43,7 @@ def extract_text(url):
 
 
 # ---------------------------
-# RSS
+# SOURCES
 # ---------------------------
 
 def get_rss_articles():
@@ -74,10 +70,6 @@ def get_rss_articles():
     return articles
 
 
-# ---------------------------
-# REDDIT
-# ---------------------------
-
 def get_reddit_posts():
     subreddits = ["QualityAssurance", "softwaretesting", "TestAutomation"]
     headers = {"User-Agent": "qa-feed-bot"}
@@ -101,7 +93,6 @@ def get_reddit_posts():
                 if "job" in title.lower():
                     continue
 
-                # skip question-style low-signal posts
                 if title.strip().endswith("?"):
                     continue
 
@@ -117,10 +108,6 @@ def get_reddit_posts():
 
     return posts
 
-
-# ---------------------------
-# DEV.TO
-# ---------------------------
 
 def get_devto_articles():
     tags = ["testing", "quality-assurance", "ai", "devops"]
@@ -157,10 +144,6 @@ def get_devto_articles():
     return articles
 
 
-# ---------------------------
-# HACKER NEWS
-# ---------------------------
-
 def get_hn_articles():
     url = "https://hn.algolia.com/api/v1/search?query=testing"
     articles = []
@@ -190,10 +173,6 @@ def get_hn_articles():
 
     return articles
 
-
-# ---------------------------
-# TESTING WEEKLY
-# ---------------------------
 
 def get_testing_weekly():
     url = "https://softwaretestingweekly.com/issues/"
@@ -247,7 +226,7 @@ Focus on:
 Avoid:
 - tutorials
 - setup guides
-- overly technical implementation details
+- overly technical content
 
 ARTICLE TITLE:
 {article['title']}
@@ -271,7 +250,7 @@ SCORING:
 2 = technical/tutorial
 1 = irrelevant
 
-Use full range.
+Use full range. Only few 5s.
 
 Return ONLY JSON.
 """
@@ -304,6 +283,8 @@ def generate_feed():
     articles += get_hn_articles()
     articles += get_testing_weekly()
 
+    print("Total scraped:", len(articles))
+
     os.makedirs("public", exist_ok=True)
 
     # Save raw candidates
@@ -311,6 +292,7 @@ def generate_feed():
         json.dump(articles, f, indent=2)
 
     processed = []
+    with_text = 0
 
     for article in articles:
 
@@ -319,11 +301,14 @@ def generate_feed():
         if not text:
             continue
 
+        with_text += 1
+
         analysis = analyze_article(article, text)
 
         if not analysis:
             continue
 
+        # 🔥 TEMPORARY LOOSER FILTER
         if analysis["signal"] < 2:
             continue
 
@@ -337,6 +322,9 @@ def generate_feed():
             "takeaway": analysis["takeaway"]
         })
 
+    print("After text extraction:", with_text)
+    print("After AI filtering:", len(processed))
+
     def score(article):
         return article["signal"] + random.uniform(0, 0.5)
 
@@ -347,12 +335,11 @@ def generate_feed():
 
     final_feed = []
 
-    # Step 1: ensure at least one per source
+    # Ensure at least one per source
     for source, items in by_source.items():
         items.sort(key=score, reverse=True)
         final_feed.append(items[0])
 
-    # Step 2: fill remaining slots
     remaining = []
     for items in by_source.values():
         remaining.extend(items[1:])
@@ -364,13 +351,14 @@ def generate_feed():
             break
         final_feed.append(article)
 
-    # Final sort with daily variation
     final_feed.sort(key=score, reverse=True)
+
+    print("Final feed size:", len(final_feed))
 
     with open(OUTPUT_FILE, "w") as f:
         json.dump(final_feed, f, indent=2)
 
-    print(f"Generated {len(final_feed)} curated articles")
+    print("Feed generation complete")
 
 
 if __name__ == "__main__":
