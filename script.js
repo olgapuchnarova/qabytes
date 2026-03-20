@@ -1,4 +1,4 @@
-fetch('feed.json')
+fetch('/feed.json')
 .then(response => response.json())
 .then(data => {
 
