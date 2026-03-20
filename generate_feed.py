@@ -281,26 +281,8 @@ def generate_feed():
     def score(article):
         return article["signal"] + random.uniform(0, 0.5)
 
-    by_source = {}
-    for article in processed:
-        by_source.setdefault(article["source"], []).append(article)
-
-    final_feed = []
-
-    for source, items in by_source.items():
-        items.sort(key=score, reverse=True)
-        final_feed.append(items[0])
-
-    remaining = []
-    for items in by_source.values():
-        remaining.extend(items[1:])
-
-    remaining.sort(key=score, reverse=True)
-
-    for article in remaining:
-        if len(final_feed) >= MAX_ARTICLES:
-            break
-        final_feed.append(article)
+    processed.sort(key=score, reverse=True)
+    final_feed = processed[:MAX_ARTICLES]
 
     final_feed.sort(key=score, reverse=True)
 
