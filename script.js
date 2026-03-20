@@ -2,7 +2,7 @@ fetch('/feed.json')
 .then(response => response.json())
 .then(data => {
 
-  if (!data || data.length === 0) return;
+  if (!data || !data.articles || data.articles.length === 0) return;
 
   const articles = data.articles;
 
