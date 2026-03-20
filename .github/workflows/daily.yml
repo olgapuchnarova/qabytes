@@ -1,45 +1,63 @@
-name: Daily Feed Update
+name: Build And Deploy Site
 
 on:
+  push:
+    branches:
+      - main
+      - master
   schedule:
-    - cron: '0 7 * * *'
+    - cron: "0 7 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
-        with:
-          persist-credentials: true
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install dependencies
-        run: |
-          pip install feedparser requests beautifulsoup4 openai
+        run: pip install -r requirements.txt
 
-      - name: Run feed generator
+      - name: Generate feed
         run: python generate_feed.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
-      - name: Debug feed
+      - name: Assemble Pages artifact
         run: |
-          echo "Feed preview:"
-          cat public/feed.json | head -n 20
+          mkdir site
+          cp index.html site/
+          cp styles.css site/
+          cp script.js site/
+          cp feed.json site/
 
-      - name: Commit and push
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-      
-          git add public/feed.json public/raw_candidates.json
-      
-          git commit -m "Update feed $(date)" || echo "No changes"
-          git push
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
