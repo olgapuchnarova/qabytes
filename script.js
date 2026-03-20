@@ -1,65 +1,116 @@
-fetch('/feed.json')
-.then(response => response.json())
-.then(data => {
+fetch("./feed.json")
+  .then((response) => response.json())
+  .then((data) => {
+    if (!data || !Array.isArray(data.articles) || data.articles.length === 0) {
+      return;
+    }
 
-  if (!data || !data.articles || data.articles.length === 0) return;
+    const articles = data.articles;
+    const featured = articles[0];
+    const rest = articles.slice(1);
 
-  const articles = data.articles;
+    const featuredContainer = document.getElementById("featured");
+    const feedContainer = document.getElementById("feed");
 
-  const featured = articles[0];
-  const rest = articles.slice(1);
+    function setText(element, value) {
+      element.textContent = value || "";
+      return element;
+    }
 
-  const featuredContainer = document.getElementById("featured");
-  const feedContainer = document.getElementById("feed");
+    function safeExternalUrl(value) {
+      if (!value) {
+        return null;
+      }
 
-  function renderKeyPoints(points) {
-    if (!points || !Array.isArray(points)) return "";
+      try {
+        const parsed = new URL(value, window.location.href);
+        if (parsed.protocol === "http:" || parsed.protocol === "https:") {
+          return parsed.href;
+        }
+      } catch (error) {
+        console.warn("Invalid article URL:", value, error);
+      }
 
-    let html = "<strong>Key points:</strong><ul>";
+      return null;
+    }
 
-    points.forEach(point => {
-      html += "<li>" + point + "</li>";
-    });
+    function renderKeyPoints(points) {
+      if (!Array.isArray(points) || points.length === 0) {
+        return null;
+      }
 
-    html += "</ul>";
+      const wrapper = document.createElement("div");
+      const heading = document.createElement("strong");
+      heading.textContent = "Key points:";
+      wrapper.appendChild(heading);
 
-    return html;
-  }
+      const list = document.createElement("ul");
+      points.forEach((point) => {
+        const item = document.createElement("li");
+        item.textContent = point;
+        list.appendChild(item);
+      });
+      wrapper.appendChild(list);
 
-  function renderCard(article, isFeatured = false) {
+      return wrapper;
+    }
 
-    const titleTag = isFeatured ? "h2" : "h3";
+    function renderCard(article, isFeatured = false) {
+      const titleTag = isFeatured ? "h2" : "h3";
+      const title = article.title || "";
+      const category = article.category || article.source || "";
+      const summary = article.summary || "";
+      const takeaway = article.takeaway || article.actionable_takeaway || "";
+      const score = article.signal_score || article.signal || "-";
+      const link = article.link || article.url;
 
-    return `
-      <div class="card">
-        <div class="signal">Signal ${article.signal_score || article.signal || "-"}/5</div>
-        <${titleTag}>${article.title || ""}</${titleTag}>
-        <div class="category">${article.category || article.source || ""}</div>
+      const card = document.createElement("div");
+      card.className = "card";
 
-        <p>${article.summary || ""}</p>
+      const signal = document.createElement("div");
+      signal.className = "signal";
+      signal.textContent = `Signal ${score}/5`;
+      card.appendChild(signal);
 
-        ${renderKeyPoints(article.key_points)}
+      const heading = document.createElement(titleTag);
+      heading.textContent = title;
+      card.appendChild(heading);
 
-        <strong>Takeaway:</strong>
-        <p>${article.takeaway || article.actionable_takeaway || ""}</p>
+      const categoryNode = document.createElement("div");
+      categoryNode.className = "category";
+      categoryNode.textContent = category;
+      card.appendChild(categoryNode);
 
-        <a href="${article.link || article.url}" target="_blank">Read original →</a>
-      </div>
-    `;
-  }
+      card.appendChild(setText(document.createElement("p"), summary));
 
-  // Render featured
-  featuredContainer.innerHTML = renderCard(featured, true);
+      const keyPoints = renderKeyPoints(article.key_points);
+      if (keyPoints) {
+        card.appendChild(keyPoints);
+      }
 
-  // Render rest (optimized)
-  let feedHTML = "";
-  rest.forEach(article => {
-    feedHTML += renderCard(article, false);
+      const takeawayLabel = document.createElement("strong");
+      takeawayLabel.textContent = "Takeaway:";
+      card.appendChild(takeawayLabel);
+      card.appendChild(setText(document.createElement("p"), takeaway));
+
+      const safeUrl = safeExternalUrl(link);
+      if (safeUrl) {
+        const anchor = document.createElement("a");
+        anchor.href = safeUrl;
+        anchor.target = "_blank";
+        anchor.rel = "noopener noreferrer";
+        anchor.textContent = "Read original ->";
+        card.appendChild(anchor);
+      }
+
+      return card;
+    }
+
+    featuredContainer.replaceChildren(renderCard(featured, true));
+    feedContainer.replaceChildren(
+      ...rest.map((article) => renderCard(article, false))
+    );
+  })
+  .catch((error) => {
+    console.error("Feed load error:", error);
   });
-
-  feedContainer.innerHTML = feedHTML;
-
-})
-.catch(error => {
-  console.error("Feed load error:", error);
-});

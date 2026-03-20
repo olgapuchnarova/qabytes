@@ -9,8 +9,8 @@ import random
 
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
-OUTPUT_FILE = "public/feed.json"
-RAW_FILE = "public/raw_candidates.json"
+OUTPUT_FILE = "feed.json"
+RAW_FILE = "raw_candidates.json"
 
 MAX_ARTICLES = 30
 
@@ -240,8 +240,6 @@ def generate_feed():
 
     print("Total scraped:", len(articles))
 
-    os.makedirs("public", exist_ok=True)
-
     with open(RAW_FILE, "w") as f:
         json.dump(articles, f, indent=2)
 
@@ -281,10 +279,18 @@ def generate_feed():
     def score(article):
         return article["signal"] + random.uniform(0, 0.5)
 
-    processed.sort(key=score, reverse=True)
-    final_feed = processed[:MAX_ARTICLES]
+    scored_articles = []
+    for article in processed:
+        article_copy = article.copy()
+        article_copy["_score"] = score(article)
+        scored_articles.append(article_copy)
 
-    final_feed.sort(key=score, reverse=True)
+    scored_articles.sort(key=lambda article: article["_score"], reverse=True)
+    final_feed = scored_articles[:MAX_ARTICLES]
+    final_feed.sort(key=lambda article: article["_score"], reverse=True)
+
+    for article in final_feed:
+        article.pop("_score", None)
 
     print("Final feed size:", len(final_feed))
 
