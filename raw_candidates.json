@@ -1,30 +1,18 @@
 [
   {
-    "title": "I fell in love with Kubernetes as a Test engineer",
-    "url": "https://www.reddit.com/r/testautomation/comments/jnvazj/i_fell_in_love_with_kubernetes_as_a_test_engineer/",
-    "text": "Since 2 years I'm using Kubernetes now. It became essential for me as a Test engineer. Having one single API to check and control the state of your applications and the system underneath, is something I never want to miss again.This led me to contributing to an open source project called [KubeLibrary](https://github.com/devopsspiral/KubeLibrary). Making it very easy to build tests which assert objects in Kubernetes clusters via [Robotframework](https://robotframework.org/).\n\nIn hope to spread some love for Kubernetes, I'll be giving a [webinar on using the KubeLibrary](https://humanitec.com/webinars/test-automation-in-continuous-deployment) on 11th of November.\n\nOn top, there is also a half-day workshop planned as part of the Robotframework [World Wide Workshop Wednesday](https://robot-work.shop/#kubelibraryverifystateofyourkubernetesclustergermanyenglish3) on 2nd of December.\n\nIf you can't make it for the online sessions, there is also a [blog article about using the KubeLibrary](https://medium.com/humanitec-developers/kubelibrary-6644ca06cea4).",
-    "source": "reddit"
-  },
-  {
-    "title": "I thought running a HashiCorp Vault cluster just to securely pass API keys to production was a bit much.\r\n\r\nSo I built Clef: a tokenless, zero-server secrets manager using Git, SOPS, and KMS envelope encryption. Better security, smaller footprint.",
-    "url": "https://dev.to/james_spears_3b283a3ce628/i-thought-running-a-hashicorp-vault-cluster-just-to-securely-pass-api-keys-to-production-was-a-bit-gd7",
+    "title": "I built a baseline-aware Python code health tool for CI and AI-assisted coding",
+    "url": "https://dev.to/orenlab/i-built-a-baseline-aware-python-code-health-tool-for-ci-and-ai-assisted-coding-5dij",
     "source": "devto"
   },
   {
-    "title": "How We Got Local MCP Servers Working in Claude Cowork (The Missing Guide)",
-    "url": "https://dev.to/murat-a-a/how-we-got-local-mcp-servers-working-in-claude-cowork-the-missing-guide-nbc",
+    "title": "pgwd in Production: From Alerts to Runbook",
+    "url": "https://dev.to/hrodrig/pgwd-in-production-from-alerts-to-runbook-2k42",
     "source": "devto"
   },
   {
-    "title": "Unlocking the relational power of graph neural networks in fraud prevention",
-    "url": "https://www.thoughtworks.com/insights/articles/graph-neural-networks-in-fraud-prevention",
+    "title": "A primer on product management for engineers",
+    "url": "https://increment.com/planning/product-management-for-engineers/",
     "source": "rss"
-  },
-  {
-    "title": "Looking for an opportunity",
-    "url": "https://www.reddit.com/r/QualityAssurance/comments/1s3o4kb/looking_for_an_opportunity/",
-    "text": "Hay guys I'm actually just got laid off from the startup company i was in due it's financial problems \nAnd I'm looking for any opportunity, i have about 1 YOE manual, API and automation Testing \nIf anyone can help i can send the cv, really appreciate it thank you all.",
-    "source": "reddit"
   },
   {
     "title": "Arrange Your Code to Communicate Data Flow",
@@ -32,30 +20,64 @@
     "source": "rss"
   },
   {
-    "title": "Playwright test runner preview - cross-browser e2e testing for web apps",
-    "url": "https://github.com/microsoft/playwright-test",
-    "text": "",
-    "source": "reddit"
+    "title": "Waymo granted permit to begin testing in New York City",
+    "url": "https://www.cnbc.com/2025/08/22/waymo-permit-new-york-city-nyc-rides.html",
+    "source": "hn"
   },
   {
-    "title": "I built a baseline-aware Python code health tool for CI and AI-assisted coding",
-    "url": "https://dev.to/orenlab/i-built-a-baseline-aware-python-code-health-tool-for-ci-and-ai-assisted-coding-5dij",
-    "source": "devto"
-  },
-  {
-    "title": "your agent can think. it can't remember.",
-    "url": "https://dev.to/ghostbuild/your-agent-can-think-it-cant-remember-5e1o",
-    "source": "devto"
-  },
-  {
-    "title": "Mercedes-Benz W203 Rear Subframe Rust",
-    "url": "https://automationpanda.com/2025/07/24/mercedes-benz-w203-rear-subframe-rust/",
+    "title": "Vibe coding while live streaming",
+    "url": "https://automationpanda.com/2025/08/20/vibe-coding-while-live-streaming/",
     "source": "rss"
   },
   {
-    "title": "Set Safe Defaults for Flags",
-    "url": "http://testing.googleblog.com/2026/03/set-safe-defaults-for-flags.html",
+    "title": "I thought running a HashiCorp Vault cluster just to securely pass API keys to production was a bit much.\r\n\r\nSo I built Clef: a tokenless, zero-server secrets manager using Git, SOPS, and KMS envelope encryption. Better security, smaller footprint.",
+    "url": "https://dev.to/james_spears_3b283a3ce628/i-thought-running-a-hashicorp-vault-cluster-just-to-securely-pass-api-keys-to-production-was-a-bit-gd7",
+    "source": "devto"
+  },
+  {
+    "title": "After all the hype, was 2025 really the year of AI agents?",
+    "url": "https://stackoverflow.blog/2026/03/20/was-2025-really-the-year-of-ai-agents/",
     "source": "rss"
+  },
+  {
+    "title": "Testing GPT 4's code-writing capabilities with some real world problems",
+    "url": "https://tylerglaiel.substack.com/p/can-gpt-4-actually-write-code",
+    "source": "hn"
+  },
+  {
+    "title": "Everyone Writes About AI Generating Code. Nobody Writes About AI Testing It.",
+    "url": "https://dev.to/manasightgg/everyone-writes-about-ai-generating-code-nobody-writes-about-ai-testing-it-171a",
+    "source": "devto"
+  },
+  {
+    "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
+    "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel/",
+    "source": "hn"
+  },
+  {
+    "title": "Planning in the dark",
+    "url": "https://increment.com/planning/planning-for-product-market-fit/",
+    "source": "rss"
+  },
+  {
+    "title": "Building a global engineering team (plus AI agents) with Netlify",
+    "url": "https://stackoverflow.blog/2026/03/19/building-a-global-engineering-team-netlify/",
+    "source": "rss"
+  },
+  {
+    "title": "Automating QA Data Collection from Jira, TestRail and CI",
+    "url": "https://dev.to/beefedai/automating-qa-data-collection-from-jira-testrail-and-ci-16ko",
+    "source": "devto"
+  },
+  {
+    "title": "My 11-Agent AI Swarm Was Secretly Hallucinating. My Own Monitoring Tool Caught It.",
+    "url": "https://dev.to/fliptrigga13/my-11-agent-ai-swarm-was-secretly-hallucinating-my-own-monitoring-tool-caught-it-4hj4",
+    "source": "devto"
+  },
+  {
+    "title": "Pfizer is testing a pill that, if successful, could cure Covid-19",
+    "url": "https://montrealgazette.com/news/world/pfizer-is-testing-a-pill-that-if-successful-could-become-first-ever-home-cure-for-covid-19",
+    "source": "hn"
   },
   {
     "title": "Making sense of the SaaSpocalypse",
@@ -63,18 +85,13 @@
     "source": "rss"
   },
   {
-    "title": "Why I built a React component library specifically for AI products",
-    "url": "https://dev.to/yangzh991/why-i-built-a-react-component-library-specifically-for-ai-products-3log",
+    "title": "I built a self-hosted AI chat app that connects 7 providers in one UI",
+    "url": "https://dev.to/tsunamayo7/i-built-a-self-hosted-ai-chat-app-that-connects-7-providers-in-one-ui-12ok",
     "source": "devto"
   },
   {
-    "title": "How Linux Powers Real-World Data Engineering",
-    "url": "https://dev.to/adev3loper/how-linux-powers-real-world-data-engineering-1m5c",
-    "source": "devto"
-  },
-  {
-    "title": "AI Build Traps: Usage, Output, and\u00a0Outcomes (How perverse incentives around token usage create cobra\u00a0farms)",
-    "url": "https://dev.to/thawkin3/ai-build-traps-usage-output-and-outcomes-how-perverse-incentives-around-token-usage-create-4cii",
+    "title": "The Test Manager\u2019s Guide: From Chaos to Predictable Quality \u2014 Part 1: Diagnosing Chaos & Defining the Target Model",
+    "url": "https://dev.to/abdulosman/the-test-managers-guide-from-chaos-to-predictable-quality-part-1-diagnosing-chaos-defining-4o70",
     "source": "devto"
   },
   {
@@ -83,52 +100,28 @@
     "source": "devto"
   },
   {
-    "title": "Vibe coding while live streaming",
-    "url": "https://automationpanda.com/2025/08/20/vibe-coding-while-live-streaming/",
-    "source": "rss"
-  },
-  {
-    "title": "3rd party testing automation best practices",
-    "url": "https://www.reddit.com/r/softwaretesting/comments/1s3lt09/3rd_party_testing_automation_best_practices/",
-    "text": "Curious how other teams handle automation against third-party services like Twilio/Postmark/any other API integration.\n\nWe currently run basically the same tests:\n\n* on PR merges to dev environment\n* in staging environment\n* and on demand\n* nightly\n\nAll of them can hit real third-party dependencies, and even with retries/timeouts they\u2019re still inconsistent. It feels like a lot of noise, wasted time/money, and frustration for failures that often aren\u2019t caused by our code.\n\nIs this overkill?\n\nAre most teams mocking these on PRs and only doing a small number of real end-to-end/smoke tests in staging or nightly?",
-    "source": "reddit"
-  },
-  {
-    "title": "I built a self-hosted AI chat app that connects 7 providers in one UI",
-    "url": "https://dev.to/tsunamayo7/i-built-a-self-hosted-ai-chat-app-that-connects-7-providers-in-one-ui-12ok",
-    "source": "devto"
-  },
-  {
-    "title": "The 10 Best Managed Software Testing Service Providers in 2020",
-    "url": "https://medium.com/qualitest/the-10-best-managed-software-testing-service-providers-in-2020-95c751d7474",
-    "text": "",
-    "source": "reddit"
-  },
-  {
-    "title": "From Chaos to Clarity: AI-Powered Performance Architecture Masterclass",
-    "url": "https://dev.to/karakoyunlu/from-chaos-to-clarity-ai-powered-performance-architecture-masterclass-48o8",
-    "source": "devto"
-  },
-  {
-    "title": "Manual vs automation, which one actually has a future",
-    "url": "https://www.reddit.com/r/QualityAssurance/comments/1s3we2e/manual_vs_automation_which_one_actually_has_a/",
-    "text": "I have been doing manual QA for about 5 years now and I like my work. But I think the market is turning to automation. Selenium, Playwright, Cypress. My manager hinted the team is moving full automation next year. Half the automation QAs I talk to say they spend more time maintaining flaky test suites than actually testing, but that is where the jobs are. So I took a Playwright course, wrote some basic tests on the side, sometimes with Beyz coding assistant to practice scripting faster. But I do not know if I should pivot toward something I am mediocre at or double down on what I am actually good at.\n\nFor people in QA long enough, where is the real value? Is automation the only path forward or is there still a place for people who are just good at breaking things?",
-    "source": "reddit"
-  },
-  {
-    "title": "Approaches to code reviews",
-    "url": "https://dev.to/h4ckb0ss/approaches-to-code-reviews-19np",
-    "source": "devto"
-  },
-  {
-    "title": "Blender is testing PeerTube after YouTube blocks their videos worldwide",
-    "url": "https://www.blender.org/media-exposure/youtube-blocks-blender-videos-worldwide/",
+    "title": "One of the Biggest At-Home DNA Testing Companies Is Working with the FBI",
+    "url": "https://www.buzzfeednews.com/article/salvadorhernandez/family-tree-dna-fbi-investigative-genealogy-privacy",
     "source": "hn"
   },
   {
-    "title": "Certifications for Career growth",
-    "url": "https://www.reddit.com/r/QualityAssurance/comments/1s3jsbq/certifications_for_career_growth/",
-    "text": "After doing some digging and research I see that at a minimum a good Certification to take as a QA is the ISTQB Foundations CTFL cert\n\nI wanted to ask if anyone had any information or recommendations about the following as well as I go down this rabbit hole: \n\nISTQB Test Automation Engineering Certification  \nISTQB Test Analyst Certification  \nISTQB Test Management Advanced Level Certification  \nISTQB Technical Test Analyst Certification\n\nIs there any certifications pertaining to git and CI/CD that could be beneficial as well?\n\n  \nAll help is appreciated!",
-    "source": "reddit"
+    "title": "Software Testing: You\u2019re Probably Doing It Wrong",
+    "url": "https://dev.to/leonpennings/software-testing-youre-probably-doing-it-wrong-564h",
+    "source": "devto"
+  },
+  {
+    "title": "Last week in AI | 16 March",
+    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/last-week-ai-16-march",
+    "source": "rss"
+  },
+  {
+    "title": "your agent can think. it can't remember.",
+    "url": "https://dev.to/ghostbuild/your-agent-can-think-it-cant-remember-5e1o",
+    "source": "devto"
+  },
+  {
+    "title": "Why Every Developer Should Learn Cloud Computing",
+    "url": "https://dev.to/mukhtar_abdussalam_0de093/why-every-developer-should-learn-cloud-computing-5f6m",
+    "source": "devto"
   }
 ]

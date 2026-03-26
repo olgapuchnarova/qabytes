@@ -1,45 +1,25 @@
 {
-  "generated_at": "2026-03-26T13:31:28.418642+00:00",
+  "generated_at": "2026-03-26T14:04:00.381593+00:00",
   "articles": [
     {
-      "id": "c6b0dd5afa93faa5",
-      "title": "The Trivy Supply Chain Attack: How a Compromised Security Scanner Stole Crypto Keys \u2014 And the CI/CD Hardening Playbook for DeFi Teams",
-      "url": "https://dev.to/ohmygod/the-trivy-supply-chain-attack-how-a-compromised-security-scanner-stole-crypto-keys-and-the-cicd-3bp3",
-      "source": "devto",
-      "signal": 4,
-      "why_it_matters": "Governance risk",
-      "summary": "The Trivy supply chain attack highlights the vulnerabilities inherent in CI/CD pipelines, particularly for DeFi projects. It underscores the need for rigorous security practices and monitoring to protect sensitive credentials and assets.",
+      "id": "ebd60259dec0934e",
+      "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
+      "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel",
+      "source": "hn",
+      "signal": 5,
+      "why_it_matters": "Industry change",
+      "summary": "Waymo's launch of fully driverless public road tests marks a significant milestone in autonomous vehicle technology, demonstrating Level 4 autonomy without a safety driver. This advancement not only showcases Waymo's confidence in its technology but also signals a potential shift in the transportation landscape as autonomous ride-hailing services become more accessible to the public.",
       "key_points": [
-        "Compromised security tools can become attack vectors.",
-        "CI/CD pipelines must be treated with the same security rigor as on-chain code.",
-        "Implementing human approval and monitoring can mitigate risks."
+        "Waymo is conducting public road tests with no safety driver, achieving Level 4 autonomy.",
+        "The trials are expanding to include existing members of the Chandler ride-hailing service.",
+        "Waymo aims to enhance road safety and broaden its operational area in the Phoenix metro region."
       ],
-      "takeaway": "DeFi teams must prioritize the security of their CI/CD processes to safeguard against existential threats.",
+      "takeaway": "The successful implementation of fully autonomous vehicles on public roads could redefine transportation and mobility services.",
       "first_seen_at": "2026-03-26",
       "last_shown_at": "2026-03-26",
       "expires_at": "2026-04-09",
       "is_new_today": true,
       "featured": true
-    },
-    {
-      "id": "5a4c46439ab20afd",
-      "title": "Gender Bias in Production LLMs: What 90 Tests Across 3 Frameworks Revealed",
-      "url": "https://dev.to/saravanan_ramachandran_db/gender-bias-in-production-llms-what-90-tests-across-3-frameworks-revealed-1a31",
-      "source": "devto",
-      "signal": 5,
-      "why_it_matters": "Governance risk",
-      "summary": "The study highlights a significant gender bias in production LLMs, revealing that AI models consistently misattribute authority based on gender. This bias poses serious implications for clinical AI deployments, where misassignments can lead to critical errors in responsibility and compliance.",
-      "key_points": [
-        "Consistent misattribution of female pronouns in authority roles across multiple frameworks.",
-        "Framework choice impacts evaluation reliability, with LangChain performing best.",
-        "Bias in AI models is a systematic issue that requires rigorous testing and validation."
-      ],
-      "takeaway": "AI safety testing must be as rigorous as validation in regulated industries to ensure responsible deployment.",
-      "first_seen_at": "2026-03-25",
-      "last_shown_at": "2026-03-26",
-      "expires_at": "2026-04-08",
-      "is_new_today": false,
-      "featured": false
     },
     {
       "id": "3e733145050d3832",
@@ -82,19 +62,19 @@
       "featured": false
     },
     {
-      "id": "1c912eb2db028519",
-      "title": "Building a Rails Engine #13 -- How to test a mountable Rails engine without a dummy app",
-      "url": "https://dev.to/seryllns_/building-a-rails-engine-13-how-to-test-a-mountable-rails-engine-without-a-dummy-app-1na2",
+      "id": "5a4c46439ab20afd",
+      "title": "Gender Bias in Production LLMs: What 90 Tests Across 3 Frameworks Revealed",
+      "url": "https://dev.to/saravanan_ramachandran_db/gender-bias-in-production-llms-what-90-tests-across-3-frameworks-revealed-1a31",
       "source": "devto",
-      "signal": 4,
-      "why_it_matters": "Testing strategy",
-      "summary": "The article highlights a novel approach to testing a mountable Rails engine without the overhead of a dummy app, using an in-memory SQLite database instead. This method streamlines the testing process, allowing for a more efficient and focused testing strategy that minimizes boilerplate code.",
+      "signal": 5,
+      "why_it_matters": "Governance risk",
+      "summary": "The study highlights a significant gender bias in production LLMs, revealing that AI models consistently misattribute authority based on gender. This bias poses serious implications for clinical AI deployments, where misassignments can lead to critical errors in responsibility and compliance.",
       "key_points": [
-        "Eliminates the need for a dummy app, reducing overhead.",
-        "Utilizes an in-memory SQLite database for quick setup and teardown.",
-        "Focuses on a minimal Rails environment tailored to the engine's needs."
+        "Consistent misattribution of female pronouns in authority roles across multiple frameworks.",
+        "Framework choice impacts evaluation reliability, with LangChain performing best.",
+        "Bias in AI models is a systematic issue that requires rigorous testing and validation."
       ],
-      "takeaway": "Adopting a lean testing strategy can enhance efficiency and maintainability in software development.",
+      "takeaway": "AI safety testing must be as rigorous as validation in regulated industries to ensure responsible deployment.",
       "first_seen_at": "2026-03-25",
       "last_shown_at": "2026-03-26",
       "expires_at": "2026-04-08",
@@ -102,19 +82,79 @@
       "featured": false
     },
     {
-      "id": "cbfb832c224c0bb0",
-      "title": "I built a baseline-aware Python code health tool for CI and AI-assisted coding",
-      "url": "https://dev.to/orenlab/i-built-a-baseline-aware-python-code-health-tool-for-ci-and-ai-assisted-coding-5dij",
+      "id": "7ac97193eeb67d1e",
+      "title": "Waymo granted permit to begin testing in New York City",
+      "url": "https://www.cnbc.com/2025/08/22/waymo-permit-new-york-city-nyc-rides.html",
+      "source": "hn",
+      "signal": 4,
+      "why_it_matters": "Industry change",
+      "summary": "Waymo has received a permit to commence testing its autonomous vehicles in New York City, marking a significant step in the evolution of self-driving technology in urban environments. This development highlights the growing acceptance and integration of autonomous systems in complex city landscapes, which could reshape transportation and mobility.",
+      "key_points": [
+        "Waymo's testing in NYC signifies a major milestone for autonomous vehicle technology.",
+        "The urban environment presents unique challenges for self-driving systems.",
+        "This move could influence regulatory frameworks and public perception of autonomous vehicles."
+      ],
+      "takeaway": "The expansion of autonomous vehicle testing into major cities indicates a pivotal moment for the industry, necessitating a reevaluation of testing strategies and regulatory approaches.",
+      "first_seen_at": "2026-03-26",
+      "last_shown_at": "2026-03-26",
+      "expires_at": "2026-04-09",
+      "is_new_today": true,
+      "featured": false
+    },
+    {
+      "id": "5a8802b5b7037d17",
+      "title": "My 11-Agent AI Swarm Was Secretly Hallucinating. My Own Monitoring Tool Caught It.",
+      "url": "https://dev.to/fliptrigga13/my-11-agent-ai-swarm-was-secretly-hallucinating-my-own-monitoring-tool-caught-it-4hj4",
       "source": "devto",
       "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "CodeClone 2.0.0b1 introduces a baseline-aware approach to structural code health, particularly relevant for teams using AI-assisted coding tools. By focusing on distinguishing accepted code debt from new regressions, it aims to maintain code quality in rapidly evolving codebases.",
+      "why_it_matters": "Reliability lesson",
+      "summary": "The article highlights the pitfalls of multi-agent systems in AI pipelines, particularly how they can amplify errors rather than mitigate them. By comparing outputs from a complex 11-agent system to a simplified 3-agent version, the author reveals that the latter produced more reliable results by eliminating the risk of downstream hallucinations.",
       "key_points": [
-        "CodeClone tracks structural code health over time in CI environments.",
-        "The tool emphasizes separating accepted debt from new regressions to improve usability.",
-        "It provides a health score based on concrete structural reasons rather than just identifying problems."
+        "Multi-agent architectures can create a false sense of validation.",
+        "Hallucinations in AI outputs can propagate through interconnected agents.",
+        "Simplifying the architecture can lead to better performance and reliability."
       ],
-      "takeaway": "As AI-assisted development becomes more common, tools like CodeClone are essential for maintaining code quality and governance.",
+      "takeaway": "Complexity in AI systems does not guarantee reliability; often, simpler designs yield better outcomes.",
+      "first_seen_at": "2026-03-26",
+      "last_shown_at": "2026-03-26",
+      "expires_at": "2026-04-09",
+      "is_new_today": true,
+      "featured": false
+    },
+    {
+      "id": "2bc4cfadf51dc15a",
+      "title": "A primer on product management for engineers",
+      "url": "https://increment.com/planning/product-management-for-engineers",
+      "source": "rss",
+      "signal": 4,
+      "why_it_matters": "Actionable idea",
+      "summary": "The article emphasizes the importance of product management for engineers, particularly in the absence of dedicated product managers. By adopting lightweight product management techniques, engineers can better document user requirements, enhance collaboration, and ensure that the products they build meet customer needs.",
+      "key_points": [
+        "Product management is essential for aligning engineering efforts with customer needs.",
+        "Documenting user requirements through user stories enhances transparency and collaboration.",
+        "Lightweight product management techniques can be applied even in small teams or personal projects."
+      ],
+      "takeaway": "Engineers can significantly improve their product outcomes by implementing basic product management practices, regardless of team size.",
+      "first_seen_at": "2026-03-25",
+      "last_shown_at": "2026-03-26",
+      "expires_at": "2026-04-08",
+      "is_new_today": true,
+      "featured": false
+    },
+    {
+      "id": "85aa650ada6858e9",
+      "title": "Building a global engineering team (plus AI agents) with Netlify",
+      "url": "https://stackoverflow.blog/2026/03/19/building-a-global-engineering-team-netlify",
+      "source": "rss",
+      "signal": 4,
+      "why_it_matters": "Leadership signal",
+      "summary": "Dana Lawson, CTO of Netlify, emphasizes the importance of maintaining a strong engineering culture in a remote work environment. She highlights the need for intentional in-person connections and a written culture to foster psychological safety and clarity within globally distributed teams.",
+      "key_points": [
+        "Intentional in-person meetings are crucial for team bonding.",
+        "A written culture helps reduce ambiguity and supports diverse languages.",
+        "Balancing open communication with focused execution is essential."
+      ],
+      "takeaway": "Creating a strong engineering culture in a remote setting requires both intentional personal interactions and clear documentation.",
       "first_seen_at": "2026-03-26",
       "last_shown_at": "2026-03-26",
       "expires_at": "2026-04-09",
@@ -138,63 +178,23 @@
       "first_seen_at": "2026-03-25",
       "last_shown_at": "2026-03-26",
       "expires_at": "2026-04-08",
-      "is_new_today": true,
+      "is_new_today": false,
       "featured": false
     },
     {
-      "id": "919392c3bb12e321",
-      "title": "your agent can think. it can't remember.",
-      "url": "https://dev.to/ghostbuild/your-agent-can-think-it-cant-remember-5e1o",
-      "source": "devto",
-      "signal": 4,
-      "why_it_matters": "Tooling trend",
-      "summary": "The emergence of ephemeral databases like Ghost represents a significant shift in how agents can manage data, allowing for more flexible and efficient workflows. By integrating memory, search, and execution capabilities directly within a PostgreSQL environment, it reduces the complexity of managing multiple services and enhances agent productivity.",
-      "key_points": [
-        "Ghost provides instant, ephemeral PostgreSQL databases for agents.",
-        "Memory Engine allows agents to track temporal data and search memories effectively.",
-        "TigerFS integrates file management directly with PostgreSQL, enhancing data accessibility."
-      ],
-      "takeaway": "Embracing ephemeral databases can streamline agent workflows and improve overall efficiency in software testing.",
-      "first_seen_at": "2026-03-26",
-      "last_shown_at": "2026-03-26",
-      "expires_at": "2026-04-09",
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "782a3db3c1f2d735",
-      "title": "Need advice with this dilemma",
-      "url": "https://www.reddit.com/r/QualityAssurance/comments/1s25lov/need_advice_with_this_dilemma",
-      "source": "reddit",
-      "signal": 4,
-      "why_it_matters": "Leadership signal",
-      "summary": "Navigating career decisions in QA can be challenging, especially when weighing promotions against new opportunities. The potential for growth and learning in a new role should be carefully considered alongside immediate financial benefits.",
-      "key_points": [
-        "Promotion offers limited pay increase but potential for future growth.",
-        "New opportunity provides significant pay jump and remote work flexibility.",
-        "Consider long-term career development versus short-term financial gain."
-      ],
-      "takeaway": "Evaluate the long-term impact of your decision on career growth and job satisfaction.",
-      "first_seen_at": "2026-03-25",
-      "last_shown_at": "2026-03-26",
-      "expires_at": "2026-04-08",
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "a6ce6570e8e43486",
-      "title": "Set Safe Defaults for Flags",
-      "url": "http://testing.googleblog.com/2026/03/set-safe-defaults-for-flags.html",
+      "id": "534738c29784a9f0",
+      "title": "After all the hype, was 2025 really the year of AI agents?",
+      "url": "https://stackoverflow.blog/2026/03/20/was-2025-really-the-year-of-ai-agents",
       "source": "rss",
       "signal": 4,
-      "why_it_matters": "Reliability lesson",
-      "summary": "Setting safe defaults for command-line flags can significantly reduce the risk of critical errors in production environments. By prioritizing safety in default settings, teams can prevent costly mistakes and ensure smoother operations during data updates.",
+      "why_it_matters": "AI in QA",
+      "summary": "The conversation highlights the evolution of AI agents and the challenges organizations face in adopting them. While there was initial excitement about the potential of AI agents, the reality has revealed significant gaps in infrastructure, trust, and data readiness that hinder their effective implementation.",
       "key_points": [
-        "Default settings should minimize the impact of user errors.",
-        "Documentation should reflect safe defaults to guide users effectively.",
-        "Context matters when defining defaults; consider the potential consequences of mistakes."
+        "Infrastructure for AI agents is lacking, especially in legacy organizations.",
+        "A significant trust deficit exists among developers regarding AI technologies.",
+        "Most enterprise data is not structured for machine consumption, complicating AI adoption."
       ],
-      "takeaway": "Prioritizing safe defaults in command-line interfaces is essential for maintaining reliability and preventing major outages.",
+      "takeaway": "Organizations must address infrastructure, trust, and data readiness to fully leverage the potential of AI agents.",
       "first_seen_at": "2026-03-26",
       "last_shown_at": "2026-03-26",
       "expires_at": "2026-04-09",

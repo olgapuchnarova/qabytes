@@ -26,7 +26,7 @@
     "first_seen_at": "2026-03-25",
     "last_shown_at": "2026-03-26",
     "expires_at": "2026-04-08",
-    "times_shown": 1,
+    "times_shown": 2,
     "status": "active",
     "source": "rss",
     "signal": 4,
@@ -186,7 +186,7 @@
     "first_seen_at": "2026-03-25",
     "last_shown_at": "2026-03-26",
     "expires_at": "2026-04-08",
-    "times_shown": 2,
+    "times_shown": 3,
     "status": "active",
     "source": "devto",
     "signal": 5,
@@ -231,33 +231,33 @@
     "source": "rss",
     "signal": 4,
     "why_it_matters": "AI in QA",
-    "summary": "The workshop highlighted the potential and limitations of AI-assisted coding tools in real-time scenarios. Despite facing challenges with the live coding approach, the session provided valuable insights into the practical application of AI in testing. Attendees engaged actively, indicating a strong interest in exploring innovative testing strategies.",
+    "summary": "The workshop highlighted the potential and limitations of AI-assisted coding tools in real-time scenarios. Despite facing challenges with the live coding approach, the session provided valuable insights into the practical application of AI in testing workflows.",
     "key_points": [
-      "Vibe coding can lead to unpredictable outcomes when using AI tools.",
-      "Real-time demonstrations can be more impactful than traditional teaching methods.",
-      "Transparency about challenges can enhance learning experiences."
+      "Vibe coding can lead to unexpected results when integrating AI tools.",
+      "Transparency about challenges can enhance the learning experience for attendees.",
+      "Real-world application of AI tools can yield both successes and lessons learned."
     ],
-    "takeaway": "Embracing AI in testing requires a balance of ambition and preparedness, as real-world applications can differ from expectations."
+    "takeaway": "Embracing AI in testing requires a balance of ambition and preparedness, as real-time applications can reveal both strengths and weaknesses."
   },
   "2bc4cfadf51dc15a": {
     "id": "2bc4cfadf51dc15a",
     "canonical_url": "https://increment.com/planning/product-management-for-engineers",
     "title": "A primer on product management for engineers",
     "first_seen_at": "2026-03-25",
-    "last_shown_at": null,
+    "last_shown_at": "2026-03-26",
     "expires_at": "2026-04-08",
-    "times_shown": 0,
+    "times_shown": 1,
     "status": "active",
     "source": "rss",
     "signal": 4,
     "why_it_matters": "Actionable idea",
-    "summary": "The article emphasizes the importance of product management for engineers, even in the absence of a dedicated product manager. By adopting lightweight product management techniques, engineers can enhance collaboration, document user requirements, and ensure that the product aligns with customer needs.",
+    "summary": "The article emphasizes the importance of product management for engineers, particularly in the absence of dedicated product managers. By adopting lightweight product management techniques, engineers can better document user requirements, enhance collaboration, and ensure that the products they build meet customer needs.",
     "key_points": [
       "Product management is essential for aligning engineering efforts with customer needs.",
-      "Documenting user requirements through user stories helps prioritize and track development.",
-      "Lightweight product management practices can improve collaboration and transparency within teams."
+      "Documenting user requirements through user stories enhances transparency and collaboration.",
+      "Lightweight product management techniques can be applied even in small teams or personal projects."
     ],
-    "takeaway": "Engineers can significantly benefit from applying product management principles to their projects, leading to better outcomes and user satisfaction."
+    "takeaway": "Engineers can significantly improve their product outcomes by implementing basic product management practices, regardless of team size."
   },
   "9849386f07e2c1f9": {
     "id": "9849386f07e2c1f9",
@@ -333,11 +333,11 @@
     "why_it_matters": "AI in QA",
     "summary": "The recent release of GPT-5.4 highlights significant advancements in AI that can enhance enterprise and knowledge work. However, it also raises concerns about security and the cognitive load associated with managing multiple AI agents, emphasizing the need for effective workflow optimization.",
     "key_points": [
-      "GPT-5.4 introduces notable improvements for enterprise applications.",
-      "Security challenges persist in AI assistance, necessitating new strategies.",
-      "A shift towards command line interfaces may enhance security and efficiency."
+      "GPT-5.4 introduces improvements for enterprise applications.",
+      "Security challenges persist in AI-assisted environments.",
+      "A shift towards command line interfaces may enhance security."
     ],
-    "takeaway": "Focusing on optimizing workflows and managing AI agents effectively is crucial for leveraging AI advancements in QA."
+    "takeaway": "Focusing on optimizing workflows and managing cognitive load is crucial as AI tools evolve."
   },
   "b80d02eacdbd48e6": {
     "id": "b80d02eacdbd48e6",
@@ -426,7 +426,7 @@
     "first_seen_at": "2026-03-25",
     "last_shown_at": "2026-03-26",
     "expires_at": "2026-04-08",
-    "times_shown": 3,
+    "times_shown": 4,
     "status": "active",
     "source": "devto",
     "signal": 5,
@@ -446,7 +446,7 @@
     "first_seen_at": "2026-03-25",
     "last_shown_at": "2026-03-26",
     "expires_at": "2026-04-08",
-    "times_shown": 3,
+    "times_shown": 4,
     "status": "active",
     "source": "devto",
     "signal": 5,
@@ -531,13 +531,13 @@
     "source": "devto",
     "signal": 4,
     "why_it_matters": "Tooling trend",
-    "summary": "The development of Clef, a tokenless and zero-server secrets manager, highlights a shift towards more lightweight and efficient solutions for managing sensitive information in production environments. By leveraging Git, SOPS, and KMS envelope encryption, it offers a compelling alternative to traditional solutions like HashiCorp Vault.",
+    "summary": "The development of Clef as a tokenless, zero-server secrets manager highlights a growing trend towards simplifying security practices in software development. By leveraging Git, SOPS, and KMS envelope encryption, this approach offers a more efficient and secure alternative to traditional solutions like HashiCorp Vault.",
     "key_points": [
-      "Clef provides a smaller footprint for secrets management.",
-      "It utilizes Git for version control and SOPS for encryption.",
-      "The solution aims to enhance security without the overhead of a server."
+      "Clef reduces the complexity of managing secrets in production environments.",
+      "It utilizes existing tools like Git and KMS for enhanced security.",
+      "The approach emphasizes a smaller footprint while maintaining security."
     ],
-    "takeaway": "Innovative tooling like Clef can streamline security processes while reducing complexity."
+    "takeaway": "Simplifying security management can lead to better practices and efficiency in software development."
   },
   "b15b46434cde4878": {
     "id": "b15b46434cde4878",
@@ -591,13 +591,13 @@
     "source": "rss",
     "signal": 4,
     "why_it_matters": "Quality practice",
-    "summary": "Arranging code to reflect data flow enhances readability and reduces cognitive load for developers. By grouping related lines and emphasizing logical sequences, teams can foster better collaboration and understanding of the codebase.",
+    "summary": "Arranging code to reflect data flow enhances readability and reduces cognitive load for developers. By grouping related lines and emphasizing logical sequences, teams can improve collaboration and maintainability of their codebase.",
     "key_points": [
-      "Adjacent lines of code should be coherent to improve understanding.",
-      "Ordering lines to match data flow can clarify the logic.",
+      "Adjacent lines of code should be coherent to aid understanding.",
+      "Ordering lines to match data flow increases clarity.",
       "Using blank lines and method extraction can further enhance readability."
     ],
-    "takeaway": "Organizing code by data flow is a key practice for improving code clarity and team collaboration."
+    "takeaway": "Organizing code by data flow is a key practice for improving code quality and team efficiency."
   },
   "09f4d30f0f8a68b8": {
     "id": "09f4d30f0f8a68b8",
@@ -631,13 +631,13 @@
     "source": "devto",
     "signal": 4,
     "why_it_matters": "AI in QA",
-    "summary": "CodeClone 2.0.0b1 introduces a baseline-aware approach to structural code health, particularly relevant for teams using AI-assisted coding tools. By focusing on distinguishing accepted code debt from new regressions, it aims to maintain code quality in rapidly evolving codebases.",
+    "summary": "CodeClone 2.0.0b1 introduces a baseline-aware approach to structural code health, particularly relevant for teams utilizing AI-assisted coding tools. By distinguishing between accepted technical debt and new regressions, it aims to maintain code quality in fast-paced development environments.",
     "key_points": [
-      "CodeClone tracks structural code health over time in CI environments.",
-      "The tool emphasizes separating accepted debt from new regressions to improve usability.",
-      "It provides a health score based on concrete structural reasons rather than just identifying problems."
+      "Focuses on tracking structural code health over time in CI.",
+      "Separates accepted debt from new regressions to enhance usability.",
+      "Addresses the challenges posed by AI-generated code in maintaining repository quality."
     ],
-    "takeaway": "As AI-assisted development becomes more common, tools like CodeClone are essential for maintaining code quality and governance."
+    "takeaway": "As AI-assisted development becomes more prevalent, tools like CodeClone that focus on structural integrity and baseline awareness are essential for maintaining code quality."
   },
   "919392c3bb12e321": {
     "id": "919392c3bb12e321",
@@ -651,13 +651,13 @@
     "source": "devto",
     "signal": 4,
     "why_it_matters": "Tooling trend",
-    "summary": "The emergence of ephemeral databases like Ghost represents a significant shift in how agents can manage data, allowing for more flexible and efficient workflows. By integrating memory, search, and execution capabilities directly within a PostgreSQL environment, it reduces the complexity of managing multiple services and enhances agent productivity.",
+    "summary": "The emergence of ephemeral databases like Ghost represents a significant shift in how agents can manage data, allowing for more agile and flexible workflows. By integrating memory, search, and execution capabilities within a single framework, it streamlines the development process for AI agents, reducing the complexity of managing multiple services.",
     "key_points": [
-      "Ghost provides instant, ephemeral PostgreSQL databases for agents.",
-      "Memory Engine allows agents to track temporal data and search memories effectively.",
-      "TigerFS integrates file management directly with PostgreSQL, enhancing data accessibility."
+      "Ghost provides instant, ephemeral PostgreSQL databases for AI agents.",
+      "Integration with memory and search tools enhances agents' capabilities.",
+      "Simplifies the infrastructure needed for AI-driven workflows."
     ],
-    "takeaway": "Embracing ephemeral databases can streamline agent workflows and improve overall efficiency in software testing."
+    "takeaway": "Embracing ephemeral databases can significantly improve the efficiency and flexibility of AI agent workflows."
   },
   "b602ff676198887b": {
     "id": "b602ff676198887b",
@@ -711,13 +711,13 @@
     "source": "rss",
     "signal": 4,
     "why_it_matters": "Industry change",
-    "summary": "The concept of the 'SaaSpocalypse' highlights the transformative impact of AI on the software-as-a-service market, shifting expectations from traditional models to more intelligent, customized solutions. As AI capabilities evolve, businesses must reconsider their software strategies, balancing cost with the need for quality and speed.",
+    "summary": "The emergence of AI is reshaping the expectations and economics of the SaaS market, leading to what some are calling the 'SaaSpocalypse.' As organizations reassess their software needs, the shift from traditional SaaS models to AI-driven solutions is becoming increasingly evident, prompting a reevaluation of how software is built and utilized.",
     "key_points": [
-      "AI is changing the economics of software, raising expectations for customization and intelligence.",
-      "The traditional SaaS model may no longer be viable as businesses seek more strategic, tailored solutions.",
-      "Enterprises must adapt their software development lifecycle to effectively replace legacy systems with AI-native solutions."
+      "AI is changing the economics of software, making it cheaper and faster to create.",
+      "The distinction between utility and strategic software is becoming blurred as AI enhances customer intelligence.",
+      "Organizations must adapt their software development lifecycle to effectively replace traditional SaaS solutions."
     ],
-    "takeaway": "The shift towards AI-driven software necessitates a reevaluation of how organizations approach software purchasing and development."
+    "takeaway": "AI is not just a cost-saving tool; it fundamentally alters what businesses should expect from their software solutions."
   },
   "c14528299998fc35": {
     "id": "c14528299998fc35",
@@ -794,10 +794,10 @@
     "summary": "The Trivy supply chain attack highlights the vulnerabilities inherent in CI/CD pipelines, particularly for DeFi projects. It underscores the need for rigorous security practices and monitoring to protect sensitive credentials and assets.",
     "key_points": [
       "Compromised security tools can become attack vectors.",
-      "CI/CD pipelines must be treated with the same security rigor as on-chain code.",
-      "Implementing human approval and monitoring can mitigate risks."
+      "DeFi projects often neglect auditing their CI/CD pipelines.",
+      "Implementing strict access controls and monitoring can mitigate risks."
     ],
-    "takeaway": "DeFi teams must prioritize the security of their CI/CD processes to safeguard against existential threats."
+    "takeaway": "Treat your CI/CD pipeline with the same security rigor as your on-chain code to safeguard against existential threats."
   },
   "15095148d2caba0b": {
     "id": "15095148d2caba0b",
@@ -831,13 +831,13 @@
     "source": "devto",
     "signal": 4,
     "why_it_matters": "AI in QA",
-    "summary": "The development of Helix AI Studio showcases a growing trend in integrating multiple AI providers into a single interface, enhancing productivity for QA engineers. This self-hosted solution emphasizes local execution and flexibility, catering to the diverse needs of software testing workflows.",
+    "summary": "The development of Helix AI Studio highlights the growing trend of integrating multiple AI providers into a single interface, streamlining workflows for QA engineers. This self-hosted solution not only enhances productivity but also allows for greater flexibility in testing strategies by leveraging different AI capabilities.",
     "key_points": [
-      "Combines multiple AI providers into one user-friendly interface.",
-      "Focuses on local execution to avoid cloud dependency.",
-      "Facilitates a multi-step pipeline for planning, executing, and verifying tasks."
+      "Combines multiple AI providers into one user-friendly interface",
+      "Supports local execution without cloud dependency",
+      "Facilitates a multi-step testing pipeline with different models"
     ],
-    "takeaway": "The rise of integrated AI tools is transforming how QA engineers approach testing strategies, allowing for more efficient workflows."
+    "takeaway": "Integrating diverse AI tools can significantly enhance the efficiency and effectiveness of QA processes."
   },
   "050924476a4f83e3": {
     "id": "050924476a4f83e3",
@@ -948,5 +948,285 @@
       "Understanding CI/CD and Git can complement testing skills and improve collaboration."
     ],
     "takeaway": "Investing in relevant certifications can provide a competitive edge in the QA field."
+  },
+  "5a02af66b2b59df2": {
+    "id": "5a02af66b2b59df2",
+    "canonical_url": "https://dev.to/hrodrig/pgwd-in-production-from-alerts-to-runbook-2k42",
+    "title": "pgwd in Production: From Alerts to Runbook",
+    "first_seen_at": "2026-03-26",
+    "last_shown_at": null,
+    "expires_at": "2026-04-09",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "signal": 4,
+    "why_it_matters": "Reliability lesson",
+    "summary": "The implementation of pgwd as a signal-to-action layer highlights the importance of operational context in managing PostgreSQL connections. By establishing a structured response to connection pressure, teams can avoid critical failures and ensure system reliability.",
+    "key_points": [
+      "Operational context is crucial for effective decision-making during connection pressure.",
+      "A 3-tier model helps in managing connection limits proactively.",
+      "Runbooks should emphasize observation and adjustment rather than one-time increases."
+    ],
+    "takeaway": "Effective monitoring and structured response strategies are essential for maintaining system reliability in production environments."
+  },
+  "7ac97193eeb67d1e": {
+    "id": "7ac97193eeb67d1e",
+    "canonical_url": "https://www.cnbc.com/2025/08/22/waymo-permit-new-york-city-nyc-rides.html",
+    "title": "Waymo granted permit to begin testing in New York City",
+    "first_seen_at": "2026-03-26",
+    "last_shown_at": "2026-03-26",
+    "expires_at": "2026-04-09",
+    "times_shown": 1,
+    "status": "active",
+    "source": "hn",
+    "signal": 4,
+    "why_it_matters": "Industry change",
+    "summary": "Waymo has received a permit to commence testing its autonomous vehicles in New York City, marking a significant step in the evolution of self-driving technology in urban environments. This development highlights the growing acceptance and integration of autonomous systems in complex city landscapes, which could reshape transportation and mobility.",
+    "key_points": [
+      "Waymo's testing in NYC signifies a major milestone for autonomous vehicle technology.",
+      "The urban environment presents unique challenges for self-driving systems.",
+      "This move could influence regulatory frameworks and public perception of autonomous vehicles."
+    ],
+    "takeaway": "The expansion of autonomous vehicle testing into major cities indicates a pivotal moment for the industry, necessitating a reevaluation of testing strategies and regulatory approaches."
+  },
+  "534738c29784a9f0": {
+    "id": "534738c29784a9f0",
+    "canonical_url": "https://stackoverflow.blog/2026/03/20/was-2025-really-the-year-of-ai-agents",
+    "title": "After all the hype, was 2025 really the year of AI agents?",
+    "first_seen_at": "2026-03-26",
+    "last_shown_at": "2026-03-26",
+    "expires_at": "2026-04-09",
+    "times_shown": 1,
+    "status": "active",
+    "source": "rss",
+    "signal": 4,
+    "why_it_matters": "AI in QA",
+    "summary": "The conversation highlights the evolution of AI agents and the challenges organizations face in adopting them. While there was initial excitement about the potential of AI agents, the reality has revealed significant gaps in infrastructure, trust, and data readiness that hinder their effective implementation.",
+    "key_points": [
+      "Infrastructure for AI agents is lacking, especially in legacy organizations.",
+      "A significant trust deficit exists among developers regarding AI technologies.",
+      "Most enterprise data is not structured for machine consumption, complicating AI adoption."
+    ],
+    "takeaway": "Organizations must address infrastructure, trust, and data readiness to fully leverage the potential of AI agents."
+  },
+  "29e9342ae7df74b5": {
+    "id": "29e9342ae7df74b5",
+    "canonical_url": "https://tylerglaiel.substack.com/p/can-gpt-4-actually-write-code",
+    "title": "Testing GPT 4's code-writing capabilities with some real world problems",
+    "first_seen_at": "2026-03-26",
+    "last_shown_at": null,
+    "expires_at": "2026-04-09",
+    "times_shown": 0,
+    "status": "active"
+  },
+  "77f1df4d779ae914": {
+    "id": "77f1df4d779ae914",
+    "canonical_url": "https://dev.to/manasightgg/everyone-writes-about-ai-generating-code-nobody-writes-about-ai-testing-it-171a",
+    "title": "Everyone Writes About AI Generating Code. Nobody Writes About AI Testing It.",
+    "first_seen_at": "2026-03-26",
+    "last_shown_at": null,
+    "expires_at": "2026-04-09",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "signal": 4,
+    "why_it_matters": "AI in QA",
+    "summary": "The article highlights the transformative impact of AI, specifically Claude Code, on the testing process for software development. By enabling real-time diagnostics and parallel investigations, it significantly reduces the time from bug report to fix deployment, enhancing the overall QA experience for developers.",
+    "key_points": [
+      "AI can streamline the testing process by running background diagnostics while developers continue their work.",
+      "Real-time feedback and log analysis allow for quicker identification and resolution of issues.",
+      "The integration of AI in QA shifts the developer's perspective from dreading bug reports to welcoming them."
+    ],
+    "takeaway": "AI tools can fundamentally change the dynamics of software testing, making it more efficient and less disruptive."
+  },
+  "ebd60259dec0934e": {
+    "id": "ebd60259dec0934e",
+    "canonical_url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel",
+    "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
+    "first_seen_at": "2026-03-26",
+    "last_shown_at": "2026-03-26",
+    "expires_at": "2026-04-09",
+    "times_shown": 1,
+    "status": "active",
+    "source": "hn",
+    "signal": 5,
+    "why_it_matters": "Industry change",
+    "summary": "Waymo's launch of fully driverless public road tests marks a significant milestone in autonomous vehicle technology, demonstrating Level 4 autonomy without a safety driver. This advancement not only showcases Waymo's confidence in its technology but also signals a potential shift in the transportation landscape as autonomous ride-hailing services become more accessible to the public.",
+    "key_points": [
+      "Waymo is conducting public road tests with no safety driver, achieving Level 4 autonomy.",
+      "The trials are expanding to include existing members of the Chandler ride-hailing service.",
+      "Waymo aims to enhance road safety and broaden its operational area in the Phoenix metro region."
+    ],
+    "takeaway": "The successful implementation of fully autonomous vehicles on public roads could redefine transportation and mobility services."
+  },
+  "7fe3cd5c8dfcfedc": {
+    "id": "7fe3cd5c8dfcfedc",
+    "canonical_url": "https://increment.com/planning/planning-for-product-market-fit",
+    "title": "Planning in the dark",
+    "first_seen_at": "2026-03-26",
+    "last_shown_at": null,
+    "expires_at": "2026-04-09",
+    "times_shown": 0,
+    "status": "active",
+    "source": "rss",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "The article emphasizes the importance of navigating uncertainty when developing products without clear product-market fit. It advocates for an incremental approach to development, focusing on hypothesis testing and adapting based on user feedback rather than attempting to plan every detail upfront.",
+    "key_points": [
+      "Accept limited visibility and focus on short-term planning.",
+      "Utilize a hypothesis-driven approach to guide development.",
+      "Iterate based on user feedback to refine product features."
+    ],
+    "takeaway": "Embrace ambiguity in product development and prioritize incremental testing to achieve product-market fit."
+  },
+  "85aa650ada6858e9": {
+    "id": "85aa650ada6858e9",
+    "canonical_url": "https://stackoverflow.blog/2026/03/19/building-a-global-engineering-team-netlify",
+    "title": "Building a global engineering team (plus AI agents) with Netlify",
+    "first_seen_at": "2026-03-26",
+    "last_shown_at": "2026-03-26",
+    "expires_at": "2026-04-09",
+    "times_shown": 1,
+    "status": "active",
+    "source": "rss",
+    "signal": 4,
+    "why_it_matters": "Leadership signal",
+    "summary": "Dana Lawson, CTO of Netlify, emphasizes the importance of maintaining a strong engineering culture in a remote work environment. She highlights the need for intentional in-person connections and a written culture to foster psychological safety and clarity within globally distributed teams.",
+    "key_points": [
+      "Intentional in-person meetings are crucial for team bonding.",
+      "A written culture helps reduce ambiguity and supports diverse languages.",
+      "Balancing open communication with focused execution is essential."
+    ],
+    "takeaway": "Creating a strong engineering culture in a remote setting requires both intentional personal interactions and clear documentation."
+  },
+  "15e8b77374276981": {
+    "id": "15e8b77374276981",
+    "canonical_url": "https://dev.to/beefedai/automating-qa-data-collection-from-jira-testrail-and-ci-16ko",
+    "title": "Automating QA Data Collection from Jira, TestRail and CI",
+    "first_seen_at": "2026-03-26",
+    "last_shown_at": null,
+    "expires_at": "2026-04-09",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "Automating QA data collection from tools like Jira, TestRail, and CI systems can significantly enhance the accuracy and reliability of quality metrics. By moving away from manual exports and embracing event-driven data collection, teams can ensure that their dashboards reflect real-time information, reducing confusion and blame during incidents.",
+    "key_points": [
+      "Automated data collection improves accuracy and traceability.",
+      "Event-driven metrics prevent discrepancies and delays.",
+      "Establishing a canonical QA schema fosters a shared understanding."
+    ],
+    "takeaway": "Transitioning to automated, event-based data collection is essential for improving QA processes and metrics reliability."
+  },
+  "5a8802b5b7037d17": {
+    "id": "5a8802b5b7037d17",
+    "canonical_url": "https://dev.to/fliptrigga13/my-11-agent-ai-swarm-was-secretly-hallucinating-my-own-monitoring-tool-caught-it-4hj4",
+    "title": "My 11-Agent AI Swarm Was Secretly Hallucinating. My Own Monitoring Tool Caught It.",
+    "first_seen_at": "2026-03-26",
+    "last_shown_at": "2026-03-26",
+    "expires_at": "2026-04-09",
+    "times_shown": 1,
+    "status": "active",
+    "source": "devto",
+    "signal": 4,
+    "why_it_matters": "Reliability lesson",
+    "summary": "The article highlights the pitfalls of multi-agent systems in AI pipelines, particularly how they can amplify errors rather than mitigate them. By comparing outputs from a complex 11-agent system to a simplified 3-agent version, the author reveals that the latter produced more reliable results by eliminating the risk of downstream hallucinations.",
+    "key_points": [
+      "Multi-agent architectures can create a false sense of validation.",
+      "Hallucinations in AI outputs can propagate through interconnected agents.",
+      "Simplifying the architecture can lead to better performance and reliability."
+    ],
+    "takeaway": "Complexity in AI systems does not guarantee reliability; often, simpler designs yield better outcomes."
+  },
+  "37e9c7c5ea29a595": {
+    "id": "37e9c7c5ea29a595",
+    "canonical_url": "https://montrealgazette.com/news/world/pfizer-is-testing-a-pill-that-if-successful-could-become-first-ever-home-cure-for-covid-19",
+    "title": "Pfizer is testing a pill that, if successful, could cure Covid-19",
+    "first_seen_at": "2026-03-26",
+    "last_shown_at": null,
+    "expires_at": "2026-04-09",
+    "times_shown": 0,
+    "status": "active"
+  },
+  "0a2910fcbfe241d8": {
+    "id": "0a2910fcbfe241d8",
+    "canonical_url": "https://dev.to/abdulosman/the-test-managers-guide-from-chaos-to-predictable-quality-part-1-diagnosing-chaos-defining-4o70",
+    "title": "The Test Manager\u2019s Guide: From Chaos to Predictable Quality \u2014 Part 1: Diagnosing Chaos & Defining the Target Model",
+    "first_seen_at": "2026-03-26",
+    "last_shown_at": null,
+    "expires_at": "2026-04-09",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "The article emphasizes the importance of diagnosing structural issues within testing processes rather than attributing chaos to the testers themselves. By understanding the underlying disorder, teams can define a target operating model that enhances visibility and predictability in quality outcomes.",
+    "key_points": [
+      "Testing chaos often stems from structural misalignment and lack of feedback loops.",
+      "Effective diagnosis involves listening to team members to identify where information is lost.",
+      "A target operating model focuses on achieving predictable outcomes rather than just improving processes."
+    ],
+    "takeaway": "Understanding and addressing the structural issues in testing can lead to more predictable quality outcomes."
+  },
+  "14a2e5f946472d20": {
+    "id": "14a2e5f946472d20",
+    "canonical_url": "https://www.buzzfeednews.com/article/salvadorhernandez/family-tree-dna-fbi-investigative-genealogy-privacy",
+    "title": "One of the Biggest At-Home DNA Testing Companies Is Working with the FBI",
+    "first_seen_at": "2026-03-26",
+    "last_shown_at": null,
+    "expires_at": "2026-04-09",
+    "times_shown": 0,
+    "status": "active",
+    "source": "hn",
+    "signal": 3,
+    "why_it_matters": "Governance risk",
+    "summary": "The collaboration between Family Tree DNA and the FBI raises significant privacy concerns regarding the use of genetic data for law enforcement purposes. This development highlights the tension between technological advancements in genealogy and the ethical implications of data privacy.",
+    "key_points": [
+      "Family Tree DNA allows the FBI to access its genealogy database to solve violent crimes.",
+      "Privacy advocates express concerns over the potential for a de-facto national DNA database.",
+      "Users may feel their trust has been violated, leading to a potential backlash against the company."
+    ],
+    "takeaway": "The intersection of technology and privacy in genetic testing presents governance risks that organizations must navigate carefully."
+  },
+  "7eec27864caa46ce": {
+    "id": "7eec27864caa46ce",
+    "canonical_url": "https://dev.to/leonpennings/software-testing-youre-probably-doing-it-wrong-564h",
+    "title": "Software Testing: You\u2019re Probably Doing It Wrong",
+    "first_seen_at": "2026-03-26",
+    "last_shown_at": null,
+    "expires_at": "2026-04-09",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "The article emphasizes the distinction between verification and validation in software testing, highlighting the risks of conflating behavioral verification with overall software quality. It warns that focusing too much on passing tests can lead to systems that are optimized for compliance rather than true understanding of business needs.",
+    "key_points": [
+      "Testing should verify behavior, not replace engineering.",
+      "Confusing verification with validation can lead to building the wrong solutions.",
+      "Tests that focus on implementation details can hinder necessary refactoring."
+    ],
+    "takeaway": "A passing test suite proves behavioral agreement, not solution fitness."
+  },
+  "f045563e77cc53a5": {
+    "id": "f045563e77cc53a5",
+    "canonical_url": "https://dev.to/mukhtar_abdussalam_0de093/why-every-developer-should-learn-cloud-computing-5f6m",
+    "title": "Why Every Developer Should Learn Cloud Computing",
+    "first_seen_at": "2026-03-26",
+    "last_shown_at": null,
+    "expires_at": "2026-04-09",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "signal": 3,
+    "why_it_matters": "Industry change",
+    "summary": "Cloud computing is becoming an essential skill for developers, enabling scalable resources and reducing infrastructure management burdens. Understanding cloud services not only enhances a developer's toolkit but also opens up new career opportunities in a rapidly evolving tech landscape.",
+    "key_points": [
+      "Cloud computing offers scalable resources for applications.",
+      "Robust security features in cloud platforms build user trust.",
+      "Acquiring cloud certifications enhances marketability and career prospects."
+    ],
+    "takeaway": "Embracing cloud computing is crucial for developers to stay relevant in an evolving industry."
   }
 }
