@@ -61,16 +61,39 @@ fetch("./feed.json")
       const category = article.category || article.source || "";
       const summary = article.summary || "";
       const takeaway = article.takeaway || article.actionable_takeaway || "";
-      const score = article.signal_score || article.signal || "-";
+      const whyItMatters = article.why_it_matters || "";
       const link = article.link || article.url;
+      const safeUrl = safeExternalUrl(link);
 
-      const card = document.createElement("div");
+      const card = document.createElement(safeUrl ? "a" : "article");
       card.className = "card";
 
-      const signal = document.createElement("div");
-      signal.className = "signal";
-      signal.textContent = `Signal ${score}/5`;
-      card.appendChild(signal);
+      if (safeUrl) {
+        card.href = safeUrl;
+        card.target = "_blank";
+        card.rel = "noopener noreferrer";
+      }
+
+      const meta = document.createElement("div");
+      meta.className = "card-meta";
+
+      if (whyItMatters) {
+        const reason = document.createElement("div");
+        reason.className = "why-it-matters";
+        reason.textContent = `Why it matters: ${whyItMatters}`;
+        meta.appendChild(reason);
+      }
+
+      if (article.is_new_today) {
+        const badge = document.createElement("div");
+        badge.className = "new-badge";
+        badge.textContent = "New";
+        meta.appendChild(badge);
+      }
+
+      if (meta.childElementCount > 0) {
+        card.appendChild(meta);
+      }
 
       const heading = document.createElement(titleTag);
       heading.textContent = title;
@@ -92,16 +115,6 @@ fetch("./feed.json")
       takeawayLabel.textContent = "Takeaway:";
       card.appendChild(takeawayLabel);
       card.appendChild(setText(document.createElement("p"), takeaway));
-
-      const safeUrl = safeExternalUrl(link);
-      if (safeUrl) {
-        const anchor = document.createElement("a");
-        anchor.href = safeUrl;
-        anchor.target = "_blank";
-        anchor.rel = "noopener noreferrer";
-        anchor.textContent = "Read original ->";
-        card.appendChild(anchor);
-      }
 
       return card;
     }
