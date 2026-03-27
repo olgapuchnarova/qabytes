@@ -38,16 +38,46 @@ WHY_IT_MATTERS_OPTIONS = [
 ]
 
 RSS_FEEDS = [
-    "https://www.ministryoftesting.com/articles/rss",
-    "https://testing.googleblog.com/feeds/posts/default",
-    "https://blog.testproject.io/feed/",
-    "https://automationpanda.com/feed/",
-    "https://martinfowler.com/feed.atom",
-    "https://www.thoughtworks.com/rss/insights.xml",
-    "https://increment.com/feed.xml",
-    "https://stackoverflow.blog/feed/",
-    "https://thenewstack.io/feed/",
-    "https://www.infoq.com/testing/rss/",
+    {
+        "url": "https://www.ministryoftesting.com/articles/rss",
+        "name": "Ministry of Testing",
+    },
+    {
+        "url": "https://testing.googleblog.com/feeds/posts/default",
+        "name": "Google Testing Blog",
+    },
+    {
+        "url": "https://blog.testproject.io/feed/",
+        "name": "TestProject",
+    },
+    {
+        "url": "https://automationpanda.com/feed/",
+        "name": "Automation Panda",
+    },
+    {
+        "url": "https://martinfowler.com/feed.atom",
+        "name": "Martin Fowler",
+    },
+    {
+        "url": "https://www.thoughtworks.com/rss/insights.xml",
+        "name": "Thoughtworks",
+    },
+    {
+        "url": "https://increment.com/feed.xml",
+        "name": "Increment",
+    },
+    {
+        "url": "https://stackoverflow.blog/feed/",
+        "name": "Stack Overflow Blog",
+    },
+    {
+        "url": "https://thenewstack.io/feed/",
+        "name": "The New Stack",
+    },
+    {
+        "url": "https://www.infoq.com/testing/rss/",
+        "name": "InfoQ",
+    },
 ]
 
 
@@ -142,6 +172,7 @@ def build_article_from_state(record):
         "title",
         "canonical_url",
         "source",
+        "source_name",
         "signal",
         "why_it_matters",
         "summary",
@@ -158,6 +189,7 @@ def build_article_from_state(record):
         "title": record["title"],
         "url": record["canonical_url"],
         "source": record["source"],
+        "source_name": record["source_name"],
         "signal": record["signal"],
         "why_it_matters": record["why_it_matters"],
         "summary": record["summary"],
@@ -183,7 +215,7 @@ def extract_text(url):
 def get_rss_articles():
     articles = []
     for feed in RSS_FEEDS:
-        parsed = feedparser.parse(feed)
+        parsed = feedparser.parse(feed["url"])
         for entry in parsed.entries[:5]:
             title = entry.title
             if len(title) < 20:
@@ -194,6 +226,7 @@ def get_rss_articles():
                 "title": title,
                 "url": entry.link,
                 "source": "rss",
+                "source_name": feed["name"],
             })
     return articles
 
@@ -224,6 +257,7 @@ def get_reddit_posts():
                     "url": post["url"],
                     "text": post.get("selftext", ""),
                     "source": "reddit",
+                    "source_name": f"Reddit r/{sub}",
                 })
         except Exception:
             continue
@@ -255,6 +289,7 @@ def get_devto_articles():
                     "title": title,
                     "url": article["url"],
                     "source": "devto",
+                    "source_name": "DEV Community",
                 })
         except Exception:
             continue
@@ -283,6 +318,7 @@ def get_hn_articles():
                 "title": title,
                 "url": link,
                 "source": "hn",
+                "source_name": "Hacker News",
             })
     except Exception:
         pass
@@ -312,6 +348,7 @@ def get_testing_weekly():
                 "title": title,
                 "url": href,
                 "source": "testing-weekly",
+                "source_name": "Software Testing Weekly",
             })
     except Exception:
         pass
@@ -450,6 +487,7 @@ def generate_feed():
             "title": article["title"],
             "url": state_record["canonical_url"],
             "source": article["source"],
+            "source_name": article.get("source_name") or article["source"],
             "signal": analysis["signal"],
             "why_it_matters": why_it_matters,
             "summary": analysis["summary"],
@@ -462,6 +500,7 @@ def generate_feed():
         processed.append(processed_article)
         state_record.update({
             "source": processed_article["source"],
+            "source_name": processed_article["source_name"],
             "signal": processed_article["signal"],
             "why_it_matters": processed_article["why_it_matters"],
             "summary": processed_article["summary"],
@@ -493,7 +532,7 @@ def generate_feed():
     for article in deduped.values():
         article_copy = article.copy()
         article_copy["_score"] = score_article(article_copy)
-        article_copy["is_new_today"] = state[article["id"]]["times_shown"] == 0
+        article_copy["is_new_today"] = article["first_seen_at"] == today_str
         scored_articles.append(article_copy)
 
     new_candidates = [

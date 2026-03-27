@@ -72,6 +72,38 @@ section h2 {
   display: block;
 }
 
+#filters {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 4px 0 18px;
+  margin-bottom: 4px;
+  scrollbar-width: none;
+}
+
+#filters::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-chip {
+  flex: 0 0 auto;
+  border: 1px solid rgba(166, 183, 170, 0.24);
+  background: rgba(255, 255, 255, 0.88);
+  color: #6f7771;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.filter-chip.is-active {
+  background: rgba(166, 183, 170, 0.2);
+  color: var(--ink);
+  border-color: rgba(166, 183, 170, 0.44);
+}
+
 .card {
   display: block;
   position: relative;
@@ -85,6 +117,32 @@ section h2 {
   text-decoration: none;
   color: inherit;
   overflow: hidden;
+}
+
+.card.is-read {
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(166, 183, 170, 0.14);
+  box-shadow: 0 14px 30px rgba(124, 142, 128, 0.05);
+}
+
+.card.is-read-pending {
+  border-color: rgba(166, 183, 170, 0.4);
+  box-shadow: 0 22px 40px rgba(124, 142, 128, 0.12);
+}
+
+.card.is-read-exit {
+  animation: card-read-exit 820ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.card.is-unread-exit {
+  animation: card-unread-exit 680ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.card.is-read h2,
+.card.is-read h3,
+.card.is-read p,
+.card.is-read strong {
+  opacity: 0.8;
 }
 
 #featured .card {
@@ -164,12 +222,219 @@ section h2 {
   color: var(--muted);
 }
 
+.key-points {
+  margin: 18px 0 16px;
+  padding: 14px 16px 12px;
+  background: rgba(166, 183, 170, 0.08);
+  border: 1px solid rgba(166, 183, 170, 0.18);
+  border-radius: 18px;
+}
+
+.key-points strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--ink);
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.key-points ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #59655f;
+}
+
+.key-points li {
+  margin-bottom: 8px;
+  line-height: 1.65;
+}
+
+.key-points li:last-child {
+  margin-bottom: 0;
+}
+
 .card strong {
   color: var(--ink);
 }
 
 .card li::marker {
   color: var(--sage);
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 8px;
+}
+
+.read-toggle {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(211, 157, 135, 0.42);
+  background: rgba(211, 157, 135, 0.12);
+  color: #b98772;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+.read-toggle:hover {
+  transform: scale(1.05);
+  background: rgba(211, 157, 135, 0.18);
+  border-color: rgba(211, 157, 135, 0.56);
+}
+
+.read-toggle.is-read {
+  background: var(--sage);
+  color: #ffffff;
+  border-color: rgba(166, 183, 170, 0.8);
+}
+
+.read-toggle-icon {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.direction-cue {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.direction-cue-down {
+  color: #8ba092;
+  animation: direction-cue-down 620ms ease-out forwards;
+}
+
+.direction-cue-up {
+  color: #b98772;
+  animation: direction-cue-up 600ms ease-out forwards;
+}
+
+.read-toggle-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: #b98772;
+  letter-spacing: 0.01em;
+}
+
+.read-burst {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--burst-size, 10px);
+  height: var(--burst-size, 10px);
+  border-radius: 999px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: read-burst 900ms cubic-bezier(0.18, 0.8, 0.24, 1) forwards;
+}
+
+@keyframes read-burst {
+  0% {
+    opacity: 0.95;
+    transform: translate(-50%, -50%) scale(0.7) rotate(0deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform:
+      translate(
+        calc(-50% + var(--burst-x)),
+        calc(-50% + var(--burst-y))
+      )
+      scale(0.2)
+      rotate(var(--burst-rotate));
+  }
+}
+
+@keyframes direction-cue-down {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  55% {
+    opacity: 1;
+    transform: translate(-50%, 6px) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 20px) scale(1.08);
+  }
+}
+
+@keyframes direction-cue-up {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  55% {
+    opacity: 1;
+    transform: translate(-50%, -14px) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -32px) scale(1.08);
+  }
+}
+
+@keyframes card-read-exit {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  35% {
+    transform: translateY(22px) scale(0.994);
+    opacity: 0.97;
+  }
+
+  100% {
+    transform: translateY(88px) scale(0.965);
+    opacity: 0.72;
+  }
+}
+
+@keyframes card-unread-exit {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  35% {
+    transform: translateY(-18px) scale(1.004);
+    opacity: 0.98;
+  }
+
+  100% {
+    transform: translateY(-72px) scale(1.015);
+    opacity: 0.9;
+  }
 }
 
 @media (max-width: 640px) {
