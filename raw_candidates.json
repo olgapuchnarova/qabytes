@@ -1,12 +1,37 @@
 [
   {
-    "title": "I built a baseline-aware Python code health tool for CI and AI-assisted coding",
-    "url": "https://dev.to/orenlab/i-built-a-baseline-aware-python-code-health-tool-for-ci-and-ai-assisted-coding-5dij",
+    "title": "Approaches to code reviews",
+    "url": "https://dev.to/h4ckb0ss/approaches-to-code-reviews-19np",
     "source": "devto"
   },
   {
-    "title": "pgwd in Production: From Alerts to Runbook",
-    "url": "https://dev.to/hrodrig/pgwd-in-production-from-alerts-to-runbook-2k42",
+    "title": "I Tried to Turn Agent Memory Into Plumbing Instead of Philosophy",
+    "url": "https://dev.to/marcosomma/i-tried-to-turn-agent-memory-into-plumbing-instead-of-philosophy-3a8e",
+    "source": "devto"
+  },
+  {
+    "title": "Mercedes-Benz W203 Rear Subframe Rust",
+    "url": "https://automationpanda.com/2025/07/24/mercedes-benz-w203-rear-subframe-rust/",
+    "source": "rss"
+  },
+  {
+    "title": "Software Testing: You\u2019re Probably Doing It Wrong",
+    "url": "https://dev.to/leonpennings/software-testing-youre-probably-doing-it-wrong-564h",
+    "source": "devto"
+  },
+  {
+    "title": "Bliki: Architecture Decision Record",
+    "url": "https://martinfowler.com/bliki/ArchitectureDecisionRecord.html",
+    "source": "rss"
+  },
+  {
+    "title": "Sort Lines in Source Code",
+    "url": "http://testing.googleblog.com/2025/09/sort-lines-in-source-code.html",
+    "source": "rss"
+  },
+  {
+    "title": "Scaling your productivity with spec docs in your IDE - Anti Gravity.",
+    "url": "https://dev.to/gdg/teaching-gemini-to-scale-your-workflow-in-anti-gravity-om2",
     "source": "devto"
   },
   {
@@ -15,43 +40,38 @@
     "source": "rss"
   },
   {
-    "title": "Arrange Your Code to Communicate Data Flow",
-    "url": "http://testing.googleblog.com/2025/01/arrange-your-code-to-communicate-data.html",
-    "source": "rss"
-  },
-  {
-    "title": "Waymo granted permit to begin testing in New York City",
-    "url": "https://www.cnbc.com/2025/08/22/waymo-permit-new-york-city-nyc-rides.html",
-    "source": "hn"
-  },
-  {
-    "title": "Vibe coding while live streaming",
-    "url": "https://automationpanda.com/2025/08/20/vibe-coding-while-live-streaming/",
-    "source": "rss"
-  },
-  {
-    "title": "I thought running a HashiCorp Vault cluster just to securely pass API keys to production was a bit much.\r\n\r\nSo I built Clef: a tokenless, zero-server secrets manager using Git, SOPS, and KMS envelope encryption. Better security, smaller footprint.",
-    "url": "https://dev.to/james_spears_3b283a3ce628/i-thought-running-a-hashicorp-vault-cluster-just-to-securely-pass-api-keys-to-production-was-a-bit-gd7",
+    "title": "The data engineer's Cortex Code cheat sheet",
+    "url": "https://dev.to/snowflake/the-data-engineers-cortex-code-cheat-sheet-3b60",
     "source": "devto"
   },
   {
-    "title": "After all the hype, was 2025 really the year of AI agents?",
-    "url": "https://stackoverflow.blog/2026/03/20/was-2025-really-the-year-of-ai-agents/",
+    "title": "Stop Paying for Cloud: Deploy a Highly Available Cluster on Your Own Hardware in Minutes",
+    "url": "https://dev.to/axrisi/stop-paying-for-cloud-deploy-a-highly-available-cluster-on-your-own-hardware-in-minutes-14f0",
+    "source": "devto"
+  },
+  {
+    "title": "20 lines of code that beat A/B testing every time",
+    "url": "http://stevehanov.ca/blog/index.php?id=132",
+    "source": "hn"
+  },
+  {
+    "title": "Multi-stage attacks are the Final Fantasy bosses of security",
+    "url": "https://stackoverflow.blog/2026/03/24/multi-stage-attacks-are-the-final-fantasy-bosses-of-security/",
     "source": "rss"
+  },
+  {
+    "title": "I Couldn't Find an OAuth 2.1 Proxy for MCP Servers, So I Built One",
+    "url": "https://dev.to/cpremus/i-couldnt-find-an-oauth-21-proxy-for-mcp-servers-so-i-built-one-59nd",
+    "source": "devto"
+  },
+  {
+    "title": "Testing Benford's Law",
+    "url": "http://testingbenfordslaw.com",
+    "source": "hn"
   },
   {
     "title": "Testing GPT 4's code-writing capabilities with some real world problems",
     "url": "https://tylerglaiel.substack.com/p/can-gpt-4-actually-write-code",
-    "source": "hn"
-  },
-  {
-    "title": "Everyone Writes About AI Generating Code. Nobody Writes About AI Testing It.",
-    "url": "https://dev.to/manasightgg/everyone-writes-about-ai-generating-code-nobody-writes-about-ai-testing-it-171a",
-    "source": "devto"
-  },
-  {
-    "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
-    "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel/",
     "source": "hn"
   },
   {
@@ -60,23 +80,18 @@
     "source": "rss"
   },
   {
-    "title": "Building a global engineering team (plus AI agents) with Netlify",
-    "url": "https://stackoverflow.blog/2026/03/19/building-a-global-engineering-team-netlify/",
-    "source": "rss"
+    "title": "Blender is testing PeerTube after YouTube blocks their videos worldwide",
+    "url": "https://www.blender.org/media-exposure/youtube-blocks-blender-videos-worldwide/",
+    "source": "hn"
   },
   {
-    "title": "Automating QA Data Collection from Jira, TestRail and CI",
-    "url": "https://dev.to/beefedai/automating-qa-data-collection-from-jira-testrail-and-ci-16ko",
+    "title": "SOP Lifecycle Management for QA Teams",
+    "url": "https://dev.to/beefedai/sop-lifecycle-management-for-qa-teams-1cgh",
     "source": "devto"
   },
   {
-    "title": "My 11-Agent AI Swarm Was Secretly Hallucinating. My Own Monitoring Tool Caught It.",
-    "url": "https://dev.to/fliptrigga13/my-11-agent-ai-swarm-was-secretly-hallucinating-my-own-monitoring-tool-caught-it-4hj4",
-    "source": "devto"
-  },
-  {
-    "title": "Pfizer is testing a pill that, if successful, could cure Covid-19",
-    "url": "https://montrealgazette.com/news/world/pfizer-is-testing-a-pill-that-if-successful-could-become-first-ever-home-cure-for-covid-19",
+    "title": "Waymo granted permit to begin testing in New York City",
+    "url": "https://www.cnbc.com/2025/08/22/waymo-permit-new-york-city-nyc-rides.html",
     "source": "hn"
   },
   {
@@ -85,43 +100,28 @@
     "source": "rss"
   },
   {
-    "title": "I built a self-hosted AI chat app that connects 7 providers in one UI",
-    "url": "https://dev.to/tsunamayo7/i-built-a-self-hosted-ai-chat-app-that-connects-7-providers-in-one-ui-12ok",
+    "title": "Build real-time conversational agents with Gemini 3.1 Flash Live",
+    "url": "https://dev.to/googleai/build-real-time-conversational-agents-with-gemini-31-flash-live-27f6",
     "source": "devto"
   },
   {
-    "title": "The Test Manager\u2019s Guide: From Chaos to Predictable Quality \u2014 Part 1: Diagnosing Chaos & Defining the Target Model",
-    "url": "https://dev.to/abdulosman/the-test-managers-guide-from-chaos-to-predictable-quality-part-1-diagnosing-chaos-defining-4o70",
-    "source": "devto"
-  },
-  {
-    "title": "The Trivy Supply Chain Attack: How a Compromised Security Scanner Stole Crypto Keys \u2014 And the CI/CD Hardening Playbook for DeFi Teams",
-    "url": "https://dev.to/ohmygod/the-trivy-supply-chain-attack-how-a-compromised-security-scanner-stole-crypto-keys-and-the-cicd-3bp3",
-    "source": "devto"
-  },
-  {
-    "title": "One of the Biggest At-Home DNA Testing Companies Is Working with the FBI",
-    "url": "https://www.buzzfeednews.com/article/salvadorhernandez/family-tree-dna-fbi-investigative-genealogy-privacy",
-    "source": "hn"
-  },
-  {
-    "title": "Software Testing: You\u2019re Probably Doing It Wrong",
-    "url": "https://dev.to/leonpennings/software-testing-youre-probably-doing-it-wrong-564h",
-    "source": "devto"
-  },
-  {
-    "title": "Last week in AI | 16 March",
-    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/last-week-ai-16-march",
+    "title": "Unlocking the relational power of graph neural networks in fraud prevention",
+    "url": "https://www.thoughtworks.com/insights/articles/graph-neural-networks-in-fraud-prevention",
     "source": "rss"
   },
   {
-    "title": "your agent can think. it can't remember.",
-    "url": "https://dev.to/ghostbuild/your-agent-can-think-it-cant-remember-5e1o",
-    "source": "devto"
+    "title": "Your Kubernetes isn\u2019t ready for AI workloads, and drift is the reason",
+    "url": "https://thenewstack.io/ai-workloads-kubernetes-infrastructure-drift/",
+    "source": "rss"
   },
   {
-    "title": "Why Every Developer Should Learn Cloud Computing",
-    "url": "https://dev.to/mukhtar_abdussalam_0de093/why-every-developer-should-learn-cloud-computing-5f6m",
+    "title": "Edera spent years calling KVM less secure. Here\u2019s why it changed its mind.",
+    "url": "https://thenewstack.io/edera-adds-kvm-support/",
+    "source": "rss"
+  },
+  {
+    "title": "We Just Shipped What OpenAI, Google, and Anthropic Have Not. Here Are 6 Updates.",
+    "url": "https://dev.to/jon_at_backboardio/we-just-shipped-what-openai-google-and-anthropic-have-not-here-are-6-updates-2fj8",
     "source": "devto"
   }
 ]

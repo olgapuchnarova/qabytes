@@ -1,25 +1,45 @@
 {
-  "generated_at": "2026-03-26T14:04:00.381593+00:00",
+  "generated_at": "2026-03-27T07:52:47.732991+00:00",
   "articles": [
     {
-      "id": "ebd60259dec0934e",
-      "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
-      "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel",
-      "source": "hn",
-      "signal": 5,
-      "why_it_matters": "Industry change",
-      "summary": "Waymo's launch of fully driverless public road tests marks a significant milestone in autonomous vehicle technology, demonstrating Level 4 autonomy without a safety driver. This advancement not only showcases Waymo's confidence in its technology but also signals a potential shift in the transportation landscape as autonomous ride-hailing services become more accessible to the public.",
+      "id": "eacb677cbbe704b3",
+      "title": "I thought running a HashiCorp Vault cluster just to securely pass API keys to production was a bit much.\r\n\r\nSo I built Clef: a tokenless, zero-server secrets manager using Git, SOPS, and KMS envelope encryption. Better security, smaller footprint.",
+      "url": "https://dev.to/james_spears_3b283a3ce628/i-thought-running-a-hashicorp-vault-cluster-just-to-securely-pass-api-keys-to-production-was-a-bit-gd7",
+      "source": "devto",
+      "signal": 4,
+      "why_it_matters": "Tooling trend",
+      "summary": "The development of Clef as a tokenless, zero-server secrets manager highlights a growing trend towards simplifying security practices in software development. By leveraging Git, SOPS, and KMS envelope encryption, this approach offers a more efficient and secure alternative to traditional solutions like HashiCorp Vault.",
       "key_points": [
-        "Waymo is conducting public road tests with no safety driver, achieving Level 4 autonomy.",
-        "The trials are expanding to include existing members of the Chandler ride-hailing service.",
-        "Waymo aims to enhance road safety and broaden its operational area in the Phoenix metro region."
+        "Clef reduces the complexity of managing secrets in production environments.",
+        "It utilizes existing tools like Git and KMS for enhanced security.",
+        "The approach emphasizes a smaller footprint while maintaining security."
       ],
-      "takeaway": "The successful implementation of fully autonomous vehicles on public roads could redefine transportation and mobility services.",
+      "takeaway": "Simplifying security management can lead to better practices and efficiency in software development.",
       "first_seen_at": "2026-03-26",
-      "last_shown_at": "2026-03-26",
+      "last_shown_at": "2026-03-27",
       "expires_at": "2026-04-09",
       "is_new_today": true,
       "featured": true
+    },
+    {
+      "id": "5a4c46439ab20afd",
+      "title": "Gender Bias in Production LLMs: What 90 Tests Across 3 Frameworks Revealed",
+      "url": "https://dev.to/saravanan_ramachandran_db/gender-bias-in-production-llms-what-90-tests-across-3-frameworks-revealed-1a31",
+      "source": "devto",
+      "signal": 5,
+      "why_it_matters": "Governance risk",
+      "summary": "The study highlights a significant gender bias in production LLMs, revealing that AI models consistently misattribute authority based on gender. This bias poses serious implications for clinical AI deployments, where misassignments can lead to critical errors in responsibility and compliance.",
+      "key_points": [
+        "Consistent misattribution of female pronouns in authority roles across multiple frameworks.",
+        "Framework choice impacts evaluation reliability, with LangChain performing best.",
+        "Bias in AI models is a systematic issue that requires rigorous testing and validation."
+      ],
+      "takeaway": "AI safety testing must be as rigorous as validation in regulated industries to ensure responsible deployment.",
+      "first_seen_at": "2026-03-25",
+      "last_shown_at": "2026-03-27",
+      "expires_at": "2026-04-08",
+      "is_new_today": false,
+      "featured": false
     },
     {
       "id": "3e733145050d3832",
@@ -36,7 +56,7 @@
       ],
       "takeaway": "The real product is trust, which requires a shift in focus from model intelligence to reducing ambiguity.",
       "first_seen_at": "2026-03-25",
-      "last_shown_at": "2026-03-26",
+      "last_shown_at": "2026-03-27",
       "expires_at": "2026-04-08",
       "is_new_today": false,
       "featured": false
@@ -56,69 +76,89 @@
       ],
       "takeaway": "AI enhances coding efficiency, but engineers must maintain quality through rigorous testing and critical review.",
       "first_seen_at": "2026-03-25",
-      "last_shown_at": "2026-03-26",
+      "last_shown_at": "2026-03-27",
       "expires_at": "2026-04-08",
       "is_new_today": false,
       "featured": false
     },
     {
-      "id": "5a4c46439ab20afd",
-      "title": "Gender Bias in Production LLMs: What 90 Tests Across 3 Frameworks Revealed",
-      "url": "https://dev.to/saravanan_ramachandran_db/gender-bias-in-production-llms-what-90-tests-across-3-frameworks-revealed-1a31",
-      "source": "devto",
-      "signal": 5,
-      "why_it_matters": "Governance risk",
-      "summary": "The study highlights a significant gender bias in production LLMs, revealing that AI models consistently misattribute authority based on gender. This bias poses serious implications for clinical AI deployments, where misassignments can lead to critical errors in responsibility and compliance.",
-      "key_points": [
-        "Consistent misattribution of female pronouns in authority roles across multiple frameworks.",
-        "Framework choice impacts evaluation reliability, with LangChain performing best.",
-        "Bias in AI models is a systematic issue that requires rigorous testing and validation."
-      ],
-      "takeaway": "AI safety testing must be as rigorous as validation in regulated industries to ensure responsible deployment.",
-      "first_seen_at": "2026-03-25",
-      "last_shown_at": "2026-03-26",
-      "expires_at": "2026-04-08",
-      "is_new_today": false,
-      "featured": false
-    },
-    {
-      "id": "7ac97193eeb67d1e",
-      "title": "Waymo granted permit to begin testing in New York City",
-      "url": "https://www.cnbc.com/2025/08/22/waymo-permit-new-york-city-nyc-rides.html",
+      "id": "ebd60259dec0934e",
+      "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
+      "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel",
       "source": "hn",
-      "signal": 4,
+      "signal": 5,
       "why_it_matters": "Industry change",
-      "summary": "Waymo has received a permit to commence testing its autonomous vehicles in New York City, marking a significant step in the evolution of self-driving technology in urban environments. This development highlights the growing acceptance and integration of autonomous systems in complex city landscapes, which could reshape transportation and mobility.",
+      "summary": "Waymo's launch of fully driverless public road tests marks a significant milestone in autonomous vehicle technology, demonstrating Level 4 autonomy without a safety driver. This advancement not only showcases Waymo's confidence in its technology but also signals a potential shift in the transportation landscape as autonomous ride-hailing services become more accessible to the public.",
       "key_points": [
-        "Waymo's testing in NYC signifies a major milestone for autonomous vehicle technology.",
-        "The urban environment presents unique challenges for self-driving systems.",
-        "This move could influence regulatory frameworks and public perception of autonomous vehicles."
+        "Waymo is conducting public road tests with no safety driver, achieving Level 4 autonomy.",
+        "The trials are expanding to include existing members of the Chandler ride-hailing service.",
+        "Waymo aims to enhance road safety and broaden its operational area in the Phoenix metro region."
       ],
-      "takeaway": "The expansion of autonomous vehicle testing into major cities indicates a pivotal moment for the industry, necessitating a reevaluation of testing strategies and regulatory approaches.",
+      "takeaway": "The successful implementation of fully autonomous vehicles on public roads could redefine transportation and mobility services.",
       "first_seen_at": "2026-03-26",
-      "last_shown_at": "2026-03-26",
+      "last_shown_at": "2026-03-27",
+      "expires_at": "2026-04-09",
+      "is_new_today": false,
+      "featured": false
+    },
+    {
+      "id": "1c912eb2db028519",
+      "title": "Building a Rails Engine #13 -- How to test a mountable Rails engine without a dummy app",
+      "url": "https://dev.to/seryllns_/building-a-rails-engine-13-how-to-test-a-mountable-rails-engine-without-a-dummy-app-1na2",
+      "source": "devto",
+      "signal": 4,
+      "why_it_matters": "Testing strategy",
+      "summary": "The article highlights a novel approach to testing a mountable Rails engine without the overhead of a dummy app, using an in-memory SQLite database instead. This method streamlines the testing process, allowing for a more efficient and focused testing strategy that minimizes boilerplate code.",
+      "key_points": [
+        "Eliminates the need for a dummy app, reducing overhead.",
+        "Utilizes an in-memory SQLite database for quick setup and teardown.",
+        "Focuses on a minimal Rails environment tailored to the engine's needs."
+      ],
+      "takeaway": "Adopting a lean testing strategy can enhance efficiency and maintainability in software development.",
+      "first_seen_at": "2026-03-25",
+      "last_shown_at": "2026-03-27",
+      "expires_at": "2026-04-08",
+      "is_new_today": false,
+      "featured": false
+    },
+    {
+      "id": "e58f738829caced0",
+      "title": "AI Build Traps: Usage, Output, and\u00a0Outcomes (How perverse incentives around token usage create cobra\u00a0farms)",
+      "url": "https://dev.to/thawkin3/ai-build-traps-usage-output-and-outcomes-how-perverse-incentives-around-token-usage-create-4cii",
+      "source": "devto",
+      "signal": 4,
+      "why_it_matters": "Process warning",
+      "summary": "The article highlights the dangers of relying on proxy metrics, such as token usage, to measure developer productivity in the age of AI. It illustrates how these metrics can lead to perverse incentives that ultimately detract from meaningful outcomes and value delivery.",
+      "key_points": [
+        "Proxy metrics can create unintended consequences that undermine productivity.",
+        "Focusing on output rather than outcomes can lead to a false sense of achievement.",
+        "Organizations should prioritize measuring the actual value delivered to users over mere activity metrics."
+      ],
+      "takeaway": "Shifting focus from output to outcomes is crucial for truly enhancing productivity and delivering value.",
+      "first_seen_at": "2026-03-26",
+      "last_shown_at": "2026-03-27",
       "expires_at": "2026-04-09",
       "is_new_today": true,
       "featured": false
     },
     {
-      "id": "5a8802b5b7037d17",
-      "title": "My 11-Agent AI Swarm Was Secretly Hallucinating. My Own Monitoring Tool Caught It.",
-      "url": "https://dev.to/fliptrigga13/my-11-agent-ai-swarm-was-secretly-hallucinating-my-own-monitoring-tool-caught-it-4hj4",
+      "id": "cbfb832c224c0bb0",
+      "title": "I built a baseline-aware Python code health tool for CI and AI-assisted coding",
+      "url": "https://dev.to/orenlab/i-built-a-baseline-aware-python-code-health-tool-for-ci-and-ai-assisted-coding-5dij",
       "source": "devto",
       "signal": 4,
-      "why_it_matters": "Reliability lesson",
-      "summary": "The article highlights the pitfalls of multi-agent systems in AI pipelines, particularly how they can amplify errors rather than mitigate them. By comparing outputs from a complex 11-agent system to a simplified 3-agent version, the author reveals that the latter produced more reliable results by eliminating the risk of downstream hallucinations.",
+      "why_it_matters": "AI in QA",
+      "summary": "CodeClone 2.0.0b1 introduces a baseline-aware approach to structural code health, particularly relevant for teams utilizing AI-assisted coding tools. By distinguishing between accepted technical debt and new regressions, it aims to maintain code quality in fast-paced development environments.",
       "key_points": [
-        "Multi-agent architectures can create a false sense of validation.",
-        "Hallucinations in AI outputs can propagate through interconnected agents.",
-        "Simplifying the architecture can lead to better performance and reliability."
+        "Focuses on tracking structural code health over time in CI.",
+        "Separates accepted debt from new regressions to enhance usability.",
+        "Addresses the challenges posed by AI-generated code in maintaining repository quality."
       ],
-      "takeaway": "Complexity in AI systems does not guarantee reliability; often, simpler designs yield better outcomes.",
+      "takeaway": "As AI-assisted development becomes more prevalent, tools like CodeClone that focus on structural integrity and baseline awareness are essential for maintaining code quality.",
       "first_seen_at": "2026-03-26",
-      "last_shown_at": "2026-03-26",
+      "last_shown_at": "2026-03-27",
       "expires_at": "2026-04-09",
-      "is_new_today": true,
+      "is_new_today": false,
       "featured": false
     },
     {
@@ -128,76 +168,36 @@
       "source": "rss",
       "signal": 4,
       "why_it_matters": "Actionable idea",
-      "summary": "The article emphasizes the importance of product management for engineers, particularly in the absence of dedicated product managers. By adopting lightweight product management techniques, engineers can better document user requirements, enhance collaboration, and ensure that the products they build meet customer needs.",
+      "summary": "The article emphasizes the importance of product management even for engineers working on small projects or internal tools. By documenting user requirements and utilizing lightweight frameworks, engineers can enhance collaboration and ensure that the products they build meet user needs effectively.",
       "key_points": [
-        "Product management is essential for aligning engineering efforts with customer needs.",
-        "Documenting user requirements through user stories enhances transparency and collaboration.",
-        "Lightweight product management techniques can be applied even in small teams or personal projects."
+        "Product management is essential for aligning engineering efforts with user needs.",
+        "Documenting user stories helps track requirements and facilitates collaboration.",
+        "Lightweight product management techniques can be applied even in the absence of a dedicated product manager."
       ],
-      "takeaway": "Engineers can significantly improve their product outcomes by implementing basic product management practices, regardless of team size.",
+      "takeaway": "Engineers can significantly improve their project outcomes by adopting basic product management practices.",
       "first_seen_at": "2026-03-25",
-      "last_shown_at": "2026-03-26",
-      "expires_at": "2026-04-08",
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "85aa650ada6858e9",
-      "title": "Building a global engineering team (plus AI agents) with Netlify",
-      "url": "https://stackoverflow.blog/2026/03/19/building-a-global-engineering-team-netlify",
-      "source": "rss",
-      "signal": 4,
-      "why_it_matters": "Leadership signal",
-      "summary": "Dana Lawson, CTO of Netlify, emphasizes the importance of maintaining a strong engineering culture in a remote work environment. She highlights the need for intentional in-person connections and a written culture to foster psychological safety and clarity within globally distributed teams.",
-      "key_points": [
-        "Intentional in-person meetings are crucial for team bonding.",
-        "A written culture helps reduce ambiguity and supports diverse languages.",
-        "Balancing open communication with focused execution is essential."
-      ],
-      "takeaway": "Creating a strong engineering culture in a remote setting requires both intentional personal interactions and clear documentation.",
-      "first_seen_at": "2026-03-26",
-      "last_shown_at": "2026-03-26",
-      "expires_at": "2026-04-09",
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "1190a94a4599df8a",
-      "title": "AI is becoming a second brain at the expense of your first one",
-      "url": "https://stackoverflow.blog/2026/03/19/ai-is-becoming-a-second-brain-at-the-expense-of-your-first-one",
-      "source": "rss",
-      "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "The article discusses the risks of cognitive offloading to AI tools, particularly in the context of software development and decision-making. It highlights how reliance on AI can lead to a loss of critical thinking and personal judgment, potentially resulting in a homogenized set of beliefs across society.",
-      "key_points": [
-        "Cognitive offloading to AI tools can diminish critical thinking skills.",
-        "Relying on AI may lead to a loss of personal judgment and qualitative decision-making.",
-        "The potential for a data-driven monoculture arises as more people adopt beliefs from AI."
-      ],
-      "takeaway": "Over-reliance on AI tools can erode individual judgment and lead to a uniformity of thought.",
-      "first_seen_at": "2026-03-25",
-      "last_shown_at": "2026-03-26",
+      "last_shown_at": "2026-03-27",
       "expires_at": "2026-04-08",
       "is_new_today": false,
       "featured": false
     },
     {
-      "id": "534738c29784a9f0",
-      "title": "After all the hype, was 2025 really the year of AI agents?",
-      "url": "https://stackoverflow.blog/2026/03/20/was-2025-really-the-year-of-ai-agents",
-      "source": "rss",
+      "id": "e5b9b06e2bf6e609",
+      "title": "I Couldn't Find an OAuth 2.1 Proxy for MCP Servers, So I Built One",
+      "url": "https://dev.to/cpremus/i-couldnt-find-an-oauth-21-proxy-for-mcp-servers-so-i-built-one-59nd",
+      "source": "devto",
       "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "The conversation highlights the evolution of AI agents and the challenges organizations face in adopting them. While there was initial excitement about the potential of AI agents, the reality has revealed significant gaps in infrastructure, trust, and data readiness that hinder their effective implementation.",
+      "why_it_matters": "Tooling trend",
+      "summary": "The development of mcp-gate highlights a growing need for specialized tools that simplify authentication processes in software architecture. By creating a proxy that adheres to OAuth 2.1 standards, the author addresses a gap in the market for MCP server implementations, emphasizing the importance of streamlined authentication solutions.",
       "key_points": [
-        "Infrastructure for AI agents is lacking, especially in legacy organizations.",
-        "A significant trust deficit exists among developers regarding AI technologies.",
-        "Most enterprise data is not structured for machine consumption, complicating AI adoption."
+        "mcp-gate serves as a stateless proxy for OAuth 2.1 compliance.",
+        "It simplifies authentication for various MCP server implementations.",
+        "The tool is designed for easy integration with existing infrastructures."
       ],
-      "takeaway": "Organizations must address infrastructure, trust, and data readiness to fully leverage the potential of AI agents.",
-      "first_seen_at": "2026-03-26",
-      "last_shown_at": "2026-03-26",
-      "expires_at": "2026-04-09",
+      "takeaway": "Specialized tooling can significantly enhance the efficiency of software deployment and authentication processes.",
+      "first_seen_at": "2026-03-27",
+      "last_shown_at": "2026-03-27",
+      "expires_at": "2026-04-10",
       "is_new_today": true,
       "featured": false
     }
