@@ -1,180 +1,42 @@
 {
-  "generated_at": "2026-03-27T07:52:47.732991+00:00",
+  "generated_at": "2026-03-27T12:10:16.138182+00:00",
   "articles": [
     {
-      "id": "eacb677cbbe704b3",
-      "title": "I thought running a HashiCorp Vault cluster just to securely pass API keys to production was a bit much.\r\n\r\nSo I built Clef: a tokenless, zero-server secrets manager using Git, SOPS, and KMS envelope encryption. Better security, smaller footprint.",
-      "url": "https://dev.to/james_spears_3b283a3ce628/i-thought-running-a-hashicorp-vault-cluster-just-to-securely-pass-api-keys-to-production-was-a-bit-gd7",
-      "source": "devto",
-      "signal": 4,
-      "why_it_matters": "Tooling trend",
-      "summary": "The development of Clef as a tokenless, zero-server secrets manager highlights a growing trend towards simplifying security practices in software development. By leveraging Git, SOPS, and KMS envelope encryption, this approach offers a more efficient and secure alternative to traditional solutions like HashiCorp Vault.",
-      "key_points": [
-        "Clef reduces the complexity of managing secrets in production environments.",
-        "It utilizes existing tools like Git and KMS for enhanced security.",
-        "The approach emphasizes a smaller footprint while maintaining security."
-      ],
-      "takeaway": "Simplifying security management can lead to better practices and efficiency in software development.",
-      "first_seen_at": "2026-03-26",
-      "last_shown_at": "2026-03-27",
-      "expires_at": "2026-04-09",
-      "is_new_today": true,
-      "featured": true
-    },
-    {
-      "id": "5a4c46439ab20afd",
-      "title": "Gender Bias in Production LLMs: What 90 Tests Across 3 Frameworks Revealed",
-      "url": "https://dev.to/saravanan_ramachandran_db/gender-bias-in-production-llms-what-90-tests-across-3-frameworks-revealed-1a31",
-      "source": "devto",
-      "signal": 5,
-      "why_it_matters": "Governance risk",
-      "summary": "The study highlights a significant gender bias in production LLMs, revealing that AI models consistently misattribute authority based on gender. This bias poses serious implications for clinical AI deployments, where misassignments can lead to critical errors in responsibility and compliance.",
-      "key_points": [
-        "Consistent misattribution of female pronouns in authority roles across multiple frameworks.",
-        "Framework choice impacts evaluation reliability, with LangChain performing best.",
-        "Bias in AI models is a systematic issue that requires rigorous testing and validation."
-      ],
-      "takeaway": "AI safety testing must be as rigorous as validation in regulated industries to ensure responsible deployment.",
-      "first_seen_at": "2026-03-25",
-      "last_shown_at": "2026-03-27",
-      "expires_at": "2026-04-08",
-      "is_new_today": false,
-      "featured": false
-    },
-    {
-      "id": "3e733145050d3832",
-      "title": "What Building an AI Contract Review Tool Taught Me About Trust, Tone, and Starting Narrow",
-      "url": "https://dev.to/joan_a_a54e4495093cb5f0a/what-building-an-ai-contract-review-tool-taught-me-about-trust-tone-and-starting-narrow-pgi",
-      "source": "devto",
-      "signal": 5,
-      "why_it_matters": "Actionable idea",
-      "summary": "Building an AI contract review tool reveals that trust is paramount in product design, especially when dealing with sensitive documents. The focus should be on reliability and clarity rather than merely showcasing AI capabilities.",
-      "key_points": [
-        "Start with one contract type to build trust through consistency.",
-        "Tone of output is crucial; it should be clear and grounded.",
-        "PDF extraction quality is a core product issue, not a minor detail."
-      ],
-      "takeaway": "The real product is trust, which requires a shift in focus from model intelligence to reducing ambiguity.",
-      "first_seen_at": "2026-03-25",
-      "last_shown_at": "2026-03-27",
-      "expires_at": "2026-04-08",
-      "is_new_today": false,
-      "featured": false
-    },
-    {
-      "id": "bb3cee108efde3bd",
-      "title": "AI Writes Code. You Own Quality.",
-      "url": "https://dev.to/helderberto/ai-writes-code-you-own-quality-19g0",
-      "source": "devto",
-      "signal": 5,
-      "why_it_matters": "AI in QA",
-      "summary": "The article emphasizes that while AI can accelerate code generation, the responsibility for quality remains with engineers. It highlights the importance of engineering discipline, testing strategies, and critical code review in ensuring that AI-generated code meets quality standards.",
-      "key_points": [
-        "AI is a tool that enhances engineering speed but does not replace the need for quality oversight.",
-        "Effective testing strategies, such as TDD, are crucial for guiding AI in producing reliable code.",
-        "Engineers must define standards and guardrails to ensure AI-generated outputs align with project requirements."
-      ],
-      "takeaway": "AI enhances coding efficiency, but engineers must maintain quality through rigorous testing and critical review.",
-      "first_seen_at": "2026-03-25",
-      "last_shown_at": "2026-03-27",
-      "expires_at": "2026-04-08",
-      "is_new_today": false,
-      "featured": false
-    },
-    {
-      "id": "ebd60259dec0934e",
-      "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
-      "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel",
-      "source": "hn",
-      "signal": 5,
-      "why_it_matters": "Industry change",
-      "summary": "Waymo's launch of fully driverless public road tests marks a significant milestone in autonomous vehicle technology, demonstrating Level 4 autonomy without a safety driver. This advancement not only showcases Waymo's confidence in its technology but also signals a potential shift in the transportation landscape as autonomous ride-hailing services become more accessible to the public.",
-      "key_points": [
-        "Waymo is conducting public road tests with no safety driver, achieving Level 4 autonomy.",
-        "The trials are expanding to include existing members of the Chandler ride-hailing service.",
-        "Waymo aims to enhance road safety and broaden its operational area in the Phoenix metro region."
-      ],
-      "takeaway": "The successful implementation of fully autonomous vehicles on public roads could redefine transportation and mobility services.",
-      "first_seen_at": "2026-03-26",
-      "last_shown_at": "2026-03-27",
-      "expires_at": "2026-04-09",
-      "is_new_today": false,
-      "featured": false
-    },
-    {
-      "id": "1c912eb2db028519",
-      "title": "Building a Rails Engine #13 -- How to test a mountable Rails engine without a dummy app",
-      "url": "https://dev.to/seryllns_/building-a-rails-engine-13-how-to-test-a-mountable-rails-engine-without-a-dummy-app-1na2",
-      "source": "devto",
+      "id": "15e695facee9c1c7",
+      "title": "Enterprise dev teams are about to hit a wall. And CI pipelines can\u2019t save them.",
+      "url": "https://thenewstack.io/ai-agent-validation-bottleneck",
+      "source": "rss",
+      "source_name": "The New Stack",
       "signal": 4,
       "why_it_matters": "Testing strategy",
-      "summary": "The article highlights a novel approach to testing a mountable Rails engine without the overhead of a dummy app, using an in-memory SQLite database instead. This method streamlines the testing process, allowing for a more efficient and focused testing strategy that minimizes boilerplate code.",
+      "summary": "As the speed of code generation increases due to coding agents, the validation process in enterprise environments is becoming a critical bottleneck. The need for faster and more integrated validation mechanisms is essential to keep pace with the rapid development cycles. This shift requires a reevaluation of testing strategies to ensure that validation occurs within the development loop rather than after code is deployed.",
       "key_points": [
-        "Eliminates the need for a dummy app, reducing overhead.",
-        "Utilizes an in-memory SQLite database for quick setup and teardown.",
-        "Focuses on a minimal Rails environment tailored to the engine's needs."
+        "The gap between code generation and validation is widening in enterprise environments.",
+        "Current CI pipeline models are inadequate for the rapid pace of development driven by coding agents.",
+        "New validation strategies must leverage realistic infrastructure access and composable testing workflows."
       ],
-      "takeaway": "Adopting a lean testing strategy can enhance efficiency and maintainability in software development.",
-      "first_seen_at": "2026-03-25",
+      "takeaway": "Validation in distributed systems must evolve to be an integral part of the development process, rather than a separate, delayed step.",
+      "first_seen_at": "2026-03-27",
       "last_shown_at": "2026-03-27",
-      "expires_at": "2026-04-08",
-      "is_new_today": false,
-      "featured": false
-    },
-    {
-      "id": "e58f738829caced0",
-      "title": "AI Build Traps: Usage, Output, and\u00a0Outcomes (How perverse incentives around token usage create cobra\u00a0farms)",
-      "url": "https://dev.to/thawkin3/ai-build-traps-usage-output-and-outcomes-how-perverse-incentives-around-token-usage-create-4cii",
-      "source": "devto",
-      "signal": 4,
-      "why_it_matters": "Process warning",
-      "summary": "The article highlights the dangers of relying on proxy metrics, such as token usage, to measure developer productivity in the age of AI. It illustrates how these metrics can lead to perverse incentives that ultimately detract from meaningful outcomes and value delivery.",
-      "key_points": [
-        "Proxy metrics can create unintended consequences that undermine productivity.",
-        "Focusing on output rather than outcomes can lead to a false sense of achievement.",
-        "Organizations should prioritize measuring the actual value delivered to users over mere activity metrics."
-      ],
-      "takeaway": "Shifting focus from output to outcomes is crucial for truly enhancing productivity and delivering value.",
-      "first_seen_at": "2026-03-26",
-      "last_shown_at": "2026-03-27",
-      "expires_at": "2026-04-09",
+      "expires_at": "2026-04-10",
       "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "cbfb832c224c0bb0",
-      "title": "I built a baseline-aware Python code health tool for CI and AI-assisted coding",
-      "url": "https://dev.to/orenlab/i-built-a-baseline-aware-python-code-health-tool-for-ci-and-ai-assisted-coding-5dij",
-      "source": "devto",
-      "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "CodeClone 2.0.0b1 introduces a baseline-aware approach to structural code health, particularly relevant for teams utilizing AI-assisted coding tools. By distinguishing between accepted technical debt and new regressions, it aims to maintain code quality in fast-paced development environments.",
-      "key_points": [
-        "Focuses on tracking structural code health over time in CI.",
-        "Separates accepted debt from new regressions to enhance usability.",
-        "Addresses the challenges posed by AI-generated code in maintaining repository quality."
-      ],
-      "takeaway": "As AI-assisted development becomes more prevalent, tools like CodeClone that focus on structural integrity and baseline awareness are essential for maintaining code quality.",
-      "first_seen_at": "2026-03-26",
-      "last_shown_at": "2026-03-27",
-      "expires_at": "2026-04-09",
-      "is_new_today": false,
-      "featured": false
+      "featured": true
     },
     {
       "id": "2bc4cfadf51dc15a",
       "title": "A primer on product management for engineers",
       "url": "https://increment.com/planning/product-management-for-engineers",
       "source": "rss",
+      "source_name": "Increment",
       "signal": 4,
       "why_it_matters": "Actionable idea",
-      "summary": "The article emphasizes the importance of product management even for engineers working on small projects or internal tools. By documenting user requirements and utilizing lightweight frameworks, engineers can enhance collaboration and ensure that the products they build meet user needs effectively.",
+      "summary": "The article emphasizes the importance of product management practices for engineers, especially in the absence of dedicated product managers. By documenting user requirements and utilizing lightweight frameworks, engineers can enhance collaboration and ensure their products meet user needs effectively.",
       "key_points": [
-        "Product management is essential for aligning engineering efforts with user needs.",
-        "Documenting user stories helps track requirements and facilitates collaboration.",
-        "Lightweight product management techniques can be applied even in the absence of a dedicated product manager."
+        "Product management is essential for aligning engineering efforts with customer needs.",
+        "Documenting user requirements through user stories improves transparency and collaboration.",
+        "Lightweight product management techniques can be applied even in small teams or personal projects."
       ],
-      "takeaway": "Engineers can significantly improve their project outcomes by adopting basic product management practices.",
+      "takeaway": "Engineers can significantly benefit from adopting product management practices to enhance their development processes and product outcomes.",
       "first_seen_at": "2026-03-25",
       "last_shown_at": "2026-03-27",
       "expires_at": "2026-04-08",
@@ -182,19 +44,167 @@
       "featured": false
     },
     {
-      "id": "e5b9b06e2bf6e609",
-      "title": "I Couldn't Find an OAuth 2.1 Proxy for MCP Servers, So I Built One",
-      "url": "https://dev.to/cpremus/i-couldnt-find-an-oauth-21-proxy-for-mcp-servers-so-i-built-one-59nd",
+      "id": "f9338c71e31d314b",
+      "title": "Node.js Graceful Shutdown: The Right Way (SIGTERM, Connection Draining, and Kubernetes)",
+      "url": "https://dev.to/axiom_agent_1dc642fa83651/nodejs-graceful-shutdown-the-right-way-sigterm-connection-draining-and-kubernetes-fp8",
       "source": "devto",
+      "source_name": "DEV Community",
       "signal": 4,
-      "why_it_matters": "Tooling trend",
-      "summary": "The development of mcp-gate highlights a growing need for specialized tools that simplify authentication processes in software architecture. By creating a proxy that adheres to OAuth 2.1 standards, the author addresses a gap in the market for MCP server implementations, emphasizing the importance of streamlined authentication solutions.",
+      "why_it_matters": "Reliability lesson",
+      "summary": "Implementing graceful shutdown in Node.js services is crucial for maintaining reliability during deployments. Proper handling of SIGTERM and connection draining can prevent dropped requests and ensure data integrity.",
       "key_points": [
-        "mcp-gate serves as a stateless proxy for OAuth 2.1 compliance.",
-        "It simplifies authentication for various MCP server implementations.",
-        "The tool is designed for easy integration with existing infrastructures."
+        "Ignoring SIGTERM or exiting immediately leads to dropped requests.",
+        "Health checks and connection management are vital for zero-downtime deployments.",
+        "Testing the shutdown process is essential to avoid uncaught exceptions."
       ],
-      "takeaway": "Specialized tooling can significantly enhance the efficiency of software deployment and authentication processes.",
+      "takeaway": "A well-implemented graceful shutdown strategy is key to maintaining service reliability during updates.",
+      "first_seen_at": "2026-03-27",
+      "last_shown_at": "2026-03-27",
+      "expires_at": "2026-04-10",
+      "is_new_today": true,
+      "featured": false
+    },
+    {
+      "id": "7fe3cd5c8dfcfedc",
+      "title": "Planning in the dark",
+      "url": "https://increment.com/planning/planning-for-product-market-fit",
+      "source": "rss",
+      "source_name": "Increment",
+      "signal": 4,
+      "why_it_matters": "Testing strategy",
+      "summary": "The article emphasizes the importance of flexibility and incremental development when seeking product-market fit. It highlights the need for teams to embrace uncertainty and focus on testing hypotheses rather than attempting to plan every detail upfront.",
+      "key_points": [
+        "Accept limited visibility during the exploration phase of product development.",
+        "Prioritize gathering user feedback and iterating on features rather than perfect planning.",
+        "Establish preliminary metrics to assess progress toward product-market fit."
+      ],
+      "takeaway": "Embrace an incremental approach to development, focusing on testing and adapting based on user feedback.",
+      "first_seen_at": "2026-03-26",
+      "last_shown_at": "2026-03-27",
+      "expires_at": "2026-04-09",
+      "is_new_today": false,
+      "featured": false
+    },
+    {
+      "id": "5b753b2325e4c1b3",
+      "title": "Edera spent years calling KVM less secure. Here\u2019s why it changed its mind.",
+      "url": "https://thenewstack.io/edera-adds-kvm-support",
+      "source": "rss",
+      "source_name": "The New Stack",
+      "signal": 4,
+      "why_it_matters": "Industry change",
+      "summary": "Edera's decision to support KVM marks a significant shift in the hypervisor landscape, reflecting changing customer demands and the evolving technology ecosystem. This move highlights the importance of adaptability in engineering practices as organizations seek to leverage existing investments in KVM infrastructure.",
+      "key_points": [
+        "Edera is porting its micro-VM isolation model to KVM due to customer demand.",
+        "The shift acknowledges the investment organizations have made in KVM-based infrastructures.",
+        "Xen's declining popularity and the rise of KVM in cloud operations are influencing this strategic change."
+      ],
+      "takeaway": "Adaptability to customer needs and market trends is crucial for technology providers.",
+      "first_seen_at": "2026-03-27",
+      "last_shown_at": "2026-03-27",
+      "expires_at": "2026-04-10",
+      "is_new_today": true,
+      "featured": false
+    },
+    {
+      "id": "7ac97193eeb67d1e",
+      "title": "Waymo granted permit to begin testing in New York City",
+      "url": "https://www.cnbc.com/2025/08/22/waymo-permit-new-york-city-nyc-rides.html",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "signal": 4,
+      "why_it_matters": "Industry change",
+      "summary": "Waymo has received a permit to begin testing its autonomous vehicles in New York City, marking a significant milestone in the evolution of self-driving technology. This development highlights the increasing acceptance and integration of autonomous systems in urban environments, reflecting broader trends in the transportation industry.",
+      "key_points": [
+        "Waymo's expansion into New York City signifies a major step in autonomous vehicle testing.",
+        "The permit allows for real-world testing in a complex urban landscape, which poses unique challenges.",
+        "This move could influence regulatory frameworks and public perception of self-driving technology."
+      ],
+      "takeaway": "The entry of autonomous vehicles into densely populated areas like NYC indicates a pivotal moment for the industry, necessitating new testing strategies and regulatory considerations.",
+      "first_seen_at": "2026-03-26",
+      "last_shown_at": "2026-03-27",
+      "expires_at": "2026-04-09",
+      "is_new_today": false,
+      "featured": false
+    },
+    {
+      "id": "d31b52e6e87f522d",
+      "title": "Testing Benford's Law",
+      "url": "http://testingbenfordslaw.com/",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "signal": 4,
+      "why_it_matters": "Testing strategy",
+      "summary": "Benford's Law reveals a fascinating pattern in the distribution of leading digits across large datasets, which can be leveraged in testing for data integrity and fraud detection. Understanding this principle can enhance the effectiveness of testing strategies by identifying anomalies in datasets that deviate from expected distributions.",
+      "key_points": [
+        "Benford's Law predicts a logarithmic distribution of leading digits.",
+        "It can be used in fraud detection and data validation.",
+        "Large datasets often conform to this law, making it a useful benchmark."
+      ],
+      "takeaway": "Incorporating Benford's Law into testing strategies can improve anomaly detection and data integrity assessments.",
+      "first_seen_at": "2026-03-27",
+      "last_shown_at": "2026-03-27",
+      "expires_at": "2026-04-10",
+      "is_new_today": true,
+      "featured": false
+    },
+    {
+      "id": "d01840fbf5c7d800",
+      "title": "Build real-time conversational agents with Gemini 3.1 Flash Live",
+      "url": "https://dev.to/googleai/build-real-time-conversational-agents-with-gemini-31-flash-live-27f6",
+      "source": "devto",
+      "source_name": "DEV Community",
+      "signal": 4,
+      "why_it_matters": "AI in QA",
+      "summary": "The launch of Gemini 3.1 Flash Live represents a significant advancement in real-time conversational agents, enhancing their ability to process and respond to inputs with minimal latency. This development is crucial for QA engineers as it sets new standards for the performance and reliability of voice-first AI applications.",
+      "key_points": [
+        "Gemini 3.1 Flash Live improves latency and dialogue quality for real-time interactions.",
+        "The model better understands tone, emphasis, and intent, enhancing user experience.",
+        "Integration with the Gemini Live API allows for diverse input handling in production environments."
+      ],
+      "takeaway": "Real-time voice agents are evolving, and QA practices must adapt to ensure they meet new performance benchmarks.",
+      "first_seen_at": "2026-03-27",
+      "last_shown_at": "2026-03-27",
+      "expires_at": "2026-04-10",
+      "is_new_today": true,
+      "featured": false
+    },
+    {
+      "id": "dc78bf54e5722b04",
+      "title": "Bliki: Architecture Decision Record",
+      "url": "https://martinfowler.com/bliki/ArchitectureDecisionRecord.html",
+      "source": "rss",
+      "source_name": "Martin Fowler",
+      "signal": 4,
+      "why_it_matters": "Quality practice",
+      "summary": "Architecture Decision Records (ADRs) serve as a crucial tool for documenting and clarifying architectural decisions within software projects. By capturing the context, rationale, and implications of decisions, ADRs enhance team alignment and provide a historical reference that can guide future work.",
+      "key_points": [
+        "ADRs help clarify thinking and surface different viewpoints during decision-making.",
+        "Each ADR should be concise, typically a single page, and linked to any superseding decisions.",
+        "ADRs can be beneficial beyond software architecture, serving as a decision log in various contexts."
+      ],
+      "takeaway": "Implementing ADRs can significantly improve decision-making processes and team collaboration in software development.",
+      "first_seen_at": "2026-03-25",
+      "last_shown_at": "2026-03-27",
+      "expires_at": "2026-04-08",
+      "is_new_today": false,
+      "featured": false
+    },
+    {
+      "id": "86df010ea358cd51",
+      "title": "Multi-stage attacks are the Final Fantasy bosses of security",
+      "url": "https://stackoverflow.blog/2026/03/24/multi-stage-attacks-are-the-final-fantasy-bosses-of-security",
+      "source": "rss",
+      "source_name": "Stack Overflow Blog",
+      "signal": 4,
+      "why_it_matters": "AI in QA",
+      "summary": "The discussion highlights the intricate nature of multi-stage attacks in cybersecurity, emphasizing the challenges in detection and the dual role of AI in both fortifying defenses and introducing new vulnerabilities. As AWS Security Hub evolves, it aims to streamline cloud security management amidst these complexities.",
+      "key_points": [
+        "Multi-stage attacks are complex and difficult to detect.",
+        "AI plays a dual role in enhancing security and creating vulnerabilities.",
+        "AWS Security Hub is expanding to unify cloud security options."
+      ],
+      "takeaway": "Understanding the evolving landscape of multi-stage attacks is crucial for developing effective testing strategies in security.",
       "first_seen_at": "2026-03-27",
       "last_shown_at": "2026-03-27",
       "expires_at": "2026-04-10",
