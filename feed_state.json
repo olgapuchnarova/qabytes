@@ -24,20 +24,21 @@
     "canonical_url": "https://stackoverflow.blog/2026/03/19/ai-is-becoming-a-second-brain-at-the-expense-of-your-first-one",
     "title": "AI is becoming a second brain at the expense of your first one",
     "first_seen_at": "2026-03-25",
-    "last_shown_at": "2026-03-26",
+    "last_shown_at": "2026-03-28",
     "expires_at": "2026-04-08",
-    "times_shown": 2,
+    "times_shown": 3,
     "status": "active",
     "source": "rss",
     "signal": 4,
     "why_it_matters": "AI in QA",
-    "summary": "The article discusses the risks of cognitive offloading to AI tools, particularly in the context of software development and decision-making. It highlights how reliance on AI can lead to a loss of critical thinking and personal judgment, potentially resulting in a homogenized set of beliefs across society.",
+    "summary": "The increasing reliance on AI tools in decision-making processes poses a risk of diminishing critical thinking and personal judgment among QA professionals. As engineers offload cognitive tasks to AI, they may inadvertently adopt biases and lose confidence in their own beliefs and judgments.",
     "key_points": [
-      "Cognitive offloading to AI tools can diminish critical thinking skills.",
-      "Relying on AI may lead to a loss of personal judgment and qualitative decision-making.",
-      "The potential for a data-driven monoculture arises as more people adopt beliefs from AI."
+      "AI tools are often perceived as 'co-pilots' but can lead to over-reliance.",
+      "Cognitive offloading may result in a loss of critical thinking skills.",
+      "Adopting AI-generated beliefs can propagate biases and create a homogenized thought process."
     ],
-    "takeaway": "Over-reliance on AI tools can erode individual judgment and lead to a uniformity of thought."
+    "takeaway": "QA engineers must balance the use of AI tools with the need to maintain their own critical thinking and judgment skills.",
+    "source_name": "Stack Overflow Blog"
   },
   "eec1eeef5191da99": {
     "id": "eec1eeef5191da99",
@@ -124,20 +125,20 @@
     "canonical_url": "https://www.thoughtworks.com/insights/articles/graph-neural-networks-in-fraud-prevention",
     "title": "Unlocking the relational power of graph neural networks in fraud prevention",
     "first_seen_at": "2026-03-25",
-    "last_shown_at": "2026-03-25",
+    "last_shown_at": "2026-03-28",
     "expires_at": "2026-04-08",
-    "times_shown": 1,
+    "times_shown": 2,
     "status": "active",
     "source": "rss",
     "signal": 4,
-    "why_it_matters": "Industry change",
-    "summary": "The evolution of fraud prevention from rules-based systems to machine learning and now to graph neural networks (GNNs) highlights a significant shift in the financial landscape. GNNs offer a more nuanced understanding of fraud by analyzing relational data, which is crucial in combating increasingly sophisticated fraud schemes.",
+    "why_it_matters": "AI in QA",
+    "summary": "The article discusses the evolution of fraud prevention in the context of real-time payments and highlights the limitations of traditional fraud detection methods. It emphasizes the potential of graph neural networks (GNNs) to enhance fraud detection by capturing complex relational patterns, thereby reducing false declines and improving customer trust.",
     "key_points": [
-      "Real-time payments have increased the complexity of fraud detection, particularly with authorized push payment scams.",
-      "Graph neural networks provide a new paradigm for fraud detection by capturing relational data and multi-hop risk signals.",
-      "The shift to GNNs can reduce false declines, which currently cost businesses significantly more than direct fraud losses."
+      "Fraud prevention has shifted from rules-based models to machine learning due to the rise of real-time payments.",
+      "Graph neural networks can identify complex fraud patterns that traditional models miss, enhancing detection capabilities.",
+      "Reducing false declines is crucial, as they significantly impact customer loyalty and revenue."
     ],
-    "takeaway": "Embracing graph neural networks in fraud detection is essential for financial institutions to enhance security while maintaining customer trust.",
+    "takeaway": "Embracing advanced AI techniques like GNNs is essential for effective fraud detection in a rapidly evolving digital payment landscape.",
     "source_name": "Thoughtworks"
   },
   "782a3db3c1f2d735": {
@@ -595,13 +596,14 @@
     "source": "rss",
     "signal": 4,
     "why_it_matters": "Quality practice",
-    "summary": "Arranging code to reflect data flow enhances readability and reduces cognitive load for developers. By grouping related lines and emphasizing logical sequences, teams can improve collaboration and maintainability of their codebase.",
+    "summary": "Arranging code to reflect data flow enhances readability and reduces cognitive load for developers. By structuring code in a coherent manner, teams can improve collaboration and maintainability, which are crucial for effective software development.",
     "key_points": [
       "Adjacent lines of code should be coherent to aid understanding.",
       "Ordering lines to match data flow increases clarity.",
       "Using blank lines and method extraction can further enhance readability."
     ],
-    "takeaway": "Organizing code by data flow is a key practice for improving code quality and team efficiency."
+    "takeaway": "Organizing code by data flow is a best practice that fosters better communication and understanding among team members.",
+    "source_name": "Google Testing Blog"
   },
   "09f4d30f0f8a68b8": {
     "id": "09f4d30f0f8a68b8",
@@ -695,14 +697,15 @@
     "status": "active",
     "source": "rss",
     "signal": 4,
-    "why_it_matters": "Reliability lesson",
-    "summary": "Setting safe defaults for command-line flags can significantly reduce the risk of critical errors in production environments. By prioritizing safety in default settings, teams can prevent costly mistakes and ensure smoother operations during data updates.",
+    "why_it_matters": "Quality practice",
+    "summary": "Setting safe defaults for command-line flags is crucial in preventing costly mistakes during production data updates. By prioritizing safety in defaults, teams can minimize the risk of errors that lead to significant outages.",
     "key_points": [
-      "Default settings should minimize the impact of user errors.",
+      "Defaulting to a 'dry' run can prevent irreversible mistakes.",
       "Documentation should reflect safe defaults to guide users effectively.",
-      "Context matters when defining defaults; consider the potential consequences of mistakes."
+      "Choosing the right default minimizes potential damage from user errors."
     ],
-    "takeaway": "Prioritizing safe defaults in command-line interfaces is essential for maintaining reliability and preventing major outages."
+    "takeaway": "Prioritize safety in command defaults to enhance reliability and reduce risk.",
+    "source_name": "Google Testing Blog"
   },
   "42755daf27913176": {
     "id": "42755daf27913176",
@@ -716,13 +719,13 @@
     "source": "rss",
     "signal": 4,
     "why_it_matters": "Industry change",
-    "summary": "The concept of 'SaaSpocalypse' reflects the transformative impact of AI on the software-as-a-service market, challenging traditional pricing and delivery models. As AI capabilities evolve, businesses must reconsider their software strategies, moving from a one-size-fits-all approach to more tailored systems that enhance productivity and intelligence.",
+    "summary": "The concept of 'SaaSpocalypse' highlights the transformative impact of AI on the software-as-a-service market, challenging traditional pricing and delivery models. As AI capabilities evolve, organizations must rethink their software strategies, moving from a one-size-fits-all approach to more tailored, intelligent systems that can adapt to specific business needs.",
     "key_points": [
-      "AI is reshaping expectations around software, moving from utility to strategic systems.",
-      "Cost reduction is not the primary goal; embedding intelligence and improving speed are crucial.",
-      "Enterprises need a new software development lifecycle to effectively replace traditional SaaS solutions."
+      "AI is shifting expectations for SaaS, moving from utility to strategic systems.",
+      "Cost reduction is a consideration, but the focus should be on quality and speed.",
+      "Organizations need to adopt new software development lifecycles to effectively replace traditional SaaS solutions."
     ],
-    "takeaway": "AI is not just changing software costs; it's redefining what organizations should expect from their software solutions.",
+    "takeaway": "AI is redefining the software landscape, necessitating a strategic reevaluation of how organizations approach software acquisition and development.",
     "source_name": "Thoughtworks"
   },
   "c14528299998fc35": {
@@ -1073,9 +1076,9 @@
     "canonical_url": "https://increment.com/planning/planning-for-product-market-fit",
     "title": "Planning in the dark",
     "first_seen_at": "2026-03-26",
-    "last_shown_at": "2026-03-27",
+    "last_shown_at": "2026-03-28",
     "expires_at": "2026-04-09",
-    "times_shown": 1,
+    "times_shown": 2,
     "status": "active",
     "source": "rss",
     "signal": 4,
@@ -1204,9 +1207,9 @@
     "canonical_url": "https://dev.to/leonpennings/software-testing-youre-probably-doing-it-wrong-564h",
     "title": "Software Testing: You\u2019re Probably Doing It Wrong",
     "first_seen_at": "2026-03-26",
-    "last_shown_at": null,
+    "last_shown_at": "2026-03-28",
     "expires_at": "2026-04-09",
-    "times_shown": 0,
+    "times_shown": 1,
     "status": "active",
     "source": "devto",
     "signal": 4,
@@ -1418,9 +1421,9 @@
     "canonical_url": "https://dev.to/googleai/build-real-time-conversational-agents-with-gemini-31-flash-live-27f6",
     "title": "Build real-time conversational agents with Gemini 3.1 Flash Live",
     "first_seen_at": "2026-03-27",
-    "last_shown_at": "2026-03-27",
+    "last_shown_at": "2026-03-28",
     "expires_at": "2026-04-10",
-    "times_shown": 1,
+    "times_shown": 2,
     "status": "active",
     "source": "devto",
     "signal": 4,
@@ -1641,5 +1644,372 @@
       "Testing the shutdown process is essential to avoid uncaught exceptions."
     ],
     "takeaway": "A well-implemented graceful shutdown strategy is key to maintaining service reliability during updates."
+  },
+  "ce14b17dfb03c54e": {
+    "id": "ce14b17dfb03c54e",
+    "canonical_url": "https://dev.to/auth0/auth0-mcp-server-extension-for-gemini-cli-405m",
+    "title": "Auth0 MCP Server Extension for Gemini CLI",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": null,
+    "expires_at": "2026-04-11",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 3,
+    "why_it_matters": "Tooling trend",
+    "summary": "The introduction of the Auth0 MCP Server extension for Gemini CLI simplifies the integration of Auth0 into development workflows. By allowing seamless authentication and context persistence, it enhances efficiency for QA engineers managing tenant information.",
+    "key_points": [
+      "Auth0 MCP Server is now easily installable via Gemini CLI.",
+      "The extension provides built-in commands for tenant management.",
+      "Context persistence eliminates the need for repetitive manual configurations."
+    ],
+    "takeaway": "Streamlining tools like Gemini CLI with extensions can significantly improve workflow efficiency for QA teams."
+  },
+  "2b519b6dcd158ff2": {
+    "id": "2b519b6dcd158ff2",
+    "canonical_url": "https://thenewstack.io/github-copilot-interaction-data",
+    "title": "GitHub will train AI models on your Copilot data \u2014 and share it with Microsoft",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": null,
+    "expires_at": "2026-04-11",
+    "times_shown": 0,
+    "status": "active",
+    "source": "rss",
+    "source_name": "The New Stack",
+    "signal": 3,
+    "why_it_matters": "Governance risk",
+    "summary": "GitHub's decision to use user interaction data from Copilot for AI model training raises concerns about data privacy and ownership, particularly for individual developers. While the company allows users to opt out, the default setting is to include data, which has sparked criticism within the developer community.",
+    "key_points": [
+      "GitHub will use interaction data from Copilot users to train AI models, impacting all users unless they opt out.",
+      "Data shared with GitHub's affiliates, including Microsoft, raises governance and privacy concerns.",
+      "The move has received mixed reactions, with some praising transparency while others criticize the opt-out default."
+    ],
+    "takeaway": "The shift towards using individual user data for AI training highlights the need for clear governance and privacy practices in software development tools."
+  },
+  "11ae38016f519a0d": {
+    "id": "11ae38016f519a0d",
+    "canonical_url": "https://dev.to/yash_step2dev/redis-connection-refused-diagnose-and-fix-in-5-steps-3nlj",
+    "title": "Redis Connection Refused: Diagnose and Fix in 5 Steps",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": null,
+    "expires_at": "2026-04-11",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 2,
+    "why_it_matters": "Tooling trend",
+    "summary": "The article discusses diagnosing and fixing Redis connection issues, emphasizing the importance of proper configuration in application connectivity. It highlights common pitfalls, such as Redis only accepting local connections, particularly in Docker environments.",
+    "key_points": [
+      "Redis may refuse connections if misconfigured, especially in containerized environments.",
+      "Security best practices recommend not exposing Redis to the open internet.",
+      "Memory issues can lead to Redis crashes or write refusals."
+    ],
+    "takeaway": "Proper configuration and security practices are essential for maintaining reliable Redis connections."
+  },
+  "4b0ab73b8f0b64c6": {
+    "id": "4b0ab73b8f0b64c6",
+    "canonical_url": "https://dev.to/sdetcode/why-most-qa-engineers-cant-practice-their-core-skill-and-how-mutation-testing-changes-that-c30",
+    "title": "Why Most QA Engineers Can't Practice Their Core Skill \u2014 and How Mutation Testing Changes That",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": null,
+    "expires_at": "2026-04-11",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "Mutation testing offers QA engineers a structured way to practice their core skills by providing measurable feedback on test effectiveness. This method contrasts with traditional approaches, allowing engineers to focus on identifying potential failures rather than merely validating code. By improving their ability to write effective tests, QA professionals can enhance their overall impact on software quality.",
+    "key_points": [
+      "Mutation testing introduces deliberate changes to code to evaluate test effectiveness.",
+      "A kill ratio provides a quantifiable measure of a QA engineer's ability to identify defects.",
+      "Practicing with mutation testing helps engineers develop adversarial thinking and better understand edge cases."
+    ],
+    "takeaway": "Mutation testing transforms the way QA engineers can practice and demonstrate their skills, bridging the gap in measurable improvement."
+  },
+  "d174fa0f523456a1": {
+    "id": "d174fa0f523456a1",
+    "canonical_url": "https://dev.to/sbis04/ghost-maintainer-an-ai-junior-partner-for-open-source-11l0",
+    "title": "Ghost Maintainer \u2014 An AI Junior Partner for Open Source",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": "2026-03-28",
+    "expires_at": "2026-04-11",
+    "times_shown": 1,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 5,
+    "why_it_matters": "AI in QA",
+    "summary": "Ghost Maintainer represents a significant advancement in how AI can assist open source maintainers by automating repetitive tasks and enhancing project management through a shared operations center in Notion. This approach not only streamlines issue triaging and resolution but also aligns AI actions with the project's vision, creating a more efficient workflow. The integration of AI with a human-centric vision layer marks a transformative step in human-AI collaboration.",
+    "key_points": [
+      "Automates triaging and issue management for solo maintainers",
+      "Utilizes Notion as a dynamic source of truth for project vision",
+      "Enhances human-AI collaboration by aligning AI actions with project priorities"
+    ],
+    "takeaway": "Integrating AI with a clear project vision can significantly improve maintenance efficiency and decision-making in open source projects."
+  },
+  "0492f0c31d64eddc": {
+    "id": "0492f0c31d64eddc",
+    "canonical_url": "https://dev.to/ebrahimsayed/you-inherited-a-net-codebase-with-zero-tests-now-what-46ca",
+    "title": "You inherited a .NET codebase with zero tests. Now what?",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": "2026-03-28",
+    "expires_at": "2026-04-11",
+    "times_shown": 1,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "Inheriting a codebase with no tests presents a significant challenge for QA engineers. The article introduces Litmus, a tool that automates the prioritization of files for testing based on risk and testability, offering a strategic approach to improve code quality effectively.",
+    "key_points": [
+      "Litmus ranks files based on risk and testability, helping prioritize testing efforts.",
+      "The tool identifies unseamed dependencies, allowing engineers to focus on files that can be tested without extensive refactoring.",
+      "It provides a clear framework for tracking progress and integrating into CI/CD pipelines."
+    ],
+    "takeaway": "Automating the prioritization of testing efforts can significantly enhance the efficiency and effectiveness of QA processes in legacy codebases."
+  },
+  "40547482d7cbf79c": {
+    "id": "40547482d7cbf79c",
+    "canonical_url": "https://www.androidpolice.com/youtube-ad-blockers-three-strikes",
+    "title": "YouTube is testing a more aggressive approach against ad blockers",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": "2026-03-28",
+    "expires_at": "2026-04-11",
+    "times_shown": 1,
+    "status": "active",
+    "source": "hn",
+    "source_name": "Hacker News",
+    "signal": 4,
+    "why_it_matters": "Industry change",
+    "summary": "YouTube's new approach to combat ad blockers reflects a significant shift in how digital platforms are managing user experience and monetization. By implementing a three-strikes policy, YouTube is reinforcing the importance of ad revenue in its business model, especially for free-tier users.",
+    "key_points": [
+      "YouTube is testing a three-strikes policy against ad blockers.",
+      "Users may face video player restrictions after three instances of ad blocking.",
+      "The move indicates a broader trend of platforms tightening control over ad revenue."
+    ],
+    "takeaway": "As platforms adapt to changing user behaviors, QA teams should consider how these shifts impact testing strategies and user experience."
+  },
+  "260c3f1b41f1632d": {
+    "id": "260c3f1b41f1632d",
+    "canonical_url": "https://dev.to/orthogonalinfo/self-hosted-gitops-pipeline-gitea-argocd-guide-2n5h",
+    "title": "Self-Hosted GitOps Pipeline: Gitea + ArgoCD Guide",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": null,
+    "expires_at": "2026-04-11",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 2,
+    "why_it_matters": "Tooling trend",
+    "summary": "The article discusses the challenges and benefits of setting up a self-hosted GitOps pipeline using Gitea and ArgoCD. It highlights the appeal of self-hosting for DevOps engineers and homelab enthusiasts, emphasizing control and customization over cloud services. However, the technical nature of the content may not resonate with all QA professionals.",
+    "key_points": [
+      "Self-hosting offers full control and no vendor lock-in.",
+      "GitOps simplifies infrastructure management by using Git as the source of truth.",
+      "Setting up a self-hosted pipeline can be both rewarding and technically challenging."
+    ],
+    "takeaway": "Self-hosting CI/CD pipelines can enhance control and customization but may require significant technical effort."
+  },
+  "c4654ff4313bc864": {
+    "id": "c4654ff4313bc864",
+    "canonical_url": "https://dev.to/axiom_agent_1dc642fa83651/nodejs-performance-profiling-in-production-v8-flame-graphs-clinicjs-and-heap-snapshots-2d70",
+    "title": "Node.js Performance Profiling in Production: V8 Flame Graphs, clinic.js, and Heap Snapshots",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": null,
+    "expires_at": "2026-04-11",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 3,
+    "why_it_matters": "Testing strategy",
+    "summary": "The article emphasizes the importance of data-driven profiling in identifying performance issues in Node.js applications. It highlights various tools and techniques, such as V8 flame graphs and clinic.js, to diagnose and resolve latency and memory problems effectively.",
+    "key_points": [
+      "Profiling is essential for diagnosing performance issues rather than relying on intuition.",
+      "Tools like 0x and clinic.js provide valuable insights into CPU and memory usage.",
+      "Performance profiling should be an ongoing practice integrated into the development process."
+    ],
+    "takeaway": "Effective performance profiling can significantly enhance the reliability and efficiency of Node.js services."
+  },
+  "2cf8cf07489df27a": {
+    "id": "2cf8cf07489df27a",
+    "canonical_url": "https://dev.to/novaelvaris/the-debug-first-ai-workflow-why-i-make-my-assistant-break-things-on-purpose-2b13",
+    "title": "The Debug-First AI Workflow: Why I Make My Assistant Break Things on Purpose",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": null,
+    "expires_at": "2026-04-11",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "AI in QA",
+    "summary": "The article presents a novel 'debug-first' AI workflow that prioritizes breaking code before implementation, significantly reducing bug rates. By generating tests first, QA engineers can clarify specifications and catch ambiguities early, leading to more reliable code and meaningful code reviews.",
+    "key_points": [
+      "AI can be more effective at identifying potential issues than generating correct code.",
+      "Creating tests before implementation helps clarify specifications and catch ambiguities.",
+      "The debug-first approach enhances the review process by focusing on test coverage rather than implementation details."
+    ],
+    "takeaway": "Incorporating a debug-first workflow can transform the QA process by emphasizing specification clarity and proactive testing."
+  },
+  "a306db607f23ce8e": {
+    "id": "a306db607f23ce8e",
+    "canonical_url": "https://www.theregister.com/2021/02/04/dna_testing_software",
+    "title": "Accused murderer wins right to check source code of DNA testing kit",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": null,
+    "expires_at": "2026-04-11",
+    "times_shown": 0,
+    "status": "active"
+  },
+  "c4f8b821cea11308": {
+    "id": "c4f8b821cea11308",
+    "canonical_url": "https://dev.to/rickcogley/learn-the-hard-way-first-why-new-developers-should-build-skills-before-leaning-on-ai-ibk",
+    "title": "Learn the Hard Way First: Why New Developers Should Build Skills Before Leaning on AI",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": null,
+    "expires_at": "2026-04-11",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "Quality practice",
+    "summary": "The article emphasizes the importance of foundational skills for new developers before relying on AI tools. It argues that understanding core programming concepts is crucial for effective debugging and maintaining code quality, as AI can only amplify existing knowledge and assumptions. By learning the hard way, developers can better leverage AI in their work.",
+    "key_points": [
+      "New developers should build foundational skills before relying on AI tools.",
+      "Understanding programming fundamentals is essential for effective debugging.",
+      "AI can amplify both good and bad coding practices, making foundational knowledge critical."
+    ],
+    "takeaway": "Developers must prioritize learning core skills to effectively utilize AI tools in software development."
+  },
+  "60a66375c5a950ba": {
+    "id": "60a66375c5a950ba",
+    "canonical_url": "https://automationpanda.com/2025/12/17/prioritizing-small-things",
+    "title": "Prioritizing Small Things",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": null,
+    "expires_at": "2026-04-11",
+    "times_shown": 0,
+    "status": "active",
+    "source": "rss",
+    "source_name": "Automation Panda",
+    "signal": 4,
+    "why_it_matters": "Quality practice",
+    "summary": "The article highlights the importance of addressing small, often overlooked issues in projects, whether in car maintenance or software development. By prioritizing these minor fixes, teams can enhance overall quality and prevent small problems from escalating into larger, more complex challenges.",
+    "key_points": [
+      "Small issues can significantly impact overall quality of life in projects.",
+      "Prioritizing minor fixes can lead to quick and effective solutions.",
+      "Knowledge and awareness play a crucial role in identifying and addressing these issues."
+    ],
+    "takeaway": "Addressing small problems early can prevent them from becoming larger obstacles."
+  },
+  "1991f7ce435f5ab2": {
+    "id": "1991f7ce435f5ab2",
+    "canonical_url": "https://www.thoughtworks.com/insights/blog/generative-ai/a-thoughtworks-perspective-on-circleci-s-2026-state-of-software-",
+    "title": "A Thoughtworks perspective on CircleCI\u2019s 2026 State of Software Delivery Report",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": "2026-03-28",
+    "expires_at": "2026-04-11",
+    "times_shown": 1,
+    "status": "active",
+    "source": "rss",
+    "source_name": "Thoughtworks",
+    "signal": 4,
+    "why_it_matters": "AI in QA",
+    "summary": "CircleCI\u2019s 2026 State of Software Delivery Report highlights a critical disconnect between increased code generation and actual software delivery success. While AI tools boost individual productivity, they can lead to systemic issues in the delivery pipeline if not accompanied by robust integration and validation processes.",
+    "key_points": [
+      "AI accelerates code creation but does not guarantee successful delivery.",
+      "Integration is now the key bottleneck in software delivery, not code generation.",
+      "Top-performing teams invest in engineering platforms to manage increased complexity."
+    ],
+    "takeaway": "Organizations must adopt an AI-first approach across the entire software delivery lifecycle to effectively harness the benefits of AI."
+  },
+  "86d28bef4000a971": {
+    "id": "86d28bef4000a971",
+    "canonical_url": "https://dev.to/yashksaini/i-built-a-3-agent-pipeline-that-turns-my-github-activity-into-weekly-blog-posts-on-notion-devto-1ndn",
+    "title": "Turning Weekly GitHub Activity Into Blog Posts on Notion + DEV.to",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": null,
+    "expires_at": "2026-04-11",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "AI in QA",
+    "summary": "The DevNotion pipeline automates the process of summarizing weekly GitHub activity into blog posts, showcasing the effective use of AI for enhancing productivity. By leveraging specialized agents for different tasks, it highlights a strategic approach to integrating AI in QA workflows.",
+    "key_points": [
+      "Automates weekly activity summaries into blog posts.",
+      "Utilizes specialized agents for efficiency and reliability.",
+      "Demonstrates the effective use of AI in enhancing engineering culture."
+    ],
+    "takeaway": "Leveraging AI tools in a targeted manner can significantly improve productivity and reduce cognitive load for QA engineers."
+  },
+  "7d97092327d166e3": {
+    "id": "7d97092327d166e3",
+    "canonical_url": "https://dev.to/peytongreen_dev/localstack-is-gone-floci-vs-moto-vs-testcontainers-which-one-replaces-it-c7c",
+    "title": "LocalStack Is Gone. Floci vs. Moto vs. Testcontainers: Which One Replaces It?",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": null,
+    "expires_at": "2026-04-11",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "Tooling trend",
+    "summary": "With the archiving of LocalStack, QA engineers must adapt to new tools like Moto and Floci for testing AWS integrations. Each tool serves different testing needs, emphasizing the importance of selecting the right solution for specific scenarios.",
+    "key_points": [
+      "Moto is ideal for unit tests with no infrastructure overhead.",
+      "Floci offers a zero-auth alternative for integration tests requiring a real Docker service.",
+      "LocalStack remains relevant for advanced testing scenarios with a Hobby token."
+    ],
+    "takeaway": "Choosing the right testing tool is crucial for maintaining efficient CI pipelines and effective testing strategies."
+  },
+  "83e674d10bafc756": {
+    "id": "83e674d10bafc756",
+    "canonical_url": "http://testing.googleblog.com/2025/10/simplify-your-code-functional-core.html",
+    "title": "Simplify Your Code: Functional Core, Imperative Shell",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": "2026-03-28",
+    "expires_at": "2026-04-11",
+    "times_shown": 1,
+    "status": "active",
+    "source": "rss",
+    "source_name": "Google Testing Blog",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "Adopting the functional core and imperative shell pattern enhances code maintainability and testability. By isolating business logic from side effects, QA teams can more effectively validate functionality and adapt to changing requirements.",
+    "key_points": [
+      "Separation of concerns improves code clarity.",
+      "Functional cores allow for isolated testing of business logic.",
+      "Imperative shells handle side effects, making code more adaptable."
+    ],
+    "takeaway": "Implementing a functional core can significantly streamline testing processes and improve code quality."
+  },
+  "be4d948ffecc5b5a": {
+    "id": "be4d948ffecc5b5a",
+    "canonical_url": "https://dev.to/tmdlrg/sprint-2-retrospective-every-promise-kept-every-decision-delivered-4300",
+    "title": "Sprint 2 Retrospective: Every Promise Kept, Every Decision Delivered",
+    "first_seen_at": "2026-03-28",
+    "last_shown_at": null,
+    "expires_at": "2026-04-11",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "The Sprint 2 retrospective highlights the effectiveness of Documentation-Driven Test-Driven Development (DD TDD) in maintaining quality and consistency across the project. By enforcing strict phase transitions and utilizing structural tests, the team successfully addressed previous friction points and improved observability in their codebase.",
+    "key_points": [
+      "All fifteen tickets were completed without any blocked items or skipped phases.",
+      "The implementation of structural tests became the dominant testing strategy, enhancing codebase verification.",
+      "Architecture Decision Records (ADRs) guided critical migrations and maintained clear boundaries in error handling."
+    ],
+    "takeaway": "Enforcing a rigorous testing strategy with documentation and structural tests can significantly enhance code quality and team efficiency."
   }
 }
