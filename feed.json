@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-03-28T07:37:40.996465+00:00",
+  "generated_at": "2026-03-29T07:44:14.176017+00:00",
   "articles": [
+    {
+      "id": "d35a7a2dc49af090",
+      "title": "Nvidia\u2019s NemoClaw has three layers of agent security. None of them solve the real problem.",
+      "url": "https://thenewstack.io/nvidia-nemoclaw-openclaw-security",
+      "source": "rss",
+      "source_name": "The New Stack",
+      "signal": 4,
+      "why_it_matters": "Governance risk",
+      "summary": "Nvidia's NemoClaw introduces multiple layers of security for agentic computing, yet these measures may not adequately address the core challenges posed by autonomous agents. The reliance on policy enforcement, privacy routing, and sandboxed execution highlights the complexities and inefficiencies in managing self-evolving systems.",
+      "key_points": [
+        "NemoClaw adds security layers but does not fundamentally solve the issues of agentic computing.",
+        "Policy enforcement may hinder autonomy and efficiency in multi-agent systems.",
+        "The need for experienced engineers to manage these systems is critical as the market for agentic computing grows."
+      ],
+      "takeaway": "The effectiveness of security measures in agentic computing will depend on the experience and insight of the engineers managing these systems.",
+      "first_seen_at": "2026-03-29",
+      "last_shown_at": "2026-03-29",
+      "expires_at": "2026-04-12",
+      "is_new_today": true,
+      "featured": true
+    },
     {
       "id": "d174fa0f523456a1",
       "title": "Ghost Maintainer \u2014 An AI Junior Partner for Open Source",
@@ -17,30 +38,51 @@
       ],
       "takeaway": "Integrating AI with a clear project vision can significantly improve maintenance efficiency and decision-making in open source projects.",
       "first_seen_at": "2026-03-28",
-      "last_shown_at": "2026-03-28",
+      "last_shown_at": "2026-03-29",
       "expires_at": "2026-04-11",
-      "is_new_today": true,
-      "featured": true
+      "is_new_today": false,
+      "featured": false
     },
     {
-      "id": "0492f0c31d64eddc",
-      "title": "You inherited a .NET codebase with zero tests. Now what?",
-      "url": "https://dev.to/ebrahimsayed/you-inherited-a-net-codebase-with-zero-tests-now-what-46ca",
+      "id": "7ac97193eeb67d1e",
+      "title": "Waymo granted permit to begin testing in New York City",
+      "url": "https://www.cnbc.com/2025/08/22/waymo-permit-new-york-city-nyc-rides.html",
+      "source": "hn",
+      "source_name": "Hacker News",
+      "signal": 4,
+      "why_it_matters": "Industry change",
+      "summary": "Waymo has received a permit to begin testing its autonomous vehicles in New York City, marking a significant step in the evolution of self-driving technology. This move highlights the growing acceptance and integration of autonomous systems in urban environments, which could reshape transportation and urban planning.",
+      "key_points": [
+        "Waymo's testing in NYC represents a major milestone for autonomous vehicle deployment.",
+        "The permit reflects increasing regulatory support for self-driving technology.",
+        "Urban environments pose unique challenges for autonomous systems, necessitating robust testing strategies."
+      ],
+      "takeaway": "The expansion of autonomous vehicle testing into complex urban areas signals a pivotal moment for the industry, emphasizing the need for adaptive testing strategies.",
+      "first_seen_at": "2026-03-26",
+      "last_shown_at": "2026-03-29",
+      "expires_at": "2026-04-09",
+      "is_new_today": false,
+      "featured": false
+    },
+    {
+      "id": "f9338c71e31d314b",
+      "title": "Node.js Graceful Shutdown: The Right Way (SIGTERM, Connection Draining, and Kubernetes)",
+      "url": "https://dev.to/axiom_agent_1dc642fa83651/nodejs-graceful-shutdown-the-right-way-sigterm-connection-draining-and-kubernetes-fp8",
       "source": "devto",
       "source_name": "DEV Community",
       "signal": 4,
-      "why_it_matters": "Testing strategy",
-      "summary": "Inheriting a codebase with no tests presents a significant challenge for QA engineers. The article introduces Litmus, a tool that automates the prioritization of files for testing based on risk and testability, offering a strategic approach to improve code quality effectively.",
+      "why_it_matters": "Reliability lesson",
+      "summary": "Implementing graceful shutdown in Node.js services is crucial for maintaining reliability during deployments. Proper handling of SIGTERM and connection draining can prevent dropped requests and ensure data integrity.",
       "key_points": [
-        "Litmus ranks files based on risk and testability, helping prioritize testing efforts.",
-        "The tool identifies unseamed dependencies, allowing engineers to focus on files that can be tested without extensive refactoring.",
-        "It provides a clear framework for tracking progress and integrating into CI/CD pipelines."
+        "Ignoring SIGTERM or exiting immediately leads to dropped requests.",
+        "Health checks and connection management are vital for zero-downtime deployments.",
+        "Testing the shutdown process is essential to avoid uncaught exceptions."
       ],
-      "takeaway": "Automating the prioritization of testing efforts can significantly enhance the efficiency and effectiveness of QA processes in legacy codebases.",
-      "first_seen_at": "2026-03-28",
-      "last_shown_at": "2026-03-28",
-      "expires_at": "2026-04-11",
-      "is_new_today": true,
+      "takeaway": "A well-implemented graceful shutdown strategy is key to maintaining service reliability during updates.",
+      "first_seen_at": "2026-03-27",
+      "last_shown_at": "2026-03-29",
+      "expires_at": "2026-04-10",
+      "is_new_today": false,
       "featured": false
     },
     {
@@ -59,113 +101,8 @@
       ],
       "takeaway": "Real-time voice agents are evolving, and QA practices must adapt to ensure they meet new performance benchmarks.",
       "first_seen_at": "2026-03-27",
-      "last_shown_at": "2026-03-28",
+      "last_shown_at": "2026-03-29",
       "expires_at": "2026-04-10",
-      "is_new_today": false,
-      "featured": false
-    },
-    {
-      "id": "1991f7ce435f5ab2",
-      "title": "A Thoughtworks perspective on CircleCI\u2019s 2026 State of Software Delivery Report",
-      "url": "https://www.thoughtworks.com/insights/blog/generative-ai/a-thoughtworks-perspective-on-circleci-s-2026-state-of-software-",
-      "source": "rss",
-      "source_name": "Thoughtworks",
-      "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "CircleCI\u2019s 2026 State of Software Delivery Report highlights a critical disconnect between increased code generation and actual software delivery success. While AI tools boost individual productivity, they can lead to systemic issues in the delivery pipeline if not accompanied by robust integration and validation processes.",
-      "key_points": [
-        "AI accelerates code creation but does not guarantee successful delivery.",
-        "Integration is now the key bottleneck in software delivery, not code generation.",
-        "Top-performing teams invest in engineering platforms to manage increased complexity."
-      ],
-      "takeaway": "Organizations must adopt an AI-first approach across the entire software delivery lifecycle to effectively harness the benefits of AI.",
-      "first_seen_at": "2026-03-28",
-      "last_shown_at": "2026-03-28",
-      "expires_at": "2026-04-11",
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "40547482d7cbf79c",
-      "title": "YouTube is testing a more aggressive approach against ad blockers",
-      "url": "https://www.androidpolice.com/youtube-ad-blockers-three-strikes",
-      "source": "hn",
-      "source_name": "Hacker News",
-      "signal": 4,
-      "why_it_matters": "Industry change",
-      "summary": "YouTube's new approach to combat ad blockers reflects a significant shift in how digital platforms are managing user experience and monetization. By implementing a three-strikes policy, YouTube is reinforcing the importance of ad revenue in its business model, especially for free-tier users.",
-      "key_points": [
-        "YouTube is testing a three-strikes policy against ad blockers.",
-        "Users may face video player restrictions after three instances of ad blocking.",
-        "The move indicates a broader trend of platforms tightening control over ad revenue."
-      ],
-      "takeaway": "As platforms adapt to changing user behaviors, QA teams should consider how these shifts impact testing strategies and user experience.",
-      "first_seen_at": "2026-03-28",
-      "last_shown_at": "2026-03-28",
-      "expires_at": "2026-04-11",
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "83e674d10bafc756",
-      "title": "Simplify Your Code: Functional Core, Imperative Shell",
-      "url": "http://testing.googleblog.com/2025/10/simplify-your-code-functional-core.html",
-      "source": "rss",
-      "source_name": "Google Testing Blog",
-      "signal": 4,
-      "why_it_matters": "Testing strategy",
-      "summary": "Adopting the functional core and imperative shell pattern enhances code maintainability and testability. By isolating business logic from side effects, QA teams can more effectively validate functionality and adapt to changing requirements.",
-      "key_points": [
-        "Separation of concerns improves code clarity.",
-        "Functional cores allow for isolated testing of business logic.",
-        "Imperative shells handle side effects, making code more adaptable."
-      ],
-      "takeaway": "Implementing a functional core can significantly streamline testing processes and improve code quality.",
-      "first_seen_at": "2026-03-28",
-      "last_shown_at": "2026-03-28",
-      "expires_at": "2026-04-11",
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "cb03a344c5b23559",
-      "title": "Unlocking the relational power of graph neural networks in fraud prevention",
-      "url": "https://www.thoughtworks.com/insights/articles/graph-neural-networks-in-fraud-prevention",
-      "source": "rss",
-      "source_name": "Thoughtworks",
-      "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "The article discusses the evolution of fraud prevention in the context of real-time payments and highlights the limitations of traditional fraud detection methods. It emphasizes the potential of graph neural networks (GNNs) to enhance fraud detection by capturing complex relational patterns, thereby reducing false declines and improving customer trust.",
-      "key_points": [
-        "Fraud prevention has shifted from rules-based models to machine learning due to the rise of real-time payments.",
-        "Graph neural networks can identify complex fraud patterns that traditional models miss, enhancing detection capabilities.",
-        "Reducing false declines is crucial, as they significantly impact customer loyalty and revenue."
-      ],
-      "takeaway": "Embracing advanced AI techniques like GNNs is essential for effective fraud detection in a rapidly evolving digital payment landscape.",
-      "first_seen_at": "2026-03-25",
-      "last_shown_at": "2026-03-28",
-      "expires_at": "2026-04-08",
-      "is_new_today": false,
-      "featured": false
-    },
-    {
-      "id": "7fe3cd5c8dfcfedc",
-      "title": "Planning in the dark",
-      "url": "https://increment.com/planning/planning-for-product-market-fit",
-      "source": "rss",
-      "source_name": "Increment",
-      "signal": 4,
-      "why_it_matters": "Testing strategy",
-      "summary": "The article emphasizes the importance of flexibility and incremental development when seeking product-market fit. It highlights the need for teams to embrace uncertainty and focus on testing hypotheses rather than attempting to plan every detail upfront.",
-      "key_points": [
-        "Accept limited visibility during the exploration phase of product development.",
-        "Prioritize gathering user feedback and iterating on features rather than perfect planning.",
-        "Establish preliminary metrics to assess progress toward product-market fit."
-      ],
-      "takeaway": "Embrace an incremental approach to development, focusing on testing and adapting based on user feedback.",
-      "first_seen_at": "2026-03-26",
-      "last_shown_at": "2026-03-28",
-      "expires_at": "2026-04-09",
       "is_new_today": false,
       "featured": false
     },
@@ -185,30 +122,93 @@
       ],
       "takeaway": "Teams must recognize that effective testing should focus on verifying behavior, not on validating the correctness of the underlying design and architecture.",
       "first_seen_at": "2026-03-26",
-      "last_shown_at": "2026-03-28",
+      "last_shown_at": "2026-03-29",
       "expires_at": "2026-04-09",
       "is_new_today": false,
       "featured": false
     },
     {
-      "id": "1190a94a4599df8a",
-      "title": "AI is becoming a second brain at the expense of your first one",
-      "url": "https://stackoverflow.blog/2026/03/19/ai-is-becoming-a-second-brain-at-the-expense-of-your-first-one",
+      "id": "60a66375c5a950ba",
+      "title": "Prioritizing Small Things",
+      "url": "https://automationpanda.com/2025/12/17/prioritizing-small-things",
       "source": "rss",
-      "source_name": "Stack Overflow Blog",
+      "source_name": "Automation Panda",
+      "signal": 4,
+      "why_it_matters": "Quality practice",
+      "summary": "The article highlights the importance of addressing small, often overlooked issues in projects, whether they are related to cars or software. By prioritizing these minor fixes, teams can significantly improve overall quality and efficiency. It serves as a reminder that sometimes the simplest solutions can yield the most impactful results.",
+      "key_points": [
+        "Small problems can fester and lead to larger issues if not addressed.",
+        "Prioritizing minor fixes can enhance quality of life and project outcomes.",
+        "Knowledge and awareness can transform seemingly small tasks into manageable solutions."
+      ],
+      "takeaway": "Addressing small issues promptly can lead to significant improvements in project quality and team morale.",
+      "first_seen_at": "2026-03-28",
+      "last_shown_at": "2026-03-29",
+      "expires_at": "2026-04-11",
+      "is_new_today": false,
+      "featured": false
+    },
+    {
+      "id": "c4f8b821cea11308",
+      "title": "Learn the Hard Way First: Why New Developers Should Build Skills Before Leaning on AI",
+      "url": "https://dev.to/rickcogley/learn-the-hard-way-first-why-new-developers-should-build-skills-before-leaning-on-ai-ibk",
+      "source": "devto",
+      "source_name": "DEV Community",
+      "signal": 4,
+      "why_it_matters": "Quality practice",
+      "summary": "The article emphasizes the importance of foundational skills for new developers before relying on AI tools. It argues that understanding core programming concepts is crucial for effective debugging and maintaining code quality, as AI can only amplify existing knowledge and assumptions. By learning the hard way, developers can better leverage AI in their work.",
+      "key_points": [
+        "New developers should build foundational skills before relying on AI tools.",
+        "Understanding programming fundamentals is essential for effective debugging.",
+        "AI can amplify both good and bad coding practices, making foundational knowledge critical."
+      ],
+      "takeaway": "Developers must prioritize learning core skills to effectively utilize AI tools in software development.",
+      "first_seen_at": "2026-03-28",
+      "last_shown_at": "2026-03-29",
+      "expires_at": "2026-04-11",
+      "is_new_today": false,
+      "featured": false
+    },
+    {
+      "id": "1d1c668d4c06cff0",
+      "title": "Something every senior engineer learns the expensive way:",
+      "url": "https://dev.to/neeraja_khanapure_4a33a5f/something-every-senior-engineer-learns-the-expensive-way-a8h",
+      "source": "devto",
+      "source_name": "DEV Community",
+      "signal": 4,
+      "why_it_matters": "Process warning",
+      "summary": "The article highlights the challenges of managing Terraform's dependency graph at scale, particularly when it comes to implicit ordering and the risks of module coupling. It emphasizes the importance of redesigning interfaces rather than relying on workarounds like 'depends_on' to ensure safety and maintainability.",
+      "key_points": [
+        "Implicit ordering assumptions can lead to unplanned production issues.",
+        "Fan-out graphs complicate impact analysis for changes.",
+        "Proper module design is crucial to avoid reliance on 'depends_on'."
+      ],
+      "takeaway": "Building the right guardrails in infrastructure management is essential to prevent costly mistakes.",
+      "first_seen_at": "2026-03-29",
+      "last_shown_at": "2026-03-29",
+      "expires_at": "2026-04-12",
+      "is_new_today": true,
+      "featured": false
+    },
+    {
+      "id": "2ddbcd71cdaa2cf4",
+      "title": "Show DEV: PressArk - Talk to Your WordPress Site Instead of Clicking Through It",
+      "url": "https://dev.to/abdelali_selouani_55871ee/show-dev-pressark-talk-to-your-wordpress-site-instead-of-clicking-through-it-1hb5",
+      "source": "devto",
+      "source_name": "DEV Community",
       "signal": 4,
       "why_it_matters": "AI in QA",
-      "summary": "The increasing reliance on AI tools in decision-making processes poses a risk of diminishing critical thinking and personal judgment among QA professionals. As engineers offload cognitive tasks to AI, they may inadvertently adopt biases and lose confidence in their own beliefs and judgments.",
+      "summary": "PressArk introduces an innovative AI co-pilot for WordPress that allows users to manage their site through conversational commands instead of traditional navigation. This tool emphasizes user control and safety by requiring approval before executing any actions, addressing common concerns about AI autonomy in production environments.",
       "key_points": [
-        "AI tools are often perceived as 'co-pilots' but can lead to over-reliance.",
-        "Cognitive offloading may result in a loss of critical thinking skills.",
-        "Adopting AI-generated beliefs can propagate biases and create a homogenized thought process."
+        "AI co-pilot integrates into WordPress admin for conversational site management.",
+        "Over 200 AI-callable tools available, focusing on user approval before execution.",
+        "Free tier offers full functionality without limitations, encouraging widespread adoption."
       ],
-      "takeaway": "QA engineers must balance the use of AI tools with the need to maintain their own critical thinking and judgment skills.",
-      "first_seen_at": "2026-03-25",
-      "last_shown_at": "2026-03-28",
-      "expires_at": "2026-04-08",
-      "is_new_today": false,
+      "takeaway": "The emergence of AI-driven tools like PressArk highlights a significant shift towards conversational interfaces in software management, enhancing user experience while maintaining control.",
+      "first_seen_at": "2026-03-29",
+      "last_shown_at": "2026-03-29",
+      "expires_at": "2026-04-12",
+      "is_new_today": true,
       "featured": false
     }
   ]
