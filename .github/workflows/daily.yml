@@ -69,6 +69,7 @@ jobs:
           cp styles.css site/
           cp script.js site/
           cp feed.json site/
+          echo "qabytes.com" > site/CNAME
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
