@@ -1,4 +1,6 @@
-fetch("./feed.json")
+const feedCacheKey = "20260330-2";
+
+fetch(`./feed.json?v=${feedCacheKey}`)
   .then((response) => response.json())
   .then((data) => {
     if (!data || !Array.isArray(data.articles) || data.articles.length === 0) {
@@ -112,6 +114,25 @@ fetch("./feed.json")
       wrapper.appendChild(list);
 
       return wrapper;
+    }
+
+    function createBookmarkIcon() {
+      const svgNS = "http://www.w3.org/2000/svg";
+      const svg = document.createElementNS(svgNS, "svg");
+      svg.setAttribute("viewBox", "0 0 14 18");
+      svg.setAttribute("aria-hidden", "true");
+      svg.setAttribute("focusable", "false");
+      svg.setAttribute("class", "bookmark-icon save-toggle-icon");
+
+      const path = document.createElementNS(svgNS, "path");
+      path.setAttribute(
+        "d",
+        "M3 1.25h8a1.75 1.75 0 0 1 1.75 1.75v13.05l-5.75-3.43-5.75 3.43V3A1.75 1.75 0 0 1 3 1.25Z"
+      );
+      path.setAttribute("fill", "currentColor");
+      svg.appendChild(path);
+
+      return svg;
     }
 
     function renderCard(article) {
@@ -260,9 +281,7 @@ fetch("./feed.json")
         isSaved ? "Remove from saved" : "Save for later"
       );
 
-      const saveIcon = document.createElement("span");
-      saveIcon.className = "save-toggle-icon bookmark-icon";
-      saveButton.appendChild(saveIcon);
+      saveButton.appendChild(createBookmarkIcon());
 
       const saveText = document.createElement("span");
       saveText.className = "save-toggle-text";

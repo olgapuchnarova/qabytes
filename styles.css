@@ -142,8 +142,8 @@ section:last-of-type {
   width: 14px;
   height: 18px;
   display: inline-block;
-  background: currentColor;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 72%, 0 100%);
+  fill: currentColor;
+  flex: 0 0 auto;
 }
 
 #filters {
