@@ -10,8 +10,6 @@ import requests
 from bs4 import BeautifulSoup
 from openai import OpenAI
 
-client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-
 OUTPUT_FILE = "feed.json"
 RAW_FILE = "raw_candidates.json"
 STATE_FILE = "feed_state.json"
@@ -79,6 +77,15 @@ RSS_FEEDS = [
         "name": "InfoQ",
     },
 ]
+
+client = None
+
+
+def get_openai_client():
+    global client
+    if client is None:
+        client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+    return client
 
 
 def utc_now():
@@ -404,7 +411,7 @@ Choose exactly one approved why_it_matters option.
 Return ONLY JSON.
 """
 
-    response = client.chat.completions.create(
+    response = get_openai_client().chat.completions.create(
         model="gpt-4o-mini",
         temperature=0.2,
         messages=[{"role": "user", "content": prompt}],
@@ -418,6 +425,56 @@ Return ONLY JSON.
 
 def score_article(article):
     return article["signal"] + random.uniform(0, 0.5)
+
+
+def select_feed_articles(
+    scored_articles,
+    target_feed_size=TARGET_FEED_SIZE,
+    min_feed_articles=MIN_FEED_ARTICLES,
+    min_new_articles=MIN_NEW_ARTICLES,
+):
+    new_candidates = [
+        article for article in scored_articles if article.get("is_new_today")
+    ]
+    existing_candidates = [
+        article for article in scored_articles if not article.get("is_new_today")
+    ]
+
+    new_candidates.sort(key=lambda article: article["_score"], reverse=True)
+    existing_candidates.sort(key=lambda article: article["_score"], reverse=True)
+
+    selected = []
+    selected_ids = set()
+
+    def take_from(pool, limit):
+        taken = 0
+        for item in pool:
+            if item["id"] in selected_ids:
+                continue
+            selected.append(item)
+            selected_ids.add(item["id"])
+            taken += 1
+            if taken >= limit:
+                break
+
+    if new_candidates:
+        take_from(new_candidates, 1)
+
+    remaining_new_needed = max(0, min_new_articles - len(selected))
+    if remaining_new_needed > 0:
+        take_from(new_candidates[1:], remaining_new_needed)
+
+    target_size = max(min_feed_articles, target_feed_size)
+    remaining_slots = max(0, target_size - len(selected))
+    if remaining_slots > 0:
+        combined_pool = sorted(
+            new_candidates + existing_candidates,
+            key=lambda article: article["_score"],
+            reverse=True,
+        )
+        take_from(combined_pool, remaining_slots)
+
+    return selected
 
 
 def generate_feed():
@@ -535,46 +592,10 @@ def generate_feed():
         article_copy["is_new_today"] = article["first_seen_at"] == today_str
         scored_articles.append(article_copy)
 
+    selected = select_feed_articles(scored_articles)
     new_candidates = [
         article for article in scored_articles if article["is_new_today"]
     ]
-    existing_candidates = [
-        article for article in scored_articles if not article["is_new_today"]
-    ]
-
-    new_candidates.sort(key=lambda article: article["_score"], reverse=True)
-    existing_candidates.sort(key=lambda article: article["_score"], reverse=True)
-
-    selected = []
-    selected_ids = set()
-
-    def take_from(pool, limit):
-        taken = 0
-        for item in pool:
-            if item["id"] in selected_ids:
-                continue
-            selected.append(item)
-            selected_ids.add(item["id"])
-            taken += 1
-            if taken >= limit:
-                break
-
-    if new_candidates:
-        take_from(new_candidates, 1)
-
-    remaining_new_needed = max(0, MIN_NEW_ARTICLES - len(selected))
-    if remaining_new_needed > 0:
-        take_from(new_candidates[1:], remaining_new_needed)
-
-    target_size = max(MIN_FEED_ARTICLES, TARGET_FEED_SIZE)
-    remaining_slots = max(0, target_size - len(selected))
-    if remaining_slots > 0:
-        combined_pool = sorted(
-            new_candidates + existing_candidates,
-            key=lambda article: article["_score"],
-            reverse=True,
-        )
-        take_from(combined_pool, remaining_slots)
 
     featured_id = selected[0]["id"] if selected else None
     featured_article = next(

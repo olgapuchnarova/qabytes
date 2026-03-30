@@ -34,8 +34,19 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Run Python tests
+        run: python -m unittest discover -s tests -p "test_*.py"
+
+      - name: Run JavaScript tests
+        run: node --test tests/feed_logic.test.js
 
       - name: Generate feed
         run: python generate_feed.py
@@ -54,6 +65,7 @@ jobs:
         run: |
           mkdir site
           cp index.html site/
+          cp feed_logic.js site/
           cp styles.css site/
           cp script.js site/
           cp feed.json site/

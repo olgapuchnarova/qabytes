@@ -1,4 +1,9 @@
-const feedCacheKey = "20260330-2";
+const feedCacheKey = "20260330-3";
+const {
+  filterArticles,
+  sortLatestInsights,
+  getSavedArticles,
+} = globalThis.QABytesFeedLogic;
 
 fetch(`./feed.json?v=${feedCacheKey}`)
   .then((response) => response.json())
@@ -320,33 +325,6 @@ fetch(`./feed.json?v=${feedCacheKey}`)
       }
     }
 
-    function sortLatestInsights(items) {
-      return [...items].sort((left, right) => {
-        const leftRead = getArticleState(left.id).read;
-        const rightRead = getArticleState(right.id).read;
-
-        if (leftRead !== rightRead) {
-          return leftRead ? 1 : -1;
-        }
-
-        if (left.is_new_today !== right.is_new_today) {
-          return left.is_new_today ? -1 : 1;
-        }
-
-        return (right.signal || 0) - (left.signal || 0);
-      });
-    }
-
-    function filterArticles(items) {
-      if (activeFilter === "All") {
-        return items;
-      }
-
-      return items.filter(
-        (article) => article.why_it_matters === activeFilter
-      );
-    }
-
     function renderFilters() {
       if (!filtersContainer) {
         return;
@@ -378,7 +356,10 @@ fetch(`./feed.json?v=${feedCacheKey}`)
     }
 
     function renderFeed() {
-      const filtered = sortLatestInsights(filterArticles(feedArticles));
+      const filtered = sortLatestInsights(
+        filterArticles(feedArticles, activeFilter),
+        getArticleState
+      );
       feedContainer.replaceChildren(
         ...filtered.map((article) => renderCard(article))
       );
@@ -389,9 +370,7 @@ fetch(`./feed.json?v=${feedCacheKey}`)
         return;
       }
 
-      const savedArticles = feedArticles.filter(
-        (article) => getArticleState(article.id).saved
-      );
+      const savedArticles = getSavedArticles(feedArticles, getArticleState);
 
       if (savedArticles.length === 0) {
         savedSection.hidden = true;
