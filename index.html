@@ -9,12 +9,23 @@
 <body>
 
 <header>
-  <h1>QABytes</h1>
-  <p class="tagline">Fresh QA signals, practical angles, and ideas worth reading before the rest of the day gets noisy.</p>
+  <div class="header-bar">
+    <div class="brand-block">
+      <h1>QABytes</h1>
+      <p class="tagline">Fresh QA signals and practical reads for the day ahead.</p>
+    </div>
+    <button id="saved-header-toggle" type="button" aria-expanded="false" aria-label="Toggle saved articles">
+      <span class="bookmark-icon" aria-hidden="true"></span>
+      <span id="saved-header-count" hidden>0</span>
+    </button>
+  </div>
 </header>
 
 <section>
-  <h2>Latest Insights</h2>
+  <div id="saved-section" hidden aria-live="polite">
+    <div id="saved-feed" hidden></div>
+  </div>
+
   <div id="filters"></div>
   <div id="feed"></div>
 </section>

@@ -8,6 +8,10 @@ fetch("./feed.json")
     const feedArticles = data.articles;
     const feedContainer = document.getElementById("feed");
     const filtersContainer = document.getElementById("filters");
+    const savedSection = document.getElementById("saved-section");
+    const savedHeaderToggle = document.getElementById("saved-header-toggle");
+    const savedHeaderCount = document.getElementById("saved-header-count");
+    const savedFeedContainer = document.getElementById("saved-feed");
     const storageKey = "qabytes_article_state";
     const readCompletionDelayMs = 1180;
     const unreadCompletionDelayMs = 1020;
@@ -27,6 +31,7 @@ fetch("./feed.json")
       "Actionable idea",
     ];
     let activeFilter = "All";
+    let isSavedSectionExpanded = false;
 
     function loadArticleState() {
       try {
@@ -120,6 +125,7 @@ fetch("./feed.json")
       const safeUrl = safeExternalUrl(link);
       const state = getArticleState(article.id);
       const isRead = Boolean(state.read);
+      const isSaved = Boolean(state.saved);
 
       const card = document.createElement(safeUrl ? "a" : "article");
       card.className = "card";
@@ -178,8 +184,11 @@ fetch("./feed.json")
       card.appendChild(takeawayLabel);
       card.appendChild(setText(document.createElement("p"), takeaway));
 
-      const readRow = document.createElement("div");
-      readRow.className = "card-actions";
+      const actionsRow = document.createElement("div");
+      actionsRow.className = "card-actions";
+
+      const readAction = document.createElement("div");
+      readAction.className = "card-action";
 
       const readButton = document.createElement("button");
       readButton.type = "button";
@@ -200,7 +209,7 @@ fetch("./feed.json")
       const readText = document.createElement("span");
       readText.className = "read-toggle-text";
       readText.textContent = isRead ? "Read" : "Mark read";
-      readRow.append(readButton, readText);
+      readAction.append(readButton, readText);
 
       readButton.addEventListener("click", (event) => {
         event.preventDefault();
@@ -219,7 +228,7 @@ fetch("./feed.json")
             card.classList.add("is-read-exit");
           }, 320);
           window.setTimeout(() => {
-            renderFilters();
+            renderSavedSection();
             renderFeed();
           }, readCompletionDelayMs);
           return;
@@ -232,12 +241,46 @@ fetch("./feed.json")
           card.classList.add("is-unread-exit");
         }, 300);
         window.setTimeout(() => {
-          renderFilters();
+          renderSavedSection();
           renderFeed();
         }, unreadCompletionDelayMs);
       });
 
-      card.appendChild(readRow);
+      const saveAction = document.createElement("div");
+      saveAction.className = "card-action card-action-save";
+
+      const saveButton = document.createElement("button");
+      saveButton.type = "button";
+      saveButton.className = "save-toggle";
+      if (isSaved) {
+        saveButton.classList.add("is-saved");
+      }
+      saveButton.setAttribute(
+        "aria-label",
+        isSaved ? "Remove from saved" : "Save for later"
+      );
+
+      const saveIcon = document.createElement("span");
+      saveIcon.className = "save-toggle-icon bookmark-icon";
+      saveButton.appendChild(saveIcon);
+
+      const saveText = document.createElement("span");
+      saveText.className = "save-toggle-text";
+      saveText.textContent = isSaved ? "Saved" : "Save";
+      saveAction.append(saveButton, saveText);
+
+      saveButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const nextSavedState = !getArticleState(article.id).saved;
+        updateArticleState(article.id, { saved: nextSavedState });
+        renderSavedSection();
+        renderFeed();
+      });
+
+      actionsRow.append(readAction, saveAction);
+      card.appendChild(actionsRow);
 
       return card;
     }
@@ -322,6 +365,49 @@ fetch("./feed.json")
       );
     }
 
+    function renderSavedSection() {
+      if (!savedSection || !savedFeedContainer || !savedHeaderToggle || !savedHeaderCount) {
+        return;
+      }
+
+      const savedArticles = feedArticles.filter(
+        (article) => getArticleState(article.id).saved
+      );
+
+      if (savedArticles.length === 0) {
+        savedSection.hidden = true;
+        isSavedSectionExpanded = false;
+        savedFeedContainer.hidden = true;
+        savedFeedContainer.replaceChildren();
+        savedHeaderToggle.setAttribute("aria-expanded", "false");
+        savedHeaderToggle.classList.remove("has-saved-items");
+        savedHeaderCount.hidden = true;
+        savedHeaderCount.textContent = "0";
+        return;
+      }
+
+      savedSection.hidden = !isSavedSectionExpanded;
+      savedHeaderToggle.classList.add("has-saved-items");
+      savedHeaderToggle.setAttribute("aria-expanded", String(isSavedSectionExpanded));
+      savedHeaderCount.hidden = false;
+      savedHeaderCount.textContent = `${savedArticles.length}`;
+      savedFeedContainer.hidden = !isSavedSectionExpanded;
+      savedFeedContainer.replaceChildren(
+        ...savedArticles.map((article) => renderCard(article))
+      );
+    }
+
+    if (savedHeaderToggle) {
+      savedHeaderToggle.addEventListener("click", () => {
+        if (!feedArticles.some((article) => getArticleState(article.id).saved)) {
+          return;
+        }
+        isSavedSectionExpanded = !isSavedSectionExpanded;
+        renderSavedSection();
+      });
+    }
+
+    renderSavedSection();
     renderFilters();
     renderFeed();
   })
