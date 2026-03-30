@@ -1,18 +1,17 @@
 :root {
-  --bg: #f8faf8;
-  --bg-glow: #eef3ef;
+  --bg: #f4f6ff;
+  --bg-glow: #d3d3ff;
   --surface: rgba(255, 255, 255, 0.96);
   --surface-strong: #ffffff;
-  --text: #5f6661;
-  --muted: #a0aaa3;
-  --line: rgba(166, 183, 170, 0.22);
-  --ink: #3c403d;
-  --sage: #a6b7aa;
-  --sage-soft: #dce5dc;
-  --sand: #efe8df;
-  --blush: #d39d87;
-  --mint: #47c28b;
-  --gold: #efb83f;
+  --text: #33447d;
+  --muted: #6f7ab5;
+  --line: rgba(0, 0, 128, 0.14);
+  --ink: #000080;
+  --teal: #00cec8;
+  --teal-soft: rgba(0, 206, 200, 0.12);
+  --lavender: #d3d3ff;
+  --lavender-soft: rgba(211, 211, 255, 0.5);
+  --navy-soft: rgba(0, 0, 128, 0.08);
 }
 
 * {
@@ -23,9 +22,9 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
   background:
-    radial-gradient(circle at top left, rgba(166, 183, 170, 0.22), transparent 26%),
-    radial-gradient(circle at top right, rgba(211, 157, 135, 0.12), transparent 18%),
-    linear-gradient(180deg, #ffffff 0%, var(--bg-glow) 38%, var(--bg) 100%);
+    radial-gradient(circle at top left, rgba(0, 206, 200, 0.18), transparent 24%),
+    radial-gradient(circle at top right, rgba(211, 211, 255, 0.8), transparent 26%),
+    linear-gradient(180deg, #ffffff 0%, var(--bg-glow) 42%, var(--bg) 100%);
   color: var(--text);
 }
 
@@ -45,7 +44,7 @@ header h1 {
 header p {
   margin: 14px auto 0;
   max-width: 460px;
-  color: #6f7771;
+  color: var(--muted);
   font-size: 16px;
   line-height: 1.7;
 }
@@ -87,9 +86,9 @@ section h2 {
 
 .filter-chip {
   flex: 0 0 auto;
-  border: 1px solid rgba(166, 183, 170, 0.24);
+  border: 1px solid rgba(0, 0, 128, 0.12);
   background: rgba(255, 255, 255, 0.88);
-  color: #6f7771;
+  color: var(--muted);
   border-radius: 999px;
   padding: 10px 14px;
   font-size: 13px;
@@ -99,9 +98,9 @@ section h2 {
 }
 
 .filter-chip.is-active {
-  background: rgba(166, 183, 170, 0.2);
+  background: var(--teal-soft);
   color: var(--ink);
-  border-color: rgba(166, 183, 170, 0.44);
+  border-color: rgba(0, 206, 200, 0.45);
 }
 
 .card {
@@ -112,7 +111,7 @@ section h2 {
   margin-bottom: 18px;
   border-radius: 28px;
   border: 1px solid var(--line);
-  box-shadow: 0 18px 40px rgba(124, 142, 128, 0.08);
+  box-shadow: 0 18px 40px rgba(0, 0, 128, 0.08);
   transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
   text-decoration: none;
   color: inherit;
@@ -121,13 +120,13 @@ section h2 {
 
 .card.is-read {
   background: rgba(255, 255, 255, 0.82);
-  border-color: rgba(166, 183, 170, 0.14);
-  box-shadow: 0 14px 30px rgba(124, 142, 128, 0.05);
+  border-color: rgba(0, 0, 128, 0.08);
+  box-shadow: 0 14px 30px rgba(0, 0, 128, 0.04);
 }
 
 .card.is-read-pending {
-  border-color: rgba(166, 183, 170, 0.4);
-  box-shadow: 0 22px 40px rgba(124, 142, 128, 0.12);
+  border-color: rgba(0, 206, 200, 0.45);
+  box-shadow: 0 22px 40px rgba(0, 206, 200, 0.16);
 }
 
 .card.is-read-exit {
@@ -146,15 +145,17 @@ section h2 {
 }
 
 #featured .card {
-  background: var(--surface-strong);
-  border-color: rgba(166, 183, 170, 0.28);
-  box-shadow: 0 24px 48px rgba(124, 142, 128, 0.12);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(211, 211, 255, 0.32)),
+    var(--surface-strong);
+  border-color: rgba(0, 206, 200, 0.28);
+  box-shadow: 0 24px 48px rgba(0, 0, 128, 0.1);
 }
 
 .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 24px 46px rgba(124, 142, 128, 0.14);
-  border-color: rgba(166, 183, 170, 0.4);
+  box-shadow: 0 24px 46px rgba(0, 0, 128, 0.14);
+  border-color: rgba(0, 206, 200, 0.38);
 }
 
 .card h2,
@@ -178,7 +179,7 @@ section h2 {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
-  color: var(--muted);
+  color: var(--teal);
   margin-bottom: 12px;
   text-transform: uppercase;
 }
@@ -193,8 +194,8 @@ section h2 {
 
 .why-it-matters {
   display: inline-block;
-  background: rgba(166, 183, 170, 0.16);
-  color: #6f8375;
+  background: var(--teal-soft);
+  color: var(--ink);
   font-size: 13px;
   font-weight: 700;
   padding: 6px 12px;
@@ -203,8 +204,8 @@ section h2 {
 
 .new-badge {
   display: inline-block;
-  background: rgba(211, 157, 135, 0.16);
-  color: #b17d67;
+  background: var(--lavender-soft);
+  color: var(--ink);
   font-size: 12px;
   font-weight: 800;
   padding: 6px 12px;
@@ -225,8 +226,8 @@ section h2 {
 .key-points {
   margin: 18px 0 16px;
   padding: 14px 16px 12px;
-  background: rgba(166, 183, 170, 0.08);
-  border: 1px solid rgba(166, 183, 170, 0.18);
+  background: rgba(211, 211, 255, 0.22);
+  border: 1px solid rgba(0, 0, 128, 0.12);
   border-radius: 18px;
 }
 
@@ -241,7 +242,7 @@ section h2 {
 .key-points ul {
   margin: 0;
   padding-left: 18px;
-  color: #59655f;
+  color: #324177;
 }
 
 .key-points li {
@@ -258,7 +259,7 @@ section h2 {
 }
 
 .card li::marker {
-  color: var(--sage);
+  color: var(--teal);
 }
 
 .card-actions {
@@ -274,9 +275,9 @@ section h2 {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  border: 1px solid rgba(211, 157, 135, 0.42);
-  background: rgba(211, 157, 135, 0.12);
-  color: #b98772;
+  border: 1px solid rgba(0, 206, 200, 0.42);
+  background: rgba(0, 206, 200, 0.12);
+  color: var(--teal);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -286,14 +287,14 @@ section h2 {
 
 .read-toggle:hover {
   transform: scale(1.05);
-  background: rgba(211, 157, 135, 0.18);
-  border-color: rgba(211, 157, 135, 0.56);
+  background: rgba(0, 206, 200, 0.18);
+  border-color: rgba(0, 206, 200, 0.56);
 }
 
 .read-toggle.is-read {
-  background: var(--sage);
+  background: var(--ink);
   color: #ffffff;
-  border-color: rgba(166, 183, 170, 0.8);
+  border-color: rgba(0, 0, 128, 0.8);
 }
 
 .read-toggle-icon {
@@ -315,19 +316,19 @@ section h2 {
 }
 
 .direction-cue-down {
-  color: #8ba092;
+  color: var(--teal);
   animation: direction-cue-down 620ms ease-out forwards;
 }
 
 .direction-cue-up {
-  color: #b98772;
+  color: var(--ink);
   animation: direction-cue-up 600ms ease-out forwards;
 }
 
 .read-toggle-text {
   font-size: 14px;
   font-weight: 700;
-  color: #b98772;
+  color: var(--ink);
   letter-spacing: 0.01em;
 }
 
