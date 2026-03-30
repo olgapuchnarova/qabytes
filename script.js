@@ -5,11 +5,7 @@ fetch("./feed.json")
       return;
     }
 
-    const articles = data.articles;
-    const featured = articles[0];
-    const rest = articles.slice(1);
-
-    const featuredContainer = document.getElementById("featured");
+    const feedArticles = data.articles;
     const feedContainer = document.getElementById("feed");
     const filtersContainer = document.getElementById("filters");
     const storageKey = "qabytes_article_state";
@@ -63,7 +59,7 @@ fetch("./feed.json")
     function showDirectionCue(button, direction) {
       const cue = document.createElement("span");
       cue.className = `direction-cue direction-cue-${direction}`;
-      cue.textContent = direction === "down" ? "↓" : "↑";
+      cue.textContent = direction === "down" ? "\u2193" : "\u2191";
       button.appendChild(cue);
       cue.addEventListener("animationend", () => cue.remove());
     }
@@ -97,6 +93,7 @@ fetch("./feed.json")
 
       const wrapper = document.createElement("div");
       wrapper.className = "key-points";
+
       const heading = document.createElement("strong");
       heading.textContent = "Key points:";
       wrapper.appendChild(heading);
@@ -112,10 +109,10 @@ fetch("./feed.json")
       return wrapper;
     }
 
-    function renderCard(article, isFeatured = false) {
-      const titleTag = isFeatured ? "h2" : "h3";
+    function renderCard(article) {
       const title = article.title || "";
-      const category = article.category || article.source_name || article.source || "";
+      const category =
+        article.category || article.source_name || article.source || "";
       const summary = article.summary || "";
       const takeaway = article.takeaway || article.actionable_takeaway || "";
       const whyItMatters = article.why_it_matters || "";
@@ -160,7 +157,7 @@ fetch("./feed.json")
         card.appendChild(meta);
       }
 
-      const heading = document.createElement(titleTag);
+      const heading = document.createElement("h3");
       heading.textContent = title;
       card.appendChild(heading);
 
@@ -197,7 +194,7 @@ fetch("./feed.json")
 
       const readIcon = document.createElement("span");
       readIcon.className = "read-toggle-icon";
-      readIcon.textContent = "✓";
+      readIcon.textContent = "\u2713";
       readButton.appendChild(readIcon);
 
       const readText = document.createElement("span");
@@ -246,7 +243,7 @@ fetch("./feed.json")
     }
 
     function launchReadBurst(button) {
-      const colors = ["#a6b7aa", "#d39d87", "#d2a96a"];
+      const colors = ["#00cec8", "#d3d3ff", "#000080"];
 
       for (let index = 0; index < 12; index += 1) {
         const particle = document.createElement("span");
@@ -294,7 +291,7 @@ fetch("./feed.json")
       }
 
       const availableLabels = new Set(
-        rest.map((article) => article.why_it_matters).filter(Boolean)
+        feedArticles.map((article) => article.why_it_matters).filter(Boolean)
       );
 
       const chips = taxonomyLabels
@@ -319,13 +316,12 @@ fetch("./feed.json")
     }
 
     function renderFeed() {
-      const filtered = sortLatestInsights(filterArticles(rest));
+      const filtered = sortLatestInsights(filterArticles(feedArticles));
       feedContainer.replaceChildren(
-        ...filtered.map((article) => renderCard(article, false))
+        ...filtered.map((article) => renderCard(article))
       );
     }
 
-    featuredContainer.replaceChildren(renderCard(featured, true));
     renderFilters();
     renderFeed();
   })
