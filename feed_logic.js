@@ -6,6 +6,25 @@
 
   root.QABytesFeedLogic = factory();
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
+  function snapshotArticle(article) {
+    return {
+      id: article.id,
+      title: article.title || "",
+      url: article.url || article.link || "",
+      link: article.link || article.url || "",
+      source: article.source || "",
+      source_name: article.source_name || article.source || "",
+      category: article.category || "",
+      signal: article.signal || 0,
+      why_it_matters: article.why_it_matters || "",
+      summary: article.summary || "",
+      key_points: Array.isArray(article.key_points) ? [...article.key_points] : [],
+      takeaway: article.takeaway || article.actionable_takeaway || "",
+      actionable_takeaway: article.actionable_takeaway || article.takeaway || "",
+      is_new_today: Boolean(article.is_new_today),
+    };
+  }
+
   function filterArticles(items, activeFilter) {
     if (activeFilter === "All") {
       return items;
@@ -31,12 +50,44 @@
     });
   }
 
-  function getSavedArticles(items, getArticleState) {
-    return items.filter((article) => Boolean(getArticleState(article.id).saved));
+  function getSavedArticles(feedArticles, articleState) {
+    const feedById = new Map(feedArticles.map((article) => [article.id, article]));
+    const savedArticles = [];
+
+    Object.entries(articleState || {}).forEach(([articleId, state]) => {
+      if (!state || !state.saved) {
+        return;
+      }
+
+      const currentArticle = feedById.get(articleId);
+      const savedSnapshot =
+        state.saved_article && typeof state.saved_article === "object"
+          ? state.saved_article
+          : null;
+      const mergedArticle = currentArticle
+        ? { ...(savedSnapshot || {}), ...currentArticle }
+        : savedSnapshot;
+
+      if (!mergedArticle || !mergedArticle.id) {
+        return;
+      }
+
+      savedArticles.push({
+        ...mergedArticle,
+        _saved_at: state.saved_at || "",
+      });
+    });
+
+    savedArticles.sort((left, right) =>
+      (right._saved_at || "").localeCompare(left._saved_at || "")
+    );
+
+    return savedArticles.map(({ _saved_at, ...article }) => article);
   }
 
   return {
     filterArticles,
+    snapshotArticle,
     sortLatestInsights,
     getSavedArticles,
   };

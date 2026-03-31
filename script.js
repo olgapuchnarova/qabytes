@@ -1,6 +1,7 @@
-const feedCacheKey = "20260330-3";
+const feedCacheKey = "20260331-1";
 const {
   filterArticles,
+  snapshotArticle,
   sortLatestInsights,
   getSavedArticles,
 } = globalThis.QABytesFeedLogic;
@@ -66,6 +67,27 @@ fetch(`./feed.json?v=${feedCacheKey}`)
         ...changes,
       };
       saveArticleState();
+    }
+
+    function syncSavedSnapshotsWithFeed() {
+      let didChange = false;
+
+      feedArticles.forEach((article) => {
+        const state = getArticleState(article.id);
+        if (!state.saved) {
+          return;
+        }
+
+        articleState[article.id] = {
+          ...state,
+          saved_article: snapshotArticle(article),
+        };
+        didChange = true;
+      });
+
+      if (didChange) {
+        saveArticleState();
+      }
     }
 
     function showDirectionCue(button, direction) {
@@ -298,7 +320,21 @@ fetch(`./feed.json?v=${feedCacheKey}`)
         event.stopPropagation();
 
         const nextSavedState = !getArticleState(article.id).saved;
-        updateArticleState(article.id, { saved: nextSavedState });
+        updateArticleState(
+          article.id,
+          nextSavedState
+            ? {
+                saved: true,
+                saved_at:
+                  getArticleState(article.id).saved_at || new Date().toISOString(),
+                saved_article: snapshotArticle(article),
+              }
+            : {
+                saved: false,
+                saved_at: null,
+                saved_article: null,
+              }
+        );
         renderSavedSection();
         renderFeed();
       });
@@ -370,7 +406,7 @@ fetch(`./feed.json?v=${feedCacheKey}`)
         return;
       }
 
-      const savedArticles = getSavedArticles(feedArticles, getArticleState);
+      const savedArticles = getSavedArticles(feedArticles, articleState);
 
       if (savedArticles.length === 0) {
         savedSection.hidden = true;
@@ -397,7 +433,7 @@ fetch(`./feed.json?v=${feedCacheKey}`)
 
     if (savedHeaderToggle) {
       savedHeaderToggle.addEventListener("click", () => {
-        if (!feedArticles.some((article) => getArticleState(article.id).saved)) {
+        if (getSavedArticles(feedArticles, articleState).length === 0) {
           return;
         }
         isSavedSectionExpanded = !isSavedSectionExpanded;
@@ -405,6 +441,7 @@ fetch(`./feed.json?v=${feedCacheKey}`)
       });
     }
 
+    syncSavedSnapshotsWithFeed();
     renderSavedSection();
     renderFilters();
     renderFeed();

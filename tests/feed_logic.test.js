@@ -3,6 +3,7 @@ const assert = require("node:assert/strict");
 
 const {
   filterArticles,
+  snapshotArticle,
   sortLatestInsights,
   getSavedArticles,
 } = require("../feed_logic.js");
@@ -49,15 +50,75 @@ test("sortLatestInsights orders unread before read, then new, then signal", () =
 });
 
 test("getSavedArticles returns only saved items", () => {
-  const items = [{ id: "1" }, { id: "2" }, { id: "3" }];
+  const items = [{ id: "1", title: "One" }, { id: "2" }, { id: "3", title: "Three" }];
   const state = {
-    "1": { saved: true },
+    "1": { saved: true, saved_article: { id: "1", title: "Old one" }, saved_at: "2026-03-31T10:00:00.000Z" },
     "2": { saved: false },
-    "3": { saved: true },
+    "3": { saved: true, saved_article: { id: "3", title: "Three" }, saved_at: "2026-03-30T10:00:00.000Z" },
   };
 
   assert.deepEqual(
-    getSavedArticles(items, (id) => state[id] || {}),
+    getSavedArticles(items, state),
     [items[0], items[2]]
   );
+});
+
+test("getSavedArticles keeps saved snapshots that are no longer in the feed", () => {
+  const items = [{ id: "1", title: "Still in feed" }];
+  const state = {
+    "1": {
+      saved: true,
+      saved_article: { id: "1", title: "Older title" },
+      saved_at: "2026-03-31T10:00:00.000Z",
+    },
+    "2": {
+      saved: true,
+      saved_article: {
+        id: "2",
+        title: "Saved yesterday",
+        url: "https://example.com/yesterday",
+        why_it_matters: "AI in QA",
+      },
+      saved_at: "2026-03-31T09:00:00.000Z",
+    },
+  };
+
+  assert.deepEqual(
+    getSavedArticles(items, state).map((article) => article.id),
+    ["1", "2"]
+  );
+  assert.equal(getSavedArticles(items, state)[1].title, "Saved yesterday");
+});
+
+test("snapshotArticle keeps the fields needed to render a saved card later", () => {
+  const article = {
+    id: "abc",
+    title: "Saved article",
+    url: "https://example.com/article",
+    source: "rss",
+    source_name: "Example",
+    signal: 4,
+    why_it_matters: "Testing strategy",
+    summary: "Short summary",
+    key_points: ["One", "Two"],
+    takeaway: "Do this",
+    is_new_today: true,
+  };
+
+  assert.deepEqual(snapshotArticle(article), {
+    id: "abc",
+    title: "Saved article",
+    url: "https://example.com/article",
+    link: "https://example.com/article",
+    source: "rss",
+    source_name: "Example",
+    category: "",
+    signal: 4,
+    why_it_matters: "Testing strategy",
+    summary: "Short summary",
+    key_points: ["One", "Two"],
+    takeaway: "Do this",
+    actionable_takeaway: "Do this",
+    is_new_today: true,
+  });
 });
