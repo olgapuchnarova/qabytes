@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-31T09:10:05.523165+00:00",
+  "generated_at": "2026-03-31T09:28:54.414623+00:00",
   "articles": [
     {
       "id": "bf76900e9c7167a6",
@@ -9,13 +9,13 @@
       "source_name": "DEV Community",
       "signal": 4,
       "why_it_matters": "AI in QA",
-      "summary": "The article highlights the limitations of large language models (LLMs) in software development, particularly in making architectural decisions. While LLMs can generate technically correct outputs, they often lack the contextual understanding necessary to make appropriate choices, leading to potential long-term issues in code quality and maintainability.",
+      "summary": "The article highlights the limitations of large language models (LLMs) in software development, particularly in making architectural decisions. While LLMs can generate technically correct outputs, they often lack the contextual understanding necessary to ensure those outputs are appropriate for specific situations, leading to potential long-term issues in code quality and maintainability.",
       "key_points": [
         "LLMs reflect the user's knowledge level, potentially leading to undetected errors in unfamiliar domains.",
-        "Architectural decisions require context that LLMs do not possess, which can result in inconsistent and suboptimal solutions.",
-        "Documentation can help guide LLMs, but human review is still essential to ensure quality and coherence."
+        "Architectural decisions require context that LLMs do not possess, which can result in inappropriate solutions.",
+        "Documentation can help guide LLM outputs, but human review is still essential to catch inconsistencies and errors."
       ],
-      "takeaway": "Relying solely on LLMs for architectural decisions can introduce hidden complexities that may compromise code quality.",
+      "takeaway": "Relying solely on LLMs for architectural decisions can introduce hidden complexities that may not be apparent until later.",
       "first_seen_at": "2026-03-31",
       "last_shown_at": "2026-03-31",
       "expires_at": "2026-04-14",
