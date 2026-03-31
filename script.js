@@ -1,4 +1,4 @@
-const feedCacheKey = "20260331-1";
+const feedCacheKey = "20260331-3";
 const {
   filterArticles,
   snapshotArticle,
@@ -20,6 +20,7 @@ fetch(`./feed.json?v=${feedCacheKey}`)
     const savedHeaderToggle = document.getElementById("saved-header-toggle");
     const savedHeaderCount = document.getElementById("saved-header-count");
     const savedFeedContainer = document.getElementById("saved-feed");
+    const scrollTopButton = document.getElementById("scroll-top-button");
     const storageKey = "qabytes_article_state";
     const readCompletionDelayMs = 1180;
     const unreadCompletionDelayMs = 1020;
@@ -391,14 +392,63 @@ fetch(`./feed.json?v=${feedCacheKey}`)
       filtersContainer.replaceChildren(...chips);
     }
 
+    function updateScrollTopButton() {
+      if (!scrollTopButton) {
+        return;
+      }
+
+      const shouldShow = window.scrollY > 520;
+      scrollTopButton.hidden = !shouldShow;
+      scrollTopButton.classList.toggle("is-visible", shouldShow);
+    }
+
+    function createReadDivider(hasUnreadAbove) {
+      const divider = document.createElement("div");
+      divider.className = "feed-divider";
+
+      const lineLeft = document.createElement("span");
+      lineLeft.className = "feed-divider-line";
+
+      const body = document.createElement("div");
+      body.className = "feed-divider-body";
+
+      const label = document.createElement("strong");
+      label.textContent = hasUnreadAbove
+        ? "You're all caught up"
+        : "Everything below has been read";
+
+      const sublabel = document.createElement("span");
+      sublabel.textContent = hasUnreadAbove
+        ? "Read articles continue below"
+        : "Your completed articles continue below";
+
+      body.append(label, sublabel);
+
+      const lineRight = document.createElement("span");
+      lineRight.className = "feed-divider-line";
+
+      divider.append(lineLeft, body, lineRight);
+      return divider;
+    }
+
     function renderFeed() {
       const filtered = sortLatestInsights(
         filterArticles(feedArticles, activeFilter),
         getArticleState
       );
-      feedContainer.replaceChildren(
-        ...filtered.map((article) => renderCard(article))
+      const firstReadIndex = filtered.findIndex((article) =>
+        Boolean(getArticleState(article.id).read)
       );
+      const nodes = [];
+
+      filtered.forEach((article, index) => {
+        if (index === firstReadIndex) {
+          nodes.push(createReadDivider(firstReadIndex > 0));
+        }
+        nodes.push(renderCard(article));
+      });
+
+      feedContainer.replaceChildren(...nodes);
     }
 
     function renderSavedSection() {
@@ -439,6 +489,14 @@ fetch(`./feed.json?v=${feedCacheKey}`)
         isSavedSectionExpanded = !isSavedSectionExpanded;
         renderSavedSection();
       });
+    }
+
+    if (scrollTopButton) {
+      scrollTopButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+      window.addEventListener("scroll", updateScrollTopButton, { passive: true });
+      updateScrollTopButton();
     }
 
     syncSavedSnapshotsWithFeed();
