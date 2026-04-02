@@ -126,9 +126,9 @@
     "canonical_url": "https://www.thoughtworks.com/insights/articles/graph-neural-networks-in-fraud-prevention",
     "title": "Unlocking the relational power of graph neural networks in fraud prevention",
     "first_seen_at": "2026-03-25",
-    "last_shown_at": "2026-03-31",
+    "last_shown_at": "2026-04-02",
     "expires_at": "2026-04-08",
-    "times_shown": 4,
+    "times_shown": 5,
     "status": "active",
     "source": "rss",
     "signal": 4,
@@ -276,13 +276,14 @@
     "source": "rss",
     "signal": 4,
     "why_it_matters": "AI in QA",
-    "summary": "The article discusses the evolution of software engineering towards an AI-native approach, emphasizing the need for structured orchestration of AI agents and specialized models. This shift is crucial for enhancing productivity and quality in software development, particularly in QA processes.",
+    "summary": "The article outlines the evolution of software engineering towards an AI-native approach, emphasizing the need for structured orchestration of AI agents and specialized models. It highlights the importance of these components in enhancing productivity and quality in software development.",
     "key_points": [
-      "AI agents are becoming integral to the software development workflow, enhancing automation and efficiency.",
-      "The industry is moving towards specialized AI models tailored for distinct tasks within the software lifecycle.",
-      "Successful software development will require adept orchestration of these AI models to optimize performance and context-awareness."
+      "The shift from 'vibe coding' to a structured AI-native engineering approach.",
+      "The role of specialized models in improving task execution and quality assurance.",
+      "The necessity for agents to orchestrate various AI models for effective software development."
     ],
-    "takeaway": "Embracing AI as a structured engineering stack is essential for modern QA practices."
+    "takeaway": "Embracing AI as a sophisticated engineering stack is crucial for achieving excellence in software development.",
+    "source_name": "Thoughtworks"
   },
   "82391f8b039e4001": {
     "id": "82391f8b039e4001",
@@ -417,15 +418,15 @@
     "times_shown": 0,
     "status": "active",
     "source": "rss",
-    "signal": 4,
+    "signal": 3,
     "why_it_matters": "Quality practice",
-    "summary": "Sorting lines in configuration files can significantly enhance readability and maintainability, making it easier to spot errors. This practice not only helps in identifying bugs but also contributes to a more organized codebase, which is crucial for collaborative environments.",
+    "summary": "Sorting lines in source code can significantly enhance readability and maintainability, making it easier to spot errors like duplicate flags. This practice not only helps in identifying bugs but also contributes to a cleaner codebase, which is essential for effective collaboration among QA engineers and developers.",
     "key_points": [
-      "Sorted configurations reduce the likelihood of conflicting settings.",
-      "Improved readability aids in quicker debugging and feature testing.",
-      "Integrating sorting tools into the development workflow can streamline processes."
+      "Sorted code is easier to read and maintain.",
+      "Identifying duplicate configurations can prevent bugs.",
+      "Implementing sorting tools can streamline the development process."
     ],
-    "takeaway": "Implementing sorting practices in code can prevent bugs and enhance team collaboration.",
+    "takeaway": "Adopting sorting practices in code can lead to improved quality and fewer bugs.",
     "source_name": "Google Testing Blog"
   },
   "3e733145050d3832": {
@@ -695,9 +696,9 @@
     "canonical_url": "http://testing.googleblog.com/2026/03/set-safe-defaults-for-flags.html",
     "title": "Set Safe Defaults for Flags",
     "first_seen_at": "2026-03-26",
-    "last_shown_at": "2026-03-31",
+    "last_shown_at": "2026-04-02",
     "expires_at": "2026-04-09",
-    "times_shown": 3,
+    "times_shown": 4,
     "status": "active",
     "source": "rss",
     "signal": 4,
@@ -716,9 +717,9 @@
     "canonical_url": "https://www.thoughtworks.com/insights/articles/making-sense-saaspocalypse",
     "title": "Making sense of the SaaSpocalypse",
     "first_seen_at": "2026-03-26",
-    "last_shown_at": "2026-03-31",
+    "last_shown_at": "2026-04-02",
     "expires_at": "2026-04-09",
-    "times_shown": 1,
+    "times_shown": 2,
     "status": "active",
     "source": "rss",
     "signal": 4,
@@ -1017,13 +1018,14 @@
     "source": "rss",
     "signal": 4,
     "why_it_matters": "AI in QA",
-    "summary": "The conversation highlights the evolution of AI agents and the challenges organizations face in adopting them. While there was initial excitement about the potential of AI agents, the reality has revealed significant gaps in infrastructure, trust, and data readiness that hinder their effective implementation.",
+    "summary": "The conversation highlights the evolution of AI agents and the challenges organizations face in adopting them. While there was initial excitement about the potential of AI agents, the reality has revealed significant gaps in infrastructure, trust, and data readiness that hinder effective implementation.",
     "key_points": [
-      "Infrastructure for AI agents is lacking, especially in legacy organizations.",
-      "A significant trust deficit exists among developers regarding AI technologies.",
-      "Most enterprise data is not structured for machine consumption, complicating AI adoption."
+      "AI agents have not delivered the expected utopia, leading to a more rational understanding of their capabilities.",
+      "Infrastructure gaps, including AI-ready data centers and multi-node architectures, are major blockers for adoption.",
+      "A significant trust deficit exists among developers regarding the reliability of AI, impacting its integration into workflows."
     ],
-    "takeaway": "Organizations must address infrastructure, trust, and data readiness to fully leverage the potential of AI agents."
+    "takeaway": "Organizations must address infrastructure and trust issues to fully leverage AI agents in their processes.",
+    "source_name": "Stack Overflow Blog"
   },
   "29e9342ae7df74b5": {
     "id": "29e9342ae7df74b5",
@@ -1087,13 +1089,13 @@
     "source": "rss",
     "signal": 4,
     "why_it_matters": "Testing strategy",
-    "summary": "The article emphasizes the importance of embracing uncertainty when planning product development without clear product-market fit. It encourages teams to adopt an incremental approach, focusing on hypothesis testing and iterative feedback rather than exhaustive upfront planning.",
+    "summary": "The article emphasizes the importance of embracing uncertainty when developing products without clear product-market fit. It advocates for an incremental approach to development, focusing on hypothesis testing and iterative feedback rather than exhaustive upfront planning.",
     "key_points": [
       "Accept limited visibility and focus on short-term planning.",
       "Utilize a hypothesis-driven approach to guide development.",
-      "Establish preliminary metrics to assess progress toward product-market fit."
+      "Prioritize gathering user feedback to inform subsequent iterations."
     ],
-    "takeaway": "Comfort with ambiguity and a focus on iterative development are crucial for achieving product-market fit.",
+    "takeaway": "Embrace ambiguity in product development by adopting an iterative, feedback-driven strategy.",
     "source_name": "Increment"
   },
   "85aa650ada6858e9": {
@@ -1635,9 +1637,9 @@
     "canonical_url": "https://thenewstack.io/ai-agent-validation-bottleneck",
     "title": "Enterprise dev teams are about to hit a wall. And CI pipelines can\u2019t save them.",
     "first_seen_at": "2026-03-27",
-    "last_shown_at": "2026-04-01",
+    "last_shown_at": "2026-04-02",
     "expires_at": "2026-04-10",
-    "times_shown": 2,
+    "times_shown": 3,
     "status": "active",
     "source": "rss",
     "source_name": "The New Stack",
@@ -1761,9 +1763,9 @@
     "canonical_url": "https://dev.to/sbis04/ghost-maintainer-an-ai-junior-partner-for-open-source-11l0",
     "title": "Ghost Maintainer \u2014 An AI Junior Partner for Open Source",
     "first_seen_at": "2026-03-28",
-    "last_shown_at": "2026-04-01",
+    "last_shown_at": "2026-04-02",
     "expires_at": "2026-04-11",
-    "times_shown": 13,
+    "times_shown": 14,
     "status": "active",
     "source": "devto",
     "source_name": "DEV Community",
@@ -2086,9 +2088,9 @@
     "canonical_url": "https://dev.to/sitewatch/uptime-monitoring-is-a-lie-heres-what-it-actually-misses-1258",
     "title": "Uptime Monitoring Is a Lie. Here's What It Actually Misses",
     "first_seen_at": "2026-03-29",
-    "last_shown_at": "2026-03-31",
+    "last_shown_at": "2026-04-02",
     "expires_at": "2026-04-12",
-    "times_shown": 2,
+    "times_shown": 3,
     "status": "active",
     "source": "devto",
     "source_name": "DEV Community",
@@ -2304,13 +2306,13 @@
     "source_name": "Increment",
     "signal": 4,
     "why_it_matters": "Actionable idea",
-    "summary": "Individual contributors (ICs) play a crucial role in the roadmap planning process, yet they often lack a voice in it. By understanding the planning dynamics and actively participating, ICs can leverage their unique insights to influence project prioritization and align their work with broader company goals.",
+    "summary": "Individual contributors (ICs) can significantly influence the engineering roadmap by actively participating in the planning process. By formulating insightful hypotheses and understanding stakeholder perspectives, ICs can align their contributions with company goals and enhance project impact.",
     "key_points": [
       "ICs should clarify their opinions and hypotheses early in the planning process.",
-      "Understanding the planning cycle and stakeholder perspectives enhances IC contributions.",
-      "Direct customer feedback is vital for refining project objectives and ensuring alignment with user needs."
+      "Understanding the planning cycle and stakeholder perspectives is crucial for meaningful contributions.",
+      "Direct customer feedback is essential for refining project objectives and ensuring alignment with user needs."
     ],
-    "takeaway": "ICs can significantly impact roadmap planning by actively engaging in the process and advocating for projects that align with their team's strengths and customer needs."
+    "takeaway": "ICs can elevate their role in roadmap planning by proactively engaging with stakeholders and customers to shape impactful projects."
   },
   "65b4c5f758b5c42d": {
     "id": "65b4c5f758b5c42d",
@@ -2905,9 +2907,9 @@
     "canonical_url": "https://dev.to/aralroca/from-maintaining-open-source-libraries-to-building-an-ai-powered-tools-os-with-rust-and-webassembly-3eg4",
     "title": "AI agents shouldn't control your apps; they should be the app",
     "first_seen_at": "2026-04-01",
-    "last_shown_at": "2026-04-01",
+    "last_shown_at": "2026-04-02",
     "expires_at": "2026-04-15",
-    "times_shown": 1,
+    "times_shown": 2,
     "status": "active",
     "source": "devto",
     "source_name": "DEV Community",
@@ -2937,10 +2939,10 @@
     "summary": "JetBrains is addressing the potential governance challenges posed by the rapid adoption of AI coding agents in software development. As organizations scale their use of these agents, the need for effective oversight and ROI measurement becomes critical to avoid operational chaos.",
     "key_points": [
       "90% of developers are using AI at work, but only 13% utilize it across the full software development lifecycle.",
-      "JetBrains Central aims to provide a governance platform to manage AI agent workflows and ensure alignment with business outcomes.",
-      "The platform allows integration with existing tools and aims to prevent the creation of a parallel coordination layer."
+      "JetBrains Central aims to provide a governance framework for managing AI agent workflows and their integration with existing systems.",
+      "The platform emphasizes the importance of context and coordination between human and AI agents to ensure predictable outcomes."
     ],
-    "takeaway": "Effective governance of AI agents is essential to prevent operational complexity and ensure measurable business value."
+    "takeaway": "As AI agents proliferate, organizations must prioritize governance to prevent operational complexity and ensure alignment with business objectives."
   },
   "4b0182905292166a": {
     "id": "4b0182905292166a",
@@ -3109,5 +3111,361 @@
       "Poor design leads to hidden defects, which testing can reveal."
     ],
     "takeaway": "The most valuable test cases highlight design deficiencies, reinforcing the need for a QA mindset from the outset."
+  },
+  "e117be290558d44a": {
+    "id": "e117be290558d44a",
+    "canonical_url": "https://dev.to/ailoitte_sk/token-cost-optimization-in-production-llms3-approaches-with-real-numbers-40hm",
+    "title": "Token Cost Optimization in Production LLMs: 3 Approaches With Real Numbers",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": null,
+    "expires_at": "2026-04-16",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "Cost implication",
+    "summary": "The article outlines three effective strategies for optimizing token costs in production LLMs, significantly reducing inference expenses without altering the underlying model. By implementing prompt compression, intelligent model routing, and semantic caching, organizations can manage their AI operational costs more effectively.",
+    "key_points": [
+      "Prompt compression can reduce token count by 38% with minimal quality loss.",
+      "Intelligent model routing allows for cost-effective handling of simpler queries.",
+      "Semantic caching can achieve a 34% cache hit rate, eliminating unnecessary inference costs."
+    ],
+    "takeaway": "Optimizing token costs in LLMs is crucial for managing AI operational budgets effectively."
+  },
+  "b145647764c3cfac": {
+    "id": "b145647764c3cfac",
+    "canonical_url": "https://dev.to/vishalvi/how-much-gpu-memory-does-your-llm-actually-need-40le",
+    "title": "How Much GPU Memory Does Your LLM Actually Need?",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": null,
+    "expires_at": "2026-04-16",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "Cost implication",
+    "summary": "Understanding GPU memory requirements is crucial for effective LLM deployment, as miscalculations can lead to significant financial consequences. The article emphasizes the importance of accounting for both model weights and additional memory needs, particularly the key-value cache, which can dramatically increase GPU memory requirements.",
+    "key_points": [
+      "Underprovisioning GPU memory can lead to out-of-memory crashes.",
+      "Overprovisioning results in unnecessary costs, potentially thousands of dollars per month.",
+      "Quantization techniques like INT4 can significantly reduce memory usage without compromising quality."
+    ],
+    "takeaway": "Accurate GPU memory sizing is essential for balancing performance and cost in LLM deployments."
+  },
+  "0be0504925e76f39": {
+    "id": "0be0504925e76f39",
+    "canonical_url": "https://dev.to/krinosystems/bdd-test-cases-from-user-stories-5-steps-and-12-scenarios-g76",
+    "title": "BDD Test Cases from User Stories: 5 Steps and 12 Scenarios",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": null,
+    "expires_at": "2026-04-16",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "The article emphasizes the importance of a structured approach to deriving test cases from user stories, particularly through Behavior-Driven Development (BDD). It highlights the need to consider edge cases and boundary conditions to prevent bugs that often arise from overlooked scenarios.",
+    "key_points": [
+      "User stories describe intent, not behavior, leading to potential gaps in testing.",
+      "A structured decomposition framework helps identify necessary test cases beyond the happy path.",
+      "Choosing the right level of coverage based on risk is crucial for effective testing."
+    ],
+    "takeaway": "A structured approach to test case generation from user stories can significantly reduce the risk of bugs in production."
+  },
+  "42e41ec58aa6eb60": {
+    "id": "42e41ec58aa6eb60",
+    "canonical_url": "https://dev.to/fmartins/stop-testing-your-code-and-ignoring-your-database-catching-n1-in-pytest-4pd5",
+    "title": "\ud83d\uded1 Stop Testing Your Code and Ignoring Your Database (Catching N+1 in Pytest)",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": "2026-04-02",
+    "expires_at": "2026-04-16",
+    "times_shown": 1,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "The article emphasizes the importance of integrating database performance testing into the QA process. By using tools like pytest-capquery, teams can catch N+1 query issues early, preventing costly performance regressions in production environments.",
+    "key_points": [
+      "Green CI pipelines may not reflect database performance issues.",
+      "Inefficient database queries can inflate costs and degrade user experience.",
+      "pytest-capquery allows for rigorous testing of SQL queries alongside application logic."
+    ],
+    "takeaway": "Incorporating database performance testing into your QA strategy is essential for maintaining software resilience and optimizing costs."
+  },
+  "b5013624588240a5": {
+    "id": "b5013624588240a5",
+    "canonical_url": "https://dev.to/beefedai/qa-risk-register-mitigation-plans-24nk",
+    "title": "QA Risk Register & Mitigation Plans",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": null,
+    "expires_at": "2026-04-16",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "The article emphasizes the importance of a structured QA risk register and mitigation plans to enhance release processes. By clearly defining risks, ownership, and mitigation strategies, teams can improve decision-making and reduce release delays.",
+    "key_points": [
+      "A well-structured risk register acts as a control plane for QA processes.",
+      "Assigning risk owners is crucial for accountability and visibility.",
+      "Automating score calculations and integrating tools can streamline risk management."
+    ],
+    "takeaway": "Implementing a living risk register can significantly reduce QA-driven release delays."
+  },
+  "585808e8f67112b1": {
+    "id": "585808e8f67112b1",
+    "canonical_url": "https://dev.to/henry_hang/how-to-test-twilio-webhooks-with-hookcap-1kfc",
+    "title": "How to Test Twilio Webhooks with HookCap",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": null,
+    "expires_at": "2026-04-16",
+    "times_shown": 0,
+    "status": "active"
+  },
+  "9abef7b62891353c": {
+    "id": "9abef7b62891353c",
+    "canonical_url": "https://dev.to/henry_hang/how-to-test-discord-webhooks-with-hookcap-4oj4",
+    "title": "How to Test Discord Webhooks with HookCap",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": null,
+    "expires_at": "2026-04-16",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 3,
+    "why_it_matters": "Testing strategy",
+    "summary": "The article discusses the nuances of testing Discord webhooks, particularly focusing on the interactions endpoint. It highlights the importance of understanding the different types of webhooks and the tools available for effective testing, such as HookCap.",
+    "key_points": [
+      "Differentiates between incoming webhooks and bot event webhooks.",
+      "Emphasizes the need for timely responses to interaction tokens.",
+      "Introduces HookCap as a tool for capturing and inspecting interactions."
+    ],
+    "takeaway": "Understanding the specific requirements and tools for testing webhooks can enhance the effectiveness of your testing strategy."
+  },
+  "b520340985c8f21d": {
+    "id": "b520340985c8f21d",
+    "canonical_url": "https://dev.to/testinat0r/the-integration-tax-walled-garden-agent-strategies-wont-scale-mxn-vs-mn-g5f",
+    "title": "The Integration Tax: Walled-Garden Agent Strategies Won't Scale (MxN vs. M+N)",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": null,
+    "expires_at": "2026-04-16",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "Industry change",
+    "summary": "The article highlights the challenges faced by integration engineers and recruiters as the number of AI agents in recruiting grows. It emphasizes the need for domain-specific schemas to improve interoperability and reduce costs associated with parsing unstructured data.",
+    "key_points": [
+      "The rapid increase in AI recruiting agents leads to integration overload for engineers.",
+      "Current integration methods are inefficient, relying on unstructured data formats like PDFs.",
+      "Domain-specific schemas could significantly reduce costs and improve agent efficiency."
+    ],
+    "takeaway": "Without standardized data formats, the integration of AI agents in various industries will struggle to be sustainable."
+  },
+  "e47f80f25d7295bd": {
+    "id": "e47f80f25d7295bd",
+    "canonical_url": "https://dev.to/swmcc/extracting-authentication-to-a-microservice-h99",
+    "title": "Extracting Authentication to a Microservice",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": null,
+    "expires_at": "2026-04-16",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "Extracting authentication into a dedicated microservice enhances scalability and security while ensuring consistent user access across multiple applications. The approach emphasizes starting simple with a focus on fast iteration and testing, which is crucial for maintaining a robust authentication system.",
+    "key_points": [
+      "Centralized identity provider improves consistency in authentication and authorization.",
+      "Independent scaling of the auth service optimizes performance based on specific workload patterns.",
+      "In-memory testing and layered architecture facilitate rapid development and maintainability."
+    ],
+    "takeaway": "Starting with a simple solution and migrating to a more robust system later can lead to effective and efficient development processes."
+  },
+  "daefa4a1a0e957ab": {
+    "id": "daefa4a1a0e957ab",
+    "canonical_url": "https://www.billiontoone.com/covid-19",
+    "title": "We\u2019re working on 1M Covid-19 testing capacity per day",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": null,
+    "expires_at": "2026-04-16",
+    "times_shown": 0,
+    "status": "active"
+  },
+  "4004923a2e9a701b": {
+    "id": "4004923a2e9a701b",
+    "canonical_url": "https://dev.to/sdetcode/why-most-qa-engineers-cant-practice-their-core-skill-and-how-mutation-testing-changes-that-1k7n",
+    "title": "Why Most QA Engineers Can't Practice Their Core Skill \u2014 and How Mutation Testing Changes That",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": "2026-04-02",
+    "expires_at": "2026-04-16",
+    "times_shown": 1,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "Quality practice",
+    "summary": "Mutation testing offers QA engineers a structured way to improve their skills by providing measurable feedback on test effectiveness. This approach shifts the focus from merely writing tests to understanding how well those tests can identify potential defects. As a result, it enhances the overall quality of testing practices in the industry.",
+    "key_points": [
+      "Mutation testing introduces a clear feedback loop for QA engineers.",
+      "It emphasizes the importance of thinking adversarially when designing tests.",
+      "Kill ratios provide an objective measure of test effectiveness."
+    ],
+    "takeaway": "Mutation testing transforms how QA engineers can practice and demonstrate their skills, bridging a critical gap in the field."
+  },
+  "2f4304b27e53bd1e": {
+    "id": "2f4304b27e53bd1e",
+    "canonical_url": "https://dev.to/lengochoangminh/how-i-built-a-playwright-pytest-automation-framework-with-an-ai-assistant-5adi",
+    "title": "How I Built a Playwright Pytest Automation Framework with an AI Assistant",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": null,
+    "expires_at": "2026-04-16",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "AI in QA",
+    "summary": "The integration of AI assistants in test automation can significantly enhance productivity by handling repetitive tasks and ensuring consistency in code generation. By defining clear rules and leveraging AI capabilities, QA engineers can focus on higher-level decision-making and architecture.",
+    "key_points": [
+      "AI accelerates repetitive tasks in test automation.",
+      "Defined rules and conventions lead to consistent code generation.",
+      "AI assistance reduces cognitive load for engineers."
+    ],
+    "takeaway": "Embracing AI in QA processes can lead to faster and more consistent test automation outcomes."
+  },
+  "dbdc2b018236bde5": {
+    "id": "dbdc2b018236bde5",
+    "canonical_url": "https://thenewstack.io/cursor-self-hosted-coding-agents",
+    "title": "Why Cursor is bringing self-hosted AI agents to the Fortune 500",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": null,
+    "expires_at": "2026-04-16",
+    "times_shown": 0,
+    "status": "active",
+    "source": "rss",
+    "source_name": "The New Stack",
+    "signal": 4,
+    "why_it_matters": "Tooling trend",
+    "summary": "Cursor's introduction of self-hosted AI agents addresses significant security concerns for companies, particularly in regulated industries. By allowing organizations to run AI coding agents within their own infrastructure, Cursor enhances the flexibility and control over sensitive code and data.",
+    "key_points": [
+      "Self-hosted agents provide tighter security control by keeping code and build data within a company's environment.",
+      "This move caters to the growing demand for local execution of coding agents, particularly in regulated industries.",
+      "Cursor's strategy reflects a broader trend of companies seeking to maintain control over their development environments while leveraging AI capabilities."
+    ],
+    "takeaway": "Self-hosting AI agents can significantly enhance security and compliance for organizations, making AI tools more accessible in sensitive environments."
+  },
+  "9b85a208cce561a1": {
+    "id": "9b85a208cce561a1",
+    "canonical_url": "https://dev.to/varshithvhegde/the-great-claude-code-leak-of-2026-accident-incompetence-or-the-best-pr-stunt-in-ai-history-3igm",
+    "title": "The Great Claude Code Leak of 2026: Accident, Incompetence, or the Best PR Stunt in AI History?",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": null,
+    "expires_at": "2026-04-16",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "Governance risk",
+    "summary": "The leak of Claude Code's source code highlights significant governance risks in software development, particularly around configuration management and security practices. This incident serves as a cautionary tale for organizations to prioritize robust oversight in their deployment processes to prevent similar mishaps.",
+    "key_points": [
+      "Two configuration failures led to the exposure of sensitive source code.",
+      "The incident underscores the importance of thorough testing and validation of build tools.",
+      "The leak raises questions about the adequacy of security measures in software supply chains."
+    ],
+    "takeaway": "Organizations must enhance governance and oversight in their software deployment processes to mitigate risks of accidental exposure."
+  },
+  "84745f0430c1618b": {
+    "id": "84745f0430c1618b",
+    "canonical_url": "https://dev.to/tokvera/how-to-add-ai-gateway-observability-to-a-production-control-plane-4gbb",
+    "title": "How to Add AI Gateway Observability to a Production Control Plane",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": null,
+    "expires_at": "2026-04-16",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "AI in QA",
+    "summary": "The article emphasizes the importance of observability in AI gateways as they become integral to production control planes. By providing clear traces of decision-making processes, teams can better diagnose issues and improve operational efficiency.",
+    "key_points": [
+      "AI gateways serve as a central point for policy enforcement and traffic shaping.",
+      "Observability in gateways allows teams to distinguish between issues caused by the gateway and those from downstream models.",
+      "A clear operational trace of gateway decisions enhances debugging and overall control plane management."
+    ],
+    "takeaway": "Effective observability in AI gateways is crucial for understanding and optimizing production workflows."
+  },
+  "b26229504e2e807a": {
+    "id": "b26229504e2e807a",
+    "canonical_url": "https://9to5mac.com/2026/01/16/iphone-apple-app-store-search-results-ads-new-design",
+    "title": "Apple testing new App Store design that blurs the line between ads and results",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": null,
+    "expires_at": "2026-04-16",
+    "times_shown": 0,
+    "status": "active",
+    "source": "hn",
+    "source_name": "Hacker News",
+    "signal": 3,
+    "why_it_matters": "Industry change",
+    "summary": "Apple's testing of a new App Store design blurs the distinction between ads and organic search results, potentially impacting user experience. The change, which removes the blue background from sponsored results, may lead to increased click-through rates but raises concerns about transparency for users. This shift reflects broader trends in how companies are integrating advertising within user interfaces.",
+    "key_points": [
+      "Apple is A/B testing a new App Store design that integrates ads more closely with organic results.",
+      "The only clear indicator of paid placements is a small 'Ad' banner next to the app icon.",
+      "This change could mislead users and affect their ability to distinguish between ads and genuine search results."
+    ],
+    "takeaway": "The integration of ads into search results highlights the need for transparency in user interfaces to maintain trust."
+  },
+  "27ab1f4bca421f8c": {
+    "id": "27ab1f4bca421f8c",
+    "canonical_url": "https://dev.to/prithwiraj_das_8bc02a0871/feature-flags-are-not-a-free-lunch-460b",
+    "title": "Feature Flags Are Not a Free Lunch",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": "2026-04-02",
+    "expires_at": "2026-04-16",
+    "times_shown": 1,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 4,
+    "why_it_matters": "Governance risk",
+    "summary": "Feature flags can introduce significant technical debt if not managed properly, leading to complex dependencies and untested combinations. The article emphasizes the importance of lifecycle governance to prevent flag sprawl and maintain code quality.",
+    "key_points": [
+      "Feature flags often accumulate responsibilities beyond their original intent.",
+      "Client-specific targeting can lead to untested application states, increasing the risk of production incidents.",
+      "Establishing clear governance and naming conventions is crucial for managing feature flags effectively."
+    ],
+    "takeaway": "Implementing feature flags requires careful management and governance to avoid creating technical debt and operational risks."
+  },
+  "4153550a9c26390c": {
+    "id": "4153550a9c26390c",
+    "canonical_url": "https://dev.to/suhas_mallesh/vertex-ai-workbench-with-terraform-your-ml-workspace-on-gcp-4gn6",
+    "title": "Vertex AI Workbench with Terraform: Your ML Workspace on GCP \ud83d\udd2c",
+    "first_seen_at": "2026-04-02",
+    "last_shown_at": null,
+    "expires_at": "2026-04-16",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "signal": 3,
+    "why_it_matters": "Tooling trend",
+    "summary": "The introduction of Vertex AI Workbench on GCP highlights a growing trend towards integrated ML environments that streamline the development process for data scientists. By leveraging Terraform for consistent provisioning, teams can enhance collaboration and maintain standardized configurations across their ML workflows.",
+    "key_points": [
+      "Vertex AI Workbench provides a comprehensive ML workspace with pre-installed frameworks and GPU support.",
+      "Terraform enables consistent instance provisioning, which is crucial for team collaboration and configuration management.",
+      "Cost control measures, such as idle-timeout settings, help manage expenses associated with GPU usage."
+    ],
+    "takeaway": "Integrating tools like Vertex AI Workbench with Terraform can significantly improve the efficiency and consistency of ML development environments."
   }
 }
