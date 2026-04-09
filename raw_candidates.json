@@ -1,13 +1,43 @@
 [
   {
-    "title": "The Test Manager\u2019s Guide: From Chaos to Predictable Quality \u2014 Part 2: MVP Test Strategy \u2014 First 30 Days Wins",
-    "url": "https://dev.to/abdulosman/the-test-managers-guide-from-chaos-to-predictable-quality-part-2-mvp-test-strategy-first-30-m74",
+    "title": "How We Use Gherkin, Envelopes, and Schemas to Shape Agent Behavior",
+    "url": "https://dev.to/lihsuanlung/how-we-use-gherkin-envelopes-and-schemas-to-shape-agent-behavior-3obe",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Seizing the means of messenger production",
-    "url": "https://stackoverflow.blog/2026/04/03/seizing-the-means-of-messenger-production/",
+    "title": "Arrange Your Code to Communicate Data Flow",
+    "url": "http://testing.googleblog.com/2025/01/arrange-your-code-to-communicate-data.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
+  },
+  {
+    "title": "AI Agents Write Production Code in CI \u2014 Full Test Pyramid, Multi-Perspective Review, and Bug Investigation",
+    "url": "https://dev.to/mitkotschimev/ai-agents-write-production-code-in-ci-full-test-pyramid-multi-perspective-review-and-bug-44bd",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Planning in the dark",
+    "url": "https://increment.com/planning/planning-for-product-market-fit/",
+    "source": "rss",
+    "source_name": "Increment"
+  },
+  {
+    "title": "I Audited My Own Portfolio for WCAG 2.2 \u2014 Here's What I Found in 30 Minutes",
+    "url": "https://dev.to/priya_nair/i-audited-my-own-portfolio-for-wcag-22-heres-what-i-found-in-30-minutes-4e55",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Prioritizing Small Things",
+    "url": "https://automationpanda.com/2025/12/17/prioritizing-small-things/",
+    "source": "rss",
+    "source_name": "Automation Panda"
+  },
+  {
+    "title": "Prevent agentic identity theft",
+    "url": "https://stackoverflow.blog/2026/03/27/prevent-agentic-identity-theft/",
     "source": "rss",
     "source_name": "Stack Overflow Blog"
   },
@@ -18,16 +48,46 @@
     "source_name": "Hacker News"
   },
   {
-    "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
-    "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel/",
+    "title": "How to perform a structured evaluation of AI conversational solutions",
+    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/how-to-perform-a-structured-evaluation-of-ai-conversational-solutions",
+    "source": "rss",
+    "source_name": "Thoughtworks"
+  },
+  {
+    "title": "The code smells that make your Cypress tests flaky, and how we fixed ours",
+    "url": "https://dev.to/tudorsss-betterqa/the-code-smells-that-make-your-cypress-tests-flaky-and-how-we-fixed-ours-566l",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "My AI Kept Recommending Pajamas for Date Night \u2014 Here's Why",
+    "url": "https://dev.to/alimafana/my-ai-kept-recommending-pajamas-for-date-night-heres-why-1o3b",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "E2E Testing in GitHub Actions: Setup Guide (2026)",
+    "url": "https://dev.to/hai_huang_f196ed9669351e0/e2e-testing-in-github-actions-setup-guide-2026-2637",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "I built a merge gate that quizzes developers on their own code changes \u2014 here's why and how",
+    "url": "https://dev.to/islandbytes/i-built-a-merge-gate-that-quizzes-developers-on-their-own-code-changes-heres-why-and-how-5460",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Blender is testing PeerTube after YouTube blocks their videos worldwide",
+    "url": "https://www.blender.org/media-exposure/youtube-blocks-blender-videos-worldwide/",
     "source": "hn",
     "source_name": "Hacker News"
   },
   {
-    "title": "Simplify Your Code: Functional Core, Imperative Shell",
-    "url": "http://testing.googleblog.com/2025/10/simplify-your-code-functional-core.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
+    "title": "Accused murderer wins right to check source code of DNA testing kit",
+    "url": "https://www.theregister.com/2021/02/04/dna_testing_software/",
+    "source": "hn",
+    "source_name": "Hacker News"
   },
   {
     "title": "Facebook Messenger begins testing end-to-end encryption using Signal Protocol",
@@ -36,117 +96,57 @@
     "source_name": "Hacker News"
   },
   {
-    "title": "Vibe coding while live streaming",
-    "url": "https://automationpanda.com/2025/08/20/vibe-coding-while-live-streaming/",
-    "source": "rss",
-    "source_name": "Automation Panda"
+    "title": "Your Vibe-Coded App Looks Ugly. Here's What I Did About It.",
+    "url": "https://dev.to/kiwibreaksme/your-vibe-coded-app-looks-ugly-heres-what-i-did-about-it-2nb4",
+    "source": "devto",
+    "source_name": "DEV Community"
   },
   {
-    "title": "Sam Altman promised billions for AI safety. Here\u2019s what OpenAI actually spent.",
-    "url": "https://thenewstack.io/altman-openai-ai-safety/",
+    "title": "With Claude Managed Agents, Anthropic wants to run your AI agents for you",
+    "url": "https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/",
     "source": "rss",
     "source_name": "The New Stack"
   },
   {
-    "title": "I Built Semantic Search Over My Own Creative Archive (ChromaDB + Ollama)",
-    "url": "https://dev.to/meridian-ai/i-built-semantic-search-over-my-own-creative-archive-chromadb-ollama-4oij",
+    "title": "I Scanned 42 US Government Websites Two Weeks Before the ADA Title II Deadline",
+    "url": "https://dev.to/moeatsy/i-scanned-42-us-government-websites-two-weeks-before-the-ada-title-ii-deadline-501a",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "How I Processed 335,000 Tokens in One Night for 57 Cents",
-    "url": "https://dev.to/vonb/how-i-processed-335000-tokens-in-one-night-for-57-cents-5bof",
+    "title": "Connect Claude Code to EClaw: Autonomous AI Task Execution via Kanban",
+    "url": "https://dev.to/eclaw/connect-claude-code-to-eclaw-autonomous-ai-task-execution-via-kanban-1m2p",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "The Testing Skyscraper: A Modern Alternative to the Testing Pyramid",
-    "url": "https://automationpanda.com/2025/09/29/the-testing-skyscraper-a-modern-alternative-to-the-testing-pyramid/",
-    "source": "rss",
-    "source_name": "Automation Panda"
-  },
-  {
-    "title": "A primer on product management for engineers",
-    "url": "https://increment.com/planning/product-management-for-engineers/",
-    "source": "rss",
-    "source_name": "Increment"
-  },
-  {
-    "title": "AI Writes Your Tests. Here's What It Systematically Misses.",
-    "url": "https://dev.to/anhnguyensynctree/ai-writes-your-tests-heres-what-it-systematically-misses-3a38",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Encoding Team Standards",
-    "url": "https://martinfowler.com/articles/reduce-friction-ai/encoding-team-standards.html",
-    "source": "rss",
-    "source_name": "Martin Fowler"
-  },
-  {
-    "title": "I Built a CLI AI Coding Assistant from Scratch \u2014 Here's What I Learned",
-    "url": "https://dev.to/jiayu_fd0917c8f896ea39ab9/i-built-a-cli-ai-coding-assistant-from-scratch-heres-what-i-learned-2ma7",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "ENISA's Secure by Design Playbook: What It Means for Product Teams Under the CRA",
-    "url": "https://dev.to/craevidence/enisas-secure-by-design-playbook-what-it-means-for-product-teams-under-the-cra-35a4",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Unlocking the relational power of graph neural networks in fraud prevention",
-    "url": "https://www.thoughtworks.com/insights/articles/graph-neural-networks-in-fraud-prevention",
-    "source": "rss",
-    "source_name": "Thoughtworks"
-  },
-  {
-    "title": "Beyond vibe coding: The five building blocks of AI-native engineering",
-    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/beyond-vibe-coding-the-five-building-blocks-of-aI-native-engineering",
-    "source": "rss",
-    "source_name": "Thoughtworks"
-  },
-  {
-    "title": "Testing Benford's Law",
-    "url": "http://testingbenfordslaw.com",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "API Explained: From Basics to Real-World Systems (UPI Deep Dive)",
-    "url": "https://dev.to/sreekanth_kuruba_91721e5d/api-explained-from-basics-to-real-world-systems-upi-deep-dive-8gn",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "YouTube is testing a more aggressive approach against ad blockers",
-    "url": "https://www.androidpolice.com/youtube-ad-blockers-three-strikes/",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Apple testing new App Store design that blurs the line between ads and results",
-    "url": "https://9to5mac.com/2026/01/16/iphone-apple-app-store-search-results-ads-new-design/",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Claude Code skill packs: 10 skills that cut my development time in half",
-    "url": "https://dev.to/whoffagents/claude-code-skill-packs-10-skills-that-cut-my-development-time-in-half-m97",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "How can you test your code when you don\u2019t know what\u2019s in it?",
-    "url": "https://stackoverflow.blog/2026/03/31/how-can-you-test-your-code-when-you-don-t-know-what-s-in-it/",
+    "title": "Seizing the means of messenger production",
+    "url": "https://stackoverflow.blog/2026/04/03/seizing-the-means-of-messenger-production/",
     "source": "rss",
     "source_name": "Stack Overflow Blog"
   },
   {
-    "title": "Open-source leaders question whether Meta\u2019s Alexandr Wang will truly give away its AI models",
-    "url": "https://thenewstack.io/meta-open-source-models/",
-    "source": "rss",
-    "source_name": "The New Stack"
+    "title": "Early performance testing: benefits, best practices, and implementation strategies",
+    "url": "https://dev.to/gatling/early-performance-testing-benefits-best-practices-and-implementation-strategies-5h0k",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "AIMock: One Mock Server For Your Entire AI Stack",
+    "url": "https://dev.to/copilotkit/aimock-one-mock-server-for-your-entire-ai-stack-1jhp",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "LLM Cost Monitoring with OpenTelemetry",
+    "url": "https://dev.to/uptrace/llm-cost-monitoring-with-opentelemetry-4ab5",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "\ud83d\ude80 I Built PQPM \u2014 A Process Manager That Doesn't Care What Language You Speak",
+    "url": "https://dev.to/rp01/i-built-pqpm-a-process-manager-that-doesnt-care-what-language-you-speak-npp",
+    "source": "devto",
+    "source_name": "DEV Community"
   }
 ]
