@@ -1,43 +1,19 @@
 [
   {
-    "title": "How We Use Gherkin, Envelopes, and Schemas to Shape Agent Behavior",
-    "url": "https://dev.to/lihsuanlung/how-we-use-gherkin-envelopes-and-schemas-to-shape-agent-behavior-3obe",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Arrange Your Code to Communicate Data Flow",
-    "url": "http://testing.googleblog.com/2025/01/arrange-your-code-to-communicate-data.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
-  },
-  {
-    "title": "AI Agents Write Production Code in CI \u2014 Full Test Pyramid, Multi-Perspective Review, and Bug Investigation",
-    "url": "https://dev.to/mitkotschimev/ai-agents-write-production-code-in-ci-full-test-pyramid-multi-perspective-review-and-bug-44bd",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Planning in the dark",
-    "url": "https://increment.com/planning/planning-for-product-market-fit/",
-    "source": "rss",
-    "source_name": "Increment"
-  },
-  {
-    "title": "I Audited My Own Portfolio for WCAG 2.2 \u2014 Here's What I Found in 30 Minutes",
-    "url": "https://dev.to/priya_nair/i-audited-my-own-portfolio-for-wcag-22-heres-what-i-found-in-30-minutes-4e55",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
     "title": "Prioritizing Small Things",
     "url": "https://automationpanda.com/2025/12/17/prioritizing-small-things/",
     "source": "rss",
     "source_name": "Automation Panda"
   },
   {
-    "title": "Prevent agentic identity theft",
-    "url": "https://stackoverflow.blog/2026/03/27/prevent-agentic-identity-theft/",
+    "title": "Copilot isn't slow, your process is",
+    "url": "https://dev.to/tudorsss-betterqa/copilot-isnt-slow-your-process-is-3c03",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "What the AI trust gap means for enterprise SaaS",
+    "url": "https://stackoverflow.blog/2026/04/02/what-the-ai-trust-gap-means-for-enterprise-saas/",
     "source": "rss",
     "source_name": "Stack Overflow Blog"
   },
@@ -46,30 +22,6 @@
     "url": "https://tylerglaiel.substack.com/p/can-gpt-4-actually-write-code",
     "source": "hn",
     "source_name": "Hacker News"
-  },
-  {
-    "title": "How to perform a structured evaluation of AI conversational solutions",
-    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/how-to-perform-a-structured-evaluation-of-ai-conversational-solutions",
-    "source": "rss",
-    "source_name": "Thoughtworks"
-  },
-  {
-    "title": "The code smells that make your Cypress tests flaky, and how we fixed ours",
-    "url": "https://dev.to/tudorsss-betterqa/the-code-smells-that-make-your-cypress-tests-flaky-and-how-we-fixed-ours-566l",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "My AI Kept Recommending Pajamas for Date Night \u2014 Here's Why",
-    "url": "https://dev.to/alimafana/my-ai-kept-recommending-pajamas-for-date-night-heres-why-1o3b",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "E2E Testing in GitHub Actions: Setup Guide (2026)",
-    "url": "https://dev.to/hai_huang_f196ed9669351e0/e2e-testing-in-github-actions-setup-guide-2026-2637",
-    "source": "devto",
-    "source_name": "DEV Community"
   },
   {
     "title": "I built a merge gate that quizzes developers on their own code changes \u2014 here's why and how",
@@ -84,69 +36,117 @@
     "source_name": "Hacker News"
   },
   {
-    "title": "Accused murderer wins right to check source code of DNA testing kit",
-    "url": "https://www.theregister.com/2021/02/04/dna_testing_software/",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Facebook Messenger begins testing end-to-end encryption using Signal Protocol",
-    "url": "https://whispersystems.org/blog/facebook-messenger/",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Your Vibe-Coded App Looks Ugly. Here's What I Did About It.",
-    "url": "https://dev.to/kiwibreaksme/your-vibe-coded-app-looks-ugly-heres-what-i-did-about-it-2nb4",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "With Claude Managed Agents, Anthropic wants to run your AI agents for you",
-    "url": "https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/",
+    "title": "Planning in the dark",
+    "url": "https://increment.com/planning/planning-for-product-market-fit/",
     "source": "rss",
-    "source_name": "The New Stack"
+    "source_name": "Increment"
   },
   {
-    "title": "I Scanned 42 US Government Websites Two Weeks Before the ADA Title II Deadline",
-    "url": "https://dev.to/moeatsy/i-scanned-42-us-government-websites-two-weeks-before-the-ada-title-ii-deadline-501a",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Connect Claude Code to EClaw: Autonomous AI Task Execution via Kanban",
-    "url": "https://dev.to/eclaw/connect-claude-code-to-eclaw-autonomous-ai-task-execution-via-kanban-1m2p",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Seizing the means of messenger production",
-    "url": "https://stackoverflow.blog/2026/04/03/seizing-the-means-of-messenger-production/",
+    "title": "He designed C++ to solve your code problems",
+    "url": "https://stackoverflow.blog/2026/04/07/he-designed-c-to-solve-your-code-problems/",
     "source": "rss",
     "source_name": "Stack Overflow Blog"
   },
   {
-    "title": "Early performance testing: benefits, best practices, and implementation strategies",
-    "url": "https://dev.to/gatling/early-performance-testing-benefits-best-practices-and-implementation-strategies-5h0k",
+    "title": "The QA team that tried to go 80% automated and what actually happened",
+    "url": "https://dev.to/tudorsss-betterqa/the-qa-team-that-tried-to-go-80-automated-and-what-actually-happened-4mnf",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "AIMock: One Mock Server For Your Entire AI Stack",
-    "url": "https://dev.to/copilotkit/aimock-one-mock-server-for-your-entire-ai-stack-1jhp",
+    "title": "Set Safe Defaults for Flags",
+    "url": "http://testing.googleblog.com/2026/03/set-safe-defaults-for-flags.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
+  },
+  {
+    "title": "Skills Are the New CLI",
+    "url": "https://dev.to/helderberto/skills-are-the-new-cli-225e",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "LLM Cost Monitoring with OpenTelemetry",
-    "url": "https://dev.to/uptrace/llm-cost-monitoring-with-opentelemetry-4ab5",
+    "title": "Sort Lines in Source Code",
+    "url": "http://testing.googleblog.com/2025/09/sort-lines-in-source-code.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
+  },
+  {
+    "title": "The Angular E2E testing setup we actually ship in 2026",
+    "url": "https://dev.to/tudorsss-betterqa/the-angular-e2e-testing-setup-we-actually-ship-in-2026-12c0",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "\ud83d\ude80 I Built PQPM \u2014 A Process Manager That Doesn't Care What Language You Speak",
-    "url": "https://dev.to/rp01/i-built-pqpm-a-process-manager-that-doesnt-care-what-language-you-speak-npp",
+    "title": "Principles of Mechanical Sympathy",
+    "url": "https://martinfowler.com/articles/mechanical-sympathy-principles.html",
+    "source": "rss",
+    "source_name": "Martin Fowler"
+  },
+  {
+    "title": "The Testing Skyscraper: A Modern Alternative to the Testing Pyramid",
+    "url": "https://automationpanda.com/2025/09/29/the-testing-skyscraper-a-modern-alternative-to-the-testing-pyramid/",
+    "source": "rss",
+    "source_name": "Automation Panda"
+  },
+  {
+    "title": "OpenAI\u2019s new $100 tier targets developers hitting Codex (and Claude Code) limits",
+    "url": "https://thenewstack.io/openais-new-100-tier-targets-developers-hitting-codex-and-claude-code-limits/",
+    "source": "rss",
+    "source_name": "The New Stack"
+  },
+  {
+    "title": "How can you test your code when you don\u2019t know what\u2019s in it?",
+    "url": "https://stackoverflow.blog/2026/03/31/how-can-you-test-your-code-when-you-don-t-know-what-s-in-it/",
+    "source": "rss",
+    "source_name": "Stack Overflow Blog"
+  },
+  {
+    "title": "Rethinking leadership: How a sabbatical transformed a CIO into a coding intern  [part one]",
+    "url": "https://www.thoughtworks.com/insights/blog/careers-at-thoughtworks/Rethinking-leadership-cio-journey-as-a-coding-intern",
+    "source": "rss",
+    "source_name": "Thoughtworks"
+  },
+  {
+    "title": "How to perform a structured evaluation of AI conversational solutions",
+    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/how-to-perform-a-structured-evaluation-of-ai-conversational-solutions",
+    "source": "rss",
+    "source_name": "Thoughtworks"
+  },
+  {
+    "title": "Arrange Your Code to Communicate Data Flow",
+    "url": "http://testing.googleblog.com/2025/01/arrange-your-code-to-communicate-data.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
+  },
+  {
+    "title": "Being the only QA in a 6-dev scrum team: honest notes",
+    "url": "https://dev.to/tudorsss-betterqa/being-the-only-qa-in-a-6-dev-scrum-team-honest-notes-4mec",
     "source": "devto",
     "source_name": "DEV Community"
+  },
+  {
+    "title": "Mercedes-Benz W203 Rear Subframe Rust",
+    "url": "https://automationpanda.com/2025/07/24/mercedes-benz-w203-rear-subframe-rust/",
+    "source": "rss",
+    "source_name": "Automation Panda"
+  },
+  {
+    "title": "PyTorch Foundation Expands AI Stack with Safetensors, ExecuTorch, and Helion",
+    "url": "https://thenewstack.io/pytorch-ai-stack-expand/",
+    "source": "rss",
+    "source_name": "The New Stack"
+  },
+  {
+    "title": "Waymo granted permit to begin testing in New York City",
+    "url": "https://www.cnbc.com/2025/08/22/waymo-permit-new-york-city-nyc-rides.html",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "One of the Biggest At-Home DNA Testing Companies Is Working with the FBI",
+    "url": "https://www.buzzfeednews.com/article/salvadorhernandez/family-tree-dna-fbi-investigative-genealogy-privacy",
+    "source": "hn",
+    "source_name": "Hacker News"
   }
 ]
