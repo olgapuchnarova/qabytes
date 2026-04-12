@@ -1,43 +1,13 @@
 [
   {
-    "title": "Planning in the dark",
-    "url": "https://increment.com/planning/planning-for-product-market-fit/",
-    "source": "rss",
-    "source_name": "Increment"
-  },
-  {
-    "title": "I Replaced 12 Kitchen Managers Guessing \"How Much Chicken Do We Need\" With 3 ML Models. Here's the Entire Architecture.",
-    "url": "https://dev.to/dhaivat_jambudia/i-replaced-12-kitchen-managers-guessing-how-much-chicken-do-we-need-with-3-ml-models-heres-the-421e",
+    "title": "Why Static MCP Quality Scores Are Not Enough",
+    "url": "https://dev.to/dinesh_kumar_576bd94722fd/why-static-mcp-quality-scores-are-not-enough-4550",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "I Keep Telling Claude the Same Things. So He Started Writing Them Down Himself.",
-    "url": "https://dev.to/eli_coding/i-keep-telling-claude-the-same-things-so-he-started-writing-them-down-himself-1i9",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "An IC\u2019s guide to roadmap planning",
-    "url": "https://increment.com/planning/individual-contributors-guide-to-roadmap-planning/",
-    "source": "rss",
-    "source_name": "Increment"
-  },
-  {
-    "title": "Vibe coding while live streaming",
-    "url": "https://automationpanda.com/2025/08/20/vibe-coding-while-live-streaming/",
-    "source": "rss",
-    "source_name": "Automation Panda"
-  },
-  {
-    "title": "Mercedes-Benz W203 Rear Subframe Rust",
-    "url": "https://automationpanda.com/2025/07/24/mercedes-benz-w203-rear-subframe-rust/",
-    "source": "rss",
-    "source_name": "Automation Panda"
-  },
-  {
-    "title": "The code smells that make your Cypress tests flaky, and how we fixed ours",
-    "url": "https://dev.to/tudorsss-betterqa/the-code-smells-that-make-your-cypress-tests-flaky-and-how-we-fixed-ours-566l",
+    "title": "Unit Testing Alertmanager Routing and Inhibition Rules",
+    "url": "https://dev.to/frosnerd/unit-testing-alertmanager-routing-and-inhibition-rules-1hj4",
     "source": "devto",
     "source_name": "DEV Community"
   },
@@ -48,34 +18,82 @@
     "source_name": "Martin Fowler"
   },
   {
-    "title": "He designed C++ to solve your code problems",
-    "url": "https://stackoverflow.blog/2026/04/07/he-designed-c-to-solve-your-code-problems/",
+    "title": "What the AI trust gap means for enterprise SaaS",
+    "url": "https://stackoverflow.blog/2026/04/02/what-the-ai-trust-gap-means-for-enterprise-saas/",
     "source": "rss",
     "source_name": "Stack Overflow Blog"
   },
   {
-    "title": "Your staging environment is lying to you",
-    "url": "https://dev.to/tudorsss-betterqa/your-staging-environment-is-lying-to-you-11em",
+    "title": "Arrange Your Code to Communicate Data Flow",
+    "url": "http://testing.googleblog.com/2025/01/arrange-your-code-to-communicate-data.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
+  },
+  {
+    "title": "Why data governance is the secret to AI agent success",
+    "url": "https://thenewstack.io/data-governance-ai-agents/",
+    "source": "rss",
+    "source_name": "The New Stack"
+  },
+  {
+    "title": "Where are the guardrails everyone promised for AI?",
+    "url": "https://thenewstack.io/skiplabs-ai-guardrails-skipper/",
+    "source": "rss",
+    "source_name": "The New Stack"
+  },
+  {
+    "title": "I picked a 5ms keyword router over an LLM meta-router for my AI app. Here's the math.",
+    "url": "https://dev.to/samarth0211/i-picked-a-5ms-keyword-router-over-an-llm-meta-router-for-my-ai-app-heres-the-math-23p2",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Why multi-agent AI security is broken (and the identity patterns that actually work)",
-    "url": "https://dev.to/authora/why-multi-agent-ai-security-is-broken-and-the-identity-patterns-that-actually-work-2oo5",
+    "title": "Testing Benford's Law",
+    "url": "http://testingbenfordslaw.com",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "A Black-Box Framework for Evaluating Trust in AI Agents",
+    "url": "https://dev.to/gaurav_mawari_99978969be3/a-black-box-framework-for-evaluating-trust-in-ai-agents-3681",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "The shifted operation model and MSPs in the AI Age",
-    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/shifted-operation-model-and-msps-in-ai-age",
+    "title": "Why Cursor Keeps Generating Wildcard CORS -- And How to Fix It",
+    "url": "https://dev.to/chandan_karn_fb750e731394/why-cursor-keeps-generating-wildcard-cors-and-how-to-fix-it-3ef",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Facebook Messenger begins testing end-to-end encryption using Signal Protocol",
+    "url": "https://whispersystems.org/blog/facebook-messenger/",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "How I use Claude Code to write tests for untested code \u2014 a complete workflow",
+    "url": "https://dev.to/subprime2010/how-i-use-claude-code-to-write-tests-for-untested-code-a-complete-workflow-32oh",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Rethinking leadership: How a sabbatical transformed a CIO into a coding intern  [part two]",
+    "url": "https://www.thoughtworks.com/insights/blog/careers-at-thoughtworks/cio-journey-as-a-coding-intern-part-two",
     "source": "rss",
     "source_name": "Thoughtworks"
   },
   {
-    "title": "The Testing Skyscraper: A Modern Alternative to the Testing Pyramid",
-    "url": "https://automationpanda.com/2025/09/29/the-testing-skyscraper-a-modern-alternative-to-the-testing-pyramid/",
-    "source": "rss",
-    "source_name": "Automation Panda"
+    "title": "How to Programmatically Install Firefox Extensions (And Why It Breaks)",
+    "url": "https://dev.to/alanwest/how-to-programmatically-install-firefox-extensions-and-why-it-breaks-2b01",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Why I don\u2019t trust my own deployments (and why you should audit your Security Headers)",
+    "url": "https://dev.to/alantalex/why-i-dont-trust-my-own-deployments-and-why-you-should-audit-your-security-headers-19cm",
+    "source": "devto",
+    "source_name": "DEV Community"
   },
   {
     "title": "How the Datadog MCP server can help improve IT operational insight and observability",
@@ -84,69 +102,51 @@
     "source_name": "Thoughtworks"
   },
   {
-    "title": "PyTorch Foundation Expands AI Stack with Safetensors, ExecuTorch, and Helion",
-    "url": "https://thenewstack.io/pytorch-ai-stack-expand/",
-    "source": "rss",
-    "source_name": "The New Stack"
-  },
-  {
-    "title": "\ud83d\ude80 I Built PQPM \u2014 A Process Manager That Doesn't Care What Language You Speak",
-    "url": "https://dev.to/rp01/i-built-pqpm-a-process-manager-that-doesnt-care-what-language-you-speak-npp",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "E2E Email Testing with Playwright and Cypress \u2014 No Gmail Credentials Required",
-    "url": "https://dev.to/qasim157/e2e-email-testing-with-playwright-and-cypress-no-gmail-credentials-required-33ig",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "How to perform a structured evaluation of AI conversational solutions",
-    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/how-to-perform-a-structured-evaluation-of-ai-conversational-solutions",
-    "source": "rss",
-    "source_name": "Thoughtworks"
-  },
-  {
-    "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
-    "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel/",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
     "title": "Gen Z needs a knowledge base (and so do you)",
     "url": "https://stackoverflow.blog/2026/04/09/gen-z-needs-a-knowledge-base-and-so-do-you/",
     "source": "rss",
     "source_name": "Stack Overflow Blog"
   },
   {
-    "title": "YouTube is testing a more aggressive approach against ad blockers",
-    "url": "https://www.androidpolice.com/youtube-ad-blockers-three-strikes/",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Superintelligence With a 26B Model? It Might Actually Be Possible",
-    "url": "https://dev.to/_e7be7c6e5aead9ae3f77b/superintelligence-with-a-26b-model-it-might-actually-be-possible-c60",
+    "title": "I built a local screen reader that reads your screen aloud \u2014 no cloud, no API keys",
+    "url": "https://dev.to/paradisecy/i-built-a-local-screen-reader-that-reads-your-screen-aloud-no-cloud-no-api-keys-m9",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "We\u2019re working on 1M Covid-19 testing capacity per day",
-    "url": "https://www.billiontoone.com/covid-19",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Apple testing new App Store design that blurs the line between ads and results",
-    "url": "https://9to5mac.com/2026/01/16/iphone-apple-app-store-search-results-ads-new-design/",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Every Trending AI Agent Project Is Reinventing Something Humans Already Built",
-    "url": "https://dev.to/willamhou/every-trending-ai-agent-project-is-reinventing-something-humans-already-built-469e",
+    "title": "I Built an Open-Source n8n Alternative with AI Agents \u2014 Here's What I Learned",
+    "url": "https://dev.to/sibercoder/i-built-an-open-source-n8n-alternative-with-ai-agents-heres-what-i-learned-5hlp",
     "source": "devto",
     "source_name": "DEV Community"
+  },
+  {
+    "title": "Querying Your Test Results with OpenSearch MCP",
+    "url": "https://dev.to/bsd/querying-your-test-results-with-opensearch-mcp-51no",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Race Conditions Are Awesome",
+    "url": "https://dev.to/abhijitlaxmanshirwal/race-conditions-are-awesome-3fd9",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Vibe coding while live streaming",
+    "url": "https://automationpanda.com/2025/08/20/vibe-coding-while-live-streaming/",
+    "source": "rss",
+    "source_name": "Automation Panda"
+  },
+  {
+    "title": "Simplify Your Code: Functional Core, Imperative Shell",
+    "url": "http://testing.googleblog.com/2025/10/simplify-your-code-functional-core.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
+  },
+  {
+    "title": "Planning in the dark",
+    "url": "https://increment.com/planning/planning-for-product-market-fit/",
+    "source": "rss",
+    "source_name": "Increment"
   }
 ]
