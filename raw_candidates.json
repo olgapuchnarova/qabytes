@@ -1,67 +1,43 @@
 [
   {
-    "title": "Testing Webhook Integrations Locally: A Complete Developer Guide",
-    "url": "https://dev.to/webhookscout/testing-webhook-integrations-locally-a-complete-developer-guide-3285",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Building AI Workflows for DevOps Teams",
-    "url": "https://dev.to/swrly/building-ai-workflows-for-devops-teams-51p2",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "\"My AI Coding Tools Were Running Up a Tab I Couldn't See \u2014 So I Fixed That\"",
-    "url": "https://dev.to/yiyaoai/my-ai-coding-tools-were-running-up-a-tab-i-couldnt-see-so-i-fixed-that-1g67",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Planning in the dark",
-    "url": "https://increment.com/planning/planning-for-product-market-fit/",
+    "title": "Principles of Mechanical Sympathy",
+    "url": "https://martinfowler.com/articles/mechanical-sympathy-principles.html",
     "source": "rss",
-    "source_name": "Increment"
+    "source_name": "Martin Fowler"
   },
   {
-    "title": "20 lines of code that beat A/B testing every time",
-    "url": "http://stevehanov.ca/blog/index.php?id=132",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Pfizer is testing a pill that, if successful, could cure Covid-19",
-    "url": "https://montrealgazette.com/news/world/pfizer-is-testing-a-pill-that-if-successful-could-become-first-ever-home-cure-for-covid-19",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Adding Persistent Memory to Claude Code with claude-mem \u2014 Plus a DIY Lightweight Alternative",
-    "url": "https://dev.to/kanta13jp1/adding-persistent-memory-to-claude-code-with-claude-mem-plus-a-diy-lightweight-alternative-4gha",
+    "title": "How (and why) I created my API testing tool, Yapitest",
+    "url": "https://dev.to/cd4/how-and-why-i-created-my-api-testing-tool-yapitest-18km",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Testing Benford's Law",
-    "url": "http://testingbenfordslaw.com",
-    "source": "hn",
-    "source_name": "Hacker News"
+    "title": "Building a Privacy-First Voice-Controlled AI Agent with Local LLMs \ud83c\udf99\ufe0f->\ud83e\udd16",
+    "url": "https://dev.to/deep_bartaria/building-a-privacy-first-voice-controlled-ai-agent-with-local-llms--15j0",
+    "source": "devto",
+    "source_name": "DEV Community"
   },
   {
-    "title": "The messy truth of your AI strategies",
-    "url": "https://stackoverflow.blog/2026/04/10/the-messy-truth-of-your-ai-strategies/",
+    "title": "Sort Lines in Source Code",
+    "url": "http://testing.googleblog.com/2025/09/sort-lines-in-source-code.html",
     "source": "rss",
-    "source_name": "Stack Overflow Blog"
+    "source_name": "Google Testing Blog"
   },
   {
-    "title": "Your Kyverno CI Is Lying to You: Why kyverno-cli Exits 0 on Policy Violations",
-    "url": "https://dev.to/sodiqjimoh/your-kyverno-ci-is-lying-to-you-why-kyverno-cli-exits-0-on-policy-violations-1gg9",
+    "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
+    "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel/",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Stop writing edge case tests. Let Hypothesis find them instead.",
+    "url": "https://dev.to/peytongreen_dev/stop-writing-edge-case-tests-let-hypothesis-find-them-instead-5hl0",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "I Ran 500 More Agent Memory Experiments. The Real Problem Wasn\u2019t Recall. It Was Binding.",
-    "url": "https://dev.to/marcosomma/i-ran-500-more-agent-memory-experiments-the-real-problem-wasnt-recall-it-was-binding-24kc",
+    "title": "What Karpathy's LLM Wiki Is Missing (And How to Fix It)",
+    "url": "https://dev.to/penfieldlabs/what-karpathys-llm-wiki-is-missing-and-how-to-fix-it-1988",
     "source": "devto",
     "source_name": "DEV Community"
   },
@@ -72,81 +48,105 @@
     "source_name": "Thoughtworks"
   },
   {
-    "title": "Karpathy says developers have \u2018AI Psychosis.\u2019 Everyone else is next.",
-    "url": "https://thenewstack.io/karpathy-says-developers-have-ai-psychosis-everyone-else-is-next/",
+    "title": "Running Terraform against Azure locally, without a subscription",
+    "url": "https://dev.to/kamil-mrzyglod/running-terraform-against-azure-locally-without-a-subscription-1lpf",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "The Backyard Quarry, Part 5: Digital Twins for Physical Objects",
+    "url": "https://dev.to/kenwalger/the-backyard-quarry-part-5-digital-twins-for-physical-objects-5a9i",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Facebook Messenger begins testing end-to-end encryption using Signal Protocol",
+    "url": "https://whispersystems.org/blog/facebook-messenger/",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Why Build a Local MCP Server (And How to Do It in 15 Minutes)",
+    "url": "https://dev.to/evanlausier/why-build-a-local-mcp-server-and-how-to-do-it-in-15-minutes-1423",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "The next phase of AI isn't smarter models. It's infrastructure.",
+    "url": "https://dev.to/alvarito1983/the-next-phase-of-ai-isnt-smarter-models-its-infrastructure-6jl",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Blender is testing PeerTube after YouTube blocks their videos worldwide",
+    "url": "https://www.blender.org/media-exposure/youtube-blocks-blender-videos-worldwide/",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Your AI Memory System Can't Tell a River Bank from a Savings Account",
+    "url": "https://dev.to/eyepaq/your-ai-memory-system-cant-tell-a-river-bank-from-a-savings-account-34j",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Testing GPT 4's code-writing capabilities with some real world problems",
+    "url": "https://tylerglaiel.substack.com/p/can-gpt-4-actually-write-code",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Things You're Overengineering in Your AI Agent (The LLM Already Handles Them)",
+    "url": "https://dev.to/serhiip/things-youre-overengineering-in-your-ai-agent-the-llm-already-handles-them-2lop",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Post-Mortem Best Practices That Actually Drive Change",
+    "url": "https://dev.to/samson_tanimawo/post-mortem-best-practices-that-actually-drive-change-5dgd",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "I Shrunk My Docker Image From 1.58GB to 186MB. Then I Had to Explain What I Actually Broke.",
+    "url": "https://dev.to/arbythecoder/i-shrunk-my-docker-image-from-158gb-to-186mb-then-i-had-to-explain-what-i-actually-broke-34be",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Prioritizing Small Things",
+    "url": "https://automationpanda.com/2025/12/17/prioritizing-small-things/",
+    "source": "rss",
+    "source_name": "Automation Panda"
+  },
+  {
+    "title": "Claude Mythos Preview completes full cyberattack simulation for the first time",
+    "url": "https://thenewstack.io/claude-mythos-preview-simulation/",
     "source": "rss",
     "source_name": "The New Stack"
   },
   {
-    "title": "Arrange Your Code to Communicate Data Flow",
-    "url": "http://testing.googleblog.com/2025/01/arrange-your-code-to-communicate-data.html",
+    "title": "I Built Faster With AI, But Felt Slower Mentally",
+    "url": "https://dev.to/jaideepparashar/i-built-faster-with-ai-but-felt-slower-mentally-405k",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Seizing the means of messenger production",
+    "url": "https://stackoverflow.blog/2026/04/03/seizing-the-means-of-messenger-production/",
     "source": "rss",
-    "source_name": "Google Testing Blog"
+    "source_name": "Stack Overflow Blog"
   },
   {
-    "title": "Testing the 7 Signal Store Features",
-    "url": "https://dev.to/nsimonoski/testing-the-7-signal-store-features-32od",
-    "source": "devto",
-    "source_name": "DEV Community"
+    "title": "Why observability platforms are becoming AI auditing tools",
+    "url": "https://thenewstack.io/agentic-ai-observability-auditing/",
+    "source": "rss",
+    "source_name": "The New Stack"
   },
   {
-    "title": "Lightweight & Blazing Fast HTTP Client for Windows: Meet Artemis (Open Source Alternative to Postman)",
-    "url": "https://dev.to/vinodh_kumarbakthavachal/lightweight-blazing-fast-http-client-for-windows-meet-artemis-open-source-alternative-to-5809",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "How the Datadog MCP server can help improve IT operational insight and observability",
-    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/how-Datadog-MCP-server-can-help-improve-IT-operational-insight",
+    "title": "The shifted operation model and MSPs in the AI Age",
+    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/shifted-operation-model-and-msps-in-ai-age",
     "source": "rss",
     "source_name": "Thoughtworks"
-  },
-  {
-    "title": "\ud83d\ude80 I\u2019m Building \u201cSafeMap\u201d \u2013 A Tinder-Style Travel App That Prioritizes Safety (Brutal Feedback Needed)",
-    "url": "https://dev.to/nish2005karsh/im-building-safemap-a-tinder-style-travel-app-that-prioritizes-safety-brutal-feedback-4cdf",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Vercel vs Netlify vs Cloudflare Pages 2026 \u2014 Deep Comparison with Real Numbers",
-    "url": "https://dev.to/lazydev_oh/vercel-vs-netlify-vs-cloudflare-pages-2026-deep-comparison-with-real-numbers-8pl",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Vibe coding while live streaming",
-    "url": "https://automationpanda.com/2025/08/20/vibe-coding-while-live-streaming/",
-    "source": "rss",
-    "source_name": "Automation Panda"
-  },
-  {
-    "title": "A primer on product management for engineers",
-    "url": "https://increment.com/planning/product-management-for-engineers/",
-    "source": "rss",
-    "source_name": "Increment"
-  },
-  {
-    "title": "Set Safe Defaults for Flags",
-    "url": "http://testing.googleblog.com/2026/03/set-safe-defaults-for-flags.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
-  },
-  {
-    "title": "Sort Lines in Source Code",
-    "url": "http://testing.googleblog.com/2025/09/sort-lines-in-source-code.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
-  },
-  {
-    "title": "Mercedes-Benz W203 Rear Subframe Rust",
-    "url": "https://automationpanda.com/2025/07/24/mercedes-benz-w203-rear-subframe-rust/",
-    "source": "rss",
-    "source_name": "Automation Panda"
-  },
-  {
-    "title": "Principles of Mechanical Sympathy",
-    "url": "https://martinfowler.com/articles/mechanical-sympathy-principles.html",
-    "source": "rss",
-    "source_name": "Martin Fowler"
   }
 ]
