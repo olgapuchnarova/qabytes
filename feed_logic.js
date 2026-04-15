@@ -14,8 +14,11 @@
       link: article.link || article.url || "",
       source: article.source || "",
       source_name: article.source_name || article.source || "",
+      source_id: article.source_id || article.source || "",
       category: article.category || "",
       signal: article.signal || 0,
+      rank_score:
+        typeof article.rank_score === "number" ? article.rank_score : article.signal || 0,
       why_it_matters: article.why_it_matters || "",
       summary: article.summary || "",
       key_points: Array.isArray(article.key_points) ? [...article.key_points] : [],
@@ -33,6 +36,82 @@
     return items.filter((article) => article.why_it_matters === activeFilter);
   }
 
+  function filterArticlesBySources(items, selectedSourceIds) {
+    if (!(selectedSourceIds instanceof Set) || selectedSourceIds.size === 0) {
+      return [];
+    }
+
+    return items.filter((article) => selectedSourceIds.has(article.source_id));
+  }
+
+  function getAvailableSources(items, declaredSources) {
+    if (Array.isArray(declaredSources) && declaredSources.length > 0) {
+      return [...declaredSources].sort((left, right) =>
+        (left.label || "").localeCompare(right.label || "")
+      );
+    }
+
+    const seen = new Map();
+    items.forEach((article) => {
+      if (!article.source_id || seen.has(article.source_id)) {
+        return;
+      }
+      seen.set(article.source_id, {
+        id: article.source_id,
+        label: article.source_name || article.source_id,
+      });
+    });
+
+    return [...seen.values()].sort((left, right) =>
+      left.label.localeCompare(right.label)
+    );
+  }
+
+  function selectArticlesWithSourceCap(items, limit, maxPerSource) {
+    if (!Array.isArray(items) || limit <= 0) {
+      return [];
+    }
+
+    if (!maxPerSource || maxPerSource < 1) {
+      return items.slice(0, limit);
+    }
+
+    const selected = [];
+    const selectedIds = new Set();
+    const sourceCounts = new Map();
+
+    items.forEach((article) => {
+      if (selected.length >= limit) {
+        return;
+      }
+
+      const sourceId = article.source_id || "";
+      const nextCount = (sourceCounts.get(sourceId) || 0) + 1;
+      if (nextCount > maxPerSource) {
+        return;
+      }
+
+      selected.push(article);
+      selectedIds.add(article.id);
+      sourceCounts.set(sourceId, nextCount);
+    });
+
+    if (selected.length >= limit) {
+      return selected;
+    }
+
+    items.forEach((article) => {
+      if (selected.length >= limit || selectedIds.has(article.id)) {
+        return;
+      }
+
+      selected.push(article);
+      selectedIds.add(article.id);
+    });
+
+    return selected;
+  }
+
   function sortLatestInsights(items, getArticleState) {
     return [...items].sort((left, right) => {
       const leftRead = Boolean(getArticleState(left.id).read);
@@ -46,7 +125,12 @@
         return left.is_new_today ? -1 : 1;
       }
 
-      return (right.signal || 0) - (left.signal || 0);
+      const leftScore =
+        typeof left.rank_score === "number" ? left.rank_score : left.signal || 0;
+      const rightScore =
+        typeof right.rank_score === "number" ? right.rank_score : right.signal || 0;
+
+      return rightScore - leftScore;
     });
   }
 
@@ -87,6 +171,9 @@
 
   return {
     filterArticles,
+    filterArticlesBySources,
+    getAvailableSources,
+    selectArticlesWithSourceCap,
     snapshotArticle,
     sortLatestInsights,
     getSavedArticles,

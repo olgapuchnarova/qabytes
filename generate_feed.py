@@ -2,8 +2,9 @@ import hashlib
 import json
 import os
 import random
+import re
 from datetime import UTC, datetime, timedelta
-from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
+from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
 
 import feedparser
 import requests
@@ -14,11 +15,14 @@ OUTPUT_FILE = "feed.json"
 RAW_FILE = "raw_candidates.json"
 STATE_FILE = "feed_state.json"
 
-TARGET_FEED_SIZE = 10
-MIN_FEED_ARTICLES = 3
-MIN_NEW_ARTICLES = 3
+DEFAULT_VISIBLE_FEED_SIZE = 10
+PUBLISHED_POOL_SIZE = 45
+MIN_FEED_ARTICLES = 12
+MIN_NEW_ARTICLES = 5
 ARTICLE_TTL_DAYS = 14
-MAX_ANALYZE_CANDIDATES = 25
+MAX_ANALYZE_CANDIDATES = 90
+MAX_SOURCE_ITEMS_IN_POOL = 8
+INVALID_STORED_URL_PATTERNS = ["/blog/product/", "/blog/category/", "/articles/list"]
 
 WHY_IT_MATTERS_OPTIONS = [
     "Strategic shift",
@@ -45,10 +49,6 @@ RSS_FEEDS = [
         "name": "Google Testing Blog",
     },
     {
-        "url": "https://blog.testproject.io/feed/",
-        "name": "TestProject",
-    },
-    {
         "url": "https://automationpanda.com/feed/",
         "name": "Automation Panda",
     },
@@ -73,8 +73,25 @@ RSS_FEEDS = [
         "name": "The New Stack",
     },
     {
-        "url": "https://www.infoq.com/testing/rss/",
+        "url": "https://feed.infoq.com/Testing/",
         "name": "InfoQ",
+    },
+]
+
+HTML_SOURCES = [
+    {
+        "url": "https://www.ministryoftesting.com/articles",
+        "name": "Ministry of Testing",
+        "source": "html",
+        "link_pattern": "/articles/",
+        "exclude_patterns": ["/articles/list"],
+    },
+    {
+        "url": "https://www.tricentis.com/blog/category/quality-engineering",
+        "name": "Tricentis",
+        "source": "html",
+        "link_pattern": "/blog/",
+        "exclude_patterns": ["/blog/category/", "/blog/product/", "/blog/page/"],
     },
 ]
 
@@ -116,6 +133,21 @@ def canonicalize_url(url):
 def article_id_for(url):
     canonical_url = canonicalize_url(url)
     return hashlib.sha256(canonical_url.encode("utf-8")).hexdigest()[:16]
+
+
+def slugify(value):
+    normalized = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
+    return normalized or "source"
+
+
+def source_id_for(article):
+    base = article.get("source") or "source"
+    source_name = article.get("source_name") or base
+    if base in {"devto", "hn", "testing-weekly"}:
+        return base
+    if base == "reddit":
+        return slugify(source_name.replace("Reddit ", ""))
+    return f"{base}:{slugify(source_name)}"
 
 
 def load_state():
@@ -190,6 +222,8 @@ def build_article_from_state(record):
     ]
     if any(field not in record for field in required_fields):
         return None
+    if any(pattern in record["canonical_url"] for pattern in INVALID_STORED_URL_PATTERNS):
+        return None
 
     return {
         "id": record["id"],
@@ -197,7 +231,15 @@ def build_article_from_state(record):
         "url": record["canonical_url"],
         "source": record["source"],
         "source_name": record["source_name"],
+        "source_id": record.get(
+            "source_id",
+            source_id_for({
+                "source": record["source"],
+                "source_name": record["source_name"],
+            }),
+        ),
         "signal": record["signal"],
+        "rank_score": record.get("rank_score", float(record["signal"])),
         "why_it_matters": record["why_it_matters"],
         "summary": record["summary"],
         "key_points": record["key_points"],
@@ -235,6 +277,47 @@ def get_rss_articles():
                 "source": "rss",
                 "source_name": feed["name"],
             })
+    return articles
+
+
+def get_html_articles():
+    articles = []
+    seen_urls = set()
+
+    for source in HTML_SOURCES:
+        try:
+            response = requests.get(source["url"], timeout=10)
+            soup = BeautifulSoup(response.text, "html.parser")
+        except Exception:
+            continue
+
+        for link in soup.select("a[href]"):
+            title = link.get_text(strip=True)
+            href = link.get("href")
+
+            if not href or not title:
+                continue
+            if len(title) < 20:
+                continue
+            if "job" in title.lower():
+                continue
+
+            absolute_url = urljoin(source["url"], href)
+            if source["link_pattern"] not in absolute_url:
+                continue
+            if any(pattern in absolute_url for pattern in source.get("exclude_patterns", [])):
+                continue
+            if absolute_url in seen_urls:
+                continue
+
+            seen_urls.add(absolute_url)
+            articles.append({
+                "title": title,
+                "url": absolute_url,
+                "source": source["source"],
+                "source_name": source["name"],
+            })
+
     return articles
 
 
@@ -427,11 +510,40 @@ def score_article(article):
     return article["signal"] + random.uniform(0, 0.5)
 
 
+def select_analysis_candidates(candidate_pool, limit=MAX_ANALYZE_CANDIDATES):
+    grouped = {}
+    for article in candidate_pool:
+        source_id = source_id_for(article)
+        grouped.setdefault(source_id, []).append(article)
+
+    source_ids = list(grouped.keys())
+    random.shuffle(source_ids)
+    for source_id in source_ids:
+        random.shuffle(grouped[source_id])
+
+    selected = []
+    while source_ids and len(selected) < limit:
+        remaining_source_ids = []
+        for source_id in source_ids:
+            articles = grouped[source_id]
+            if not articles:
+                continue
+            selected.append(articles.pop())
+            if len(selected) >= limit:
+                break
+            if articles:
+                remaining_source_ids.append(source_id)
+        source_ids = remaining_source_ids
+
+    return selected
+
+
 def select_feed_articles(
     scored_articles,
-    target_feed_size=TARGET_FEED_SIZE,
+    target_feed_size=PUBLISHED_POOL_SIZE,
     min_feed_articles=MIN_FEED_ARTICLES,
     min_new_articles=MIN_NEW_ARTICLES,
+    max_per_source=MAX_SOURCE_ITEMS_IN_POOL,
 ):
     new_candidates = [
         article for article in scored_articles if article.get("is_new_today")
@@ -445,14 +557,19 @@ def select_feed_articles(
 
     selected = []
     selected_ids = set()
+    source_counts = {}
 
     def take_from(pool, limit):
         taken = 0
         for item in pool:
             if item["id"] in selected_ids:
                 continue
+            source_id = item.get("source_id") or source_id_for(item)
+            if source_counts.get(source_id, 0) >= max_per_source:
+                continue
             selected.append(item)
             selected_ids.add(item["id"])
+            source_counts[source_id] = source_counts.get(source_id, 0) + 1
             taken += 1
             if taken >= limit:
                 break
@@ -477,6 +594,19 @@ def select_feed_articles(
     return selected
 
 
+def build_available_sources(articles):
+    seen = {}
+    for article in articles:
+        source_id = article["source_id"]
+        if source_id in seen:
+            continue
+        seen[source_id] = {
+            "id": source_id,
+            "label": article["source_name"],
+        }
+    return sorted(seen.values(), key=lambda source: source["label"].lower())
+
+
 def generate_feed():
     now = utc_now()
     today_str = now.strftime("%Y-%m-%d")
@@ -486,6 +616,7 @@ def generate_feed():
 
     articles = []
     articles += get_rss_articles()
+    articles += get_html_articles()
     articles += get_reddit_posts()
     articles += get_devto_articles()
     articles += get_hn_articles()
@@ -500,8 +631,7 @@ def generate_feed():
             deduped_candidates[article_id] = article
 
     candidate_pool = list(deduped_candidates.values())
-    random.shuffle(candidate_pool)
-    articles = candidate_pool[:MAX_ANALYZE_CANDIDATES]
+    articles = select_analysis_candidates(candidate_pool)
     print("Candidates selected for analysis:", len(articles))
 
     with open(RAW_FILE, "w", encoding="utf-8") as f:
@@ -545,6 +675,7 @@ def generate_feed():
             "url": state_record["canonical_url"],
             "source": article["source"],
             "source_name": article.get("source_name") or article["source"],
+            "source_id": source_id_for(article),
             "signal": analysis["signal"],
             "why_it_matters": why_it_matters,
             "summary": analysis["summary"],
@@ -558,6 +689,7 @@ def generate_feed():
         state_record.update({
             "source": processed_article["source"],
             "source_name": processed_article["source_name"],
+            "source_id": processed_article["source_id"],
             "signal": processed_article["signal"],
             "why_it_matters": processed_article["why_it_matters"],
             "summary": processed_article["summary"],
@@ -589,6 +721,7 @@ def generate_feed():
     for article in deduped.values():
         article_copy = article.copy()
         article_copy["_score"] = score_article(article_copy)
+        article_copy["rank_score"] = round(article_copy["_score"], 4)
         article_copy["is_new_today"] = article["first_seen_at"] == today_str
         scored_articles.append(article_copy)
 
@@ -597,22 +730,15 @@ def generate_feed():
         article for article in scored_articles if article["is_new_today"]
     ]
 
-    featured_id = selected[0]["id"] if selected else None
-    featured_article = next(
-        (article for article in selected if article["id"] == featured_id),
-        None,
-    )
-    remaining_articles = [
-        article for article in selected if article["id"] != featured_id
-    ]
-    remaining_articles.sort(key=lambda article: article["_score"], reverse=True)
-    final_feed = ([featured_article] if featured_article else []) + remaining_articles
+    final_feed = sorted(selected, key=lambda article: article["_score"], reverse=True)
+    featured_id = final_feed[0]["id"] if final_feed else None
 
     for article in final_feed:
         state_record = state[article["id"]]
         state_record["last_shown_at"] = today_str
         state_record["times_shown"] += 1
         state_record["status"] = "active"
+        state_record["rank_score"] = article["rank_score"]
         article["last_shown_at"] = today_str
         article["featured"] = article["id"] == featured_id
         article.pop("_score", None)
@@ -628,6 +754,9 @@ def generate_feed():
 
     final_output = {
         "generated_at": now.isoformat(),
+        "pool_size": len(final_feed),
+        "default_feed_size": DEFAULT_VISIBLE_FEED_SIZE,
+        "available_sources": build_available_sources(final_feed),
         "articles": final_feed,
     }
 

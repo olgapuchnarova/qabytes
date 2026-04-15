@@ -63,12 +63,14 @@ jobs:
 
       - name: Assemble Pages artifact
         run: |
+          BUILD_VERSION="$(date -u +%Y%m%d-%H%M%S)-${GITHUB_SHA::7}"
           mkdir site
           cp index.html site/
           cp feed_logic.js site/
           cp styles.css site/
           cp script.js site/
           cp feed.json site/
+          sed -i "s/__BUILD_VERSION__/${BUILD_VERSION}/g" site/index.html site/script.js
           echo "qabytes.com" > site/CNAME
 
       - name: Configure GitHub Pages

@@ -3,6 +3,9 @@ const assert = require("node:assert/strict");
 
 const {
   filterArticles,
+  filterArticlesBySources,
+  getAvailableSources,
+  selectArticlesWithSourceCap,
   snapshotArticle,
   sortLatestInsights,
   getSavedArticles,
@@ -26,12 +29,63 @@ test("filterArticles keeps only matching taxonomy labels", () => {
   assert.deepEqual(filterArticles(items, "AI in QA"), [items[0]]);
 });
 
-test("sortLatestInsights orders unread before read, then new, then signal", () => {
+test("filterArticlesBySources keeps only selected sources", () => {
   const items = [
-    { id: "read-high", is_new_today: true, signal: 5 },
-    { id: "unread-old-high", is_new_today: false, signal: 5 },
-    { id: "unread-new-low", is_new_today: true, signal: 3 },
-    { id: "unread-new-high", is_new_today: true, signal: 4 },
+    { id: "1", source_id: "devto" },
+    { id: "2", source_id: "rss:google-testing-blog" },
+  ];
+
+  assert.deepEqual(filterArticlesBySources(items, new Set(["devto"])), [items[0]]);
+});
+
+test("getAvailableSources prefers declared source metadata", () => {
+  const declared = [
+    { id: "hn", label: "Hacker News" },
+    { id: "devto", label: "DEV Community" },
+  ];
+
+  assert.deepEqual(getAvailableSources([], declared), [
+    { id: "devto", label: "DEV Community" },
+    { id: "hn", label: "Hacker News" },
+  ]);
+});
+
+test("selectArticlesWithSourceCap keeps the visible list diverse before backfilling", () => {
+  const items = [
+    { id: "dev-1", source_id: "devto" },
+    { id: "dev-2", source_id: "devto" },
+    { id: "dev-3", source_id: "devto" },
+    { id: "mot-1", source_id: "html:ministry-of-testing" },
+    { id: "mot-2", source_id: "html:ministry-of-testing" },
+    { id: "so-1", source_id: "rss:stack-overflow-blog" },
+    { id: "tw-1", source_id: "rss:thoughtworks" },
+  ];
+
+  assert.deepEqual(
+    selectArticlesWithSourceCap(items, 6, 2).map((article) => article.id),
+    ["dev-1", "dev-2", "mot-1", "mot-2", "so-1", "tw-1"]
+  );
+});
+
+test("selectArticlesWithSourceCap backfills when too few sources remain", () => {
+  const items = [
+    { id: "dev-1", source_id: "devto" },
+    { id: "dev-2", source_id: "devto" },
+    { id: "dev-3", source_id: "devto" },
+  ];
+
+  assert.deepEqual(
+    selectArticlesWithSourceCap(items, 3, 2).map((article) => article.id),
+    ["dev-1", "dev-2", "dev-3"]
+  );
+});
+
+test("sortLatestInsights orders unread before read, then new, then rank score", () => {
+  const items = [
+    { id: "read-high", is_new_today: true, signal: 5, rank_score: 5.2 },
+    { id: "unread-old-high", is_new_today: false, signal: 5, rank_score: 5.1 },
+    { id: "unread-new-low", is_new_today: true, signal: 3, rank_score: 3.4 },
+    { id: "unread-new-high", is_new_today: true, signal: 4, rank_score: 4.9 },
   ];
 
   const state = {
@@ -97,7 +151,9 @@ test("snapshotArticle keeps the fields needed to render a saved card later", () 
     url: "https://example.com/article",
     source: "rss",
     source_name: "Example",
+    source_id: "rss:example",
     signal: 4,
+    rank_score: 4.25,
     why_it_matters: "Testing strategy",
     summary: "Short summary",
     key_points: ["One", "Two"],
@@ -112,8 +168,10 @@ test("snapshotArticle keeps the fields needed to render a saved card later", () 
     link: "https://example.com/article",
     source: "rss",
     source_name: "Example",
+    source_id: "rss:example",
     category: "",
     signal: 4,
+    rank_score: 4.25,
     why_it_matters: "Testing strategy",
     summary: "Short summary",
     key_points: ["One", "Two"],
