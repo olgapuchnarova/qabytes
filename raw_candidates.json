@@ -1,79 +1,19 @@
 [
   {
-<<<<<<< HEAD
+    "title": "Effective regression testing in the age of AI-generated code",
+    "url": "https://www.tricentis.com/blog/ai-regression-testing-change-based-approach",
+    "source": "html",
+    "source_name": "Tricentis"
+  },
+  {
     "title": "Principles of Mechanical Sympathy",
     "url": "https://martinfowler.com/articles/mechanical-sympathy-principles.html",
     "source": "rss",
     "source_name": "Martin Fowler"
   },
   {
-    "title": "How (and why) I created my API testing tool, Yapitest",
-    "url": "https://dev.to/cd4/how-and-why-i-created-my-api-testing-tool-yapitest-18km",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Building a Privacy-First Voice-Controlled AI Agent with Local LLMs \ud83c\udf99\ufe0f->\ud83e\udd16",
-    "url": "https://dev.to/deep_bartaria/building-a-privacy-first-voice-controlled-ai-agent-with-local-llms--15j0",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Sort Lines in Source Code",
-    "url": "http://testing.googleblog.com/2025/09/sort-lines-in-source-code.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
-=======
-    "title": "How to build an AI-powered private document search app with RAG, ChromaDB, and memory",
-    "url": "https://thenewstack.io/build-rag-document-search/",
-    "source": "rss",
-    "source_name": "The New Stack"
-  },
-  {
-    "title": "Effective regression testing in the age of AI-generated code",
-    "url": "https://www.tricentis.com/blog/ai-regression-testing-change-based-approach",
-    "source": "html",
-    "source_name": "Tricentis"
->>>>>>> f7c4d87 (Add personalized source filtering and refresh feed sources)
-  },
-  {
-    "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
-    "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel/",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-<<<<<<< HEAD
-    "title": "Stop writing edge case tests. Let Hypothesis find them instead.",
-    "url": "https://dev.to/peytongreen_dev/stop-writing-edge-case-tests-let-hypothesis-find-them-instead-5hl0",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
     "title": "What Karpathy's LLM Wiki Is Missing (And How to Fix It)",
     "url": "https://dev.to/penfieldlabs/what-karpathys-llm-wiki-is-missing-and-how-to-fix-it-1988",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Rethinking leadership: How a sabbatical transformed a CIO into a coding intern  [part two]",
-    "url": "https://www.thoughtworks.com/insights/blog/careers-at-thoughtworks/cio-journey-as-a-coding-intern-part-two",
-    "source": "rss",
-    "source_name": "Thoughtworks"
-  },
-  {
-    "title": "Running Terraform against Azure locally, without a subscription",
-    "url": "https://dev.to/kamil-mrzyglod/running-terraform-against-azure-locally-without-a-subscription-1lpf",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "The Backyard Quarry, Part 5: Digital Twins for Physical Objects",
-    "url": "https://dev.to/kenwalger/the-backyard-quarry-part-5-digital-twins-for-physical-objects-5a9i",
-=======
-    "title": "Jestronaut: Explore Your Jest Tests Like Never Before",
-    "url": "https://dev.to/realdeepnandi/jestronaut-explore-your-jest-tests-like-never-before-4kc2",
->>>>>>> f7c4d87 (Add personalized source filtering and refresh feed sources)
     "source": "devto",
     "source_name": "DEV Community"
   },
@@ -84,139 +24,10 @@
     "source_name": "InfoQ"
   },
   {
-    "title": "I fell in love with Kubernetes as a Test engineer",
-    "url": "https://www.reddit.com/r/testautomation/comments/jnvazj/i_fell_in_love_with_kubernetes_as_a_test_engineer/",
-    "text": "Since 2 years I'm using Kubernetes now. It became essential for me as a Test engineer. Having one single API to check and control the state of your applications and the system underneath, is something I never want to miss again.This led me to contributing to an open source project called [KubeLibrary](https://github.com/devopsspiral/KubeLibrary). Making it very easy to build tests which assert objects in Kubernetes clusters via [Robotframework](https://robotframework.org/).\n\nIn hope to spread some love for Kubernetes, I'll be giving a [webinar on using the KubeLibrary](https://humanitec.com/webinars/test-automation-in-continuous-deployment) on 11th of November.\n\nOn top, there is also a half-day workshop planned as part of the Robotframework [World Wide Workshop Wednesday](https://robot-work.shop/#kubelibraryverifystateofyourkubernetesclustergermanyenglish3) on 2nd of December.\n\nIf you can't make it for the online sessions, there is also a [blog article about using the KubeLibrary](https://medium.com/humanitec-developers/kubelibrary-6644ca06cea4).",
-    "source": "reddit",
-    "source_name": "Reddit r/TestAutomation"
-  },
-  {
-    "title": "How to perform a structured evaluation of AI conversational solutions",
-    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/how-to-perform-a-structured-evaluation-of-ai-conversational-solutions",
-    "source": "rss",
-    "source_name": "Thoughtworks"
-  },
-  {
-    "title": "Java or Python for Automation testing",
-    "url": "https://www.reddit.com/r/QualityAssurance/comments/1sja4u4/java_or_python_for_automation_testing/",
-    "text": "Have been learning Test Automation with Selenium Python and building scratch frameworks to showcase in interviews, since I have no hands-on automation experience professionally.\n\nI come from the Insurance and Retirement industry domain with manual testing experience. A friend of mine who works as a Test Automation Architect suggested that Selenium Java is more widely used in these domains and advised me to stop learning Python and switch to Java instead.\n\nIs it true? For those working in Insurance or Retirement domain or such domains\u2014 is Java really the dominant choice for automation? Would love to hear from people who have actually interviewed or worked in automation.",
-    "source": "reddit",
-    "source_name": "Reddit r/QualityAssurance"
-  },
-  {
-    "title": "Working with AMD Surface Pro 11",
-    "url": "https://www.reddit.com/r/softwaretesting/comments/1sk5k83/working_with_amd_surface_pro_11/",
-    "text": "Is there anybody who works with a surface pro 11 which is not Intel?\n\nAre there any compatibility problems with playwright  or npm?",
-    "source": "reddit",
-    "source_name": "Reddit r/softwaretesting"
-  },
-  {
-    "title": "He designed C++ to solve your code problems",
-    "url": "https://stackoverflow.blog/2026/04/07/he-designed-c-to-solve-your-code-problems/",
-    "source": "rss",
-    "source_name": "Stack Overflow Blog"
-  },
-  {
-    "title": "Simplify Your Code: Functional Core, Imperative Shell",
-    "url": "http://testing.googleblog.com/2025/10/simplify-your-code-functional-core.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
-  },
-  {
-    "title": "Stop delegating your thinking: Using 5 whys to check AI documentation",
-    "url": "https://www.ministryoftesting.com/articles/stop-delegating-your-thinking-using-5-whys-to-check-ai-documentation",
+    "title": "Testing with feature flags: what we expected and what actually happened",
+    "url": "https://www.ministryoftesting.com/articles/testing-with-feature-flags-what-we-expected-and-what-actually-happened",
     "source": "html",
     "source_name": "Ministry of Testing"
-  },
-  {
-    "title": "Prioritizing Small Things",
-    "url": "https://automationpanda.com/2025/12/17/prioritizing-small-things/",
-    "source": "rss",
-    "source_name": "Automation Panda"
-  },
-  {
-    "title": "Alan Turing play in Cambridge MA",
-    "url": "https://martinfowler.com/articles/202604-turing.html",
-    "source": "rss",
-    "source_name": "Martin Fowler"
-  },
-  {
-    "title": "One of the Biggest At-Home DNA Testing Companies Is Working with the FBI",
-    "url": "https://www.buzzfeednews.com/article/salvadorhernandez/family-tree-dna-fbi-investigative-genealogy-privacy",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-<<<<<<< HEAD
-    "title": "Why Build a Local MCP Server (And How to Do It in 15 Minutes)",
-    "url": "https://dev.to/evanlausier/why-build-a-local-mcp-server-and-how-to-do-it-in-15-minutes-1423",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "The next phase of AI isn't smarter models. It's infrastructure.",
-    "url": "https://dev.to/alvarito1983/the-next-phase-of-ai-isnt-smarter-models-its-infrastructure-6jl",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Blender is testing PeerTube after YouTube blocks their videos worldwide",
-    "url": "https://www.blender.org/media-exposure/youtube-blocks-blender-videos-worldwide/",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Your AI Memory System Can't Tell a River Bank from a Savings Account",
-    "url": "https://dev.to/eyepaq/your-ai-memory-system-cant-tell-a-river-bank-from-a-savings-account-34j",
-=======
-    "title": "Cursor, Claude Code, and Codex are merging into one AI coding stack nobody planned",
-    "url": "https://thenewstack.io/ai-coding-tool-stack/",
-    "source": "rss",
-    "source_name": "The New Stack"
-  },
-  {
-    "title": "Balancing risk with the need for speed",
-    "url": "https://www.tricentis.com/blog/how-to-avoid-a-technology-meltdown",
-    "source": "html",
-    "source_name": "Tricentis"
-  },
-  {
-    "title": "A primer on product management for engineers",
-    "url": "https://increment.com/planning/product-management-for-engineers/",
-    "source": "rss",
-    "source_name": "Increment"
-  },
-  {
-    "title": "How to Detect Hidden Bugs in AI-Generated Code (2026)",
-    "url": "https://dev.to/hai_huang_f196ed9669351e0/how-to-detect-hidden-bugs-in-ai-generated-code-2026-3g67",
->>>>>>> f7c4d87 (Add personalized source filtering and refresh feed sources)
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-<<<<<<< HEAD
-    "title": "Testing GPT 4's code-writing capabilities with some real world problems",
-    "url": "https://tylerglaiel.substack.com/p/can-gpt-4-actually-write-code",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Things You're Overengineering in Your AI Agent (The LLM Already Handles Them)",
-    "url": "https://dev.to/serhiip/things-youre-overengineering-in-your-ai-agent-the-llm-already-handles-them-2lop",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Post-Mortem Best Practices That Actually Drive Change",
-    "url": "https://dev.to/samson_tanimawo/post-mortem-best-practices-that-actually-drive-change-5dgd",
-    "source": "devto",
-    "source_name": "DEV Community"
-=======
-    "title": "Introducing Cerberus Open Source Test Automation Framework",
-    "url": "https://www.softwaretestingmagazine.com/tools/introducing-cerberus-open-source-test-automation-framework/",
-    "text": "",
-    "source": "reddit",
-    "source_name": "Reddit r/TestAutomation"
   },
   {
     "title": "How the Datadog MCP server can help improve IT operational insight and observability",
@@ -225,149 +36,10 @@
     "source_name": "Thoughtworks"
   },
   {
-    "title": "Which AI besides Claude can I use with playwrigth? Looking for something more budget friendly but still efficient.",
-    "url": "https://www.reddit.com/r/QualityAssurance/comments/1sjhk46/which_ai_besides_claude_can_i_use_with_playwrigth/",
-    "text": ".",
-    "source": "reddit",
-    "source_name": "Reddit r/QualityAssurance"
-  },
-  {
-    "title": "[US] Where Did You Land Your Last Remote Role",
-    "url": "https://www.reddit.com/r/softwaretesting/comments/1sgs4wx/us_where_did_you_land_your_last_remote_role/",
-    "text": "Not having much luck with applications on LinkedIn or Indeed lately. Anyone getting better responses from other job boards for fully remote roles? Which platform landed your last job? Thank you for your valuable insight!",
-    "source": "reddit",
-    "source_name": "Reddit r/softwaretesting"
-  },
-  {
-    "title": "Seizing the means of messenger production",
-    "url": "https://stackoverflow.blog/2026/04/03/seizing-the-means-of-messenger-production/",
-    "source": "rss",
-    "source_name": "Stack Overflow Blog"
-  },
-  {
-    "title": "Set Safe Defaults for Flags",
-    "url": "http://testing.googleblog.com/2026/03/set-safe-defaults-for-flags.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
-  },
-  {
-    "title": "Getting paid what you are worth as a software tester",
-    "url": "https://www.ministryoftesting.com/articles/getting-paid-what-you-are-worth-as-a-software-tester",
-    "source": "html",
-    "source_name": "Ministry of Testing"
->>>>>>> f7c4d87 (Add personalized source filtering and refresh feed sources)
-  },
-  {
-    "title": "I Shrunk My Docker Image From 1.58GB to 186MB. Then I Had to Explain What I Actually Broke.",
-    "url": "https://dev.to/arbythecoder/i-shrunk-my-docker-image-from-158gb-to-186mb-then-i-had-to-explain-what-i-actually-broke-34be",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Prioritizing Small Things",
-    "url": "https://automationpanda.com/2025/12/17/prioritizing-small-things/",
-    "source": "rss",
-    "source_name": "Automation Panda"
-  },
-  {
-<<<<<<< HEAD
     "title": "Claude Mythos Preview completes full cyberattack simulation for the first time",
     "url": "https://thenewstack.io/claude-mythos-preview-simulation/",
-=======
-    "title": "Principles of Mechanical Sympathy",
-    "url": "https://martinfowler.com/articles/mechanical-sympathy-principles.html",
-    "source": "rss",
-    "source_name": "Martin Fowler"
-  },
-  {
-    "title": "Testing GPT 4's code-writing capabilities with some real world problems",
-    "url": "https://tylerglaiel.substack.com/p/can-gpt-4-actually-write-code",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "HPA-managed workloads: Why the obvious waste stays",
-    "url": "https://thenewstack.io/hpa-managed-workloads-why-waste-stays/",
->>>>>>> f7c4d87 (Add personalized source filtering and refresh feed sources)
     "source": "rss",
     "source_name": "The New Stack"
-  },
-  {
-<<<<<<< HEAD
-    "title": "I Built Faster With AI, But Felt Slower Mentally",
-    "url": "https://dev.to/jaideepparashar/i-built-faster-with-ai-but-felt-slower-mentally-405k",
-=======
-    "title": "What software makers need to know about the new EU directive",
-    "url": "https://www.tricentis.com/blog/new-eu-product-liability-directive-key-impacts-for-software-makers",
-    "source": "html",
-    "source_name": "Tricentis"
-  },
-  {
-    "title": "Planning in the dark",
-    "url": "https://increment.com/planning/planning-for-product-market-fit/",
-    "source": "rss",
-    "source_name": "Increment"
-  },
-  {
-    "title": "The Developer's Guide to Running LLMs Locally: Ollama, Gemma 4, and Why Your Side Projects Don't Need an API Key",
-    "url": "https://dev.to/kennedyraju55/the-developers-guide-to-running-llms-locally-ollama-gemma-4-and-why-your-side-projects-dont-54oe",
->>>>>>> f7c4d87 (Add personalized source filtering and refresh feed sources)
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-<<<<<<< HEAD
-    "title": "Seizing the means of messenger production",
-    "url": "https://stackoverflow.blog/2026/04/03/seizing-the-means-of-messenger-production/",
-=======
-    "title": "How to ship even faster with test automation",
-    "url": "/r/softwaretesting/comments/k1fgl6/how_to_ship_even_faster_with_test_automation/",
-    "text": "",
-    "source": "reddit",
-    "source_name": "Reddit r/TestAutomation"
-  },
-  {
-    "title": "The predictability gap in digital public infrastructure",
-    "url": "https://www.thoughtworks.com/insights/articles/predictability_gap_digital_public_infrastructure",
-    "source": "rss",
-    "source_name": "Thoughtworks"
-  },
-  {
-    "title": "A free tool for the \"I only noticed the bug after it happened\" problem",
-    "url": "https://www.reddit.com/r/QualityAssurance/comments/1sixsu3/a_free_tool_for_the_i_only_noticed_the_bug_after/",
-    "text": "QA scenario every tester knows: you're clicking through a flow, something looks wrong two screens later, and now you need the network trace for the request that caused it. But DevTools wasn't open. Or it was open and you cleared it. Either way, the evidence is gone and you're re-running the repro hoping it happens again.\n\nI built a free Chrome extension called NetRecall that fixes this one specific thing. It sits in the background and keeps a rolling 20-minute buffer (configurable 1\u201360 min) of every request the tab made URL, method, status, headers, request body, response body, timing. When you finally hit the bug, you open the panel and the history is already there. You can filter by URL/method/status, copy any request as cURL for the dev, or export the filtered set as HAR and attach it to the ticket.\n\nHonest scope:\n\n\\- Free forever, open source, no account, no telemetry, 100% local.\n\n\\- Records while installed and enabled there's a domain whitelist/blacklist if you only want\n\nit capturing your app under test.\n\n\\- It's not a replacement for Charles or Fiddler for deep proxy work. It's for the 90% of\n\ntickets where \"what did the API return\" is the question.\n\n\n\nFirst launch, solo dev, no budget trying it on a real bug and telling me what's missing is\n\nthe most useful thing anyone can do. Install link in the comments.",
-    "source": "reddit",
-    "source_name": "Reddit r/QualityAssurance"
-  },
-  {
-    "title": "I am a Rookie and i know almost nothing of Coding and my team is pressuring me.",
-    "url": "https://www.reddit.com/r/softwaretesting/comments/1sgkv25/i_am_a_rookie_and_i_know_almost_nothing_of_coding/",
-    "text": "I am Rookie at my company and i am a software tester (mostly manual) and a process designer. My team is now pressuring me to code a entire automated software thingie in seleniam to test EVERY single thing on our website and i really do mean EVERYTHING, but i know nothing of coding and they know it. They know how to do it, but they still pin the coding part on me\n\nI searched for 3 days straight on the internet for a website that does ALL the automated testing for me, no code related. I\u2019ve tried multiple websites like n8n and datadog and other lesser known ones. But NOTHING!\n\nWhat should i do? Should i try to look for someone to hire (they are expensive) or should i just let my team know that i can\u2019t. Is there a actual website out there that will do the testing for me?\n\nEven my dad says that i must have this skill to work further as my job title implies (software tester \\[manual\\] and process designer)",
-    "source": "reddit",
-    "source_name": "Reddit r/softwaretesting"
-  },
-  {
-    "title": "The messy truth of your AI strategies",
-    "url": "https://stackoverflow.blog/2026/04/10/the-messy-truth-of-your-ai-strategies/",
->>>>>>> f7c4d87 (Add personalized source filtering and refresh feed sources)
-    "source": "rss",
-    "source_name": "Stack Overflow Blog"
-  },
-  {
-<<<<<<< HEAD
-    "title": "Why observability platforms are becoming AI auditing tools",
-    "url": "https://thenewstack.io/agentic-ai-observability-auditing/",
-=======
-    "title": "Arrange Your Code to Communicate Data Flow",
-    "url": "http://testing.googleblog.com/2025/01/arrange-your-code-to-communicate-data.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
-  },
-  {
-    "title": "Two ways to use the \u201c5 whys\u201d method: Root cause of bugs and identifying continuous improvements",
-    "url": "https://www.ministryoftesting.com/articles/two-ways-to-use-the-5-whys-method-root-cause-of-bugs-and-identifying-continuous-improvements",
-    "source": "html",
-    "source_name": "Ministry of Testing"
   },
   {
     "title": "Mercedes-Benz W203 Rear Subframe Rust",
@@ -376,135 +48,10 @@
     "source_name": "Automation Panda"
   },
   {
-    "title": "Testing Benford's Law",
-    "url": "http://testingbenfordslaw.com",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Karpathy says developers have \u2018AI Psychosis.\u2019 Everyone else is next.",
-    "url": "https://thenewstack.io/karpathy-says-developers-have-ai-psychosis-everyone-else-is-next/",
->>>>>>> f7c4d87 (Add personalized source filtering and refresh feed sources)
-    "source": "rss",
-    "source_name": "The New Stack"
-  },
-  {
-<<<<<<< HEAD
-=======
-    "title": "Closing AI-generated test gaps with qTest & SeaLights",
-    "url": "https://www.tricentis.com/blog/close-ai-generated-test-gaps-qtest-sealights",
-    "source": "html",
-    "source_name": "Tricentis"
-  },
-  {
-    "title": "An IC\u2019s guide to roadmap planning",
-    "url": "https://increment.com/planning/individual-contributors-guide-to-roadmap-planning/",
+    "title": "Planning for momentum",
+    "url": "https://increment.com/planning/planning-for-momentum/",
     "source": "rss",
     "source_name": "Increment"
-  },
-  {
-    "title": "How I Secured a Linux Server from Scratch: HNG DevOps Stage 0",
-    "url": "https://dev.to/gideonbature/how-i-secured-a-linux-server-from-scratch-hng-devops-stage-0-341b",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "I don't get Gerkin/Cucumber. It seems a horrible way to test!",
-    "url": "https://www.reddit.com/r/testautomation/comments/k7xklx/i_dont_get_gerkincucumber_it_seems_a_horrible_way/",
-    "text": "I am quite an experienced tester. I have some free time so i thought i would go checkout Cucumber/Gerkin. I find it horrible! How the fuck it this so populair?\n\nFor example i have tried this cource: [https://school.cucumber.io/enrollments](https://school.cucumber.io/enrollments)\n\nThere is this example that goes like:\n\n&amp;#x200B;\n\n`Scenario: Customer has reciept`\n\n`Given Customer purchased item for 10`\n\n`And they have their reciept`\n\n`when the sales assistant processes the refund`\n\n`Then the stock inventory for item is incremented by 1`\n\n`and the customers card is credited with 10`\n\n&amp;#x200B;\n\nSo i get that you are testing the user interaction.... But from a testers point of view...\n\nWhy are you not testing the roles? I assume the sales boss, and the store manager etc ect are all able to process refunds to. And what it the reciepts in 20 years old? Am i to assume there is only 1 possible scenario and it;s a happy one?\n\nWhy are the rules concerning stock inventory. So the customer brings back an item why automatically add it to the stock? What about used items, damaged items, items that are returned because they are broken etc etc?\n\nSo what about the customer card should be credited? Where in this scenario did the customer use a card? What if he doens't even have a card but paid in cash? What if he used a coupon?\n\n&amp;#x200B;\n\nWell, you get my drift.... As a tester i can think of 1.000.000 scenarios to test this. And this,,, this Gerkin things seems like the way my Grandfather would think if testing something. Like, uhhh, someome brings something back so give him back his money and add item back in stock.....\n\nThanks Grandpa. Now what if one of the following 1.000.000 happens. Didn't think to test that did ya?\n\nAnd i don't see me copying the Gherkin 100.000 time each with a slight variation to. Like i would like a scenario where for some error the Customers card cannot be credited. Am i not testing that? \n\nWhy an i so very, very vague in my Scenario? Why don't i type:\n\n`Scenario: Customer has a valid reciept for 1 valid item and wants his card to be credited the same amount paid for?`\n\nAnd make one\n\n`Scenario: Customer has a reciept that has expired for 1 valid item and wants his card to be credited the same amount paid for?`\n\nAnd \n\n`Scenario: Customer has a valid reciept for 1 valid item and wants his card to be credited cash?`\n\nAnd \n\n`Scenario: Customer has a valid reciept for 2 valid item and wants his card to be credited the same amount paid for for all the items?`\n\nEct ect.\n\nI sure don't understand what's so hot about this Gerkin.....",
-    "source": "reddit",
-    "source_name": "Reddit r/TestAutomation"
-  },
-  {
->>>>>>> f7c4d87 (Add personalized source filtering and refresh feed sources)
-    "title": "The shifted operation model and MSPs in the AI Age",
-    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/shifted-operation-model-and-msps-in-ai-age",
-    "source": "rss",
-    "source_name": "Thoughtworks"
-<<<<<<< HEAD
-=======
-  },
-  {
-    "title": "2 years as a manual QA and I don\u2019t think I\u2019ve learned anything. Please give me some feedback",
-    "url": "https://www.reddit.com/r/QualityAssurance/comments/1sjw5e7/2_years_as_a_manual_qa_and_i_dont_think_ive/",
-    "text": "I\u2019ve been working at this product based company for 2 years now, and my work has been only manual until now as the work involves some hardware interaction during testing.\n\nI come from a non-CS background, so I\u2019ve been trained on everything from the basics. My team involves individual QA leads working on their own products. I handle some products myself. \n\nGiven that there are senior members in our team, test projects for all products already exist. All I need to do is review and update those tests from time to time based on product and software changes.\n\nWhenever the software team decides to do a release, I will be notified and I\u2019ll begin testing the changes, then the product as a whole for regressions. I then try to do some performance testing to see if the software fails. I dont have any experience with Jenkins apart from fetching new builds.\n\nAlso, the projects I work on do not have daily sprints, estimations and reviews. So I don\u2019t really have a good exposure there. While I did get to work briefly on a project that had these meetings, there were language barriers so I was just \u2018present\u2019 in the meetings.\n\nWhile I\u2019ve decided to learn Playwright and JavaScript to pivot to another job because of the language barrier at work and also because of the difficulties living in this town, I just feel like I have no skills set at all and so I\u2019m afraid I might not get a job.\n\nWhat can I do at this point?",
-    "source": "reddit",
-    "source_name": "Reddit r/QualityAssurance"
-  },
-  {
-    "title": "How to transition from other domain: tester in automotive to website automation test",
-    "url": "https://www.reddit.com/r/softwaretesting/comments/1shqavz/how_to_transition_from_other_domain_tester_in/",
-    "text": "Hi everyone, I have 5 years of experience as a software tester (both manual and automation) in the automotive industry, and I'm looking to transition into website automation testing. I'm already learning Playwright and Postman, and the progress has been good so far, thanks to some background in programming. However, I\u2019m struggling to land a new job in this field in Germany.\n\nI guess the main problem is that I don't yet have any professional experience working with the tech stacks that many companies in web automation are using. I\u2019m not sure how to make my profile stand out.\n\nHas anyone here made a similar transition? What can I do to make my profile more attractive to companies, even without experience in their specific tech stack? How to find any small chunk of real-world experience in the domain? What other keywords should I learn?\n\nAny tips on how to break into the industry would be greatly appreciated.\n\nThanks a lot.",
-    "source": "reddit",
-    "source_name": "Reddit r/softwaretesting"
-  },
-  {
-    "title": "What the AI trust gap means for enterprise SaaS",
-    "url": "https://stackoverflow.blog/2026/04/02/what-the-ai-trust-gap-means-for-enterprise-saas/",
-    "source": "rss",
-    "source_name": "Stack Overflow Blog"
-  },
-  {
-    "title": "Sort Lines in Source Code",
-    "url": "http://testing.googleblog.com/2025/09/sort-lines-in-source-code.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
-  },
-  {
-    "title": "What is software quality?",
-    "url": "https://www.ministryoftesting.com/articles/what-is-software-quality",
-    "source": "html",
-    "source_name": "Ministry of Testing"
-  },
-  {
-    "title": "The Testing Skyscraper: A Modern Alternative to the Testing Pyramid",
-    "url": "https://automationpanda.com/2025/09/29/the-testing-skyscraper-a-modern-alternative-to-the-testing-pyramid/",
-    "source": "rss",
-    "source_name": "Automation Panda"
-  },
-  {
-    "title": "20 lines of code that beat A/B testing every time",
-    "url": "http://stevehanov.ca/blog/index.php?id=132",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Where are the guardrails everyone promised for AI?",
-    "url": "https://thenewstack.io/skiplabs-ai-guardrails-skipper/",
-    "source": "rss",
-    "source_name": "The New Stack"
-  },
-  {
-    "title": "From green checkmarks to real confidence: How qTest and SeaLights close the modern quality gap",
-    "url": "https://www.tricentis.com/blog/qtest-sealights-proof-of-test-coverage",
-    "source": "html",
-    "source_name": "Tricentis"
-  },
-  {
-    "title": "I built a Telegram bot that reads 70 arXiv papers a day so I don't have to",
-    "url": "https://dev.to/landigf/i-built-a-telegram-bot-that-reads-70-arxiv-papers-a-day-so-i-dont-have-to-19b5",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Sikuli Test Automation",
-    "url": "https://www.reddit.com/r/testautomation/comments/k85ag8/sikuli_test_automation/",
-    "text": "Hey guys I\u2019m new here and Just needed some help with testing.\n\nSo I started working at this company and they want me to help them get them started on automation. They want me to select a tool to use to automate their regression tests, and the QA manager want me to go with Sikuli since it\u2019s open source. I\u2019ve been doing some research on it and I was wondering if anyone has used it? I have a few questions to ask?\n\nSo first thing did you use the Sikuli IDE or did implement its api to build framework? I have some experience with using selenium with java and JavaScript. , so I have an idea how I would go about to build a framework doing it that way. \n\nSikuli is a image based testing tool, so how would u deal with tables? I think you would have trouble like selecting items in it, like if I want to click on a check box and we have a whole column of check boxes, how would you tell it to select the right one?\n\nI just recently started so I haven\u2019t started testing Sikuli with their product but I plan on doing that this week.\n\nI appreciate any help\n\nThanks",
-    "source": "reddit",
-    "source_name": "Reddit r/TestAutomation"
-  },
-  {
-    "title": "Rethinking leadership: How a sabbatical transformed a CIO into a coding intern  [part two]",
-    "url": "https://www.thoughtworks.com/insights/blog/careers-at-thoughtworks/cio-journey-as-a-coding-intern-part-two",
-    "source": "rss",
-    "source_name": "Thoughtworks"
-  },
-  {
-    "title": "I want to level up my career as QA Engineer role and wanted to go to the big tech company like Google, Microsoft Disney,etc so I want to mentership like road map to be there and how I can reach and improve myself be be there",
-    "url": "https://www.reddit.com/r/QualityAssurance/comments/1sjjvww/i_want_to_level_up_my_career_as_qa_engineer_role/",
-    "text": "",
-    "source": "reddit",
-    "source_name": "Reddit r/QualityAssurance"
   },
   {
     "title": "Gen Z needs a knowledge base (and so do you)",
@@ -513,47 +60,82 @@
     "source_name": "Stack Overflow Blog"
   },
   {
-    "title": "The night our \u201chighly available\u201d system went dark: How testers can drive resiliency",
-    "url": "https://www.ministryoftesting.com/articles/the-night-our-highly-available-system-went-dark-how-testers-can-drive-resiliency",
-    "source": "html",
-    "source_name": "Ministry of Testing"
-  },
-  {
     "title": "We\u2019re working on 1M Covid-19 testing capacity per day",
     "url": "https://www.billiontoone.com/covid-19",
     "source": "hn",
     "source_name": "Hacker News"
   },
   {
-    "title": "Partner spotlight series: How Foulk Consulting transforms QA for energy and utilities with Tricentis",
-    "url": "https://www.tricentis.com/blog/foulk-consulting-tricentis-partner-spotlight",
+    "title": "Sort Lines in Source Code",
+    "url": "http://testing.googleblog.com/2025/09/sort-lines-in-source-code.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
+  },
+  {
+    "title": "Closing AI-generated test gaps with qTest & SeaLights",
+    "url": "https://www.tricentis.com/blog/close-ai-generated-test-gaps-qtest-sealights",
     "source": "html",
     "source_name": "Tricentis"
   },
   {
-    "title": "Putting It All Together: My 22-Day Terraform Journey",
-    "url": "https://dev.to/tink-origami/putting-it-all-together-my-22-day-terraform-journey-hlh",
+    "title": "Alan Turing play in Cambridge MA",
+    "url": "https://martinfowler.com/articles/202604-turing.html",
+    "source": "rss",
+    "source_name": "Martin Fowler"
+  },
+  {
+    "title": "A\u00f1adir aljibe a un proyecto que ya tiene Ddev",
+    "url": "https://dev.to/oskar_calvo_1615a9b3b293f/anadir-aljibe-a-un-proyecto-que-ya-tiene-ddev-c6m",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Best online course for complete understanding of Practical Selenium framework(focusing manual tester)",
-    "url": "https://www.reddit.com/r/testautomation/comments/jyxoiu/best_online_course_for_complete_understanding_of/",
-    "text": "hello guys, as clear from the title, suggest me to get the complete understanding of selenium framework with practical real time scenarios. \nPlease help. \nThanks.",
-    "source": "reddit",
-    "source_name": "Reddit r/TestAutomation"
-  },
-  {
-    "title": "Managing cognitive load for better software testing",
-    "url": "https://www.ministryoftesting.com/articles/managing-cognitive-load-for-better-software-testing",
+    "title": "6 leadership mistakes that made me a better leader",
+    "url": "https://www.ministryoftesting.com/articles/6-leadership-mistakes-that-made-me-a-better-leader",
     "source": "html",
     "source_name": "Ministry of Testing"
   },
   {
-    "title": "Facebook Messenger begins testing end-to-end encryption using Signal Protocol",
-    "url": "https://whispersystems.org/blog/facebook-messenger/",
+    "title": "Rethinking leadership: How a sabbatical transformed a CIO into a coding intern  [part two]",
+    "url": "https://www.thoughtworks.com/insights/blog/careers-at-thoughtworks/cio-journey-as-a-coding-intern-part-two",
+    "source": "rss",
+    "source_name": "Thoughtworks"
+  },
+  {
+    "title": "Spring creator wants Java\u2019s type system to tame agentic AI",
+    "url": "https://thenewstack.io/spring-creator-java-type-system-agentic-ai-rod-johnson/",
+    "source": "rss",
+    "source_name": "The New Stack"
+  },
+  {
+    "title": "The Testing Skyscraper: A Modern Alternative to the Testing Pyramid",
+    "url": "https://automationpanda.com/2025/09/29/the-testing-skyscraper-a-modern-alternative-to-the-testing-pyramid/",
+    "source": "rss",
+    "source_name": "Automation Panda"
+  },
+  {
+    "title": "A primer on product management for engineers",
+    "url": "https://increment.com/planning/product-management-for-engineers/",
+    "source": "rss",
+    "source_name": "Increment"
+  },
+  {
+    "title": "Who needs VCs when you have friends like these?",
+    "url": "https://stackoverflow.blog/2026/04/14/who-needs-vcs-when-you-have-friends-like-these/",
+    "source": "rss",
+    "source_name": "Stack Overflow Blog"
+  },
+  {
+    "title": "YouTube is testing a more aggressive approach against ad blockers",
+    "url": "https://www.androidpolice.com/youtube-ad-blockers-three-strikes/",
     "source": "hn",
     "source_name": "Hacker News"
+  },
+  {
+    "title": "Arrange Your Code to Communicate Data Flow",
+    "url": "http://testing.googleblog.com/2025/01/arrange-your-code-to-communicate-data.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
   },
   {
     "title": "AI in QA: What leading quality experts want every team to know",
@@ -562,27 +144,152 @@
     "source_name": "Tricentis"
   },
   {
-    "title": "Laravel Telescope vs Pulse vs Nightwatch: Which Monitoring Tool Do You Actually Need?",
-    "url": "https://dev.to/hafiz619/laravel-telescope-vs-pulse-vs-nightwatch-which-monitoring-tool-do-you-actually-need-2fig",
+    "title": "Post-Mortem Best Practices That Actually Drive Change",
+    "url": "https://dev.to/samson_tanimawo/post-mortem-best-practices-that-actually-drive-change-5dgd",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "API test automation with Python using Tavern-CI course is live on udemy",
-    "url": "https://www.reddit.com/r/testautomation/comments/jnhi3k/api_test_automation_with_python_using_tavernci/",
-    "text": "My course on API test automation with Python using tavern-ci is live on udemy. If you are interested in learning please check it out\n\nhttps://www.udemy.com/course/api-test-automation-using-python-with-tavern-ci/?referralCode=7D4E22A93C0D4EDC73F5",
-    "source": "reddit",
-    "source_name": "Reddit r/TestAutomation"
-  },
-  {
-    "title": "Beyond data generation: How I learned to trust synthetic data in performance testing",
-    "url": "https://www.ministryoftesting.com/articles/beyond-data-generation-how-i-learned-to-trust-synthetic-data-in-performance-testing",
+    "title": "Why software testers should write documentation even if no one else reads it",
+    "url": "https://www.ministryoftesting.com/articles/why-software-testers-should-write-documentation-even-if-no-one-else-reads-it",
     "source": "html",
     "source_name": "Ministry of Testing"
   },
   {
-    "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
-    "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel/",
+    "title": "The predictability gap in digital public infrastructure",
+    "url": "https://www.thoughtworks.com/insights/articles/predictability_gap_digital_public_infrastructure",
+    "source": "rss",
+    "source_name": "Thoughtworks"
+  },
+  {
+    "title": "Anthropic\u2019s redesigned Claude Code desktop app lets you burn through tokens even faster",
+    "url": "https://thenewstack.io/claude-code-desktop-redesign/",
+    "source": "rss",
+    "source_name": "The New Stack"
+  },
+  {
+    "title": "Prioritizing Small Things",
+    "url": "https://automationpanda.com/2025/12/17/prioritizing-small-things/",
+    "source": "rss",
+    "source_name": "Automation Panda"
+  },
+  {
+    "title": "Planning in the dark",
+    "url": "https://increment.com/planning/planning-for-product-market-fit/",
+    "source": "rss",
+    "source_name": "Increment"
+  },
+  {
+    "title": "Seizing the means of messenger production",
+    "url": "https://stackoverflow.blog/2026/04/03/seizing-the-means-of-messenger-production/",
+    "source": "rss",
+    "source_name": "Stack Overflow Blog"
+  },
+  {
+    "title": "Testing Benford's Law",
+    "url": "http://testingbenfordslaw.com",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Set Safe Defaults for Flags",
+    "url": "http://testing.googleblog.com/2026/03/set-safe-defaults-for-flags.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
+  },
+  {
+    "title": "From green checkmarks to real confidence: How qTest and SeaLights close the modern quality gap",
+    "url": "https://www.tricentis.com/blog/qtest-sealights-proof-of-test-coverage",
+    "source": "html",
+    "source_name": "Tricentis"
+  },
+  {
+    "title": "My AI told me to pip install a package that doesn't exist. Turns out someone already weaponized that.",
+    "url": "https://dev.to/xihegoddess/my-ai-told-me-to-pip-install-a-package-that-doesnt-exist-turns-out-someone-already-weaponized-2eoi",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "The future of testing: Autonomous agents, ethical AI, and human oversight",
+    "url": "https://www.ministryoftesting.com/articles/the-future-of-testing-autonomous-agents-ethical-ai-and-human-oversight",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "How to perform a structured evaluation of AI conversational solutions",
+    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/how-to-perform-a-structured-evaluation-of-ai-conversational-solutions",
+    "source": "rss",
+    "source_name": "Thoughtworks"
+  },
+  {
+    "title": "Why observability platforms are becoming AI auditing tools",
+    "url": "https://thenewstack.io/agentic-ai-observability-auditing/",
+    "source": "rss",
+    "source_name": "The New Stack"
+  },
+  {
+    "title": "Vibe coding while live streaming",
+    "url": "https://automationpanda.com/2025/08/20/vibe-coding-while-live-streaming/",
+    "source": "rss",
+    "source_name": "Automation Panda"
+  },
+  {
+    "title": "An IC\u2019s guide to roadmap planning",
+    "url": "https://increment.com/planning/individual-contributors-guide-to-roadmap-planning/",
+    "source": "rss",
+    "source_name": "Increment"
+  },
+  {
+    "title": "He designed C++ to solve your code problems",
+    "url": "https://stackoverflow.blog/2026/04/07/he-designed-c-to-solve-your-code-problems/",
+    "source": "rss",
+    "source_name": "Stack Overflow Blog"
+  },
+  {
+    "title": "Facebook Messenger begins testing end-to-end encryption using Signal Protocol",
+    "url": "https://whispersystems.org/blog/facebook-messenger/",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Simplify Your Code: Functional Core, Imperative Shell",
+    "url": "http://testing.googleblog.com/2025/10/simplify-your-code-functional-core.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
+  },
+  {
+    "title": "Partner spotlight series: How Foulk Consulting transforms QA for energy and utilities with Tricentis",
+    "url": "https://www.tricentis.com/blog/foulk-consulting-tricentis-partner-spotlight",
+    "source": "html",
+    "source_name": "Tricentis"
+  },
+  {
+    "title": "MCP Security in Action: Decision-Lineage Observability",
+    "url": "https://dev.to/ajaydevineni/mcp-security-in-action-decision-lineage-observability-1k6c",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "What is software quality?",
+    "url": "https://www.ministryoftesting.com/articles/what-is-software-quality",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "The shifted operation model and MSPs in the AI Age",
+    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/shifted-operation-model-and-msps-in-ai-age",
+    "source": "rss",
+    "source_name": "Thoughtworks"
+  },
+  {
+    "title": "The messy truth of your AI strategies",
+    "url": "https://stackoverflow.blog/2026/04/10/the-messy-truth-of-your-ai-strategies/",
+    "source": "rss",
+    "source_name": "Stack Overflow Blog"
+  },
+  {
+    "title": "One of the Biggest At-Home DNA Testing Companies Is Working with the FBI",
+    "url": "https://www.buzzfeednews.com/article/salvadorhernandez/family-tree-dna-fbi-investigative-genealogy-privacy",
     "source": "hn",
     "source_name": "Hacker News"
   },
@@ -593,21 +300,38 @@
     "source_name": "Tricentis"
   },
   {
-    "title": "GitOps vs GitHub Actions: Security-First in Production",
-    "url": "https://dev.to/orthogonalinfo/gitops-vs-github-actions-security-first-in-production-18in",
+    "title": "Running Terraform against Azure locally, without a subscription",
+    "url": "https://dev.to/kamil-mrzyglod/running-terraform-against-azure-locally-without-a-subscription-1lpf",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Playwright test runner preview - cross-browser e2e testing for web apps",
-    "url": "https://github.com/microsoft/playwright-test",
-    "text": "",
-    "source": "reddit",
-    "source_name": "Reddit r/TestAutomation"
+    "title": "Creating a resilient test framework with the Playwright Page Object Model (POM)",
+    "url": "https://www.ministryoftesting.com/articles/creating-a-resilient-test-framework-with-the-playwright-page-object-model-pom",
+    "source": "html",
+    "source_name": "Ministry of Testing"
   },
   {
-    "title": "Why software testers should write documentation even if no one else reads it",
-    "url": "https://www.ministryoftesting.com/articles/why-software-testers-should-write-documentation-even-if-no-one-else-reads-it",
+    "title": "20 lines of code that beat A/B testing every time",
+    "url": "http://stevehanov.ca/blog/index.php?id=132",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "What software makers need to know about the new EU directive",
+    "url": "https://www.tricentis.com/blog/new-eu-product-liability-directive-key-impacts-for-software-makers",
+    "source": "html",
+    "source_name": "Tricentis"
+  },
+  {
+    "title": "AI Web Browsers & Agents in 2026: The Complete Selection Guide",
+    "url": "https://dev.to/sarvabharan/ai-web-browsers-agents-in-2026-the-complete-selection-guide-pkb",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Finding software testing opportunities early with the Requirements Review Model",
+    "url": "https://www.ministryoftesting.com/articles/finding-software-testing-opportunities-early-with-the-requirements-review-model",
     "source": "html",
     "source_name": "Ministry of Testing"
   },
@@ -624,39 +348,14 @@
     "source_name": "Tricentis"
   },
   {
-    "title": "I Gamified My Claude Code Terminal With Evolving Pixel Pets",
-    "url": "https://dev.to/patheonsceo/i-gamified-my-claude-code-terminal-with-evolving-pixel-pets-4jgi",
+    "title": "The Backyard Quarry, Part 5: Digital Twins for Physical Objects",
+    "url": "https://dev.to/kenwalger/the-backyard-quarry-part-5-digital-twins-for-physical-objects-5a9i",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "The 10 Best Managed Software Testing Service Providers in 2020",
-    "url": "https://medium.com/qualitest/the-10-best-managed-software-testing-service-providers-in-2020-95c751d7474",
-    "text": "",
-    "source": "reddit",
-    "source_name": "Reddit r/TestAutomation"
-  },
-  {
-    "title": "Does AI test generation actually improve velocity? Solving the regression bloat",
-    "url": "https://www.ministryoftesting.com/articles/does-ai-test-generation-actually-improve-velocity-solving-the-regression-bloat",
-    "source": "html",
-    "source_name": "Ministry of Testing"
-  },
-  {
-    "title": "Blender is testing PeerTube after YouTube blocks their videos worldwide",
-    "url": "https://www.blender.org/media-exposure/youtube-blocks-blender-videos-worldwide/",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "I Replaced SQLite with a Rust Database in My AI Robot \u2014 Here's What Happened",
-    "url": "https://dev.to/motedb/i-replaced-sqlite-with-a-rust-database-in-my-ai-robot-heres-what-happened-1n6k",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Everyday accessibility: 7 ways to do a little a11y every day",
-    "url": "https://www.ministryoftesting.com/articles/everyday-accessibility-7-ways-to-do-a-little-a11y-every-day",
+    "title": "Managing cognitive load for better software testing",
+    "url": "https://www.ministryoftesting.com/articles/managing-cognitive-load-for-better-software-testing",
     "source": "html",
     "source_name": "Ministry of Testing"
   },
@@ -667,8 +366,152 @@
     "source_name": "Hacker News"
   },
   {
-    "title": "\"My AI Coding Tools Were Running Up a Tab I Couldn't See \u2014 So I Fixed That\"",
-    "url": "https://dev.to/yiyaoai/my-ai-coding-tools-were-running-up-a-tab-i-couldnt-see-so-i-fixed-that-1g67",
+    "title": "Balancing risk with the need for speed",
+    "url": "https://www.tricentis.com/blog/how-to-avoid-a-technology-meltdown",
+    "source": "html",
+    "source_name": "Tricentis"
+  },
+  {
+    "title": "Your AI Memory System Can't Tell a River Bank from a Savings Account",
+    "url": "https://dev.to/eyepaq/your-ai-memory-system-cant-tell-a-river-bank-from-a-savings-account-34j",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Getting paid what you are worth as a software tester",
+    "url": "https://www.ministryoftesting.com/articles/getting-paid-what-you-are-worth-as-a-software-tester",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
+    "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel/",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Why I Built tat: A Tiny API Test Tool for Real Integration Work and fits With AI Workflows",
+    "url": "https://dev.to/joehom_sum_e64272f38d9618/why-i-built-tat-a-tiny-api-test-tool-for-real-integration-work-and-fits-with-ai-workflows-4b99",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Delivering quality and deploying on time when your team is small",
+    "url": "https://www.ministryoftesting.com/articles/delivering-quality-and-deploying-on-time-when-your-team-is-small",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "Waymo granted permit to begin testing in New York City",
+    "url": "https://www.cnbc.com/2025/08/22/waymo-permit-new-york-city-nyc-rides.html",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "How I Ran a Live Production Upgrade in 24 Minutes Without Taking the Site Down",
+    "url": "https://dev.to/rokcso/how-i-ran-a-live-production-upgrade-in-24-minutes-without-taking-the-site-down-4hcn",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "When hiring software testers doesn't work (and what to do BEFORE you hire them)",
+    "url": "https://www.ministryoftesting.com/articles/when-hiring-software-testers-doesn-t-work-and-what-to-do-before-you-hire-them",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "Apple testing new App Store design that blurs the line between ads and results",
+    "url": "https://9to5mac.com/2026/01/16/iphone-apple-app-store-search-results-ads-new-design/",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "The Git habits that made reviewers trust me before they read a single line of code",
+    "url": "https://dev.to/amaanx86/the-git-habits-that-made-reviewers-trust-me-before-they-read-a-single-line-of-code-anh",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "The night our \u201chighly available\u201d system went dark: How testers can drive resiliency",
+    "url": "https://www.ministryoftesting.com/articles/the-night-our-highly-available-system-went-dark-how-testers-can-drive-resiliency",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "Blender is testing PeerTube after YouTube blocks their videos worldwide",
+    "url": "https://www.blender.org/media-exposure/youtube-blocks-blender-videos-worldwide/",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Your .env.example Is Not a Schema. Here's a 400-Line Python CLI That Fixes That",
+    "url": "https://dev.to/sendotltd/your-envexample-is-not-a-schema-heres-a-400-line-python-cli-that-fixes-that-5el3",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Six common mistakes in test automation scripting",
+    "url": "https://www.ministryoftesting.com/articles/six-common-mistakes-in-test-automation-scripting",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "Testing GPT 4's code-writing capabilities with some real world problems",
+    "url": "https://tylerglaiel.substack.com/p/can-gpt-4-actually-write-code",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "YATL \u2014 API testing in a new way",
+    "url": "https://dev.to/khabib73/yatl-api-testing-in-a-new-way-1kb3",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Does AI test generation actually improve velocity? Solving the regression bloat",
+    "url": "https://www.ministryoftesting.com/articles/does-ai-test-generation-actually-improve-velocity-solving-the-regression-bloat",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "The AI Agent Economy Needs Payment Rails \u2014 Here's What I Built",
+    "url": "https://dev.to/pmestreforge/the-ai-agent-economy-needs-payment-rails-heres-what-i-built-1mo1",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Product-minded testing: choosing what matters when everything feels important",
+    "url": "https://www.ministryoftesting.com/articles/product-minded-testing-choosing-what-matters-when-everything-feels-important",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "How do AI video generation models work?",
+    "url": "https://dev.to/googleai/how-do-ai-video-generation-models-work-a82",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Stop delegating your thinking: Using 5 whys to check AI documentation",
+    "url": "https://www.ministryoftesting.com/articles/stop-delegating-your-thinking-using-5-whys-to-check-ai-documentation",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "How to Detect API Breaking Changes Before They Hit Production",
+    "url": "https://dev.to/flarecanary/how-to-detect-api-breaking-changes-before-they-hit-production-257p",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Everyday accessibility: 7 ways to do a little a11y every day",
+    "url": "https://www.ministryoftesting.com/articles/everyday-accessibility-7-ways-to-do-a-little-a11y-every-day",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "Things You're Overengineering in Your AI Agent (The LLM Already Handles Them)",
+    "url": "https://dev.to/serhiip/things-youre-overengineering-in-your-ai-agent-the-llm-already-handles-them-2lop",
     "source": "devto",
     "source_name": "DEV Community"
   },
@@ -679,10 +522,21 @@
     "source_name": "Ministry of Testing"
   },
   {
-    "title": "YouTube is testing a more aggressive approach against ad blockers",
-    "url": "https://www.androidpolice.com/youtube-ad-blockers-three-strikes/",
-    "source": "hn",
-    "source_name": "Hacker News"
->>>>>>> f7c4d87 (Add personalized source filtering and refresh feed sources)
+    "title": "Construa uma crew CrewAI que publica na The Colony em 5 minutos",
+    "url": "https://dev.to/colonistone_34/construa-uma-crew-crewai-que-publica-na-the-colony-em-5-minutos-2omd",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Inclusive development teams: Why representation matters",
+    "url": "https://www.ministryoftesting.com/articles/inclusive-development-teams-why-representation-matters",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "How (and why) I created my API testing tool, Yapitest",
+    "url": "https://dev.to/cd4/how-and-why-i-created-my-api-testing-tool-yapitest-18km",
+    "source": "devto",
+    "source_name": "DEV Community"
   }
 ]
