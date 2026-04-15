@@ -14,12 +14,16 @@ const {
 } = globalThis.QABytesFeedLogic;
 
 const feedContainer = document.getElementById("feed");
-const filtersContainer = document.getElementById("filters");
-const sourceControlsContainer = document.getElementById("source-controls");
-const feedStatusContainer = document.getElementById("feed-status");
+const activeFiltersContainer = document.getElementById("active-filters");
 const savedSection = document.getElementById("saved-section");
 const savedHeaderToggle = document.getElementById("saved-header-toggle");
 const savedHeaderCount = document.getElementById("saved-header-count");
+const filterHeaderToggle = document.getElementById("filter-header-toggle");
+const filterHeaderCount = document.getElementById("filter-header-count");
+const filterSheetBackdrop = document.getElementById("filter-sheet-backdrop");
+const filterSheet = document.getElementById("filter-sheet");
+const filterSheetBody = document.getElementById("filter-sheet-body");
+const filterSheetClose = document.getElementById("filter-sheet-close");
 const savedFeedContainer = document.getElementById("saved-feed");
 const scrollTopButton = document.getElementById("scroll-top-button");
 const readCompletionDelayMs = 1180;
@@ -45,7 +49,7 @@ let availableSources = [];
 let visibleFeedSize = defaultVisibleFeedSize;
 let activeFilter = "All";
 let isSavedSectionExpanded = false;
-let isSourcePanelExpanded = false;
+let isFilterSheetOpen = false;
 let hasInitializedUi = false;
 let currentFeedSignature = "";
 let lastFeedRefreshAt = 0;
@@ -249,6 +253,11 @@ function getVisibleFeedArticles() {
   return selectArticlesWithSourceCap(filteredArticles, visibleFeedSize, 2);
 }
 
+function countActiveFilters() {
+  const selectedSourceIds = getSelectedSourceIdsSet();
+  return (selectedSourceIds ? selectedSourceIds.size : 0) + (activeFilter === "All" ? 0 : 1);
+}
+
 function renderCard(article) {
   const title = article.title || "";
   const category =
@@ -448,142 +457,201 @@ function launchReadBurst(button) {
   }
 }
 
-function renderSourceControls() {
-  if (!sourceControlsContainer) {
-    return;
-  }
-
-  if (availableSources.length === 0) {
-    sourceControlsContainer.replaceChildren();
+function renderActiveFilters() {
+  if (!activeFiltersContainer) {
     return;
   }
 
   const selectedSourceIds = getSelectedSourceIdsSet();
-  const panel = document.createElement("div");
-  panel.className = "source-panel";
+  const nodes = [];
 
-  const header = document.createElement("div");
-  header.className = "source-panel-header";
+  if (selectedSourceIds) {
+    availableSources
+      .filter((source) => selectedSourceIds.has(source.id))
+      .forEach((source) => {
+        const pill = document.createElement("div");
+        pill.className = "active-filter-pill";
+        pill.textContent = `Source: ${source.label}`;
 
-  const title = document.createElement("div");
-  title.className = "source-panel-title";
-  const titleStrong = document.createElement("strong");
-  titleStrong.textContent = "Sources";
-  const titleText = document.createElement("span");
-  titleText.textContent = selectedSourceIds
-    ? `${selectedSourceIds.size} source${selectedSourceIds.size === 1 ? "" : "s"} selected`
-    : "No source filter applied";
-  title.append(titleStrong, titleText);
-
-  const toggleButton = document.createElement("button");
-  toggleButton.type = "button";
-  toggleButton.className = "source-panel-toggle";
-  toggleButton.textContent = isSourcePanelExpanded ? "Hide sources" : "Choose sources";
-  toggleButton.setAttribute("aria-expanded", String(isSourcePanelExpanded));
-  toggleButton.addEventListener("click", () => {
-    isSourcePanelExpanded = !isSourcePanelExpanded;
-    renderSourceControls();
-  });
-
-  header.append(title, toggleButton);
-  panel.appendChild(header);
-
-  if (isSourcePanelExpanded) {
-    const actions = document.createElement("div");
-    actions.className = "source-panel-actions";
-
-    const selectAllButton = document.createElement("button");
-    selectAllButton.type = "button";
-    selectAllButton.className = "source-utility-button";
-    selectAllButton.textContent = "Show all";
-    selectAllButton.addEventListener("click", () => {
-      resetSelectedSourceIds();
-      renderAll();
-    });
-
-    const qaFocusedButton = document.createElement("button");
-    qaFocusedButton.type = "button";
-    qaFocusedButton.className = "source-utility-button";
-    qaFocusedButton.textContent = "QA-focused";
-    qaFocusedButton.addEventListener("click", () => {
-      const qaFocusedIds = availableSources
-        .filter((source) => !["devto", "hn"].includes(source.id))
-        .map((source) => source.id);
-      setSelectedSourceIds(qaFocusedIds.length > 0 ? qaFocusedIds : getAllSourceIds());
-      renderAll();
-    });
-
-    const hideDevButton = document.createElement("button");
-    hideDevButton.type = "button";
-    hideDevButton.className = "source-utility-button";
-    hideDevButton.textContent = "Hide DEV";
-    hideDevButton.addEventListener("click", () => {
-      const withoutDev = getAllSourceIds().filter((sourceId) => sourceId !== "devto");
-      setSelectedSourceIds(withoutDev.length > 0 ? withoutDev : getAllSourceIds());
-      renderAll();
-    });
-
-    actions.append(selectAllButton, qaFocusedButton, hideDevButton);
-    panel.appendChild(actions);
-
-    const grid = document.createElement("div");
-    grid.className = "source-pill-grid";
-
-    availableSources.forEach((source) => {
-      const pill = document.createElement("button");
-      pill.type = "button";
-      pill.className = "source-pill";
-      const isSelected = selectedSourceIds ? selectedSourceIds.has(source.id) : false;
-      pill.classList.add(isSelected ? "is-selected" : "is-deselected");
-      pill.textContent = source.label;
-      pill.addEventListener("click", () => {
-        const nextSelection = new Set(getSelectedSourceIdsSet() || []);
-        if (nextSelection.has(source.id)) {
+        const removeButton = document.createElement("button");
+        removeButton.type = "button";
+        removeButton.setAttribute("aria-label", `Remove ${source.label} source filter`);
+        removeButton.textContent = "\u00d7";
+        removeButton.addEventListener("click", () => {
+          const nextSelection = new Set(getSelectedSourceIdsSet() || []);
           nextSelection.delete(source.id);
-        } else {
-          nextSelection.add(source.id);
-        }
-        setSelectedSourceIds([...nextSelection]);
-        renderAll();
-      });
-      grid.appendChild(pill);
-    });
+          setSelectedSourceIds([...nextSelection]);
+          renderAll();
+        });
 
-    panel.appendChild(grid);
+        pill.appendChild(removeButton);
+        nodes.push(pill);
+      });
   }
 
-  sourceControlsContainer.replaceChildren(panel);
+  if (activeFilter !== "All") {
+    const topicPill = document.createElement("div");
+    topicPill.className = "active-filter-pill active-filter-pill-topic";
+    topicPill.textContent = `Topic: ${activeFilter}`;
+
+    const removeButton = document.createElement("button");
+    removeButton.type = "button";
+    removeButton.setAttribute("aria-label", `Remove ${activeFilter} topic filter`);
+    removeButton.textContent = "\u00d7";
+    removeButton.addEventListener("click", () => {
+      activeFilter = "All";
+      renderAll();
+    });
+
+    topicPill.appendChild(removeButton);
+    nodes.push(topicPill);
+  }
+
+  activeFiltersContainer.replaceChildren(...nodes);
 }
 
-function renderFilters() {
-  if (!filtersContainer) {
+function renderFilterSheet() {
+  if (!filterSheetBody || !filterHeaderToggle || !filterHeaderCount) {
     return;
+  }
+
+  const activeFilterCount = countActiveFilters();
+  filterHeaderToggle.setAttribute("aria-expanded", String(isFilterSheetOpen));
+  filterHeaderCount.hidden = activeFilterCount === 0;
+  filterHeaderCount.textContent = `${activeFilterCount}`;
+
+  if (filterSheetBackdrop) {
+    filterSheetBackdrop.hidden = !isFilterSheetOpen;
+  }
+  if (filterSheet) {
+    filterSheet.hidden = !isFilterSheetOpen;
   }
 
   const availableLabels = new Set(
     feedArticles.map((article) => article.why_it_matters).filter(Boolean)
   );
+  const selectedSourceIds = getSelectedSourceIdsSet();
 
-  const chips = taxonomyLabels
-    .filter((label) => label === "All" || availableLabels.has(label))
-    .map((label) => {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "filter-chip";
-      if (label === activeFilter) {
-        button.classList.add("is-active");
+  const sourceSection = document.createElement("div");
+  sourceSection.className = "filter-sheet-section";
+  sourceSection.appendChild(Object.assign(document.createElement("strong"), {
+    className: "filter-sheet-section-title",
+    textContent: "Sources",
+  }));
+
+  const sourceGrid = document.createElement("div");
+  sourceGrid.className = "filter-sheet-grid";
+
+  availableSources.forEach((source) => {
+    const pill = document.createElement("button");
+    pill.type = "button";
+    pill.className = "filter-choice-pill";
+    const isSelected = selectedSourceIds ? selectedSourceIds.has(source.id) : false;
+    pill.classList.add(isSelected ? "is-selected" : "is-deselected");
+    pill.textContent = source.label;
+    pill.addEventListener("click", () => {
+      const nextSelection = new Set(getSelectedSourceIdsSet() || []);
+      if (nextSelection.has(source.id)) {
+        nextSelection.delete(source.id);
+      } else {
+        nextSelection.add(source.id);
       }
-      button.textContent = label;
-      button.addEventListener("click", () => {
+      setSelectedSourceIds([...nextSelection]);
+      renderAll();
+    });
+    sourceGrid.appendChild(pill);
+  });
+
+  sourceSection.appendChild(sourceGrid);
+
+  const topicSection = document.createElement("div");
+  topicSection.className = "filter-sheet-section";
+  topicSection.appendChild(Object.assign(document.createElement("strong"), {
+    className: "filter-sheet-section-title",
+    textContent: "Topics",
+  }));
+
+  const topicGrid = document.createElement("div");
+  topicGrid.className = "filter-sheet-grid";
+
+  taxonomyLabels
+    .filter((label) => label === "All" || availableLabels.has(label))
+    .forEach((label) => {
+      const pill = document.createElement("button");
+      pill.type = "button";
+      pill.className = "filter-choice-pill";
+      pill.classList.add(label === activeFilter ? "is-selected" : "is-deselected");
+      pill.textContent = label;
+      pill.addEventListener("click", () => {
         activeFilter = label;
-        renderFilters();
-        renderFeedStatus();
-        renderFeed();
+        renderAll();
       });
-      return button;
+      topicGrid.appendChild(pill);
     });
 
-  filtersContainer.replaceChildren(...chips);
+  topicSection.appendChild(topicGrid);
+
+  const actions = document.createElement("div");
+  actions.className = "filter-sheet-actions";
+
+  const actionsLeft = document.createElement("div");
+  actionsLeft.className = "filter-sheet-actions-left";
+  const hasSelectedSources = Boolean(selectedSourceIds && selectedSourceIds.size > 0);
+  const hasTopicFilter = activeFilter !== "All";
+  const hasActiveFilters = hasSelectedSources || hasTopicFilter;
+
+  if (hasSelectedSources) {
+    const clearSourcesButton = document.createElement("button");
+    clearSourcesButton.type = "button";
+    clearSourcesButton.className = "filter-sheet-action";
+    clearSourcesButton.textContent = "Clear sources";
+    clearSourcesButton.addEventListener("click", () => {
+      resetSelectedSourceIds();
+      renderAll();
+    });
+    actionsLeft.appendChild(clearSourcesButton);
+  }
+
+  if (hasTopicFilter) {
+    const clearTopicButton = document.createElement("button");
+    clearTopicButton.type = "button";
+    clearTopicButton.className = "filter-sheet-action";
+    clearTopicButton.textContent = "Clear topic";
+    clearTopicButton.addEventListener("click", () => {
+      activeFilter = "All";
+      renderAll();
+    });
+    actionsLeft.appendChild(clearTopicButton);
+  }
+
+  if (hasActiveFilters) {
+    const clearAllButton = document.createElement("button");
+    clearAllButton.type = "button";
+    clearAllButton.className = "filter-sheet-action";
+    clearAllButton.textContent = "Clear all";
+    clearAllButton.addEventListener("click", () => {
+      resetSelectedSourceIds();
+      activeFilter = "All";
+      renderAll();
+    });
+    actionsLeft.appendChild(clearAllButton);
+    actions.append(actionsLeft);
+  }
+
+  const bodyNodes = [sourceSection, topicSection];
+  if (hasActiveFilters) {
+    bodyNodes.push(actions);
+  }
+
+  filterSheetBody.replaceChildren(...bodyNodes);
+}
+
+function setFilterSheetOpen(nextState) {
+  isFilterSheetOpen = nextState;
+  if (document.body) {
+    document.body.style.overflow = isFilterSheetOpen ? "hidden" : "";
+  }
+  renderFilterSheet();
 }
 
 function updateScrollTopButton() {
@@ -625,65 +693,26 @@ function createReadDivider(hasUnreadAbove) {
   return divider;
 }
 
-function renderFeedStatus() {
-  if (!feedStatusContainer) {
-    return;
-  }
+function createEmptyFeedState() {
+  const hasSourceFilter = Boolean(getSelectedSourceIdsSet()?.size);
+  const hasTopicFilter = activeFilter !== "All";
+  const state = document.createElement("div");
+  state.className = "feed-empty-state";
 
-  const filteredArticles = getFilteredFeedArticles();
-  const visibleArticles = getVisibleFeedArticles();
-  const selectedSourceIds = getSelectedSourceIdsSet();
-  const isSourceFilterActive = selectedSourceIds !== null;
+  const title = document.createElement("strong");
+  title.textContent =
+    hasSourceFilter || hasTopicFilter
+      ? "No articles match these filters today."
+      : "No articles are available right now.";
 
-  if (visibleArticles.length >= visibleFeedSize || filteredArticles.length === feedArticles.length) {
-    feedStatusContainer.hidden = true;
-    feedStatusContainer.replaceChildren();
-    return;
-  }
+  const description = document.createElement("p");
+  description.textContent =
+    hasSourceFilter || hasTopicFilter
+      ? "Try removing a source or topic filter to widen the feed."
+      : "Please check back in a moment while the latest QA reads load in.";
 
-  const wrapper = document.createElement("div");
-  wrapper.className = "feed-status";
-
-  const strong = document.createElement("strong");
-  strong.textContent = filteredArticles.length === 0 ? "No articles match right now" : "Filtered view";
-
-  const text = document.createElement("span");
-  if (filteredArticles.length === 0) {
-    text.textContent = !isSourceFilterActive && activeFilter === "All"
-      ? "There are no articles available in today's pool yet."
-      : "Try turning on more sources or resetting your filters.";
-  } else if (!isSourceFilterActive && activeFilter === "All") {
-    text.textContent = `Only ${visibleArticles.length} articles are available in today's default view right now.`;
-  } else {
-    text.textContent = `Only ${filteredArticles.length} articles match your selected sources${activeFilter !== "All" ? ` and ${activeFilter.toLowerCase()} filter` : ""}.`;
-  }
-
-  wrapper.append(strong, text);
-
-  if (isSourceFilterActive) {
-    const resetButton = document.createElement("button");
-    resetButton.type = "button";
-    resetButton.textContent = "Show all sources";
-    resetButton.addEventListener("click", () => {
-      resetSelectedSourceIds();
-      renderAll();
-    });
-    wrapper.appendChild(resetButton);
-  }
-
-  if (activeFilter !== "All") {
-    const clearFilterButton = document.createElement("button");
-    clearFilterButton.type = "button";
-    clearFilterButton.textContent = "Clear topic filter";
-    clearFilterButton.addEventListener("click", () => {
-      activeFilter = "All";
-      renderAll();
-    });
-    wrapper.appendChild(clearFilterButton);
-  }
-
-  feedStatusContainer.hidden = false;
-  feedStatusContainer.replaceChildren(wrapper);
+  state.append(title, description);
+  return state;
 }
 
 function renderFeed() {
@@ -692,6 +721,11 @@ function renderFeed() {
   }
 
   const filtered = getVisibleFeedArticles();
+  if (filtered.length === 0) {
+    feedContainer.replaceChildren(createEmptyFeedState());
+    return;
+  }
+
   const firstReadIndex = filtered.findIndex((article) =>
     Boolean(getArticleState(article.id).read)
   );
@@ -739,10 +773,9 @@ function renderSavedSection() {
 
 function renderAll() {
   syncSavedSnapshotsWithFeed();
-  renderSourceControls();
+  renderActiveFilters();
+  renderFilterSheet();
   renderSavedSection();
-  renderFilters();
-  renderFeedStatus();
   renderFeed();
 }
 
@@ -847,6 +880,24 @@ function initializeUi() {
     });
   }
 
+  if (filterHeaderToggle) {
+    filterHeaderToggle.addEventListener("click", () => {
+      setFilterSheetOpen(!isFilterSheetOpen);
+    });
+  }
+
+  if (filterSheetClose) {
+    filterSheetClose.addEventListener("click", () => {
+      setFilterSheetOpen(false);
+    });
+  }
+
+  if (filterSheetBackdrop) {
+    filterSheetBackdrop.addEventListener("click", () => {
+      setFilterSheetOpen(false);
+    });
+  }
+
   if (scrollTopButton) {
     scrollTopButton.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -875,6 +926,12 @@ function initializeUi() {
   window.addEventListener("focus", () => {
     if (document.visibilityState === "visible") {
       requestFeedRefresh();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && isFilterSheetOpen) {
+      setFilterSheetOpen(false);
     }
   });
 }

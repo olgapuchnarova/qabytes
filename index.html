@@ -16,13 +16,22 @@
       <h1>QABytes</h1>
       <p class="tagline">Fresh QA signals and practical reads for the day ahead.</p>
     </div>
-    <button id="saved-header-toggle" type="button" aria-expanded="false" aria-label="Toggle saved articles">
-      <svg class="bookmark-icon" viewBox="0 0 14 18" aria-hidden="true" focusable="false">
-        <path d="M3 1.25h8a1.75 1.75 0 0 1 1.75 1.75v13.05l-5.75-3.43-5.75 3.43V3A1.75 1.75 0 0 1 3 1.25Z" fill="currentColor"></path>
-      </svg>
-      <span id="saved-header-count" hidden>0</span>
-    </button>
+    <div class="header-actions">
+      <button id="saved-header-toggle" type="button" aria-expanded="false" aria-label="Toggle saved articles">
+        <svg class="bookmark-icon" viewBox="0 0 14 18" aria-hidden="true" focusable="false">
+          <path d="M3 1.25h8a1.75 1.75 0 0 1 1.75 1.75v13.05l-5.75-3.43-5.75 3.43V3A1.75 1.75 0 0 1 3 1.25Z" fill="currentColor"></path>
+        </svg>
+        <span id="saved-header-count" hidden>0</span>
+      </button>
+      <button id="filter-header-toggle" type="button" aria-expanded="false" aria-controls="filter-sheet" aria-label="Open filters">
+        <svg class="filter-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+          <path d="M3 4.5h14l-5.1 5.82v4.36l-3.8 1.82v-6.18L3 4.5Z" fill="currentColor"></path>
+        </svg>
+        <span id="filter-header-count" hidden>0</span>
+      </button>
+    </div>
   </div>
+  <div id="active-filters" aria-live="polite"></div>
 </header>
 
 <section>
@@ -30,11 +39,21 @@
     <div id="saved-feed" hidden></div>
   </div>
 
-  <div id="source-controls"></div>
-  <div id="filters"></div>
-  <div id="feed-status" hidden aria-live="polite"></div>
   <div id="feed"></div>
 </section>
+
+<div id="filter-sheet-backdrop" hidden></div>
+<div id="filter-sheet" hidden aria-modal="true" role="dialog" aria-labelledby="filter-sheet-title">
+  <div class="filter-sheet-handle" aria-hidden="true"></div>
+  <div class="filter-sheet-header">
+    <div>
+      <strong id="filter-sheet-title">Filters</strong>
+      <span>Filters apply instantly. Tap Done when you're finished.</span>
+    </div>
+    <button id="filter-sheet-close" type="button" aria-label="Close filters">Done</button>
+  </div>
+  <div id="filter-sheet-body"></div>
+</div>
 
 <button id="scroll-top-button" type="button" aria-label="Scroll to top" hidden>
   <span aria-hidden="true">&uarr;</span>
