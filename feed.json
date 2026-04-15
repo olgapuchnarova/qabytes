@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "generated_at": "2026-04-15T10:48:38.192840+00:00",
-=======
-  "generated_at": "2026-04-15T16:34:19.581741+00:00",
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
+  "generated_at": "2026-04-15T17:02:01.516756+00:00",
   "pool_size": 45,
   "default_feed_size": 10,
   "available_sources": [
@@ -18,17 +14,6 @@
     {
       "id": "rss:google-testing-blog",
       "label": "Google Testing Blog"
-<<<<<<< HEAD
-=======
-    },
-    {
-      "id": "hn",
-      "label": "Hacker News"
-    },
-    {
-      "id": "rss:increment",
-      "label": "Increment"
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
     },
     {
       "id": "hn",
@@ -43,17 +28,6 @@
       "label": "Ministry of Testing"
     },
     {
-<<<<<<< HEAD
-=======
-      "id": "r-softwaretesting",
-      "label": "Reddit r/softwaretesting"
-    },
-    {
-      "id": "r-testautomation",
-      "label": "Reddit r/TestAutomation"
-    },
-    {
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
       "id": "rss:stack-overflow-blog",
       "label": "Stack Overflow Blog"
     },
@@ -72,29 +46,6 @@
   ],
   "articles": [
     {
-      "id": "b94b5e1d7261a3c8",
-      "title": "Rethinking leadership: How a sabbatical transformed a CIO into a coding intern  [part two]",
-      "url": "https://www.thoughtworks.com/insights/blog/careers-at-thoughtworks/cio-journey-as-a-coding-intern-part-two",
-      "source": "rss",
-      "source_name": "Thoughtworks",
-      "source_id": "rss:thoughtworks",
-      "signal": 5,
-      "why_it_matters": "Leadership signal",
-      "summary": "Jessie Xia's sabbatical as a coding intern provided profound insights into the dynamics of leadership and collaboration in the AI era. Both she and her mentor, Zhang Wei, learned that true leadership involves empathy, clarity of intent, and creating a safe space for collaboration, which are essential for driving change in a rapidly evolving tech landscape.",
-      "key_points": [
-        "Intent is the new syntax; clear thinking enhances AI's utility.",
-        "Productivity must be governable, focusing on scalable engineering systems.",
-        "Collaboration starts with empathy, essential for driving change."
-      ],
-      "takeaway": "Effective leadership in tech requires a shift from authority to collaboration, emphasizing empathy and clarity.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 5.4176,
-      "is_new_today": true,
-      "featured": true
-    },
-    {
       "id": "828b94f4713d16a5",
       "title": "The future of testing: Autonomous agents, ethical AI, and human oversight",
       "url": "https://www.ministryoftesting.com/articles/the-future-of-testing-autonomous-agents-ethical-ai-and-human-oversight",
@@ -103,30 +54,17 @@
       "source_id": "html:ministry-of-testing",
       "signal": 5,
       "why_it_matters": "AI in QA",
-<<<<<<< HEAD
-      "summary": "The future of software testing is shifting towards a model that prioritizes ethical considerations and the dynamic nature of AI systems. As AI becomes more autonomous, the role of testers will evolve to ensure not only technical reliability but also fairness, accountability, resilience, and transparency in AI-driven systems.",
+      "summary": "The evolution of software testing is imperative as AI and self-adaptive systems introduce probabilistic behaviors that challenge traditional deterministic testing methods. Testers must now focus on ethical considerations, explainability, and the broader societal impacts of AI systems, shifting the quality conversation from mere functionality to trust and accountability. This transformation positions testing as a strategic governance function rather than a mere verification process.",
       "key_points": [
-        "Traditional testing methods are inadequate for AI systems that exhibit probabilistic behavior.",
-        "Testing must now include assessments of data quality, explainability, and emergent properties of AI systems.",
-        "The definition of quality in software testing is expanding to encompass ethical and societal impacts."
+        "Traditional testing methods are inadequate for AI-driven systems due to their probabilistic nature.",
+        "Quality assurance must now encompass ethical and societal impacts, not just functional correctness.",
+        "The AI FART model introduces new metrics for assessing AI system quality, including fairness and interpretability."
       ],
-      "takeaway": "Software testing is transitioning from a focus on correctness to a broader responsibility for trust and ethical accountability in AI systems.",
+      "takeaway": "Software testing must evolve to ensure trust in AI systems, focusing on ethical accountability and broader quality metrics.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
-      "rank_score": 5.206,
-=======
-      "summary": "The future of software testing is evolving to address the complexities of AI-driven systems, emphasizing the need for continuous, adaptive testing strategies. As AI transitions from a supportive role to a decision-making one, the focus shifts from mere functionality to ethical accountability and trustworthiness.",
-      "key_points": [
-        "Traditional testing methods are inadequate for AI systems due to their probabilistic nature and emergent behaviors.",
-        "Quality assurance must now encompass fairness, accountability, resilience, and transparency in AI technologies.",
-        "The AI FART model introduces new metrics for assessing quality, expanding the definition of success in software testing."
-      ],
-      "takeaway": "Software testing must evolve from validating outcomes to ensuring ethical integrity and societal impact in AI systems.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 5.0468,
+      "rank_score": 5.3627,
       "is_new_today": true,
       "featured": true
     },
@@ -139,265 +77,67 @@
       "source_id": "hn",
       "signal": 5,
       "why_it_matters": "Industry change",
-      "summary": "Waymo has begun public road tests of its fully autonomous vehicles without a safety driver, marking a significant advancement in self-driving technology. This milestone reflects the company's confidence in achieving Level 4 autonomy and indicates a shift towards commercial self-driving services in urban areas.",
+      "summary": "Waymo has begun public road tests of its fully autonomous vehicles without a safety driver, marking a significant milestone in the development of self-driving technology. This advancement demonstrates Waymo's confidence in achieving Level 4 autonomy and signals a shift towards commercializing autonomous ride-hailing services.",
       "key_points": [
-        "Waymo is testing fully driverless cars on public roads in Chandler, Arizona.",
-        "The trials will soon expand to include the public, allowing residents to hail autonomous rides.",
-        "This represents a major step towards realizing the dream of commercial self-driving services."
+        "Waymo is testing fully driverless vehicles on public roads in Chandler, Arizona.",
+        "The trials will soon expand to include the general public, enhancing accessibility to autonomous ride-hailing.",
+        "This development represents a major step towards the realization of widespread commercial self-driving services."
       ],
-      "takeaway": "The launch of fully autonomous ride-hailing services could redefine transportation and set new industry standards.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 5.0452,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "fd1b20c9b31a676a",
-      "title": "Postgres to Iceberg in 13 minutes: How Supermetal compares to Flink, Kafka Connect, and Spark",
-      "url": "https://thenewstack.io/postgres-iceberg-cdc-benchmarks",
-      "source": "rss",
-      "source_name": "The New Stack",
-      "source_id": "rss:the-new-stack",
-      "signal": 4,
-      "why_it_matters": "Tooling trend",
-      "summary": "Supermetal's performance in transferring data from Postgres to Iceberg highlights a significant advancement in data pipeline efficiency, outperforming traditional tools like Flink, Kafka Connect, and Spark. This showcases a shift towards more integrated and streamlined data processing solutions.",
-      "key_points": [
-        "Supermetal completed the snapshotting process in just 13 minutes, significantly faster than its competitors.",
-        "The tool's unique approach allows for dynamic configuration based on the CDC source phase, enhancing throughput.",
-        "Low resource usage during the test indicates efficiency and reduced operational overhead."
-      ],
-      "takeaway": "The emergence of tools like Supermetal signals a trend towards more efficient and less resource-intensive data processing solutions.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4865,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "ffcb5da3d64c1cf8",
-      "title": "Getting paid what you are worth as a software tester",
-      "url": "https://www.ministryoftesting.com/articles/getting-paid-what-you-are-worth-as-a-software-tester",
-      "source": "html",
-      "source_name": "Ministry of Testing",
-      "source_id": "html:ministry-of-testing",
-      "signal": 4,
-      "why_it_matters": "Industry change",
-      "summary": "Understanding your worth as a software tester is crucial in today's job market, especially as companies navigate salary transparency and negotiation tactics. Beyond salary, it's important to consider other benefits that align with personal values and career goals.",
-      "key_points": [
-        "Job ads often lack salary information for flexibility in negotiations.",
-        "Salary transparency is becoming more common to reduce pay gaps.",
-        "Other benefits like vacation days and work-life balance can be as important as salary."
-      ],
-      "takeaway": "Recognizing your value and negotiating effectively can lead to a more fulfilling career beyond just salary.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4843,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "84bcb8aec6c34a61",
-      "title": "How to perform a structured evaluation of AI conversational solutions",
-      "url": "https://www.thoughtworks.com/insights/blog/generative-ai/how-to-perform-a-structured-evaluation-of-ai-conversational-solutions",
-      "source": "rss",
-      "source_name": "Thoughtworks",
-      "source_id": "rss:thoughtworks",
-      "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "The article discusses the evaluation of AI conversational solutions, emphasizing the need for a structured, metrics-driven approach to assess their performance. By implementing a unified evaluation framework, the team improved system accuracy and stakeholder alignment while addressing the complexities of multi-dimensional accuracy in conversational AI.",
-      "key_points": [
-        "Traditional evaluation methods were inconsistent and lacked scalability.",
-        "A structured framework was developed to assess retrieval, prompting, and generation components.",
-        "The use of Weights & Biases Weave allowed for centralized metrics and traceability."
-      ],
-      "takeaway": "A multi-dimensional evaluation approach is crucial for accurately assessing AI conversational systems.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4682,
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-<<<<<<< HEAD
-      "id": "ebd60259dec0934e",
-      "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
-      "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel",
-      "source": "hn",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "signal": 5,
-      "why_it_matters": "Industry change",
-      "summary": "Waymo's launch of public road tests for its fully autonomous vehicles marks a significant milestone in the self-driving car industry. Operating at Level 4 autonomy without a safety driver showcases the company's confidence in its technology and paves the way for future commercial applications.",
-      "key_points": [
-        "Waymo is conducting public road tests with fully autonomous vehicles in Chandler, Arizona.",
-        "The trials represent a major advancement in self-driving technology, operating at Level 4 autonomy.",
-        "Waymo plans to expand its service to the broader Phoenix metro area, allowing residents to use the vehicles for various transportation needs."
-      ],
-      "takeaway": "The successful deployment of fully autonomous vehicles on public roads signals a transformative shift in the transportation industry, highlighting the potential for widespread adoption of self-driving technology.",
+      "takeaway": "The launch of fully autonomous public road tests by Waymo indicates a pivotal moment in the self-driving industry, potentially reshaping transportation and mobility solutions.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
       "rank_score": 5.1852,
-=======
-      "id": "bef7bbf25c116d01",
-      "title": "Alan Turing play in Cambridge MA",
-      "url": "https://martinfowler.com/articles/202604-turing.html",
-      "source": "rss",
-      "source_name": "Martin Fowler",
-      "source_id": "rss:martin-fowler",
-      "signal": 4,
-      "why_it_matters": "Leadership signal",
-      "summary": "The production of 'Breaking the Code' highlights the profound impact of Alan Turing on both technology and society. It serves as a reminder of the importance of innovation and ethical considerations in engineering and QA practices.",
-      "key_points": [
-        "Alan Turing's contributions to computing and democracy are significant.",
-        "The play emphasizes the intersection of technology and ethics.",
-        "Cultural events can inspire reflection on our professional responsibilities."
-      ],
-      "takeaway": "Engaging with historical narratives can enhance our understanding of the ethical implications of our work in technology.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.466,
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
       "is_new_today": true,
       "featured": false
     },
     {
-      "id": "9a2f6ea6d175a684",
-      "title": "AI-powered test optimization with Tricentis Testim and SeaLights",
-      "url": "https://www.tricentis.com/blog/testim-tricentis-sealights-intelligent-test-optimization",
-      "source": "html",
-      "source_name": "Tricentis",
-      "source_id": "html:tricentis",
-<<<<<<< HEAD
-      "signal": 5,
-=======
-      "signal": 4,
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
-      "why_it_matters": "AI in QA",
-      "summary": "The integration of Tricentis Testim and SeaLights represents a significant advancement in test optimization by combining AI-driven automation with quality intelligence. This approach allows teams to focus on relevant tests based on code changes, enhancing efficiency and reducing unnecessary resource expenditure.",
-      "key_points": [
-        "AI-powered automation accelerates test creation and maintenance.",
-<<<<<<< HEAD
-        "SeaLights provides insights into test coverage and code changes.",
-        "The integration shifts testing from reactive to proactive quality engineering."
-      ],
-      "takeaway": "Leveraging AI in testing not only improves speed but also enhances the quality of software releases by ensuring that relevant tests are executed based on actual code changes.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 5.1747,
-=======
-        "SeaLights provides insights into test coverage and relevant tests based on code changes.",
-        "The integration shifts testing from reactive to proactive quality engineering."
-      ],
-      "takeaway": "Leveraging AI in testing can drastically improve efficiency and product quality by ensuring that only the most relevant tests are executed.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4629,
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-<<<<<<< HEAD
-      "id": "f4c8b1f2558095ec",
-      "title": "AI Web Browsers & Agents in 2026: The Complete Selection Guide",
-      "url": "https://dev.to/sarvabharan/ai-web-browsers-agents-in-2026-the-complete-selection-guide-pkb",
+      "id": "6e986c068ab5d6dd",
+      "title": "How to Onboard a New Developer Without Sharing a Single API Key",
+      "url": "https://dev.to/the_seventeen/how-to-onboard-a-new-developer-without-sharing-a-single-api-key-51g7",
       "source": "devto",
       "source_name": "DEV Community",
       "source_id": "devto",
       "signal": 4,
-      "why_it_matters": "Tooling trend",
-      "summary": "As AI agents become integral to software development, selecting the right tools is crucial for efficiency and cost management. The article emphasizes the importance of understanding the specific needs of your AI agent and the implications of API costs, especially in production environments.",
+      "why_it_matters": "Governance risk",
+      "summary": "The article highlights the risks associated with sharing API credentials during developer onboarding, particularly in AI projects. It introduces a solution that allows developers to access encrypted credentials without ever sharing the actual values, thereby enhancing security and simplifying offboarding processes.",
       "key_points": [
-        "Choose architectures that support long-term workflows for multi-step jobs.",
-        "Be cautious of LLM API costs and consider on-device alternatives.",
-        "Focus on compatibility with your existing stack rather than flashy features."
+        "Traditional credential sharing methods leave sensitive information vulnerable.",
+        "AgentSecrets provides a secure way to manage credentials without sharing values.",
+        "Focusing on token management during onboarding can prevent future bottlenecks."
       ],
-      "takeaway": "Building AI agents for survivability is more important than chasing the latest features.",
+      "takeaway": "Implementing a workspace model for credential management can significantly reduce security risks associated with developer onboarding.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
       "rank_score": 4.492,
-=======
-      "id": "daf3c59a98ca2158",
-      "title": "Question regarding Katalon and Azure Devops",
-      "url": "https://www.reddit.com/r/softwaretesting/comments/1sku57q/question_regarding_katalon_and_azure_devops",
-      "source": "reddit",
-      "source_name": "Reddit r/softwaretesting",
-      "source_id": "r-softwaretesting",
-      "signal": 4,
-      "why_it_matters": "Tooling trend",
-      "summary": "Integrating Katalon with Azure DevOps can enhance automation testing workflows by streamlining project management and tracking. This transition reflects a broader trend of adopting versatile tools that improve collaboration and efficiency in QA processes.",
-      "key_points": [
-        "Katalon can be integrated with Azure DevOps for better project tracking.",
-        "This integration supports a more cohesive workflow between testing and development teams.",
-        "Adopting modern tools like Azure DevOps is becoming a standard practice in the industry."
-      ],
-      "takeaway": "Embracing integration between testing tools and project management platforms can significantly enhance team collaboration and efficiency.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4598,
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
       "is_new_today": true,
       "featured": false
     },
     {
-<<<<<<< HEAD
-      "id": "52d0d9af63431107",
-      "title": "Inclusive development teams: Why representation matters",
-      "url": "https://www.ministryoftesting.com/articles/inclusive-development-teams-why-representation-matters",
+      "id": "d3803797660f8ccd",
+      "title": "Everyday accessibility: 7 ways to do a little a11y every day",
+      "url": "https://www.ministryoftesting.com/articles/everyday-accessibility-7-ways-to-do-a-little-a11y-every-day",
       "source": "html",
       "source_name": "Ministry of Testing",
       "source_id": "html:ministry-of-testing",
       "signal": 4,
       "why_it_matters": "Quality practice",
-      "summary": "Diverse perspectives in development and testing teams are crucial for identifying hidden bugs and creating inclusive software. Representation ensures that the software meets the needs of a broader user base, ultimately leading to better user experiences and innovation.",
+      "summary": "The article emphasizes the importance of integrating accessibility into daily software testing practices. By adopting small, consistent actions towards accessibility, teams can enhance user experience and ensure inclusivity for all users.",
       "key_points": [
-        "Diverse teams reveal hidden bugs that homogenous teams might overlook.",
-        "Lack of representation can lead to significant issues, such as biases in facial recognition technology.",
-        "Inclusive testing considers the needs of all users, including those with disabilities and non-Western naming conventions."
+        "Incorporating diverse user journeys can improve accessibility focus.",
+        "Using inclusive user personas helps in understanding varied user needs.",
+        "Regularly practicing keyboard-only navigation reveals accessibility issues."
       ],
-      "takeaway": "Inclusive testing teams enhance software quality by ensuring it serves a diverse user population.",
+      "takeaway": "Small, daily efforts towards accessibility can lead to significant improvements in software usability.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
       "rank_score": 4.4832,
-=======
-      "id": "5ae31f7cac231759",
-      "title": "Vibe coding while live streaming",
-      "url": "https://automationpanda.com/2025/08/20/vibe-coding-while-live-streaming",
-      "source": "rss",
-      "source_name": "Automation Panda",
-      "source_id": "rss:automation-panda",
-      "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "The workshop highlighted the potential and pitfalls of using AI-assisted coding tools in real-time scenarios. While the initial attempt at vibe coding faced challenges, the session ultimately provided valuable insights into the effectiveness of AI in refining test scripts and engaging participants.",
-      "key_points": [
-        "Mixed results from using AI-assisted coding tools during a live workshop.",
-        "Demonstrated the strengths and weaknesses of AI in test automation.",
-        "Encouraged attendees to embrace experimentation in their own practices."
-      ],
-      "takeaway": "Transparency about challenges can enhance learning experiences and foster a culture of experimentation.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4587,
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
       "is_new_today": true,
       "featured": false
     },
     {
-<<<<<<< HEAD
       "id": "d31b52e6e87f522d",
       "title": "Testing Benford's Law",
       "url": "http://testingbenfordslaw.com/",
@@ -406,13 +146,13 @@
       "source_id": "hn",
       "signal": 4,
       "why_it_matters": "Quality practice",
-      "summary": "Benford's Law reveals a fascinating pattern in the distribution of leading digits in large datasets, which can be leveraged in various fields, including fraud detection. Understanding this phenomenon can enhance the quality of data analysis and testing strategies by providing a benchmark for expected distributions.",
+      "summary": "Benford's Law reveals a fascinating pattern in the distribution of leading digits in large datasets, which can be leveraged for data validation and anomaly detection. Understanding this principle can enhance the rigor of testing strategies, especially in financial and statistical applications. Its application in fraud detection underscores the importance of data integrity in quality assurance.",
       "key_points": [
-        "Benford's Law predicts a logarithmic distribution of leading digits in datasets.",
-        "It is commonly used in detecting anomalies in financial data.",
-        "Exploring large datasets for compliance with Benford's Law can improve data integrity."
+        "Benford's Law predicts a logarithmic distribution of leading digits in large datasets.",
+        "It is used in detecting anomalies and potential fraud in accounting.",
+        "Exploring datasets for compliance with Benford's Law can improve data validation processes."
       ],
-      "takeaway": "Incorporating Benford's Law into testing strategies can enhance data validation processes.",
+      "takeaway": "Incorporating Benford's Law into testing strategies can enhance data integrity and fraud detection efforts.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -421,66 +161,44 @@
       "featured": false
     },
     {
-      "id": "931344a4dce14a49",
-      "title": "Delivering quality and deploying on time when your team is small",
-      "url": "https://www.ministryoftesting.com/articles/delivering-quality-and-deploying-on-time-when-your-team-is-small",
+      "id": "ba73e48c7d7993c2",
+      "title": "Six common mistakes in test automation scripting",
+      "url": "https://www.ministryoftesting.com/articles/six-common-mistakes-in-test-automation-scripting",
       "source": "html",
       "source_name": "Ministry of Testing",
       "source_id": "html:ministry-of-testing",
       "signal": 4,
       "why_it_matters": "Testing strategy",
-      "summary": "The article emphasizes the importance of shifting the testing responsibility from a late-stage process to a proactive, team-wide approach, especially in small teams with limited resources. By focusing on intentional testing and risk discussions, teams can maintain quality without overwhelming workloads.",
+      "summary": "The article highlights common pitfalls in test automation scripting that can undermine the effectiveness of automated tests. By addressing these mistakes, QA engineers can enhance the reliability and maintainability of their test suites, ensuring they adapt to changes in the UI without compromising test quality.",
       "key_points": [
-        "Transform testing from a gatekeeping process to a shared responsibility.",
-        "Prioritize testing based on user impact rather than exhaustive test cases.",
-        "Encourage early discussions about risk to improve overall quality."
+        "Avoid using absolute XPath for element locators to ensure robustness against UI changes.",
+        "Implement loops in scripts to handle dynamic content efficiently and reduce maintenance overhead.",
+        "Incorporate validation steps to confirm that actions yield the expected outcomes, preventing false positives."
       ],
-      "takeaway": "In small teams, effective testing is about making risk visible and intentional, rather than trying to eliminate it completely.",
+      "takeaway": "Effective test automation requires a strategic approach to scripting that prioritizes maintainability and validation.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
       "rank_score": 4.4648,
-=======
-      "id": "1f723db8b09aa1c3",
-      "title": "Agents are rewriting the rules of security. Here\u2019s what engineering needs to know.",
-      "url": "https://thenewstack.io/securing-ai-agent-systems",
-      "source": "rss",
-      "source_name": "The New Stack",
-      "source_id": "rss:the-new-stack",
-      "signal": 4,
-      "why_it_matters": "Governance risk",
-      "summary": "AI agents are transforming software development by autonomously handling various tasks, but they also introduce significant security risks that organizations must address. Understanding these risks is crucial for engineering leaders to ensure a secure deployment of AI technologies while maintaining software quality.",
-      "key_points": [
-        "AI agents expand the attack surface and introduce novel security challenges.",
-        "Prompt-injection attacks and the combination of capabilities within agents pose unique risks.",
-        "Proper governance and layered controls can mitigate risks while leveraging the benefits of AI agents."
-      ],
-      "takeaway": "Organizations must implement robust governance frameworks to harness the power of AI agents while safeguarding against their inherent risks.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4467,
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
       "is_new_today": true,
       "featured": false
     },
     {
-      "id": "3ae7ce9341331377",
-      "title": "The messy truth of your AI strategies",
-      "url": "https://stackoverflow.blog/2026/04/10/the-messy-truth-of-your-ai-strategies",
+      "id": "8ccbbba850835f03",
+      "title": "Why AI hasn't replaced human expertise\u2014and what that means for your SaaS stack",
+      "url": "https://stackoverflow.blog/2026/04/15/why-ai-hasn-t-replaced-human-expertise",
       "source": "rss",
       "source_name": "Stack Overflow Blog",
       "source_id": "rss:stack-overflow-blog",
       "signal": 4,
-      "why_it_matters": "Governance risk",
-<<<<<<< HEAD
-      "summary": "The discussion highlights the challenges organizations face with AI implementation, particularly concerning data governance and security. As AI budgets grow, the risk of shadow AI increases, leading to potential data breaches and compliance issues.",
+      "why_it_matters": "AI in QA",
+      "summary": "Despite advancements in AI tools for software development, developers still heavily rely on human expertise for complex problem-solving. The increasing volume of advanced questions on platforms like Stack Overflow highlights the limitations of AI in providing trustworthy solutions. This indicates a need for AI tools that enhance human judgment rather than replace it.",
       "key_points": [
-        "AI budgets are increasing, leading to more vendors and shadow AI usage.",
-        "CIOs are concerned about sensitive data being exposed to unapproved AI services.",
-        "Implementing governance strategies like deploying models within approved platforms can mitigate risks."
+        "AI tools excel at handling straightforward coding tasks but struggle with complex issues.",
+        "Developers value the context and discourse found in community discussions over simple answers.",
+        "A knowledge intelligence layer can bridge the trust and validation gaps in AI-generated solutions."
       ],
-      "takeaway": "Organizations must prioritize data governance to manage the risks associated with AI implementation.",
+      "takeaway": "AI tools must complement human expertise by providing context and fostering trust in their outputs.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -489,21 +207,21 @@
       "featured": false
     },
     {
-      "id": "d97a8921aeea837e",
-      "title": "Coaching with code: using AI to learn how to automate tests",
-      "url": "https://www.ministryoftesting.com/articles/coaching-with-code-using-ai-to-learn-how-to-automate-tests",
+      "id": "5016c8b3163870ca",
+      "title": "The night our \u201chighly available\u201d system went dark: How testers can drive resiliency",
+      "url": "https://www.ministryoftesting.com/articles/the-night-our-highly-available-system-went-dark-how-testers-can-drive-resiliency",
       "source": "html",
       "source_name": "Ministry of Testing",
       "source_id": "html:ministry-of-testing",
       "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "The integration of AI as a personalized coding coach can significantly enhance the automation skills of testers transitioning from manual testing. By translating manual test cases into executable scripts and providing explanations, AI tools like GitHub Copilot empower testers to learn at their own pace and build confidence in automation.",
+      "why_it_matters": "Testing strategy",
+      "summary": "The article emphasizes the importance of resiliency testing in software development, shifting the focus from mere uptime to understanding user experience during failures. It provides practical strategies for testers to map failure paths and conduct small experiments to enhance system reliability.",
       "key_points": [
-        "AI can bridge the gap between manual and automated testing.",
-        "Testers can leverage AI to understand code and improve their automation skills.",
-        "AI tools provide personalized feedback and explanations, enhancing learning."
+        "Resiliency testing helps identify user experience during system failures.",
+        "Mapping failure paths and conducting lightweight experiments can improve system reliability.",
+        "Collaboration between testers, SREs, and developers is crucial for building resilient systems."
       ],
-      "takeaway": "AI is transforming the learning process for testers, making automation more accessible and efficient.",
+      "takeaway": "By integrating resiliency testing into the QA process, teams can better prepare for failures and enhance overall system reliability.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -520,13 +238,13 @@
       "source_id": "rss:martin-fowler",
       "signal": 4,
       "why_it_matters": "Leadership signal",
-      "summary": "The play 'Breaking the Code' highlights Alan Turing's significant contributions to technology and democracy, emphasizing the importance of recognizing historical figures in the tech industry. It serves as a reminder of the ethical responsibilities that come with technological advancements.",
+      "summary": "The play 'Breaking the Code' highlights the life and contributions of Alan Turing, a pivotal figure in computer science and a symbol of the fight for freedom and equality. His work not only laid the groundwork for modern computing but also serves as a reminder of the importance of ethical considerations in technology.",
       "key_points": [
-        "Alan Turing's work laid the foundation for modern computing and software engineering.",
-        "The play reflects on the societal impact of technology and the importance of ethical considerations.",
-        "Recognizing historical contributions can inspire current and future generations of engineers."
+        "Alan Turing's contributions to computer science are foundational.",
+        "The play emphasizes the intersection of technology and ethics.",
+        "Turing's legacy continues to influence discussions on diversity and inclusion in tech."
       ],
-      "takeaway": "Understanding the historical context of technology can enhance our approach to ethical decision-making in engineering.",
+      "takeaway": "Understanding the historical context of technology can inspire a more inclusive engineering culture.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -535,21 +253,21 @@
       "featured": false
     },
     {
-      "id": "ffcb5da3d64c1cf8",
-      "title": "Getting paid what you are worth as a software tester",
-      "url": "https://www.ministryoftesting.com/articles/getting-paid-what-you-are-worth-as-a-software-tester",
+      "id": "d328a63f4dbf34af",
+      "title": "Managing cognitive load for better software testing",
+      "url": "https://www.ministryoftesting.com/articles/managing-cognitive-load-for-better-software-testing",
       "source": "html",
       "source_name": "Ministry of Testing",
       "source_id": "html:ministry-of-testing",
       "signal": 4,
-      "why_it_matters": "Industry change",
-      "summary": "Understanding your worth as a software tester is crucial in today's job market, especially as companies navigate salary transparency and negotiation tactics. Beyond salary, it's important to consider other benefits that align with personal values and career goals.",
+      "why_it_matters": "Quality practice",
+      "summary": "Managing cognitive load is crucial for effective software testing, as it directly impacts the quality of outcomes. By recognizing and reducing unnecessary mental strain, teams can enhance focus, accuracy, and overall productivity in testing processes.",
       "key_points": [
-        "Job ads often lack salary information for flexibility in negotiations.",
-        "Salary transparency is becoming more common to reduce pay gaps.",
-        "Other benefits, such as vacation days and work-life balance, can be as important as salary."
+        "Cognitive load affects testers' ability to perform effectively and can lead to quality issues.",
+        "Reducing extraneous cognitive load allows testers to concentrate on meaningful analysis and exploration.",
+        "Small, intentional changes in workflows and tools can significantly improve testing outcomes."
       ],
-      "takeaway": "Recognizing your value and negotiating effectively can lead to a more fulfilling career beyond just salary.",
+      "takeaway": "Better cognitive conditions lead to better software quality.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -568,11 +286,11 @@
       "why_it_matters": "AI in QA",
       "summary": "The integration of Tricentis qTest and SeaLights creates a robust AI-driven testing feedback loop that enhances test coverage and quality assurance. By combining user-story-based test creation with deep code coverage insights, teams can automatically identify and address gaps in their test suites, ensuring higher release confidence.",
       "key_points": [
-        "Integration of qTest and SeaLights enables a closed-loop testing process.",
-        "AI-generated tests are enhanced by real code behavior insights.",
-        "Teams gain immediate clarity on test coverage and gaps."
+        "Tricentis qTest automates test case creation from user stories, improving efficiency.",
+        "SeaLights provides deep insights into code coverage, identifying untested methods.",
+        "The integration allows for continuous adaptation of test suites based on actual code changes."
       ],
-      "takeaway": "The future of QA lies in leveraging AI to continuously adapt test suites to evolving code changes.",
+      "takeaway": "AI-driven testing tools can significantly enhance the quality and reliability of software releases.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -581,21 +299,21 @@
       "featured": false
     },
     {
-      "id": "cb497d0f54d7f53a",
-      "title": "Why observability platforms are becoming AI auditing tools",
-      "url": "https://thenewstack.io/agentic-ai-observability-auditing",
+      "id": "8fa1aafbe25f3fa4",
+      "title": "Cal.com goes private: A security reckoning for open source",
+      "url": "https://thenewstack.io/cal-com-codebase-security-ai",
       "source": "rss",
       "source_name": "The New Stack",
       "source_id": "rss:the-new-stack",
       "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "As AI workloads become integral to enterprise operations, observability platforms are evolving into AI auditing tools. This shift is crucial for ensuring that AI-driven decisions are transparent and aligned with business objectives.",
+      "why_it_matters": "Governance risk",
+      "summary": "Cal.com's decision to move its core codebase behind closed doors highlights the growing security concerns in the open-source community, particularly in light of AI advancements that can exploit vulnerabilities. This shift reflects a broader trend where transparency in code is being weighed against the risks of exposure to malicious actors.",
       "key_points": [
-        "AI workloads require different monitoring and management approaches compared to traditional workloads.",
-        "Observability platforms are transitioning to provide actionable insights and auditing capabilities for AI decisions.",
-        "There is a growing need for operations teams to adapt to AI-centric monitoring and decision-making processes."
+        "Cal.com is transitioning to a closed codebase due to security risks associated with AI-driven vulnerability detection.",
+        "The company has released Cal.diy, an open-source version stripped of enterprise features, to maintain community access while protecting its core product.",
+        "This move underscores a significant governance risk for open-source projects as they navigate the balance between openness and security."
       ],
-      "takeaway": "The evolution of observability platforms into AI auditing tools is essential for maintaining oversight and confidence in AI-driven applications.",
+      "takeaway": "The rise of AI in vulnerability research is prompting open-source companies to reconsider their approach to code transparency and security.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -604,21 +322,44 @@
       "featured": false
     },
     {
-      "id": "b0ee7d6ad0d083a7",
-      "title": "Partner spotlight series: How Foulk Consulting transforms QA for energy and utilities with Tricentis",
-      "url": "https://www.tricentis.com/blog/foulk-consulting-tricentis-partner-spotlight",
-      "source": "html",
-      "source_name": "Tricentis",
-      "source_id": "html:tricentis",
+      "id": "5766a58884e4085a",
+      "title": "The predictability gap in digital public infrastructure",
+      "url": "https://www.thoughtworks.com/insights/articles/predictability_gap_digital_public_infrastructure",
+      "source": "rss",
+      "source_name": "Thoughtworks",
+      "source_id": "rss:thoughtworks",
       "signal": 4,
-      "why_it_matters": "Testing strategy",
-      "summary": "Foulk Consulting's partnership with Tricentis has significantly enhanced QA processes for a Fortune 500 energy provider, leading to a reduction in testing cycles and an increase in coverage. Their approach emphasizes the importance of automation and expert consulting in navigating the complexities of digital transformation in regulated industries.",
+      "why_it_matters": "Leadership signal",
+      "summary": "The predictability gap in digital public infrastructure highlights the challenges of transitioning from centralized platforms to decentralized protocols. While technical solutions may be sound, the real hurdles lie in institutional readiness and cultural adoption, which require a shift in mindset and approach.",
       "key_points": [
-        "Testing cycles were cut by over 50% and coverage increased by 75%.",
-        "Automation and model-based testing are crucial for compliance in regulated sectors.",
-        "Foulk Consulting's expertise helped overcome legacy challenges and realize ROI in QA investments."
+        "The predictability gap persists due to varying institutional readiness across countries.",
+        "Generative AI has the potential to accelerate implementation but requires a supportive ecosystem.",
+        "Successful adoption of digital public infrastructure depends on understanding complex human behaviors and fostering trust."
       ],
-      "takeaway": "Integrating expert consulting with advanced automation tools can transform QA processes and drive significant improvements in testing efficiency.",
+      "takeaway": "Leaders must prioritize institutional readiness and cultural trust-building over merely developing technical protocols.",
+      "first_seen_at": "2026-04-15",
+      "last_shown_at": "2026-04-15",
+      "expires_at": "2026-04-29",
+      "rank_score": 4.4176,
+      "is_new_today": true,
+      "featured": false
+    },
+    {
+      "id": "a3420a79a3e27341",
+      "title": "Keep It Simple, Silly!",
+      "url": "https://dev.to/fabiosarmento/keep-it-simple-silly-4ng5",
+      "source": "devto",
+      "source_name": "DEV Community",
+      "source_id": "devto",
+      "signal": 4,
+      "why_it_matters": "Quality practice",
+      "summary": "Simplicity in system design is crucial to avoid the pitfalls of over-engineering. By focusing on straightforward solutions, teams can enhance maintainability and efficiency. Utilizing templates can streamline processes and improve response times to common queries.",
+      "key_points": [
+        "Over-engineering leads to maintenance challenges.",
+        "Simplicity often yields the most effective solutions.",
+        "Templates can help in managing FAQs and reusable snippets."
+      ],
+      "takeaway": "Prioritizing simplicity can significantly improve system maintainability and team efficiency.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -635,13 +376,13 @@
       "source_id": "devto",
       "signal": 4,
       "why_it_matters": "AI in QA",
-      "summary": "The article highlights the risks associated with relying on AI-generated code, particularly in terms of dependency management and code quality. The author's experience with a non-existent package and misleading method calls raises concerns about the trustworthiness of AI recommendations in software development.",
+      "summary": "The article highlights the risks associated with relying on AI-generated code, particularly in terms of dependency management and code quality. The author's experience with a non-existent package and flawed tests raises concerns about the trustworthiness of AI recommendations in software development.",
       "key_points": [
         "AI can suggest non-existent packages, leading to wasted time and potential security risks.",
-        "Code reviews may miss errors introduced by AI, such as incorrect method calls.",
+        "Code generated by AI may include incorrect method calls and ineffective tests.",
         "There is a lack of automated tools to verify the validity of AI-generated code."
       ],
-      "takeaway": "As AI becomes more integrated into development workflows, engineers must remain vigilant and develop strategies to validate AI-generated outputs.",
+      "takeaway": "QA engineers must remain vigilant and critically assess AI-generated code to ensure reliability and security.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -658,13 +399,13 @@
       "source_id": "rss:google-testing-blog",
       "signal": 4,
       "why_it_matters": "Quality practice",
-      "summary": "Arranging code to reflect data flow enhances readability and reduces cognitive load for developers. By grouping related lines and emphasizing logical sequences, teams can foster better collaboration and understanding of the codebase.",
+      "summary": "Arranging code to reflect data flow enhances readability and reduces cognitive load for developers. By structuring code in a coherent manner, engineers can better understand the logic and relationships within the code, leading to improved collaboration and maintenance.",
       "key_points": [
-        "Coherent code organization improves comprehension.",
-        "Grouping related lines can reduce cognitive load.",
-        "Extracting methods can enhance clarity when applicable."
+        "Ordering code by data flow improves clarity.",
+        "Using blank lines can visually separate related code blocks.",
+        "Extracting methods can enhance readability but isn't always feasible."
       ],
-      "takeaway": "Prioritizing data flow in code arrangement leads to clearer communication among team members.",
+      "takeaway": "Prioritizing code organization around data flow fosters better understanding and collaboration among team members.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -673,21 +414,44 @@
       "featured": false
     },
     {
-      "id": "72b48f712220aaa8",
-      "title": "MCP Security in Action: Decision-Lineage Observability",
-      "url": "https://dev.to/ajaydevineni/mcp-security-in-action-decision-lineage-observability-1k6c",
+      "id": "910022b5806ab2d2",
+      "title": "Meerkat and the Safety Observability Trap",
+      "url": "https://dev.to/falloficarus22/meerkat-and-the-safety-observability-trap-3pa5",
       "source": "devto",
       "source_name": "DEV Community",
       "source_id": "devto",
       "signal": 4,
-      "why_it_matters": "Governance risk",
-      "summary": "The implementation of decision-lineage observability enhances the ability to audit AI-driven changes in cloud environments, addressing critical governance risks. By capturing the reasoning behind AI decisions, organizations can mitigate potential security threats and improve compliance processes.",
+      "why_it_matters": "Testing strategy",
+      "summary": "The Meerkat framework highlights the limitations of traditional safety evaluation methods in agent systems, emphasizing the need for improved observability across multiple traces. While it offers a more flexible approach to identifying failures, it also reveals a concerning trend of relying on post-hoc analysis rather than proactive safety measures.",
       "key_points": [
-        "Decision lineage provides context and reasoning for AI actions, reducing post-mortem challenges.",
-        "The architecture integrates seamlessly with existing observability tools, enhancing traceability without additional infrastructure.",
-        "The pilot results showed significant improvements in incident response times and compliance audit efficiency."
+        "Meerkat advocates for analyzing large collections of traces to detect distributed failures.",
+        "The industry is increasingly normalizing surveillance-based safety rather than constraining system behavior.",
+        "Relying on post-hoc failure discovery raises concerns about the long-term stability and cost of safety mechanisms."
       ],
-      "takeaway": "Implementing decision-lineage observability is crucial for managing governance risks associated with AI in cloud environments.",
+      "takeaway": "The shift towards cross-trace auditing may improve failure detection but risks creating a dependency on complex, reactive safety measures.",
+      "first_seen_at": "2026-04-15",
+      "last_shown_at": "2026-04-15",
+      "expires_at": "2026-04-29",
+      "rank_score": 4.3803,
+      "is_new_today": true,
+      "featured": false
+    },
+    {
+      "id": "91ccc8d2d9607af9",
+      "title": "Why software testers should write documentation even if no one else reads it",
+      "url": "https://www.ministryoftesting.com/articles/why-software-testers-should-write-documentation-even-if-no-one-else-reads-it",
+      "source": "html",
+      "source_name": "Ministry of Testing",
+      "source_id": "html:ministry-of-testing",
+      "signal": 4,
+      "why_it_matters": "Quality practice",
+      "summary": "The article emphasizes the importance of documentation in software testing, even if it seems underappreciated by others. It highlights how thorough documentation can serve as a foundation for testing strategies, enforce processes, and build trust within teams and with stakeholders.",
+      "key_points": [
+        "Documentation demonstrates due diligence and quantifies risk for stakeholders.",
+        "Testers benefit from documenting their analyses and findings, which can lead to cost savings.",
+        "Documentation serves as a guide and reminder for processes, helping to enforce critical rules."
+      ],
+      "takeaway": "Even if no one else reads it, documentation is essential for testers to validate their work and support quality assurance processes.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -704,13 +468,13 @@
       "source_id": "hn",
       "signal": 4,
       "why_it_matters": "Industry change",
-      "summary": "YouTube's new approach to combat ad blockers reflects a significant shift in how digital platforms are addressing revenue challenges. By implementing a three-strikes policy, YouTube is signaling a move towards stricter enforcement of ad visibility, which could influence user behavior and expectations across the industry.",
+      "summary": "YouTube's new approach to combat ad blockers reflects a significant shift in how digital platforms are managing user experience and monetization. By implementing a three-strikes policy, YouTube is signaling a move towards stricter enforcement of ad views, which could influence user behavior and expectations across the industry.",
       "key_points": [
         "YouTube is testing a three-strikes policy against ad blockers.",
         "Users may face video player restrictions after multiple instances of ad blocking.",
-        "This shift could impact the broader landscape of free content consumption online."
+        "This shift could impact how free users engage with the platform and its monetization strategy."
       ],
-      "takeaway": "The aggressive stance against ad blockers by platforms like YouTube highlights an evolving industry trend where monetization strategies are becoming more stringent.",
+      "takeaway": "The aggressive stance against ad blockers by YouTube highlights a broader trend in the industry towards stricter monetization practices.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -727,13 +491,13 @@
       "source_id": "html:tricentis",
       "signal": 4,
       "why_it_matters": "Testing strategy",
-      "summary": "As AI-generated code becomes more prevalent, traditional regression testing methods are proving inadequate. A shift towards change-based regression testing is essential to effectively manage the complexities introduced by AI modifications.",
+      "summary": "As AI-generated code becomes more prevalent, traditional regression testing strategies are becoming inadequate. A shift towards change-based regression testing is necessary to effectively manage the complexities introduced by AI modifications.",
       "key_points": [
         "AI-generated code can introduce unpredictable changes that traditional testing strategies cannot accommodate.",
-        "Tools like Tricentis SeaLights can intelligently identify and test code changes, ensuring quality amidst rapid AI-driven development.",
-        "The need for a new testing approach highlights the evolving landscape of software development and the importance of adapting QA practices."
+        "Tools like Tricentis SeaLights can help identify and test code changes more effectively.",
+        "Understanding the ripple effects of AI modifications is crucial for maintaining software quality."
       ],
-      "takeaway": "Embracing change-based regression testing is crucial for maintaining software quality in an era of AI-generated code.",
+      "takeaway": "Adapting regression testing strategies to account for AI-generated code is essential for ensuring software quality and reliability.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -742,21 +506,21 @@
       "featured": false
     },
     {
-      "id": "84bcb8aec6c34a61",
-      "title": "How to perform a structured evaluation of AI conversational solutions",
-      "url": "https://www.thoughtworks.com/insights/blog/generative-ai/how-to-perform-a-structured-evaluation-of-ai-conversational-solutions",
+      "id": "10421cacdeaf000a",
+      "title": "How the Datadog MCP server can help improve IT operational insight and observability",
+      "url": "https://www.thoughtworks.com/insights/blog/generative-ai/how-Datadog-MCP-server-can-help-improve-IT-operational-insight",
       "source": "rss",
       "source_name": "Thoughtworks",
       "source_id": "rss:thoughtworks",
       "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "The article outlines a structured evaluation framework for AI conversational solutions, emphasizing the importance of multi-dimensional accuracy assessment. By implementing a metrics-driven approach, organizations can better understand the performance of their AI systems and improve stakeholder alignment.",
+      "why_it_matters": "Tooling trend",
+      "summary": "The Datadog MCP server enhances IT operational insight by integrating AI with observability tools, allowing for natural language queries that streamline troubleshooting. This innovation enables faster identification of issues and improves the overall efficiency of monitoring systems.",
       "key_points": [
-        "Traditional evaluation methods are insufficient for complex conversational systems.",
-        "A multi-dimensional scoring system helps pinpoint failures in the AI pipeline.",
-        "Using a unified evaluation platform enhances collaboration and consistency across teams."
+        "Real-time observability allows immediate visibility into operational signals.",
+        "Context-aware debugging helps engineers understand failure triggers quickly.",
+        "Unified AIOps integration evaluates machine learning and operational monitoring together."
       ],
-      "takeaway": "A structured, metrics-driven evaluation framework is essential for effectively assessing AI conversational solutions.",
+      "takeaway": "MCP transforms IT monitoring into a cohesive narrative, enhancing both troubleshooting and proactive issue management.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -765,21 +529,21 @@
       "featured": false
     },
     {
-      "id": "6c38b814affcc043",
-      "title": "YATL \u2014 API testing in a new way",
-      "url": "https://dev.to/khabib73/yatl-api-testing-in-a-new-way-1kb3",
+      "id": "b835d260474a7c0e",
+      "title": "Steer GitHub Copilot CLI Sessions Remotely from Any Device",
+      "url": "https://dev.to/pwd9000/steer-github-copilot-cli-sessions-remotely-from-any-device-3mee",
       "source": "devto",
       "source_name": "DEV Community",
       "source_id": "devto",
       "signal": 4,
       "why_it_matters": "Tooling trend",
-      "summary": "YATL introduces a domain-specific language for API testing that simplifies the process by using YAML for test descriptions. This approach reduces the complexity of traditional testing methods, making it more accessible for non-developers on the team.",
+      "summary": "The introduction of remote access for GitHub Copilot CLI sessions marks a significant advancement in developer workflows, allowing for greater flexibility and productivity. This feature enables engineers to monitor and interact with their coding sessions from any device, enhancing collaboration and responsiveness.",
       "key_points": [
-        "YATL democratizes API testing by allowing team members without programming expertise to write tests.",
-        "The use of YAML makes test scripts more readable and closer to specifications.",
-        "YATL supports parallel test execution and flexible test management features."
+        "Remote access allows developers to steer sessions from any device, improving workflow flexibility.",
+        "The feature supports real-time interaction, enabling developers to maintain productivity even when away from their desks.",
+        "Integration with GitHub Mobile enhances accessibility for quick check-ins and approvals."
       ],
-      "takeaway": "Simplifying API testing through declarative languages can enhance collaboration across teams.",
+      "takeaway": "Remote access to Copilot CLI sessions exemplifies the ongoing trend of enhancing developer tools for better collaboration and efficiency.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -788,44 +552,21 @@
       "featured": false
     },
     {
-      "id": "b7b51b40ad188b4a",
-      "title": "Creating a resilient test framework with the Playwright Page Object Model (POM)",
-      "url": "https://www.ministryoftesting.com/articles/creating-a-resilient-test-framework-with-the-playwright-page-object-model-pom",
+      "id": "bd6fefc8b8d5bee2",
+      "title": "Stop delegating your thinking: Using 5 whys to check AI documentation",
+      "url": "https://www.ministryoftesting.com/articles/stop-delegating-your-thinking-using-5-whys-to-check-ai-documentation",
       "source": "html",
       "source_name": "Ministry of Testing",
       "source_id": "html:ministry-of-testing",
       "signal": 4,
-      "why_it_matters": "Testing strategy",
-      "summary": "Implementing the Page Object Model (POM) in test automation frameworks enhances maintainability and scalability by centralizing page interactions. This approach reduces the fragility of tests, allowing for easier updates and modifications when application changes occur.",
+      "why_it_matters": "AI in QA",
+      "summary": "The article emphasizes the importance of maintaining critical thinking in the age of AI, particularly when it comes to generating documentation. It highlights a personal experience where over-reliance on AI led to inadequate outputs, demonstrating the need for human oversight and contextual understanding.",
       "key_points": [
-        "POM separates test logic from page interactions, improving code readability.",
-        "Centralizing selectors in page classes minimizes maintenance efforts.",
-        "Adopting POM aligns with best practices for scalable test automation."
+        "AI should be used as a clarity booster, not a replacement for human thought.",
+        "The 5W2H method can help evaluate AI-generated content by ensuring critical questions are addressed.",
+        "Over-reliance on AI can lead to outputs that are technically correct but practically useless."
       ],
-      "takeaway": "Utilizing POM can significantly streamline test maintenance and enhance the resilience of test frameworks.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.3627,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "33f6e669bb0f958a",
-      "title": "6 leadership mistakes that made me a better leader",
-      "url": "https://www.ministryoftesting.com/articles/6-leadership-mistakes-that-made-me-a-better-leader",
-      "source": "html",
-      "source_name": "Ministry of Testing",
-      "source_id": "html:ministry-of-testing",
-      "signal": 4,
-      "why_it_matters": "Leadership signal",
-      "summary": "The article highlights key leadership mistakes that can hinder personal growth and team effectiveness. It emphasizes the importance of proactive support over reactive defense, the need for clarity in leadership identity, and the value of involving teams in metric creation for better accountability.",
-      "key_points": [
-        "Proactively supporting your team fosters growth and collaboration.",
-        "Understanding your leadership identity is crucial for effective management.",
-        "Involving team members in metric creation enhances accountability and buy-in."
-      ],
-      "takeaway": "Effective leadership requires a balance of support, self-awareness, and collaboration with your team.",
+      "takeaway": "Critical thinking remains essential in QA, even as AI tools become more integrated into the workflow.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -842,11 +583,11 @@
       "source_id": "hn",
       "signal": 4,
       "why_it_matters": "Industry change",
-      "summary": "Waymo has received a permit to begin testing its autonomous vehicles in New York City, marking a significant step in the evolution of self-driving technology. This move not only expands Waymo's operational territory but also highlights the growing acceptance and integration of autonomous vehicles in urban environments.",
+      "summary": "Waymo has received a permit to start testing its autonomous vehicles in New York City, marking a significant step in the evolution of self-driving technology. This move not only expands Waymo's operational footprint but also highlights the increasing acceptance and integration of autonomous systems in urban environments.",
       "key_points": [
         "Waymo's expansion into New York City represents a major milestone for autonomous vehicle testing.",
         "The permit allows for real-world testing in a complex urban landscape, which poses unique challenges.",
-        "This development reflects broader trends in the acceptance of AI-driven technologies in everyday life."
+        "This development reflects broader industry trends towards the adoption of AI and autonomous technologies in everyday life."
       ],
       "takeaway": "The integration of autonomous vehicles into urban settings signals a pivotal moment for the future of transportation and testing strategies.",
       "first_seen_at": "2026-04-15",
@@ -865,13 +606,13 @@
       "source_id": "devto",
       "signal": 4,
       "why_it_matters": "Industry change",
-      "summary": "The concept of digital twins is evolving beyond traditional applications, demonstrating their potential as foundational elements in modern systems. This shift allows for more dynamic interactions with physical objects, enhancing data management and system design. As industries adopt this approach, the implications for scalability and efficiency become increasingly significant.",
+      "summary": "The concept of digital twins is evolving from theoretical discussions to practical applications across various industries. By creating digital representations of physical objects, organizations can enhance interaction, track changes over time, and build scalable systems. This shift highlights the importance of abstraction layers in modern software development.",
       "key_points": [
-        "Digital twins serve as abstractions that enable interaction with physical objects through software.",
-        "They track the lifecycle and history of objects, providing context beyond simple data storage.",
-        "The scalability of systems built on digital twins presents new challenges and opportunities for various industries."
+        "Digital twins serve as useful abstractions that enable software interaction with physical objects.",
+        "They allow for tracking the lifecycle and history of objects, enhancing data utility.",
+        "The scalability of systems built around digital twins is crucial as datasets grow."
       ],
-      "takeaway": "Digital twins are transforming how we interact with physical objects, paving the way for more efficient and scalable systems.",
+      "takeaway": "Digital twins are transforming how industries manage and interact with physical objects, paving the way for more efficient and scalable systems.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -880,25 +621,48 @@
       "featured": false
     },
     {
-      "id": "a53f69e406413e91",
-      "title": "What is software quality?",
-      "url": "https://www.ministryoftesting.com/articles/what-is-software-quality",
-      "source": "html",
-      "source_name": "Ministry of Testing",
-      "source_id": "html:ministry-of-testing",
+      "id": "b94b5e1d7261a3c8",
+      "title": "Rethinking leadership: How a sabbatical transformed a CIO into a coding intern  [part two]",
+      "url": "https://www.thoughtworks.com/insights/blog/careers-at-thoughtworks/cio-journey-as-a-coding-intern-part-two",
+      "source": "rss",
+      "source_name": "Thoughtworks",
+      "source_id": "rss:thoughtworks",
       "signal": 4,
-      "why_it_matters": "Quality practice",
-      "summary": "Software quality is a multifaceted concept that varies based on the perspectives of different stakeholders, including users, developers, and product managers. It encompasses not only the absence of bugs but also the overall user experience and the value delivered to users. Understanding these diverse definitions is crucial for aligning development efforts with true user needs.",
+      "why_it_matters": "Leadership signal",
+      "summary": "Jessie Xia's sabbatical as a coding intern provided her with valuable insights into the challenges of AI-enabled programming and transformed her approach to leadership. Both she and her mentor, Zhang Wei, learned the importance of empathy, collaboration, and clear intent in driving change within their teams.",
       "key_points": [
-        "Software quality is context-dependent and varies among stakeholders.",
-        "It includes aspects like reliability, user experience, and business value.",
-        "A holistic view of quality balances different perspectives to create valuable products."
+        "Admitting gaps in knowledge fosters a learning environment.",
+        "True collaboration requires creating a safe space for progress.",
+        "Intent clarity is essential for effective AI utilization."
       ],
-      "takeaway": "Quality is not a fixed measure but is shaped by the needs and expectations of various stakeholders.",
+      "takeaway": "Leadership in the AI era demands empathy and a focus on aligning intent rather than merely addressing problems.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
       "rank_score": 4.3452,
+      "is_new_today": true,
+      "featured": false
+    },
+    {
+      "id": "b7b51b40ad188b4a",
+      "title": "Creating a resilient test framework with the Playwright Page Object Model (POM)",
+      "url": "https://www.ministryoftesting.com/articles/creating-a-resilient-test-framework-with-the-playwright-page-object-model-pom",
+      "source": "html",
+      "source_name": "Ministry of Testing",
+      "source_id": "html:ministry-of-testing",
+      "signal": 4,
+      "why_it_matters": "Testing strategy",
+      "summary": "Implementing the Page Object Model (POM) in test automation frameworks enhances maintainability and scalability by centralizing page interactions. This approach minimizes the fragility of tests and allows for easier updates when application changes occur.",
+      "key_points": [
+        "POM separates test logic from page interactions, improving code readability.",
+        "Centralizing selectors reduces maintenance efforts when UI changes happen.",
+        "Adopting POM aligns with best practices in software development, promoting clean code architecture."
+      ],
+      "takeaway": "A well-structured test framework using POM can significantly streamline test maintenance and enhance overall test reliability.",
+      "first_seen_at": "2026-04-15",
+      "last_shown_at": "2026-04-15",
+      "expires_at": "2026-04-29",
+      "rank_score": 4.3328,
       "is_new_today": true,
       "featured": false
     },
@@ -911,13 +675,13 @@
       "source_id": "html:tricentis",
       "signal": 4,
       "why_it_matters": "Governance risk",
-      "summary": "The updated EU Product Liability Directive introduces new safety rules and liabilities for software producers, emphasizing the need for enhanced consumer protection. With enforcement starting in December 2026, companies must adapt their testing and risk management strategies to align with these regulations.",
+      "summary": "The updated EU Product Liability Directive introduces new safety rules and liabilities for software producers, emphasizing the need for enhanced accountability in software development. With enforcement set for December 2026, companies must adapt their testing strategies to mitigate potential risks associated with safety-related defects.",
       "key_points": [
-        "The directive focuses on safety-related defects that harm individuals.",
-        "Continuous testing and proactive measures are essential to mitigate liability risks.",
-        "The timeframe until December 2026 is critical for aligning processes with the new requirements."
+        "The directive focuses on safety-related defects that harm individuals, not on fitness for use.",
+        "Continuous testing and proactive measures are essential to reduce liability risks.",
+        "The lead-up to December 2026 is critical for aligning processes with the new requirements."
       ],
-      "takeaway": "Software producers must prioritize safety and accountability in their testing strategies to comply with the new EU directive.",
+      "takeaway": "Software producers must prioritize safety in their testing strategies to comply with the new EU directive and minimize liability exposure.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -926,44 +690,21 @@
       "featured": false
     },
     {
-      "id": "39dce183ecb2a4b9",
-      "title": "How to Detect API Breaking Changes Before They Hit Production",
-      "url": "https://dev.to/flarecanary/how-to-detect-api-breaking-changes-before-they-hit-production-257p",
-      "source": "devto",
-      "source_name": "DEV Community",
-      "source_id": "devto",
+      "id": "b0ee7d6ad0d083a7",
+      "title": "Partner spotlight series: How Foulk Consulting transforms QA for energy and utilities with Tricentis",
+      "url": "https://www.tricentis.com/blog/foulk-consulting-tricentis-partner-spotlight",
+      "source": "html",
+      "source_name": "Tricentis",
+      "source_id": "html:tricentis",
       "signal": 4,
       "why_it_matters": "Testing strategy",
-      "summary": "Detecting API breaking changes before they reach production is crucial for maintaining application reliability. Implementing monitoring tools can help teams catch potential issues early, reducing the risk of production incidents and customer complaints.",
+      "summary": "Foulk Consulting's partnership with Tricentis has enabled significant improvements in QA processes for a Fortune 500 energy provider, showcasing the importance of modernizing testing strategies in regulated industries. By leveraging automation and model-based testing, they achieved a drastic reduction in testing cycles and increased coverage, demonstrating the effectiveness of integrating advanced tooling with expert consulting.",
       "key_points": [
-        "Not all API changes are breaking, but warnings can lead to silent data corruption.",
-        "Common pitfalls include type changes, nullable responses, and structural modifications.",
-        "Using tools like FlareCanary can help monitor schema drift effectively."
+        "Testing cycles were cut by over 50% and coverage increased by 75%.",
+        "Automation and model-based testing are crucial for compliance in regulated sectors.",
+        "Foulk Consulting's expertise facilitated a rapid transition from pilot to production."
       ],
-      "takeaway": "Proactive monitoring of API changes is essential for safeguarding application integrity.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.3202,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "83e674d10bafc756",
-      "title": "Simplify Your Code: Functional Core, Imperative Shell",
-      "url": "http://testing.googleblog.com/2025/10/simplify-your-code-functional-core.html",
-      "source": "rss",
-      "source_name": "Google Testing Blog",
-      "source_id": "rss:google-testing-blog",
-      "signal": 4,
-      "why_it_matters": "Quality practice",
-      "summary": "Adopting the functional core and imperative shell pattern enhances code maintainability and testability. By separating business logic from side effects, teams can create cleaner, more adaptable codebases that are easier to understand and modify.",
-      "key_points": [
-        "Separation of concerns improves code clarity.",
-        "Functional cores allow for isolated testing of business logic.",
-        "Imperative shells handle side effects, making code more flexible."
-      ],
-      "takeaway": "Implementing a functional core and imperative shell can significantly streamline your testing strategy and improve overall code quality.",
+      "takeaway": "Integrating advanced testing tools with expert consulting can transform QA processes and drive significant efficiency gains.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -972,21 +713,21 @@
       "featured": false
     },
     {
-      "id": "f7ef3d2ce6991f41",
-      "title": "The AI Agent Economy Needs Payment Rails \u2014 Here's What I Built",
-      "url": "https://dev.to/pmestreforge/the-ai-agent-economy-needs-payment-rails-heres-what-i-built-1mo1",
+      "id": "6c38b814affcc043",
+      "title": "YATL \u2014 API testing in a new way",
+      "url": "https://dev.to/khabib73/yatl-api-testing-in-a-new-way-1kb3",
       "source": "devto",
       "source_name": "DEV Community",
       "source_id": "devto",
       "signal": 4,
-      "why_it_matters": "Industry change",
-      "summary": "The emergence of AI agents engaging in autonomous commerce through micropayments signifies a transformative shift in how software services can be monetized. This development could redefine the economics of service usage, making it more efficient and cost-effective for AI systems.",
+      "why_it_matters": "Tooling trend",
+      "summary": "YATL introduces a domain-specific language for API testing that simplifies the process by using YAML for test descriptions. This approach reduces the complexity of writing tests, making it accessible to non-developers and enhancing collaboration within teams.",
       "key_points": [
-        "500K+ AI agent wallets exist on x402, indicating rapid growth in AI commerce.",
-        "Micropayments enable a new pricing model focused on cost-per-call rather than subscription fees.",
-        "True agent-to-agent discovery is still 12-18 months away, highlighting a current limitation in the ecosystem."
+        "YATL transforms API testing into a declarative format using YAML, minimizing boilerplate code.",
+        "It democratizes testing by allowing non-developers to contribute, fostering a collaborative engineering culture.",
+        "The tool supports multi-threaded test execution and flexible test management features."
       ],
-      "takeaway": "The rise of AI agents and micropayments could significantly alter the landscape of software service monetization.",
+      "takeaway": "YATL represents a significant shift towards making API testing more accessible and efficient for diverse team members.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -995,21 +736,21 @@
       "featured": false
     },
     {
-      "id": "49a0f642f8d8a0b2",
-      "title": "Post-Mortem Best Practices That Actually Drive Change",
-      "url": "https://dev.to/samson_tanimawo/post-mortem-best-practices-that-actually-drive-change-5dgd",
+      "id": "06640399f73019be",
+      "title": "Why I Let a Machine Judge My Code",
+      "url": "https://dev.to/bash-thedev/why-i-let-a-machine-judge-my-code-42ca",
       "source": "devto",
       "source_name": "DEV Community",
       "source_id": "devto",
       "signal": 4,
-      "why_it_matters": "Actionable idea",
-      "summary": "The article emphasizes the importance of effective post-mortem practices in driving real change within teams. By implementing a structured approach with a focus on accountability and measurable outcomes, organizations can significantly reduce the recurrence of incidents.",
+      "why_it_matters": "Testing strategy",
+      "summary": "The article discusses the importance of using automated tools, like linters, to maintain code quality in growing codebases. By enforcing coding standards through automated checks, developers can focus on more complex decision-making while ensuring consistency and reducing the risk of bugs.",
       "key_points": [
-        "Limit action items to a maximum of three to focus on real issues.",
-        "Link every action item to the next sprint to ensure timely follow-up.",
-        "Track the repeat incident rate to measure the effectiveness of post-mortems."
+        "Automated checks help maintain coding standards in large codebases.",
+        "Linters can prevent the accumulation of inconsistencies that lead to maintenance challenges.",
+        "Complexity checks and specific rules can save time and prevent future debugging issues."
       ],
-      "takeaway": "Implementing structured post-mortem practices can lead to significant improvements in incident management and accountability.",
+      "takeaway": "Automating code quality checks allows developers to prioritize critical thinking over routine enforcement.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -1018,21 +759,21 @@
       "featured": false
     },
     {
-      "id": "1c3f990aab898512",
-      "title": "Spring creator wants Java\u2019s type system to tame agentic AI",
-      "url": "https://thenewstack.io/spring-creator-java-type-system-agentic-ai-rod-johnson",
+      "id": "fd1b20c9b31a676a",
+      "title": "Postgres to Iceberg in 13 minutes: How Supermetal compares to Flink, Kafka Connect, and Spark",
+      "url": "https://thenewstack.io/postgres-iceberg-cdc-benchmarks",
       "source": "rss",
       "source_name": "The New Stack",
       "source_id": "rss:the-new-stack",
       "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "Rod Johnson's new framework, Embabel, aims to enhance the predictability of AI-driven applications in enterprise settings by leveraging Java's type system. This initiative highlights a strategic shift in how businesses can integrate generative AI with traditional programming paradigms to create more reliable software solutions.",
+      "why_it_matters": "Tooling trend",
+      "summary": "Supermetal's performance in transferring data from Postgres to Iceberg showcases a significant advancement in data pipeline efficiency compared to traditional tools like Flink, Kafka Connect, and Spark. With a snapshotting time of just 13 minutes, it highlights the importance of optimizing data transfer processes in modern data architectures.",
       "key_points": [
-        "Embabel is designed to bridge the gap between Java and Python in the AI agent space.",
-        "The framework uses Goal-Oriented Action Planning (GOAP) to ensure deterministic execution paths.",
-        "Johnson emphasizes the importance of decomposing large problems into manageable steps for effective AI integration."
+        "Supermetal completed snapshotting in 13 minutes, outperforming Flink, Kafka Connect, and Spark significantly.",
+        "The tool's unique ability to adjust configurations based on the CDC source phase enhances its efficiency.",
+        "Low resource usage during the test indicates a well-optimized process without the need for extensive tuning."
       ],
-      "takeaway": "The emergence of frameworks like Embabel signals a significant evolution in how enterprise applications can harness AI while maintaining reliability and predictability.",
+      "takeaway": "Optimizing data transfer tools can lead to substantial improvements in pipeline performance.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -1049,13 +790,13 @@
       "source_id": "html:tricentis",
       "signal": 4,
       "why_it_matters": "AI in QA",
-      "summary": "The integration of AI in QA is shifting focus from mere test execution to decision intelligence, emphasizing the importance of trust, context, and human judgment. QA leaders must critically evaluate AI outputs and understand the implications of AI-driven decisions on their processes.",
+      "summary": "The integration of AI in QA is shifting the focus from mere test execution to decision intelligence, emphasizing the importance of trust, context, and human judgment. QA leaders must critically assess AI outputs and understand the implications of AI-driven decisions on their processes.",
       "key_points": [
-        "QA leaders should prioritize understanding AI's decision-making processes and the associated risks.",
-        "Context engineering is emerging as a crucial skill for QA teams to effectively guide AI.",
-        "The future of QA will favor teams that think critically over those that simply move quickly."
+        "QA leaders should prioritize QA for AI, focusing on model validation and bias testing.",
+        "Context engineering is becoming a crucial skill for QA teams to effectively guide AI.",
+        "The future of QA will depend on critical thinking rather than just speed in automation."
       ],
-      "takeaway": "Human judgment remains essential in navigating the complexities introduced by AI in QA.",
+      "takeaway": "Human judgment remains essential in navigating AI's role in quality assurance.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -1071,100 +812,18 @@
       "source_name": "Google Testing Blog",
       "source_id": "rss:google-testing-blog",
       "signal": 4,
-      "why_it_matters": "Reliability lesson",
-      "summary": "Setting safe defaults for command-line flags can significantly reduce the risk of costly mistakes in production environments. By prioritizing safety in default settings, teams can prevent unintended consequences from occurring due to human error.",
+      "why_it_matters": "Quality practice",
+      "summary": "Setting safe defaults for command-line flags is crucial in preventing costly mistakes during production data updates. By defaulting to a 'dry run' mode, teams can minimize the risk of unintended changes and ensure a safer deployment process.",
       "key_points": [
-        "Default settings should minimize the impact of mistakes.",
+        "Default settings should prioritize safety to avoid major outages.",
         "Documentation should reflect safe defaults to guide users effectively.",
-        "Context matters when determining the safest default behavior."
+        "Context matters when defining defaults; consider the potential impact of mistakes."
       ],
-      "takeaway": "Prioritize safety in default configurations to enhance reliability and prevent major outages.",
+      "takeaway": "Implementing safe defaults in command-line tools can significantly reduce the risk of errors in production environments.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
       "rank_score": 4.2569,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "c72329b7cef2a8e6",
-      "title": "Gen Z needs a knowledge base (and so do you)",
-      "url": "https://stackoverflow.blog/2026/04/09/gen-z-needs-a-knowledge-base-and-so-do-you",
-      "source": "rss",
-      "source_name": "Stack Overflow Blog",
-      "source_id": "rss:stack-overflow-blog",
-      "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "The article highlights the growing reliance of Gen Z on AI tools for knowledge acquisition, which raises concerns about cognitive offloading and knowledge retention. It emphasizes the importance of building a personal knowledge base to counteract the negative effects of AI dependency and enhance long-term learning.",
-      "key_points": [
-        "Gen Z's heavy use of AI tools is leading to cognitive offloading and diminished knowledge retention.",
-        "Trust in AI is declining even as its usage increases, creating a paradox for young professionals.",
-        "Establishing a personal knowledge base can help mitigate the risks associated with AI reliance."
-      ],
-      "takeaway": "Creating a knowledge base is essential for fostering long-term learning and cognitive health in an AI-driven environment.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.2385,
-=======
-      "summary": "The discussion highlights the challenges organizations face with AI implementation, particularly concerning data governance and the risks associated with shadow AI. As companies rush to adopt AI technologies, the lack of oversight can lead to sensitive data being exposed to unapproved services.",
-      "key_points": [
-        "AI budgets are increasing, leading to widespread adoption across various functions.",
-        "Shadow AI poses significant risks as employees may use unapproved AI tools, potentially compromising sensitive data.",
-        "Implementing governance strategies, such as deploying models within approved platforms, can help mitigate these risks."
-      ],
-      "takeaway": "Organizations must prioritize governance in their AI strategies to protect sensitive data and maintain control over their information security.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4423,
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "83e674d10bafc756",
-      "title": "Simplify Your Code: Functional Core, Imperative Shell",
-      "url": "http://testing.googleblog.com/2025/10/simplify-your-code-functional-core.html",
-      "source": "rss",
-      "source_name": "Google Testing Blog",
-      "source_id": "rss:google-testing-blog",
-      "signal": 4,
-      "why_it_matters": "Quality practice",
-      "summary": "Adopting the functional core and imperative shell pattern enhances code maintainability and testability. By separating business logic from side effects, teams can create cleaner, more adaptable codebases that facilitate easier updates and feature additions.",
-      "key_points": [
-        "Separation of concerns improves code clarity.",
-        "Functional cores allow for isolated testing of business logic.",
-        "Imperative shells handle side effects, making the system more flexible."
-      ],
-      "takeaway": "Implementing a functional core and imperative shell can significantly improve the quality and adaptability of your code.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4416,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "c72329b7cef2a8e6",
-      "title": "Gen Z needs a knowledge base (and so do you)",
-      "url": "https://stackoverflow.blog/2026/04/09/gen-z-needs-a-knowledge-base-and-so-do-you",
-      "source": "rss",
-      "source_name": "Stack Overflow Blog",
-      "source_id": "rss:stack-overflow-blog",
-      "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "The article highlights the growing reliance of Gen Z on AI tools for knowledge acquisition, which raises concerns about cognitive offloading and knowledge retention. It emphasizes the importance of building a personal knowledge base to counteract these effects and foster long-term learning and wisdom.",
-      "key_points": [
-        "Gen Z's heavy use of AI tools is leading to cognitive offloading and diminished knowledge retention.",
-        "Trust in AI is declining, yet its use is increasing due to competitive job market pressures.",
-        "Creating a personal knowledge base can help individuals retain information and develop critical thinking skills."
-      ],
-      "takeaway": "Building a knowledge base is essential for Gen Z to enhance learning and counteract the negative effects of AI reliance.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.437,
       "is_new_today": true,
       "featured": false
     },
@@ -1177,81 +836,67 @@
       "source_id": "rss:stack-overflow-blog",
       "signal": 4,
       "why_it_matters": "Industry change",
-<<<<<<< HEAD
-      "summary": "The emergence of AI as a foundational infrastructure is reshaping the operating models of enterprises and Managed Services Providers (MSPs). As AI systems introduce new complexities and risks, both sectors must adapt their strategies and offerings to ensure safe and effective operation of intelligent assets.",
+      "summary": "Zhen Lu's journey with RunPod highlights a shift towards community-driven funding and development in the tech industry. By prioritizing direct user feedback over traditional VC funding, they emphasize the importance of aligning product development with community needs.",
       "key_points": [
-        "AI is transitioning from a tool to infrastructure, necessitating a shift in operating models.",
-        "Managed Services Providers must evolve to manage not just traditional IT assets but also intelligent systems.",
-        "Enterprises are increasingly focused on the ability of providers to operate AI safely and manage associated risks."
+        "Founders leveraged their software expertise to build a product without external funding.",
+        "Community validation was crucial in confirming the demand for their AI cloud services.",
+        "The evolution of software development towards machine learning and AI is a key focus for future growth."
       ],
-      "takeaway": "The integration of AI into core operations requires a fundamental redesign of service models and risk management strategies.",
+      "takeaway": "Community engagement can drive product success and innovation in the tech landscape.",
+      "first_seen_at": "2026-04-15",
+      "last_shown_at": "2026-04-15",
+      "expires_at": "2026-04-29",
+      "rank_score": 4.2385,
+      "is_new_today": true,
+      "featured": false
+    },
+    {
+      "id": "1f723db8b09aa1c3",
+      "title": "Agents are rewriting the rules of security. Here\u2019s what engineering needs to know.",
+      "url": "https://thenewstack.io/securing-ai-agent-systems",
+      "source": "rss",
+      "source_name": "The New Stack",
+      "source_id": "rss:the-new-stack",
+      "signal": 4,
+      "why_it_matters": "Governance risk",
+      "summary": "AI agents are transforming software development but also introduce significant security risks that organizations must address. Understanding these risks is crucial for engineering leaders to ensure a secure deployment of AI technologies while maintaining development speed.",
+      "key_points": [
+        "AI agents can autonomously perform tasks but pose unique security challenges.",
+        "The combination of capabilities in AI agents can lead to severe vulnerabilities if not properly governed.",
+        "Layered security controls can mitigate risks while leveraging the advantages of AI agents."
+      ],
+      "takeaway": "Organizations must implement strong governance and security measures to harness the benefits of AI agents without compromising safety.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
       "rank_score": 4.214,
-=======
-      "summary": "Zhen Lu's journey with RunPod highlights a shift in how startups can leverage community support over traditional VC funding. This approach emphasizes the importance of direct user feedback in shaping product development and aligns with the growing trend of community-driven innovation in the tech industry.",
-      "key_points": [
-        "Founders can bypass traditional VC routes by engaging directly with their community.",
-        "Community-driven development allows for immediate validation of ideas and products.",
-        "The evolution of software development is increasingly leaning towards machine learning and AI."
-      ],
-      "takeaway": "Engaging with the community can provide valuable insights and validation, reducing reliance on traditional funding sources.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4331,
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
       "is_new_today": true,
       "featured": false
     },
     {
-<<<<<<< HEAD
-      "id": "10421cacdeaf000a",
-      "title": "How the Datadog MCP server can help improve IT operational insight and observability",
-      "url": "https://www.thoughtworks.com/insights/blog/generative-ai/how-Datadog-MCP-server-can-help-improve-IT-operational-insight",
+      "id": "036bc85dc8c67340",
+      "title": "The shifted operation model and MSPs in the AI Age",
+      "url": "https://www.thoughtworks.com/insights/blog/generative-ai/shifted-operation-model-and-msps-in-ai-age",
       "source": "rss",
       "source_name": "Thoughtworks",
       "source_id": "rss:thoughtworks",
       "signal": 4,
-      "why_it_matters": "Tooling trend",
-      "summary": "The Datadog Model Context Protocol (MCP) enhances IT operational insight by enabling natural language queries that streamline access to observability data. This integration allows teams to quickly identify and address issues, improving overall efficiency in monitoring and troubleshooting.",
+      "why_it_matters": "Industry change",
+      "summary": "The emergence of AI as infrastructure is reshaping the operational models of Managed Services Providers (MSPs) and enterprises alike. As AI capabilities become economically viable and integral to business processes, both sectors must adapt their strategies and offerings to manage the unique risks and complexities associated with intelligent systems.",
       "key_points": [
-        "MCP simplifies the process of querying observability data through natural language.",
-        "It provides real-time insights, enabling faster detection of issues as they arise.",
-        "MCP integrates machine learning monitoring with operational data for a holistic view."
+        "AI is transitioning from a tool to a foundational infrastructure, necessitating new operating models.",
+        "MSPs must evolve their service offerings to include management of AI systems, focusing on decision quality and risk management.",
+        "Enterprises are shifting their expectations from traditional IT management to the safe and effective operation of AI technologies."
       ],
-      "takeaway": "MCP transforms IT monitoring into a more efficient and actionable process, allowing teams to focus on critical insights rather than getting lost in data.",
+      "takeaway": "The integration of AI into business operations requires a fundamental redesign of service models and operational strategies.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
       "rank_score": 4.2054,
-=======
-      "id": "7ac97193eeb67d1e",
-      "title": "Waymo granted permit to begin testing in New York City",
-      "url": "https://www.cnbc.com/2025/08/22/waymo-permit-new-york-city-nyc-rides.html",
-      "source": "hn",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "signal": 4,
-      "why_it_matters": "Industry change",
-      "summary": "Waymo has received a permit to commence testing its autonomous vehicles in New York City, marking a significant expansion of its operations. This move highlights the growing acceptance and integration of self-driving technology in urban environments, which could reshape transportation and mobility in major cities.",
-      "key_points": [
-        "Waymo's testing in NYC represents a major milestone for autonomous vehicle deployment.",
-        "The permit indicates regulatory progress and increasing trust in self-driving technology.",
-        "Urban testing environments present unique challenges and opportunities for autonomous systems."
-      ],
-      "takeaway": "The expansion of autonomous vehicle testing into densely populated areas signals a pivotal moment for the industry, emphasizing the need for robust testing strategies in complex environments.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4293,
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
       "is_new_today": true,
       "featured": false
     },
     {
-<<<<<<< HEAD
       "id": "5ae31f7cac231759",
       "title": "Vibe coding while live streaming",
       "url": "https://automationpanda.com/2025/08/20/vibe-coding-while-live-streaming",
@@ -1260,13 +905,13 @@
       "source_id": "rss:automation-panda",
       "signal": 4,
       "why_it_matters": "AI in QA",
-      "summary": "The workshop showcased the potential and limitations of AI-assisted coding tools in real-time scenarios. Despite challenges, the session fostered engagement and highlighted the importance of adaptability in testing practices.",
+      "summary": "The workshop highlighted the potential and limitations of AI-assisted coding tools in real-time scenarios. While the initial coding attempt faced challenges, the session ultimately provided valuable insights into leveraging AI for test automation.",
       "key_points": [
-        "Vibe coding can lead to unpredictable outcomes when using AI tools.",
-        "Real-time demonstrations can enhance learning, even with imperfect results.",
-        "Transparency about challenges can build trust and encourage innovation among peers."
+        "Vibe coding can yield mixed results when integrating AI tools.",
+        "Transparency about challenges can enhance learning experiences.",
+        "Engaging with attendees fosters a collaborative learning environment."
       ],
-      "takeaway": "Embracing imperfections in AI-assisted coding can lead to valuable learning experiences and foster a culture of experimentation.",
+      "takeaway": "Embracing imperfections in the coding process can lead to meaningful insights and encourage innovation in testing strategies.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -1275,21 +920,21 @@
       "featured": false
     },
     {
-      "id": "2889fb2a5dcaf80d",
-      "title": "Claude Mythos Preview completes full cyberattack simulation for the first time",
-      "url": "https://thenewstack.io/claude-mythos-preview-simulation",
+      "id": "155f7dd16bf01030",
+      "title": "What engineering leaders get wrong about data stack consolidation",
+      "url": "https://thenewstack.io/data-stack-consolidation-risks",
       "source": "rss",
       "source_name": "The New Stack",
       "source_id": "rss:the-new-stack",
       "signal": 4,
       "why_it_matters": "Governance risk",
-      "summary": "The evaluation of Claude Mythos Preview highlights significant advancements in AI's capability to autonomously conduct cyberattacks, raising concerns about the security of vulnerable systems. While the model shows promise in controlled environments, its real-world effectiveness against well-defended systems remains uncertain.",
+      "summary": "The article highlights the risks associated with data stack consolidation, particularly the emergence of architectural debt as open-source tools become proprietary features. Engineering leaders must recognize that this shift can lead to a loss of team expertise and increased vendor dependency.",
       "key_points": [
-        "Claude Mythos Preview completed a complex cyberattack simulation, outperforming previous models.",
-        "The model's capabilities pose a governance risk as it could be exploited by malicious actors.",
-        "Real-world application may differ significantly from controlled evaluations, highlighting the need for robust security measures."
+        "Acquisitions can transform open-source tools into proprietary features, reducing engineering autonomy.",
+        "Architectural debt accumulates when convenience layers obscure the underlying technology, making migration difficult.",
+        "Teams may lose core technology knowledge, becoming overly reliant on vendor-specific solutions."
       ],
-      "takeaway": "The rise of advanced AI models like Claude Mythos Preview necessitates a reevaluation of cybersecurity strategies to mitigate potential risks.",
+      "takeaway": "Engineering leaders must critically evaluate the long-term implications of managed services on their team's expertise and architectural flexibility.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -1306,17 +951,40 @@
       "source_id": "rss:martin-fowler",
       "signal": 4,
       "why_it_matters": "Quality practice",
-      "summary": "The principles of mechanical sympathy emphasize the importance of understanding hardware behavior to optimize software performance. By applying concepts like predictable memory access and the single-writer principle, QA engineers can enhance the efficiency of their systems, particularly in high-performance environments.",
+      "summary": "The principles of mechanical sympathy emphasize the importance of understanding hardware to optimize software performance. By applying concepts like predictable memory access and the single-writer principle, engineers can create more efficient systems that leverage modern hardware capabilities effectively.",
       "key_points": [
-        "Mechanical sympathy helps leverage modern hardware capabilities for better software performance.",
-        "Understanding cache behavior and avoiding false sharing can significantly improve multithreaded application performance.",
-        "The Single Writer Principle can simplify data management and reduce contention in concurrent systems."
+        "Predictable memory access enhances performance by favoring sequential data access.",
+        "False sharing can significantly degrade performance in multithreaded applications.",
+        "The Single Writer Principle minimizes contention and improves data integrity."
       ],
-      "takeaway": "Optimizing software with a focus on hardware interactions can lead to substantial performance gains.",
+      "takeaway": "Understanding and applying mechanical sympathy can lead to substantial performance improvements in software systems.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
       "rank_score": 4.1784,
+      "is_new_today": true,
+      "featured": false
+    },
+    {
+      "id": "9a2f6ea6d175a684",
+      "title": "AI-powered test optimization with Tricentis Testim and SeaLights",
+      "url": "https://www.tricentis.com/blog/testim-tricentis-sealights-intelligent-test-optimization",
+      "source": "html",
+      "source_name": "Tricentis",
+      "source_id": "html:tricentis",
+      "signal": 4,
+      "why_it_matters": "AI in QA",
+      "summary": "The integration of Tricentis Testim and SeaLights represents a significant advancement in test optimization by combining AI-driven automation with quality intelligence. This approach allows teams to focus on relevant tests based on code changes, enhancing efficiency and reducing unnecessary resource consumption.",
+      "key_points": [
+        "AI-powered automation accelerates test creation and maintenance.",
+        "SeaLights provides insights into test coverage and code changes.",
+        "The integration shifts testing from reactive to proactive quality engineering."
+      ],
+      "takeaway": "Leveraging AI in testing not only improves speed but also ensures that quality is maintained by focusing on the most relevant tests.",
+      "first_seen_at": "2026-04-15",
+      "last_shown_at": "2026-04-15",
+      "expires_at": "2026-04-29",
+      "rank_score": 4.1747,
       "is_new_today": true,
       "featured": false
     },
@@ -1329,13 +997,13 @@
       "source_id": "rss:automation-panda",
       "signal": 4,
       "why_it_matters": "Testing strategy",
-      "summary": "The article challenges the traditional Testing Pyramid model, advocating for a more flexible approach termed the Testing Skyscraper. This new model emphasizes that testing strategies should be tailored to the unique needs of each project rather than adhering to a rigid structure.",
+      "summary": "The article critiques the traditional Testing Pyramid, arguing that it is an outdated model for modern testing strategies. Instead, it proposes the Testing Skyscraper as a more flexible and tailored approach that reflects the diverse needs of contemporary software development.",
       "key_points": [
-        "The Testing Pyramid is considered outdated and overly simplistic for modern software development.",
-        "A Testing Skyscraper allows for a diverse range of testing types and strategies, reflecting the complexity of contemporary applications.",
-        "The focus should shift from quantity of tests to building robust feedback loops that address various risks."
+        "The Testing Pyramid is an antiquated model that may mislead testers.",
+        "Modern testing requires a unique approach that accommodates various test types without strict quotas.",
+        "The Testing Skyscraper symbolizes flexibility and adaptability in testing strategies."
       ],
-      "takeaway": "Embrace a flexible testing strategy that adapts to the specific needs of your software rather than conforming to traditional models.",
+      "takeaway": "Embrace a flexible testing strategy that prioritizes continuous feedback over rigid structures.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
@@ -1347,272 +1015,22 @@
       "id": "eed1cbf9fd1ce162",
       "title": "Introducing Tricentis Vera\u2122 2024.3",
       "url": "https://www.tricentis.com/blog/introducing-tricentis-vera-2024-3",
-=======
-      "id": "738c4f4d2fa53f8a",
-      "title": "What software makers need to know about the new EU directive",
-      "url": "https://www.tricentis.com/blog/new-eu-product-liability-directive-key-impacts-for-software-makers",
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
       "source": "html",
       "source_name": "Tricentis",
       "source_id": "html:tricentis",
       "signal": 4,
-<<<<<<< HEAD
       "why_it_matters": "Tooling trend",
-      "summary": "The release of Tricentis Vera\u2122 2024.3 introduces significant enhancements aimed at streamlining validation processes and improving integration with Tricentis Tosca. These updates focus on usability, security, and efficiency, which are crucial for modern QA teams managing complex projects.",
+      "summary": "Tricentis Vera\u2122 2024.3 introduces significant enhancements aimed at streamlining validation processes and improving integration with Tricentis Tosca. The updates focus on optimizing approval workflows, user management, and system integrations, which are crucial for maintaining compliance and efficiency in software testing.",
       "key_points": [
-        "Enhanced approval workflows prevent conflicts of interest in record approvals.",
-        "Improved user management and role configuration simplify administrative tasks.",
-        "New filtering options in the Record Table enhance data navigation and accessibility."
+        "Enhanced approval workflows prevent conflicts of interest in Jira records.",
+        "Improved Record Table with advanced filtering and customizable settings.",
+        "Upgraded connections support custom headers and secure communication."
       ],
-      "takeaway": "Investing in advanced tooling like Tricentis Vera can significantly improve QA processes and team efficiency.",
+      "takeaway": "The latest updates in Tricentis Vera reflect a growing trend towards integrated tooling that enhances collaboration and compliance in QA processes.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
       "rank_score": 4.1652,
-=======
-      "why_it_matters": "Governance risk",
-      "summary": "The updated EU Product Liability Directive introduces new safety rules and liabilities for software producers, emphasizing the need for enhanced accountability in software development. With enforcement set for December 2026, companies must adapt their testing and risk management strategies to align with these changes.",
-      "key_points": [
-        "The directive focuses on safety-related defects that harm individuals.",
-        "Continuous testing and proactive measures are essential to mitigate liability risks.",
-        "The lead-up to 2026 is a critical period for aligning processes with the new requirements."
-      ],
-      "takeaway": "Software producers must prioritize safety and accountability in their testing strategies to comply with the new EU directive.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4288,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "bd6fefc8b8d5bee2",
-      "title": "Stop delegating your thinking: Using 5 whys to check AI documentation",
-      "url": "https://www.ministryoftesting.com/articles/stop-delegating-your-thinking-using-5-whys-to-check-ai-documentation",
-      "source": "html",
-      "source_name": "Ministry of Testing",
-      "source_id": "html:ministry-of-testing",
-      "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "The article emphasizes the importance of maintaining critical thinking in the age of AI, particularly in the context of generating documentation. It highlights the risks of over-relying on AI outputs without proper evaluation and the need for a structured approach to ensure that AI serves as a support tool rather than a replacement for human insight.",
-      "key_points": [
-        "AI should be viewed as a clarity booster, not a single source of truth.",
-        "Critical thinking and business knowledge are essential in Quality Engineering.",
-        "The 5W2H method can help evaluate AI-generated content effectively."
-      ],
-      "takeaway": "Always apply critical thinking when using AI tools to ensure outputs align with real-world contexts and needs.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4277,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "dea42aacc68d6b9d",
-      "title": "An IC\u2019s guide to roadmap planning",
-      "url": "https://increment.com/planning/individual-contributors-guide-to-roadmap-planning",
-      "source": "rss",
-      "source_name": "Increment",
-      "source_id": "rss:increment",
-      "signal": 4,
-      "why_it_matters": "Actionable idea",
-      "summary": "Individual contributors (ICs) play a crucial role in roadmap planning by aligning their insights with company goals and team capabilities. By actively participating in the planning process and gathering direct customer feedback, ICs can advocate for high-impact projects that leverage their expertise.",
-      "key_points": [
-        "ICs should clarify their opinions and hypotheses early in the planning process.",
-        "Understanding the planning cycle and stakeholder perspectives enhances IC contributions.",
-        "Direct customer feedback is essential for refining project priorities."
-      ],
-      "takeaway": "ICs can significantly influence the roadmap by engaging in the planning process and advocating for projects that align with both customer needs and team strengths.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4237,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "8e097541d8f7908c",
-      "title": "A letter to the hiring manager of software testers: 10 years later",
-      "url": "https://www.ministryoftesting.com/articles/a-letter-to-the-hiring-manager-of-software-testers-10-years-later",
-      "source": "html",
-      "source_name": "Ministry of Testing",
-      "source_id": "html:ministry-of-testing",
-      "signal": 4,
-      "why_it_matters": "Industry change",
-      "summary": "The recruitment landscape for software testers has evolved significantly over the past decade, reflecting broader industry changes and the need for adaptability. With layoffs impacting the testing community, hiring managers must prioritize human connection and real-world experience over mere certifications.",
-      "key_points": [
-        "The importance of community involvement for testers has grown, with networking opportunities becoming crucial for career development.",
-        "Hiring managers should focus on understanding their specific needs and pain points to attract the right talent.",
-        "Real-world experience is often more valuable than certifications, emphasizing the need for a holistic view of candidates."
-      ],
-      "takeaway": "Fostering a human-centric recruitment process can lead to stronger loyalty and performance from testers.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4168,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "a6ce6570e8e43486",
-      "title": "Set Safe Defaults for Flags",
-      "url": "http://testing.googleblog.com/2026/03/set-safe-defaults-for-flags.html",
-      "source": "rss",
-      "source_name": "Google Testing Blog",
-      "source_id": "rss:google-testing-blog",
-      "signal": 4,
-      "why_it_matters": "Reliability lesson",
-      "summary": "Setting safe defaults for command-line flags can significantly reduce the risk of costly mistakes in production environments. By prioritizing safety in flag defaults, teams can prevent accidental data changes and ensure more reliable operations.",
-      "key_points": [
-        "Defaulting to a 'dry run' minimizes the risk of unintended consequences.",
-        "Documentation should reflect safe defaults to guide users effectively.",
-        "Context matters when defining defaults; consider the potential impact of mistakes."
-      ],
-      "takeaway": "Prioritizing safety in command defaults is crucial for maintaining reliability in software operations.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4094,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "d31b52e6e87f522d",
-      "title": "Testing Benford's Law",
-      "url": "http://testingbenfordslaw.com/",
-      "source": "hn",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "signal": 4,
-      "why_it_matters": "Quality practice",
-      "summary": "Benford's Law reveals a fascinating pattern in numerical data that can be leveraged for quality assurance in data integrity. Understanding this law can enhance the ability of QA engineers to detect anomalies in datasets, which is crucial for maintaining data quality. Its application in fraud detection underscores its importance in various industries.",
-      "key_points": [
-        "Benford's Law predicts a logarithmic distribution of leading digits in large datasets.",
-        "It can be used to identify anomalies and potential fraud in data.",
-        "The law applies to various fields, including finance, science, and social sciences."
-      ],
-      "takeaway": "Incorporating Benford's Law into testing strategies can improve data validation and integrity checks.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.4029,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "68fd98b5e64c12f9",
-      "title": "NVIDIA Ising: When GenAI and DevOps Meet Quantum Error Correction",
-      "url": "https://dev.to/kaustubhyerkade/nvidia-ising-when-genai-and-devops-meet-quantum-error-correction-22b2",
-      "source": "devto",
-      "source_name": "DEV Community",
-      "source_id": "devto",
-      "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "NVIDIA Ising represents a significant advancement in the integration of AI with quantum computing, addressing the challenges of error correction and calibration in quantum systems. By leveraging Vision-Language Models and deploying them through microservices, NVIDIA is streamlining the operational complexities associated with quantum hardware.",
-      "key_points": [
-        "NVIDIA Ising introduces AI models specifically designed for quantum error correction and calibration.",
-        "The use of Vision-Language Models allows for more efficient handling of quantum telemetry.",
-        "Deployment via NVIDIA Inference Microservices simplifies the integration of these models into existing infrastructures."
-      ],
-      "takeaway": "The intersection of AI and quantum computing is reshaping how we approach error correction and system stability in advanced computing environments.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.395,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "c0032baf8e59c9dd",
-      "title": "I fell in love with Kubernetes as a Test engineer",
-      "url": "https://www.reddit.com/r/testautomation/comments/jnvazj/i_fell_in_love_with_kubernetes_as_a_test_engineer",
-      "source": "reddit",
-      "source_name": "Reddit r/TestAutomation",
-      "source_id": "r-testautomation",
-      "signal": 4,
-      "why_it_matters": "Tooling trend",
-      "summary": "The article highlights the growing importance of Kubernetes in the testing landscape, particularly for test engineers. By leveraging a unified API for application state management, it emphasizes how Kubernetes can streamline testing processes and enhance efficiency.",
-      "key_points": [
-        "Kubernetes provides a single API for managing application states.",
-        "Contributed to KubeLibrary to simplify testing in Kubernetes environments.",
-        "Upcoming webinars and workshops aim to educate others on using Kubernetes for testing."
-      ],
-      "takeaway": "Embracing Kubernetes can significantly improve testing strategies and foster a more efficient engineering culture.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.3938,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "b1428d30d3bdd208",
-      "title": "Why \u201cgood enough\u201d cloud databases are becoming a business risk",
-      "url": "https://thenewstack.io/cloud-database-complacency-research",
-      "source": "rss",
-      "source_name": "The New Stack",
-      "source_id": "rss:the-new-stack",
-      "signal": 4,
-      "why_it_matters": "Cost implication",
-      "summary": "The complacency surrounding cloud databases poses a significant risk for organizations as they face rising costs and unpredictable workloads. Many leaders recognize that their current solutions may not scale to meet future demands, yet they often wait for crises to prompt action. This reactive approach can lead to missed opportunities for cost savings and improved performance.",
-      "key_points": [
-        "38% of technology leaders worry their current database won't meet future needs.",
-        "A 10% cost reduction could prompt many leaders to consider migrating their cloud database.",
-        "Database decisions are often reactive, driven by crises rather than proactive strategy."
-      ],
-      "takeaway": "Complacency with 'good enough' cloud databases can lead to significant business risks and missed opportunities for optimization.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.393,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "b0ee7d6ad0d083a7",
-      "title": "Partner spotlight series: How Foulk Consulting transforms QA for energy and utilities with Tricentis",
-      "url": "https://www.tricentis.com/blog/foulk-consulting-tricentis-partner-spotlight",
-      "source": "html",
-      "source_name": "Tricentis",
-      "source_id": "html:tricentis",
-      "signal": 4,
-      "why_it_matters": "Testing strategy",
-      "summary": "Foulk Consulting's partnership with Tricentis has enabled significant improvements in QA processes for a Fortune 500 energy provider, cutting testing cycles by over 50% and increasing coverage by 75%. This case highlights the importance of integrating advanced automation tools and expert consulting to enhance quality assurance in regulated industries.",
-      "key_points": [
-        "Foulk Consulting utilized Tricentis Tosca to modernize QA processes.",
-        "The energy sector faces unique QA challenges during digital transformations.",
-        "Automation is crucial for compliance and efficiency in testing."
-      ],
-      "takeaway": "Integrating enterprise-grade automation tools with expert consulting can drastically improve QA efficiency and coverage in complex, regulated environments.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.3827,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "7f9b18e5e49a2515",
-      "title": "Your AI Memory System Can't Tell a River Bank from a Savings Account",
-      "url": "https://dev.to/eyepaq/your-ai-memory-system-cant-tell-a-river-bank-from-a-savings-account-34j",
-      "source": "devto",
-      "source_name": "DEV Community",
-      "source_id": "devto",
-      "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "The article discusses the limitations of regex-based safety classification in AI memory systems and introduces a two-stage classification pipeline that improves the detection of safety-critical content. By combining regex with LLMs, the new approach enhances the accuracy of identifying YMYL (Your Money or Your Life) content, which is crucial for protecting sensitive information.",
-      "key_points": [
-        "Regex-based classifiers often misclassify or miss critical content.",
-        "The two-stage pipeline improves detection of implied YMYL content.",
-        "YMYL classification enhances importance scoring and decay immunity."
-      ],
-      "takeaway": "Integrating LLMs with traditional methods can significantly improve the reliability of AI systems in handling sensitive information.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.3806,
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
       "is_new_today": true,
       "featured": false
     },
@@ -1625,465 +1043,40 @@
       "source_id": "hn",
       "signal": 4,
       "why_it_matters": "Industry change",
-<<<<<<< HEAD
-      "summary": "Facebook Messenger's introduction of end-to-end encryption through the Signal Protocol marks a significant step towards enhancing user privacy in messaging applications. While not yet default for all conversations, this initiative reflects a growing trend among tech companies to prioritize secure communication.",
-=======
-      "summary": "Facebook Messenger's introduction of end-to-end encryption through the Signal Protocol marks a significant step towards enhancing user privacy in messaging applications. While not yet default for all conversations, this initiative reflects a growing trend in the industry to prioritize secure communication.",
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
+      "summary": "Facebook Messenger's introduction of end-to-end encryption through the Signal Protocol marks a significant shift in the landscape of digital communication privacy. While not yet default for all conversations, this feature represents a growing trend towards prioritizing user privacy in messaging applications.",
       "key_points": [
         "End-to-end encryption enhances user privacy.",
-        "Integration of Signal Protocol demonstrates collaboration in the industry.",
-        "This move may influence other messaging platforms to adopt similar security measures."
+        "Integration of Signal Protocol showcases collaboration in the tech industry.",
+        "This move may influence other platforms to adopt similar privacy measures."
       ],
-<<<<<<< HEAD
-      "takeaway": "The push for stronger encryption in messaging apps signals a broader industry shift towards prioritizing user privacy.",
+      "takeaway": "The push for enhanced privacy features in messaging apps reflects a broader industry trend towards prioritizing user security.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
       "rank_score": 4.1469,
-=======
-      "takeaway": "The push for stronger encryption in messaging apps signals a broader industry commitment to user privacy.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.3726,
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
       "is_new_today": true,
       "featured": false
     },
     {
-<<<<<<< HEAD
-      "id": "5766a58884e4085a",
-      "title": "The predictability gap in digital public infrastructure",
-      "url": "https://www.thoughtworks.com/insights/articles/predictability_gap_digital_public_infrastructure",
+      "id": "84bcb8aec6c34a61",
+      "title": "How to perform a structured evaluation of AI conversational solutions",
+      "url": "https://www.thoughtworks.com/insights/blog/generative-ai/how-to-perform-a-structured-evaluation-of-ai-conversational-solutions",
       "source": "rss",
       "source_name": "Thoughtworks",
       "source_id": "rss:thoughtworks",
       "signal": 4,
-      "why_it_matters": "Leadership signal",
-      "summary": "The predictability gap in digital public infrastructure highlights the challenges of adoption that go beyond technical design. As generative AI offers new capabilities, leaders must focus on institutional readiness and cultural factors to ensure successful implementation.",
+      "why_it_matters": "AI in QA",
+      "summary": "The article outlines a structured evaluation framework for AI conversational solutions, emphasizing the importance of a multi-dimensional approach to assess system performance. By leveraging Weights & Biases Weave, the evaluation process becomes more consistent and scalable, addressing common challenges in AI-driven systems.",
       "key_points": [
-        "The shift from centralized platforms to protocol-based systems increases institutional complexity.",
-        "Simplicity in design does not guarantee ease of adoption; cultural trust and incentives are crucial.",
-        "A mindset shift towards rapid experimentation and feedback is essential for navigating complex challenges."
+        "Traditional evaluation methods are insufficient for complex conversational systems.",
+        "A multi-dimensional scoring approach is necessary to assess retrieval, prompting, and generation components.",
+        "Implementing a unified evaluation platform enhances traceability and provides actionable insights."
       ],
-      "takeaway": "Leaders must prioritize institutional readiness and cultural factors alongside technical solutions to bridge the predictability gap in digital public infrastructure.",
+      "takeaway": "A structured, metrics-driven evaluation framework is crucial for improving the performance and reliability of AI conversational solutions.",
       "first_seen_at": "2026-04-15",
       "last_shown_at": "2026-04-15",
       "expires_at": "2026-04-29",
       "rank_score": 4.1427,
-=======
-      "id": "6e986c068ab5d6dd",
-      "title": "How to Onboard a New Developer Without Sharing a Single API Key",
-      "url": "https://dev.to/the_seventeen/how-to-onboard-a-new-developer-without-sharing-a-single-api-key-51g7",
-      "source": "devto",
-      "source_name": "DEV Community",
-      "source_id": "devto",
-      "signal": 4,
-      "why_it_matters": "Governance risk",
-      "summary": "The article discusses the challenges of sharing API credentials during developer onboarding, particularly in AI projects. It highlights the risks associated with credential sharing and presents a solution that enhances security by using encrypted access rather than direct credential sharing.",
-      "key_points": [
-        "Traditional methods of sharing credentials leave them vulnerable and uncontrollable.",
-        "AgentSecrets provides a workspace model that isolates developer access and enhances security.",
-        "Focusing on token management during onboarding can prevent future bottlenecks and security issues."
-      ],
-      "takeaway": "Implementing a secure credential management system is crucial for protecting sensitive information and maintaining control over access.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.3662,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "8fa1aafbe25f3fa4",
-      "title": "Cal.com goes private: A security reckoning for open source",
-      "url": "https://thenewstack.io/cal-com-codebase-security-ai",
-      "source": "rss",
-      "source_name": "The New Stack",
-      "source_id": "rss:the-new-stack",
-      "signal": 4,
-      "why_it_matters": "Governance risk",
-      "summary": "Cal.com\u2019s decision to move its core codebase behind closed doors highlights the growing security concerns in the open-source community, particularly in light of advancements in AI that can exploit vulnerabilities. This shift underscores the delicate balance between transparency and security for companies relying on open-source models.",
-      "key_points": [
-        "Cal.com cites AI-driven vulnerability research as a key factor in its decision to close its core codebase.",
-        "The company has released Cal.diy, an open-source version stripped of enterprise features, while keeping critical components private.",
-        "This move reflects a broader trend in the industry where security concerns are prompting companies to reconsider the openness of their code."
-      ],
-      "takeaway": "The increasing sophistication of AI tools poses significant governance risks for open-source projects, necessitating a reevaluation of transparency versus security.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.366,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "2bc4cfadf51dc15a",
-      "title": "A primer on product management for engineers",
-      "url": "https://increment.com/planning/product-management-for-engineers",
-      "source": "rss",
-      "source_name": "Increment",
-      "source_id": "rss:increment",
-      "signal": 4,
-      "why_it_matters": "Actionable idea",
-      "summary": "The article emphasizes the importance of product management for engineers, even in the absence of a dedicated product manager. By documenting user requirements and utilizing lightweight frameworks, engineers can enhance collaboration and ensure that the products they build meet user needs effectively.",
-      "key_points": [
-        "Product management is crucial for aligning engineering efforts with user needs.",
-        "Documenting user stories helps prioritize and track development requirements.",
-        "Lightweight product management techniques can improve collaboration among engineers."
-      ],
-      "takeaway": "Engineers should adopt product management practices to enhance project clarity and user alignment.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.3458,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "8ccbbba850835f03",
-      "title": "Why AI hasn't replaced human expertise\u2014and what that means for your SaaS stack",
-      "url": "https://stackoverflow.blog/2026/04/15/why-ai-hasn-t-replaced-human-expertise",
-      "source": "rss",
-      "source_name": "Stack Overflow Blog",
-      "source_id": "rss:stack-overflow-blog",
-      "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "Despite the rise of AI tools in software development, developers still heavily rely on human expertise for complex problem-solving. The trust and validation gaps in AI outputs highlight the need for a knowledge intelligence layer that enhances the value of AI by providing context and community insights.",
-      "key_points": [
-        "AI tools excel at handling straightforward coding tasks but struggle with complex questions.",
-        "Developers prefer to engage with human discourse to gain deeper understanding and context.",
-        "Enterprise SaaS buyers should focus on tools that enhance trust and validation of AI-generated solutions."
-      ],
-      "takeaway": "AI tools are valuable, but human expertise remains essential for addressing complex challenges in software development.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.3405,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "d9821a869a0aa89f",
-      "title": "Principles of Mechanical Sympathy",
-      "url": "https://martinfowler.com/articles/mechanical-sympathy-principles.html",
-      "source": "rss",
-      "source_name": "Martin Fowler",
-      "source_id": "rss:martin-fowler",
-      "signal": 4,
-      "why_it_matters": "Quality practice",
-      "summary": "The principles of mechanical sympathy emphasize the importance of understanding hardware when developing software, leading to more efficient and performant systems. By applying concepts like predictable memory access and the single-writer principle, engineers can significantly enhance the performance of their applications.",
-      "key_points": [
-        "Mechanical sympathy helps leverage modern hardware capabilities for better software performance.",
-        "Understanding cache behavior and memory access patterns can prevent issues like false sharing.",
-        "The single-writer principle can simplify multithreading and improve application efficiency."
-      ],
-      "takeaway": "Embracing mechanical sympathy can lead to substantial performance improvements in software systems.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.3357,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "4327be3673ed0d0a",
-      "title": "Does AI test generation actually improve velocity? Solving the regression bloat",
-      "url": "https://www.ministryoftesting.com/articles/does-ai-test-generation-actually-improve-velocity-solving-the-regression-bloat",
-      "source": "html",
-      "source_name": "Ministry of Testing",
-      "source_id": "html:ministry-of-testing",
-      "signal": 4,
-      "why_it_matters": "Testing strategy",
-      "summary": "AI-generated test cases can enhance coverage and speed up test creation, but without a robust strategy for managing regression suites, teams risk longer feedback cycles and diminished returns. By integrating test impact analysis, teams can optimize their testing efforts, ensuring that only relevant tests are executed to maintain velocity.",
-      "key_points": [
-        "AI test generation can quickly expand test coverage but may lead to regression cycle bloat.",
-        "Effective regression testing should focus on risk reduction rather than sheer volume of tests.",
-        "Combining AI test generation with test impact analysis can streamline testing processes and improve feedback times."
-      ],
-      "takeaway": "Balancing test coverage with strategic execution is crucial to maintaining velocity in software releases.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.3307,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "40547482d7cbf79c",
-      "title": "YouTube is testing a more aggressive approach against ad blockers",
-      "url": "https://www.androidpolice.com/youtube-ad-blockers-three-strikes",
-      "source": "hn",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "signal": 4,
-      "why_it_matters": "Industry change",
-      "summary": "YouTube's new approach to combat ad blockers reflects a significant shift in how digital platforms are managing user experience and monetization. By implementing a three-strikes policy, YouTube is signaling a move towards stricter enforcement of ad visibility, which could influence other platforms to adopt similar strategies.",
-      "key_points": [
-        "YouTube is testing a three-strikes policy against ad blockers.",
-        "Users on the free tier may face video player restrictions after multiple ad blocker detections.",
-        "This move could push users towards Premium subscriptions or increase ad exposure."
-      ],
-      "takeaway": "The evolving landscape of ad management on platforms like YouTube may prompt QA teams to consider user experience and monetization strategies in their testing frameworks.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.3292,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "1e3d621f57c3d3a2",
-      "title": "AI in QA: What leading quality experts want every team to know",
-      "url": "https://www.tricentis.com/blog/ai-in-qa-decision-intelligence",
-      "source": "html",
-      "source_name": "Tricentis",
-      "source_id": "html:tricentis",
-      "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "The integration of AI in QA is shifting the focus from mere test execution to decision intelligence, emphasizing the importance of trust and context in testing processes. QA leaders are encouraged to critically assess AI outputs and maintain human judgment at the core of quality assurance.",
-      "key_points": [
-        "Trust and context are more important than automation volume.",
-        "QA teams must focus on context engineering to guide AI effectively.",
-        "Critical thinking about AI decision-making is essential for future QA success."
-      ],
-      "takeaway": "The future of QA will depend on teams that prioritize understanding AI's decision-making processes over simply increasing automation.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.3254,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "4b6c143bcec7c576",
-      "title": "Stop Guessing Which systemd Override Wins: Practical `systemd-delta` + `systemctl cat`",
-      "url": "https://dev.to/lyraalishaikh/stop-guessing-which-systemd-override-wins-practical-systemd-delta-systemctl-cat-3ho5",
-      "source": "devto",
-      "source_name": "DEV Community",
-      "source_id": "devto",
-      "signal": 4,
-      "why_it_matters": "Tooling trend",
-      "summary": "Understanding the nuances of systemd configuration is crucial for maintaining reliable service behavior in Linux environments. The use of tools like systemd-delta and systemctl cat can significantly streamline troubleshooting processes, allowing engineers to quickly identify and resolve configuration issues.",
-      "key_points": [
-        "systemd-delta helps identify configuration overrides and local changes.",
-        "Using drop-ins for local overrides preserves vendor updates and clarity.",
-        "systemctl revert provides a clean method to restore original configurations."
-      ],
-      "takeaway": "Leveraging the right tools can transform complex troubleshooting into a more efficient and repeatable process.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.3246,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "96d9fb6d4ffb05a9",
-      "title": "Finding software testing opportunities early with the Requirements Review Model",
-      "url": "https://www.ministryoftesting.com/articles/finding-software-testing-opportunities-early-with-the-requirements-review-model",
-      "source": "html",
-      "source_name": "Ministry of Testing",
-      "source_id": "html:ministry-of-testing",
-      "signal": 4,
-      "why_it_matters": "Testing strategy",
-      "summary": "The Requirements Review Model (RRM) emphasizes the importance of early testing by identifying risks and clarifying ambiguities in requirements before any code is written. By engaging stakeholders and refining requirements, teams can prevent costly rework and improve overall software quality.",
-      "key_points": [
-        "Testing should start before code is written to catch issues early.",
-        "Engaging stakeholders leads to clearer requirements and better testing outcomes.",
-        "Vague requirements can lead to significant rework and production issues."
-      ],
-      "takeaway": "Early involvement in requirement reviews can significantly enhance software quality and reduce development costs.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.3204,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "f7895c3a7a83b216",
-      "title": "Balancing risk with the need for speed",
-      "url": "https://www.tricentis.com/blog/how-to-avoid-a-technology-meltdown",
-      "source": "html",
-      "source_name": "Tricentis",
-      "source_id": "html:tricentis",
-      "signal": 4,
-      "why_it_matters": "Testing strategy",
-      "summary": "As technology evolves, organizations face the challenge of balancing speed with risk in their software releases. A comprehensive quality assurance strategy that includes sophisticated testing methodologies is essential to minimize errors and maintain operational efficiency.",
-      "key_points": [
-        "The pace of technological change requires organizations to prioritize speed to market.",
-        "Rapid innovation without adequate risk assessment can lead to significant errors and impacts.",
-        "Regularly reviewing testing and deployment strategies is crucial to align with current customer needs and risk profiles."
-      ],
-      "takeaway": "Organizations must adopt a proactive approach to quality assurance to effectively manage the dual pressures of speed and risk.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.3161,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "c5536751525e00a1",
-      "title": "Article: A Better Alternative to Reducing CI Regression Test Suite Sizes",
-      "url": "https://www.infoq.com/articles/alternative-reduce-test-suite-size",
-      "source": "rss",
-      "source_name": "InfoQ",
-      "source_id": "rss:infoq",
-      "signal": 4,
-      "why_it_matters": "Testing strategy",
-      "summary": "The article discusses the challenges and considerations in reducing CI regression test suite sizes while maintaining effective bug detection. It emphasizes the importance of a well-structured test architecture to address issues like slow feedback and CI lab capacity overload without sacrificing test coverage.",
-      "key_points": [
-        "Reducing test suite sizes can lead to faster feedback but risks missing subtle bugs.",
-        "A large suite of relevant tests is an asset that should be optimized rather than reduced.",
-        "Improving test architecture can alleviate issues related to slow feedback and resource overload."
-      ],
-      "takeaway": "Maintaining a comprehensive regression test suite is crucial for catching subtle bugs, and optimizing test architecture is key to balancing speed and thoroughness.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.2759,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "e3f1d566b96316ec",
-      "title": "Closing AI-generated test gaps with qTest & SeaLights",
-      "url": "https://www.tricentis.com/blog/close-ai-generated-test-gaps-qtest-sealights",
-      "source": "html",
-      "source_name": "Tricentis",
-      "source_id": "html:tricentis",
-      "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "The integration of Tricentis qTest and SeaLights creates a closed-loop testing feedback system that enhances the quality and coverage of AI-generated tests. By combining user-story-based test creation with deep code coverage insights, teams can automatically identify and address gaps in their test suites, ensuring higher confidence in release quality.",
-      "key_points": [
-        "Integration of qTest and SeaLights enables automated test generation based on real code behavior.",
-        "AI-generated tests are enhanced by capturing untested code areas, leading to richer test cases.",
-        "The system adapts to code changes, providing continuous visibility into test completeness and release readiness."
-      ],
-      "takeaway": "The future of QA lies in leveraging AI to create dynamic, context-aware testing strategies that evolve with the software development lifecycle.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.2733,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "1a7bc612a61ebccf",
-      "title": "The Testing Skyscraper: A Modern Alternative to the Testing Pyramid",
-      "url": "https://automationpanda.com/2025/09/29/the-testing-skyscraper-a-modern-alternative-to-the-testing-pyramid",
-      "source": "rss",
-      "source_name": "Automation Panda",
-      "source_id": "rss:automation-panda",
-      "signal": 4,
-      "why_it_matters": "Testing strategy",
-      "summary": "The article challenges the traditional Testing Pyramid model, advocating for a more flexible and modern approach termed the Testing Skyscraper. This new model emphasizes the uniqueness of testing strategies and the importance of building robust feedback loops rather than adhering to rigid quotas for test types.",
-      "key_points": [
-        "The Testing Pyramid is seen as an outdated model that no longer fits the current landscape of software testing.",
-        "The Testing Skyscraper represents a more adaptable approach, allowing for varied testing strategies tailored to specific needs.",
-        "All test types are valuable in mitigating different risks, and the focus should be on continuous feedback rather than quantity."
-      ],
-      "takeaway": "Embrace a flexible testing strategy that prioritizes unique needs over traditional models.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.2599,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "60a66375c5a950ba",
-      "title": "Prioritizing Small Things",
-      "url": "https://automationpanda.com/2025/12/17/prioritizing-small-things",
-      "source": "rss",
-      "source_name": "Automation Panda",
-      "source_id": "rss:automation-panda",
-      "signal": 4,
-      "why_it_matters": "Quality practice",
-      "summary": "The article highlights the importance of addressing small, often overlooked issues in projects, whether they are related to cars or software. By prioritizing these minor fixes, teams can enhance overall quality and prevent small problems from escalating into larger, more complex issues.",
-      "key_points": [
-        "Small problems can significantly impact quality of life and project outcomes.",
-        "Prioritizing minor fixes can lead to quick and effective resolutions.",
-        "The ability to address small issues reflects our priorities and capabilities."
-      ],
-      "takeaway": "Addressing small issues promptly can prevent them from becoming larger problems and improve overall project quality.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.2575,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "155f7dd16bf01030",
-      "title": "What engineering leaders get wrong about data stack consolidation",
-      "url": "https://thenewstack.io/data-stack-consolidation-risks",
-      "source": "rss",
-      "source_name": "The New Stack",
-      "source_id": "rss:the-new-stack",
-      "signal": 4,
-      "why_it_matters": "Governance risk",
-      "summary": "The article highlights the risks associated with data stack consolidation, particularly the emergence of architectural debt as open-source tools become proprietary. It emphasizes the importance of maintaining engineering autonomy and understanding the long-term implications of vendor lock-in on team expertise and infrastructure portability.",
-      "key_points": [
-        "Consolidation can lead to architectural debt, making systems less portable over time.",
-        "Vendor lock-in increases as teams become reliant on proprietary features, reducing their understanding of core technologies.",
-        "Engineering leaders must evaluate the long-term implications of managed services beyond immediate benefits."
-      ],
-      "takeaway": "Leaders should prioritize architectural neutrality and assess the portability of integrations when considering managed data services.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.2573,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "eed1cbf9fd1ce162",
-      "title": "Introducing Tricentis Vera\u2122 2024.3",
-      "url": "https://www.tricentis.com/blog/introducing-tricentis-vera-2024-3",
-      "source": "html",
-      "source_name": "Tricentis",
-      "source_id": "html:tricentis",
-      "signal": 4,
-      "why_it_matters": "Tooling trend",
-      "summary": "Tricentis Vera\u2122 2024.3 introduces significant enhancements aimed at improving integration, usability, and security for QA teams. The updates focus on streamlining approval workflows and user management, which are critical for maintaining compliance and efficiency in testing processes.",
-      "key_points": [
-        "Enhanced integration with Tricentis Tosca and qTest for improved validation workflows.",
-        "New approval restrictions in Jira to prevent conflicts of interest.",
-        "Simplified user and role management to reduce administrative overhead."
-      ],
-      "takeaway": "The latest updates in Tricentis Vera reflect a broader trend towards more integrated and user-friendly testing tools that enhance compliance and efficiency.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.2539,
-      "is_new_today": true,
-      "featured": false
-    },
-    {
-      "id": "13a86c1d5c4f3765",
-      "title": "Human input needed: take our survey on AI agents",
-      "url": "https://stackoverflow.blog/2026/04/15/human-input-needed-take-our-survey-on-ai-agents",
-      "source": "rss",
-      "source_name": "Stack Overflow Blog",
-      "source_id": "rss:stack-overflow-blog",
-      "signal": 4,
-      "why_it_matters": "AI in QA",
-      "summary": "The evolving role of AI agents in software development is reshaping how QA engineers interact with technology. As teams transition from a 'human-in-the-loop' to a 'human-on-the-loop' model, understanding the impact of this shift is crucial for optimizing testing strategies.",
-      "key_points": [
-        "AI agents are increasingly handling significant tasks in software development.",
-        "Research indicates that collaboration between humans and AI leads to better testing outcomes.",
-        "A survey is being conducted to gauge the current state of AI agent usage in the workplace."
-      ],
-      "takeaway": "The integration of AI agents is transforming QA roles, necessitating a reevaluation of testing strategies and responsibilities.",
-      "first_seen_at": "2026-04-15",
-      "last_shown_at": "2026-04-15",
-      "expires_at": "2026-04-29",
-      "rank_score": 4.2355,
->>>>>>> cd70dad (Polish mobile filters and empty feed state)
       "is_new_today": true,
       "featured": false
     }
