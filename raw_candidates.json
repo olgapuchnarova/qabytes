@@ -1,249 +1,9 @@
 [
   {
-    "title": "Introducing Tricentis Vera\u2122 2024.3",
-    "url": "https://www.tricentis.com/blog/introducing-tricentis-vera-2024-3",
-    "source": "html",
-    "source_name": "Tricentis"
-  },
-  {
-    "title": "Escaping the platform labyrinth: A product guide to beating cognitive load",
-    "url": "https://www.thoughtworks.com/insights/blog/platforms/escaping-the-platform-labyrinth--a-product-guide-to-beating-cogn",
-    "source": "rss",
-    "source_name": "Thoughtworks"
-  },
-  {
-    "title": "Simplify Your Code: Functional Core, Imperative Shell",
-    "url": "http://testing.googleblog.com/2025/10/simplify-your-code-functional-core.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
-  },
-  {
-    "title": "Structured-Prompt-Driven Development (SPDD)",
-    "url": "https://martinfowler.com/articles/structured-prompt-driven/",
-    "source": "rss",
-    "source_name": "Martin Fowler"
-  },
-  {
-    "title": "AI giveth and AI taketh CPU",
-    "url": "https://stackoverflow.blog/2026/05/08/ai-giveth-and-ai-taketh-cpu/",
-    "source": "rss",
-    "source_name": "Stack Overflow Blog"
-  },
-  {
-    "title": "Vitest 4.1: Test Tags, Native Node.js Execution and AI Agent Reporter",
-    "url": "https://www.infoq.com/news/2026/05/vitest-4-1-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Testing",
-    "source": "rss",
-    "source_name": "InfoQ"
-  },
-  {
-    "title": "BDD Gherkin Guidelines for AI Coding and Testing",
-    "url": "https://automationpanda.com/2026/04/27/bdd-gherkin-guidelines-for-ai-coding-and-testing/",
-    "source": "rss",
-    "source_name": "Automation Panda"
-  },
-  {
-    "title": "Accused murderer wins right to check source code of DNA testing kit",
-    "url": "https://www.theregister.com/2021/02/04/dna_testing_software/",
+    "title": "20 lines of code that beat A/B testing every time",
+    "url": "http://stevehanov.ca/blog/index.php?id=132",
     "source": "hn",
     "source_name": "Hacker News"
-  },
-  {
-    "title": "Back to the basics: Rethinking how we use AI in testing",
-    "url": "https://www.ministryoftesting.com/articles/back-to-the-basics-rethinking-how-we-use-ai-in-testing",
-    "source": "html",
-    "source_name": "Ministry of Testing"
-  },
-  {
-    "title": "WhatsApp Group Monitor with AI Summaries & Scheduled Email Reports",
-    "url": "https://dev.to/moisi_trungu_31647b7ac300/whatsapp-group-monitor-with-ai-summaries-scheduled-email-reports-15jb",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Planning in the dark",
-    "url": "https://increment.com/planning/planning-for-product-market-fit/",
-    "source": "rss",
-    "source_name": "Increment"
-  },
-  {
-    "title": "I tested the new OpenAI Codex features on a real Python codebase, and it\u2019s the strongest Claude Code rival yet",
-    "url": "https://thenewstack.io/openai-codex-claude-code/",
-    "source": "rss",
-    "source_name": "The New Stack"
-  },
-  {
-    "title": "AI in QA: What leading quality experts want every team to know",
-    "url": "https://www.tricentis.com/blog/ai-in-qa-decision-intelligence",
-    "source": "html",
-    "source_name": "Tricentis"
-  },
-  {
-    "title": "Why AI is raising the stakes of the software engineering craft",
-    "url": "https://www.thoughtworks.com/insights/blog/agile-engineering-practices/why-ai-raising-stakes-software-engineering-craft",
-    "source": "rss",
-    "source_name": "Thoughtworks"
-  },
-  {
-    "title": "Construct with Collaborators, Call with Work",
-    "url": "http://testing.googleblog.com/2026/05/construct-with-collaborators-call-with.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
-  },
-  {
-    "title": "Bliki: Mythical Man Month",
-    "url": "https://martinfowler.com/bliki/MythicalManMonth.html",
-    "source": "rss",
-    "source_name": "Martin Fowler"
-  },
-  {
-    "title": "Dispatches from O'Reilly: Fast paths and slow paths",
-    "url": "https://stackoverflow.blog/2026/05/01/dispatches-from-o-reilly-fast-paths-and-slow-paths/",
-    "source": "rss",
-    "source_name": "Stack Overflow Blog"
-  },
-  {
-    "title": "The Testing Skyscraper: A Modern Alternative to the Testing Pyramid",
-    "url": "https://automationpanda.com/2025/09/29/the-testing-skyscraper-a-modern-alternative-to-the-testing-pyramid/",
-    "source": "rss",
-    "source_name": "Automation Panda"
-  },
-  {
-    "title": "Testing GPT 4's code-writing capabilities with some real world problems",
-    "url": "https://tylerglaiel.substack.com/p/can-gpt-4-actually-write-code",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "The forgotten part of quality: paying attention to production",
-    "url": "https://www.ministryoftesting.com/articles/the-forgotten-part-of-quality-paying-attention-to-production",
-    "source": "html",
-    "source_name": "Ministry of Testing"
-  },
-  {
-    "title": "Deploying a Multi-Agent System with Terraform and Cloud Run",
-    "url": "https://dev.to/googleai/deploying-a-multi-agent-system-with-terraform-and-cloud-run-2a9c",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Planning for momentum",
-    "url": "https://increment.com/planning/planning-for-momentum/",
-    "source": "rss",
-    "source_name": "Increment"
-  },
-  {
-    "title": "Elastic architects reveal how to query observability data in plain English",
-    "url": "https://thenewstack.io/ai-observability-opentelemetry-webinar/",
-    "source": "rss",
-    "source_name": "The New Stack"
-  },
-  {
-    "title": "Balancing risk with the need for speed",
-    "url": "https://www.tricentis.com/blog/how-to-avoid-a-technology-meltdown",
-    "source": "html",
-    "source_name": "Tricentis"
-  },
-  {
-    "title": "GitHub Copilot and me: The evolution of my partnership with a coding assistant",
-    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/github-copilot-me-evolution-partnership-coding-assistant",
-    "source": "rss",
-    "source_name": "Thoughtworks"
-  },
-  {
-    "title": "Set Safe Defaults for Flags",
-    "url": "http://testing.googleblog.com/2026/03/set-safe-defaults-for-flags.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
-  },
-  {
-    "title": "Time is a construct but it can still break your software",
-    "url": "https://stackoverflow.blog/2026/05/01/time-is-a-construct-but-it-can-break-your-software/",
-    "source": "rss",
-    "source_name": "Stack Overflow Blog"
-  },
-  {
-    "title": "Vibe coding while live streaming",
-    "url": "https://automationpanda.com/2025/08/20/vibe-coding-while-live-streaming/",
-    "source": "rss",
-    "source_name": "Automation Panda"
-  },
-  {
-    "title": "We\u2019re working on 1M Covid-19 testing capacity per day",
-    "url": "https://www.billiontoone.com/covid-19",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Writing custom Cypress plug-ins that solve common software testing problems",
-    "url": "https://www.ministryoftesting.com/articles/writing-custom-cypress-plug-ins-that-solve-common-software-testing-problems",
-    "source": "html",
-    "source_name": "Ministry of Testing"
-  },
-  {
-    "title": "I shipped a hospital management system to production. Here's what actually broke.",
-    "url": "https://dev.to/mrvenom17/i-shipped-a-hospital-management-system-to-productionheres-what-actually-broke-2aem",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "A primer on product management for engineers",
-    "url": "https://increment.com/planning/product-management-for-engineers/",
-    "source": "rss",
-    "source_name": "Increment"
-  },
-  {
-    "title": "Temporal reveals a serverless option for its Durable Execution platform",
-    "url": "https://thenewstack.io/temporal-replay-2026-news/",
-    "source": "rss",
-    "source_name": "The New Stack"
-  },
-  {
-    "title": "From green checkmarks to real confidence: How qTest and SeaLights close the modern quality gap",
-    "url": "https://www.tricentis.com/blog/qtest-sealights-proof-of-test-coverage",
-    "source": "html",
-    "source_name": "Tricentis"
-  },
-  {
-    "title": "The future of secured lending in the UK and Europe: From bottlenecks to AI-driven growth",
-    "url": "https://www.thoughtworks.com/insights/articles/the-future-of-secured-lending-in-the-uk-and-europe",
-    "source": "rss",
-    "source_name": "Thoughtworks"
-  },
-  {
-    "title": "One Map Key, One Lookup",
-    "url": "http://testing.googleblog.com/2026/04/one-map-key-one-lookup.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
-  },
-  {
-    "title": "What (un)exactly do you mean by semantic search?",
-    "url": "https://stackoverflow.blog/2026/05/05/what-un-exactly-do-you-mean-by-semantic-search/",
-    "source": "rss",
-    "source_name": "Stack Overflow Blog"
-  },
-  {
-    "title": "Prioritizing Small Things",
-    "url": "https://automationpanda.com/2025/12/17/prioritizing-small-things/",
-    "source": "rss",
-    "source_name": "Automation Panda"
-  },
-  {
-    "title": "Pfizer is testing a pill that, if successful, could cure Covid-19",
-    "url": "https://montrealgazette.com/news/world/pfizer-is-testing-a-pill-that-if-successful-could-become-first-ever-home-cure-for-covid-19",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Six common mistakes in test automation scripting",
-    "url": "https://www.ministryoftesting.com/articles/six-common-mistakes-in-test-automation-scripting",
-    "source": "html",
-    "source_name": "Ministry of Testing"
-  },
-  {
-    "title": "Real GPT-5.4 Chatbot Costs in Production (WordPress + WooCommerce + Forums)",
-    "url": "https://dev.to/fabio-plugins/real-gpt-54-chatbot-costs-in-production-wordpress-woocommerce-forums-4agk",
-    "source": "devto",
-    "source_name": "DEV Community"
   },
   {
     "title": "An IC\u2019s guide to roadmap planning",
@@ -252,22 +12,220 @@
     "source_name": "Increment"
   },
   {
-    "title": "OpenAI brings GPT-5-level reasoning to its speech models",
-    "url": "https://thenewstack.io/openai-gpt-5-level-speech/",
-    "source": "rss",
-    "source_name": "The New Stack"
-  },
-  {
-    "title": "What software makers need to know about the new EU directive",
-    "url": "https://www.tricentis.com/blog/new-eu-product-liability-directive-key-impacts-for-software-makers",
-    "source": "html",
-    "source_name": "Tricentis"
-  },
-  {
     "title": "The agentic journey from idea to product",
     "url": "https://www.thoughtworks.com/insights/articles/agentic-journey-from-idea-to-product",
     "source": "rss",
     "source_name": "Thoughtworks"
+  },
+  {
+    "title": "The Local Model That Doesn't Sleep: Gemma 4 + MTP as a Marathon Engine",
+    "url": "https://dev.to/ertugrul_demir/the-local-model-that-doesnt-sleep-gemma-4-mtp-as-a-marathon-engine-4c9",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "BDD Gherkin Guidelines for AI Coding and Testing",
+    "url": "https://automationpanda.com/2026/04/27/bdd-gherkin-guidelines-for-ai-coding-and-testing/",
+    "source": "rss",
+    "source_name": "Automation Panda"
+  },
+  {
+    "title": "What (un)exactly do you mean by semantic search?",
+    "url": "https://stackoverflow.blog/2026/05/05/what-un-exactly-do-you-mean-by-semantic-search/",
+    "source": "rss",
+    "source_name": "Stack Overflow Blog"
+  },
+  {
+    "title": "The future of testing: Autonomous agents, ethical AI, and human oversight",
+    "url": "https://www.ministryoftesting.com/articles/the-future-of-testing-autonomous-agents-ethical-ai-and-human-oversight",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "Bliki: Mythical Man Month",
+    "url": "https://martinfowler.com/bliki/MythicalManMonth.html",
+    "source": "rss",
+    "source_name": "Martin Fowler"
+  },
+  {
+    "title": "Simplify Your Code: Functional Core, Imperative Shell",
+    "url": "http://testing.googleblog.com/2025/10/simplify-your-code-functional-core.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
+  },
+  {
+    "title": "Partner spotlight series: How Foulk Consulting transforms QA for energy and utilities with Tricentis",
+    "url": "https://www.tricentis.com/blog/foulk-consulting-tricentis-partner-spotlight",
+    "source": "html",
+    "source_name": "Tricentis"
+  },
+  {
+    "title": "AI startups are scrambling to survive in big tech\u2019s shadow",
+    "url": "https://thenewstack.io/ai-agent-conference-startups/",
+    "source": "rss",
+    "source_name": "The New Stack"
+  },
+  {
+    "title": "Vitest 4.1: Test Tags, Native Node.js Execution and AI Agent Reporter",
+    "url": "https://www.infoq.com/news/2026/05/vitest-4-1-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Testing",
+    "source": "rss",
+    "source_name": "InfoQ"
+  },
+  {
+    "title": "Testing Benford's Law",
+    "url": "http://testingbenfordslaw.com",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Planning in the dark",
+    "url": "https://increment.com/planning/planning-for-product-market-fit/",
+    "source": "rss",
+    "source_name": "Increment"
+  },
+  {
+    "title": "GitHub Copilot and me: The evolution of my partnership with a coding assistant",
+    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/github-copilot-me-evolution-partnership-coding-assistant",
+    "source": "rss",
+    "source_name": "Thoughtworks"
+  },
+  {
+    "title": "When your SaaS API has docs but no real sandbox",
+    "url": "https://dev.to/fetchsandbox/when-your-saas-api-has-docs-but-no-real-sandbox-3mfh",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Prioritizing Small Things",
+    "url": "https://automationpanda.com/2025/12/17/prioritizing-small-things/",
+    "source": "rss",
+    "source_name": "Automation Panda"
+  },
+  {
+    "title": "No Dumb Questions: What is an MCP server and why do I care?",
+    "url": "https://stackoverflow.blog/2026/05/08/no-dumb-questions-mcp/",
+    "source": "rss",
+    "source_name": "Stack Overflow Blog"
+  },
+  {
+    "title": "Six common mistakes in test automation scripting",
+    "url": "https://www.ministryoftesting.com/articles/six-common-mistakes-in-test-automation-scripting",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "Structured-Prompt-Driven Development (SPDD)",
+    "url": "https://martinfowler.com/articles/structured-prompt-driven/",
+    "source": "rss",
+    "source_name": "Martin Fowler"
+  },
+  {
+    "title": "Set Safe Defaults for Flags",
+    "url": "http://testing.googleblog.com/2026/03/set-safe-defaults-for-flags.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
+  },
+  {
+    "title": "Balancing risk with the need for speed",
+    "url": "https://www.tricentis.com/blog/how-to-avoid-a-technology-meltdown",
+    "source": "html",
+    "source_name": "Tricentis"
+  },
+  {
+    "title": "Anthropic recruited SpaceX\u2019s 220,000-GPU Colossus 1 to fix what Claude users kept complaining about",
+    "url": "https://thenewstack.io/anthropic-spacex-claude-limits/",
+    "source": "rss",
+    "source_name": "The New Stack"
+  },
+  {
+    "title": "One of the Biggest At-Home DNA Testing Companies Is Working with the FBI",
+    "url": "https://www.buzzfeednews.com/article/salvadorhernandez/family-tree-dna-fbi-investigative-genealogy-privacy",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "A primer on product management for engineers",
+    "url": "https://increment.com/planning/product-management-for-engineers/",
+    "source": "rss",
+    "source_name": "Increment"
+  },
+  {
+    "title": "Escaping the platform labyrinth: A product guide to beating cognitive load",
+    "url": "https://www.thoughtworks.com/insights/blog/platforms/escaping-the-platform-labyrinth--a-product-guide-to-beating-cogn",
+    "source": "rss",
+    "source_name": "Thoughtworks"
+  },
+  {
+    "title": "I shipped a hospital management system to production. Here's what actually broke.",
+    "url": "https://dev.to/mrvenom17/i-shipped-a-hospital-management-system-to-productionheres-what-actually-broke-2aem",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "The Testing Skyscraper: A Modern Alternative to the Testing Pyramid",
+    "url": "https://automationpanda.com/2025/09/29/the-testing-skyscraper-a-modern-alternative-to-the-testing-pyramid/",
+    "source": "rss",
+    "source_name": "Automation Panda"
+  },
+  {
+    "title": "AI giveth and AI taketh CPU",
+    "url": "https://stackoverflow.blog/2026/05/08/ai-giveth-and-ai-taketh-cpu/",
+    "source": "rss",
+    "source_name": "Stack Overflow Blog"
+  },
+  {
+    "title": "What is software quality?",
+    "url": "https://www.ministryoftesting.com/articles/what-is-software-quality",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "Construct with Collaborators, Call with Work",
+    "url": "http://testing.googleblog.com/2026/05/construct-with-collaborators-call-with.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
+  },
+  {
+    "title": "Effective regression testing in the age of AI-generated code",
+    "url": "https://www.tricentis.com/blog/ai-regression-testing-change-based-approach",
+    "source": "html",
+    "source_name": "Tricentis"
+  },
+  {
+    "title": "\u201cThe terminal still matters\u201d: Amp rebuilds its CLI for an agentic future beyond the command line",
+    "url": "https://thenewstack.io/amp-neo-cli-agents/",
+    "source": "rss",
+    "source_name": "The New Stack"
+  },
+  {
+    "title": "Pfizer is testing a pill that, if successful, could cure Covid-19",
+    "url": "https://montrealgazette.com/news/world/pfizer-is-testing-a-pill-that-if-successful-could-become-first-ever-home-cure-for-covid-19",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Planning for momentum",
+    "url": "https://increment.com/planning/planning-for-momentum/",
+    "source": "rss",
+    "source_name": "Increment"
+  },
+  {
+    "title": "The future of secured lending in the UK and Europe: From bottlenecks to AI-driven growth",
+    "url": "https://www.thoughtworks.com/insights/articles/the-future-of-secured-lending-in-the-uk-and-europe",
+    "source": "rss",
+    "source_name": "Thoughtworks"
+  },
+  {
+    "title": "How I tested 16 processes racing for the same task in 200 lines of Rust",
+    "url": "https://dev.to/dmarshaltu/how-i-tested-16-processes-racing-for-the-same-task-in-200-lines-of-rust-3nkm",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Vibe coding while live streaming",
+    "url": "https://automationpanda.com/2025/08/20/vibe-coding-while-live-streaming/",
+    "source": "rss",
+    "source_name": "Automation Panda"
   },
   {
     "title": "How we replaced Ingress-NGINX at Stack Overflow",
@@ -276,32 +234,116 @@
     "source_name": "Stack Overflow Blog"
   },
   {
-    "title": "Facebook Messenger begins testing end-to-end encryption using Signal Protocol",
-    "url": "https://whispersystems.org/blog/facebook-messenger/",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Lean testing under pressure: How small teams deliver high-impact quality in highly constrained environments",
-    "url": "https://www.ministryoftesting.com/articles/lean-testing-under-pressure-how-small-teams-deliver-high-impact-quality-in-highly-constrained-environments",
+    "title": "Product-minded testing: choosing what matters when everything feels important",
+    "url": "https://www.ministryoftesting.com/articles/product-minded-testing-choosing-what-matters-when-everything-feels-important",
     "source": "html",
     "source_name": "Ministry of Testing"
   },
   {
-    "title": "Cloud Run private networking without a VPC Connector",
-    "url": "https://dev.to/gyorgy/cloud-run-private-networking-without-a-vpc-connector-4ej5",
-    "source": "devto",
-    "source_name": "DEV Community"
+    "title": "One Map Key, One Lookup",
+    "url": "http://testing.googleblog.com/2026/04/one-map-key-one-lookup.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
   },
   {
-    "title": "How Microsoft is governing thousands of Kubernetes clusters without manual intervention",
-    "url": "https://thenewstack.io/kubernetes-fleet-management-scale/",
+    "title": "What software makers need to know about the new EU directive",
+    "url": "https://www.tricentis.com/blog/new-eu-product-liability-directive-key-impacts-for-software-makers",
+    "source": "html",
+    "source_name": "Tricentis"
+  },
+  {
+    "title": "OpenAI Codex arrives in the browser with new Chrome extension",
+    "url": "https://thenewstack.io/openai-codex-chrome-extension/",
     "source": "rss",
     "source_name": "The New Stack"
   },
   {
-    "title": "Partner spotlight series: How Foulk Consulting transforms QA for energy and utilities with Tricentis",
-    "url": "https://www.tricentis.com/blog/foulk-consulting-tricentis-partner-spotlight",
+    "title": "Waymo granted permit to begin testing in New York City",
+    "url": "https://www.cnbc.com/2025/08/22/waymo-permit-new-york-city-nyc-rides.html",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Why AI is raising the stakes of the software engineering craft",
+    "url": "https://www.thoughtworks.com/insights/blog/agile-engineering-practices/why-ai-raising-stakes-software-engineering-craft",
+    "source": "rss",
+    "source_name": "Thoughtworks"
+  },
+  {
+    "title": "Building a Custom CLI Management Tool for VoIP Servers",
+    "url": "https://dev.to/moisi_trungu_31647b7ac300/building-a-custom-cli-management-tool-for-voip-servers-2ae2",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Dispatches from O'Reilly: Fast paths and slow paths",
+    "url": "https://stackoverflow.blog/2026/05/01/dispatches-from-o-reilly-fast-paths-and-slow-paths/",
+    "source": "rss",
+    "source_name": "Stack Overflow Blog"
+  },
+  {
+    "title": "Finding software testing opportunities early with the Requirements Review Model",
+    "url": "https://www.ministryoftesting.com/articles/finding-software-testing-opportunities-early-with-the-requirements-review-model",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "AI in QA: What leading quality experts want every team to know",
+    "url": "https://www.tricentis.com/blog/ai-in-qa-decision-intelligence",
+    "source": "html",
+    "source_name": "Tricentis"
+  },
+  {
+    "title": "\u201cSeveral known limitations\u201d: Developers react to Cursor\u2019s promising but still-moving SDK",
+    "url": "https://thenewstack.io/cursor-sdk-ai-agents/",
+    "source": "rss",
+    "source_name": "The New Stack"
+  },
+  {
+    "title": "Apple testing new App Store design that blurs the line between ads and results",
+    "url": "https://9to5mac.com/2026/01/16/iphone-apple-app-store-search-results-ads-new-design/",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Nine Seconds, No Backups: An Agent\u2019s \u201cConfession\u201d",
+    "url": "https://dev.to/seekdb/nine-seconds-no-backups-an-agents-confession-k11",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Testing with feature flags: what we expected and what actually happened",
+    "url": "https://www.ministryoftesting.com/articles/testing-with-feature-flags-what-we-expected-and-what-actually-happened",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "From green checkmarks to real confidence: How qTest and SeaLights close the modern quality gap",
+    "url": "https://www.tricentis.com/blog/qtest-sealights-proof-of-test-coverage",
+    "source": "html",
+    "source_name": "Tricentis"
+  },
+  {
+    "title": "YouTube is testing a more aggressive approach against ad blockers",
+    "url": "https://www.androidpolice.com/youtube-ad-blockers-three-strikes/",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Building Custom Claude Code Skills for VoIP Infrastructure Operations",
+    "url": "https://dev.to/moisi_trungu_31647b7ac300/building-custom-claude-code-skills-for-voip-infrastructure-operations-1595",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "A letter to the hiring manager of software testers: 10 years later",
+    "url": "https://www.ministryoftesting.com/articles/a-letter-to-the-hiring-manager-of-software-testers-10-years-later",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "AI-powered test optimization with Tricentis Testim and SeaLights",
+    "url": "https://www.tricentis.com/blog/testim-tricentis-sealights-intelligent-test-optimization",
     "source": "html",
     "source_name": "Tricentis"
   },
@@ -312,64 +354,16 @@
     "source_name": "Hacker News"
   },
   {
-    "title": "Getting paid what you are worth as a software tester",
-    "url": "https://www.ministryoftesting.com/articles/getting-paid-what-you-are-worth-as-a-software-tester",
-    "source": "html",
-    "source_name": "Ministry of Testing"
-  },
-  {
-    "title": "Building Custom Claude Code Skills for VoIP Infrastructure Operations",
-    "url": "https://dev.to/moisi_trungu_31647b7ac300/building-custom-claude-code-skills-for-voip-infrastructure-operations-1595",
+    "title": "We were burning \u00a3300/month on Bitbucket pipeline minutes before a single test suite was finished. So I built the alternative.",
+    "url": "https://dev.to/benwake/we-were-burning-ps300month-on-bitbucket-pipeline-minutes-before-a-single-test-suite-was-finished-3l15",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "AI-powered test optimization with Tricentis Testim and SeaLights",
-    "url": "https://www.tricentis.com/blog/testim-tricentis-sealights-intelligent-test-optimization",
-    "source": "html",
-    "source_name": "Tricentis"
-  },
-  {
-    "title": "One of the Biggest At-Home DNA Testing Companies Is Working with the FBI",
-    "url": "https://www.buzzfeednews.com/article/salvadorhernandez/family-tree-dna-fbi-investigative-genealogy-privacy",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Does AI test generation actually improve velocity? Solving the regression bloat",
-    "url": "https://www.ministryoftesting.com/articles/does-ai-test-generation-actually-improve-velocity-solving-the-regression-bloat",
+    "title": "Back to the basics: Rethinking how we use AI in testing",
+    "url": "https://www.ministryoftesting.com/articles/back-to-the-basics-rethinking-how-we-use-ai-in-testing",
     "source": "html",
     "source_name": "Ministry of Testing"
-  },
-  {
-    "title": "I Built My Mom an AI Recipe Helper for Mother's Day",
-    "url": "https://dev.to/aws/i-built-my-mom-an-ai-recipe-helper-for-mothers-day-2hc5",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Effective regression testing in the age of AI-generated code",
-    "url": "https://www.tricentis.com/blog/ai-regression-testing-change-based-approach",
-    "source": "html",
-    "source_name": "Tricentis"
-  },
-  {
-    "title": "Waymo granted permit to begin testing in New York City",
-    "url": "https://www.cnbc.com/2025/08/22/waymo-permit-new-york-city-nyc-rides.html",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Everyday accessibility: 7 ways to do a little a11y every day",
-    "url": "https://www.ministryoftesting.com/articles/everyday-accessibility-7-ways-to-do-a-little-a11y-every-day",
-    "source": "html",
-    "source_name": "Ministry of Testing"
-  },
-  {
-    "title": "Top 5 AI Test Automation Tools to Watch in 2026",
-    "url": "https://dev.to/waqarhashmicoder/top-5-ai-test-automation-tools-to-watch-in-2026-1jb2",
-    "source": "devto",
-    "source_name": "DEV Community"
   },
   {
     "title": "Closing AI-generated test gaps with qTest & SeaLights",
@@ -378,92 +372,38 @@
     "source_name": "Tricentis"
   },
   {
-    "title": "20 lines of code that beat A/B testing every time",
-    "url": "http://stevehanov.ca/blog/index.php?id=132",
+    "title": "Accused murderer wins right to check source code of DNA testing kit",
+    "url": "https://www.theregister.com/2021/02/04/dna_testing_software/",
     "source": "hn",
     "source_name": "Hacker News"
   },
   {
-    "title": "Stop delegating your thinking: Using 5 whys to check AI documentation",
-    "url": "https://www.ministryoftesting.com/articles/stop-delegating-your-thinking-using-5-whys-to-check-ai-documentation",
-    "source": "html",
-    "source_name": "Ministry of Testing"
-  },
-  {
-    "title": "Stop Burning API Credits While Building AI Apps: Run Local LLMs with Docker Model Runner",
-    "url": "https://dev.to/raju_dandigam/stop-burning-api-credits-while-building-ai-apps-run-local-llms-with-docker-model-runner-510j",
+    "title": "WhatsApp Group Monitor with AI Summaries & Scheduled Email Reports",
+    "url": "https://dev.to/moisi_trungu_31647b7ac300/whatsapp-group-monitor-with-ai-summaries-scheduled-email-reports-15jb",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
-    "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel/",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Delivering quality and deploying on time when your team is small",
-    "url": "https://www.ministryoftesting.com/articles/delivering-quality-and-deploying-on-time-when-your-team-is-small",
+    "title": "Does AI test generation actually improve velocity? Solving the regression bloat",
+    "url": "https://www.ministryoftesting.com/articles/does-ai-test-generation-actually-improve-velocity-solving-the-regression-bloat",
     "source": "html",
     "source_name": "Ministry of Testing"
   },
   {
-    "title": "Designing a team of agents",
-    "url": "https://dev.to/nfrankel/designing-a-team-of-agents-j1b",
-    "source": "devto",
-    "source_name": "DEV Community"
+    "title": "Introducing Tricentis Vera\u2122 2024.3",
+    "url": "https://www.tricentis.com/blog/introducing-tricentis-vera-2024-3",
+    "source": "html",
+    "source_name": "Tricentis"
   },
   {
-    "title": "Apple testing new App Store design that blurs the line between ads and results",
-    "url": "https://9to5mac.com/2026/01/16/iphone-apple-app-store-search-results-ads-new-design/",
+    "title": "Facebook Messenger begins testing end-to-end encryption using Signal Protocol",
+    "url": "https://whispersystems.org/blog/facebook-messenger/",
     "source": "hn",
     "source_name": "Hacker News"
   },
   {
-    "title": "Testing with feature flags: what we expected and what actually happened",
-    "url": "https://www.ministryoftesting.com/articles/testing-with-feature-flags-what-we-expected-and-what-actually-happened",
-    "source": "html",
-    "source_name": "Ministry of Testing"
-  },
-  {
-    "title": "Automated Accessibility Testing for Web Apps",
-    "url": "https://dev.to/john_sam_40b2f2781ac0003c/automated-accessibility-testing-for-web-apps-533p",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Testing Benford's Law",
-    "url": "http://testingbenfordslaw.com",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "What is software quality?",
-    "url": "https://www.ministryoftesting.com/articles/what-is-software-quality",
-    "source": "html",
-    "source_name": "Ministry of Testing"
-  },
-  {
-    "title": "What landed in MiniStack between 1.2.0 and 1.3.30",
-    "url": "https://dev.to/nahuel990/what-landed-in-ministack-between-120-and-1330-3c74",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "YouTube is testing a more aggressive approach against ad blockers",
-    "url": "https://www.androidpolice.com/youtube-ad-blockers-three-strikes/",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Beyond data generation: How I learned to trust synthetic data in performance testing",
-    "url": "https://www.ministryoftesting.com/articles/beyond-data-generation-how-i-learned-to-trust-synthetic-data-in-performance-testing",
-    "source": "html",
-    "source_name": "Ministry of Testing"
-  },
-  {
-    "title": "How to Authorize AI Agents Using Token Exchange Open Standards",
-    "url": "https://dev.to/kimmaida/how-to-authorize-ai-agents-using-token-exchange-open-standards-288d",
+    "title": "Go forth and `git rm -f` \ud83d\ude80",
+    "url": "https://dev.to/simbo1905/go-forth-and-git-rm-f-nmc",
     "source": "devto",
     "source_name": "DEV Community"
   },
@@ -474,44 +414,86 @@
     "source_name": "Ministry of Testing"
   },
   {
-    "title": "Local Testing of a Multi-Agent System with Memory",
-    "url": "https://dev.to/googleai/local-testing-of-a-multi-agent-system-with-memory-37mm",
+    "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
+    "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel/",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "ATC-XML-Reports automatisiert auswerten \u2014 Was die Praxis aus 50.000 Zeilen Custom-Code-Analyse zeigt",
+    "url": "https://dev.to/erp_forgeai_39e262c8c5509/atc-xml-reports-automatisiert-auswerten-was-die-praxis-aus-50000-zeilen-custom-code-analyse-zeigt-5aib",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Why software testers should write documentation even if no one else reads it",
-    "url": "https://www.ministryoftesting.com/articles/why-software-testers-should-write-documentation-even-if-no-one-else-reads-it",
+    "title": "Stop delegating your thinking: Using 5 whys to check AI documentation",
+    "url": "https://www.ministryoftesting.com/articles/stop-delegating-your-thinking-using-5-whys-to-check-ai-documentation",
     "source": "html",
     "source_name": "Ministry of Testing"
   },
   {
-    "title": "Visual regression testing: the missing piece in your testing stack",
-    "url": "https://dev.to/andresclua/visual-regression-testing-the-missing-piece-in-your-testing-stack-1c79",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "The night our \u201chighly available\u201d system went dark: How testers can drive resiliency",
-    "url": "https://www.ministryoftesting.com/articles/the-night-our-highly-available-system-went-dark-how-testers-can-drive-resiliency",
-    "source": "html",
-    "source_name": "Ministry of Testing"
-  },
-  {
-    "title": "Building an Autonomous Vehicle Safety Test Framework: Automating MISRA & CERT C Compliance",
-    "url": "https://dev.to/rishumishra/building-an-autonomous-vehicle-safety-test-framework-automating-misra-cert-c-compliance-3c9l",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "6 leadership mistakes that made me a better leader",
-    "url": "https://www.ministryoftesting.com/articles/6-leadership-mistakes-that-made-me-a-better-leader",
-    "source": "html",
-    "source_name": "Ministry of Testing"
+    "title": "Testing GPT 4's code-writing capabilities with some real world problems",
+    "url": "https://tylerglaiel.substack.com/p/can-gpt-4-actually-write-code",
+    "source": "hn",
+    "source_name": "Hacker News"
   },
   {
     "title": "MariaDB Multi-Source Replication for VoIP Call Centers",
     "url": "https://dev.to/moisi_trungu_31647b7ac300/mariadb-multi-source-replication-for-voip-call-centers-29a9",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Inclusive development teams: Why representation matters",
+    "url": "https://www.ministryoftesting.com/articles/inclusive-development-teams-why-representation-matters",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "We\u2019re working on 1M Covid-19 testing capacity per day",
+    "url": "https://www.billiontoone.com/covid-19",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "BrowserQA: AI-assisted QA, Playwright runs, and a Chrome side panel that talks to your app",
+    "url": "https://dev.to/bekaen/browserqa-ai-assisted-qa-playwright-runs-and-a-chrome-side-panel-that-talks-to-your-app-3d0i",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Beyond data generation: How I learned to trust synthetic data in performance testing",
+    "url": "https://www.ministryoftesting.com/articles/beyond-data-generation-how-i-learned-to-trust-synthetic-data-in-performance-testing",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "Por Qu\u00e9 Fallan los Agentes de IA: 3 Modos de Fallo Que Cuestan Tokens y Tiempo",
+    "url": "https://dev.to/aws-espanol/por-que-fallan-los-agentes-de-ia-3-modos-de-fallo-que-cuestan-tokens-y-tiempo-20b",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Getting paid what you are worth as a software tester",
+    "url": "https://www.ministryoftesting.com/articles/getting-paid-what-you-are-worth-as-a-software-tester",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "Your AI agent already emits OpenTelemetry. Why aren't you watching it?",
+    "url": "https://dev.to/sunilprakash/your-ai-agent-already-emits-opentelemetry-why-arent-you-watching-it-b06",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "The forgotten part of quality: paying attention to production",
+    "url": "https://www.ministryoftesting.com/articles/the-forgotten-part-of-quality-paying-attention-to-production",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "I Ran 5 LLMs Through 10 Real Agent Coding Tasks. The Free One Won.",
+    "url": "https://dev.to/vystartasv/i-ran-5-llms-through-10-real-agent-coding-tasks-the-free-one-won-1dan",
     "source": "devto",
     "source_name": "DEV Community"
   },
@@ -522,21 +504,39 @@
     "source_name": "Ministry of Testing"
   },
   {
-    "title": "Fuzz Testing a Go Security CLI: 8 Targets that Found What Unit Tests Missed",
-    "url": "https://dev.to/bala_paranj_059d338e44e7e/fuzz-testing-a-go-security-cli-8-targets-that-found-what-unit-tests-missed-1dbc",
+    "title": "I Trained an LLM on 75K of My Own Messages So It Would Stop Writing Like a Chatbot",
+    "url": "https://dev.to/niclydon/i-trained-an-llm-on-75k-of-my-own-messages-so-it-would-stop-writing-like-a-chatbot-1dpi",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "The future of testing: Autonomous agents, ethical AI, and human oversight",
-    "url": "https://www.ministryoftesting.com/articles/the-future-of-testing-autonomous-agents-ethical-ai-and-human-oversight",
+    "title": "Lean testing under pressure: How small teams deliver high-impact quality in highly constrained environments",
+    "url": "https://www.ministryoftesting.com/articles/lean-testing-under-pressure-how-small-teams-deliver-high-impact-quality-in-highly-constrained-environments",
     "source": "html",
     "source_name": "Ministry of Testing"
   },
   {
-    "title": "\"My Mobile Coding Agent Kept Starting New Sessions. I Taught It to Remember the Last Task\"",
-    "url": "https://dev.to/codekingai/my-mobile-coding-agent-kept-starting-new-sessions-i-taught-it-to-remember-the-last-task-2ge1",
+    "title": "Record-and-Playback Test Automation Is Not Enough for the AI Era",
+    "url": "https://dev.to/vietnd96/record-and-playback-test-automation-is-not-enough-for-the-ai-era-1hnn",
     "source": "devto",
     "source_name": "DEV Community"
+  },
+  {
+    "title": "Why software testers should write documentation even if no one else reads it",
+    "url": "https://www.ministryoftesting.com/articles/why-software-testers-should-write-documentation-even-if-no-one-else-reads-it",
+    "source": "html",
+    "source_name": "Ministry of Testing"
+  },
+  {
+    "title": "Congrats to the OpenClaw Challenge Winners!",
+    "url": "https://dev.to/devteam/congrats-to-the-openclaw-challenge-winners-1lha",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Creating a resilient test framework with the Playwright Page Object Model (POM)",
+    "url": "https://www.ministryoftesting.com/articles/creating-a-resilient-test-framework-with-the-playwright-page-object-model-pom",
+    "source": "html",
+    "source_name": "Ministry of Testing"
   }
 ]
