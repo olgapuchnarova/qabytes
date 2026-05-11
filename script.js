@@ -16,6 +16,7 @@ const {
 const feedContainer = document.getElementById("feed");
 const activeFiltersContainer = document.getElementById("active-filters");
 const savedSection = document.getElementById("saved-section");
+const savedViewLabel = document.getElementById("saved-view-label");
 const savedHeaderToggle = document.getElementById("saved-header-toggle");
 const savedHeaderCount = document.getElementById("saved-header-count");
 const filterHeaderToggle = document.getElementById("filter-header-toggle");
@@ -23,6 +24,7 @@ const filterHeaderCount = document.getElementById("filter-header-count");
 const filterSheetBackdrop = document.getElementById("filter-sheet-backdrop");
 const filterSheet = document.getElementById("filter-sheet");
 const filterSheetBody = document.getElementById("filter-sheet-body");
+const filterSheetFooter = document.getElementById("filter-sheet-footer");
 const filterSheetClose = document.getElementById("filter-sheet-close");
 const savedFeedContainer = document.getElementById("saved-feed");
 const scrollTopButton = document.getElementById("scroll-top-button");
@@ -124,8 +126,12 @@ function getSelectedSourceIdsSet() {
 }
 
 function setSelectedSourceIds(nextSourceIds) {
+  const normalizedSourceIds = [...new Set(nextSourceIds)].filter((sourceId) =>
+    getAllSourceIds().includes(sourceId)
+  );
+
   sourcePreferences = {
-    selectedSourceIds: [...new Set(nextSourceIds)],
+    selectedSourceIds: normalizedSourceIds.length > 0 ? normalizedSourceIds : null,
   };
   saveSourcePreferences();
 }
@@ -404,7 +410,8 @@ function renderCard(article) {
     isSaved ? "Remove from saved" : "Save for later"
   );
 
-  saveButton.appendChild(createBookmarkIcon());
+  const saveIcon = createBookmarkIcon();
+  saveButton.appendChild(saveIcon);
 
   const saveText = document.createElement("span");
   saveText.className = "save-toggle-text";
@@ -511,7 +518,7 @@ function renderActiveFilters() {
 }
 
 function renderFilterSheet() {
-  if (!filterSheetBody || !filterHeaderToggle || !filterHeaderCount) {
+  if (!filterSheetBody || !filterSheetFooter || !filterHeaderToggle || !filterHeaderCount) {
     return;
   }
 
@@ -541,6 +548,17 @@ function renderFilterSheet() {
 
   const sourceGrid = document.createElement("div");
   sourceGrid.className = "filter-sheet-grid";
+
+  const allSourcesPill = document.createElement("button");
+  allSourcesPill.type = "button";
+  allSourcesPill.className = "filter-choice-pill";
+  allSourcesPill.classList.add(selectedSourceIds === null ? "is-selected" : "is-deselected");
+  allSourcesPill.textContent = "All";
+  allSourcesPill.addEventListener("click", () => {
+    resetSelectedSourceIds();
+    renderAll();
+  });
+  sourceGrid.appendChild(allSourcesPill);
 
   availableSources.forEach((source) => {
     const pill = document.createElement("button");
@@ -635,15 +653,23 @@ function renderFilterSheet() {
       renderAll();
     });
     actionsLeft.appendChild(clearAllButton);
+  }
+
+  if (hasActiveFilters) {
     actions.append(actionsLeft);
   }
 
-  const bodyNodes = [sourceSection, topicSection];
-  if (hasActiveFilters) {
-    bodyNodes.push(actions);
-  }
+  const doneButton = document.createElement("button");
+  doneButton.type = "button";
+  doneButton.className = "filter-sheet-action filter-sheet-done";
+  doneButton.textContent = "Done";
+  doneButton.addEventListener("click", () => {
+    setFilterSheetOpen(false);
+  });
+  actions.append(doneButton);
 
-  filterSheetBody.replaceChildren(...bodyNodes);
+  filterSheetBody.replaceChildren(sourceSection, topicSection);
+  filterSheetFooter.replaceChildren(actions);
 }
 
 function setFilterSheetOpen(nextState) {
@@ -720,6 +746,13 @@ function renderFeed() {
     return;
   }
 
+  const hasSavedFeedOpen =
+    isSavedSectionExpanded && getSavedArticles(feedArticles, articleState).length > 0;
+  feedContainer.hidden = hasSavedFeedOpen;
+  if (hasSavedFeedOpen) {
+    return;
+  }
+
   const filtered = getVisibleFeedArticles();
   if (filtered.length === 0) {
     feedContainer.replaceChildren(createEmptyFeedState());
@@ -751,6 +784,10 @@ function renderSavedSection() {
   if (savedArticles.length === 0) {
     savedSection.hidden = true;
     isSavedSectionExpanded = false;
+    if (savedViewLabel) {
+      savedViewLabel.hidden = true;
+      savedViewLabel.replaceChildren();
+    }
     savedFeedContainer.hidden = true;
     savedFeedContainer.replaceChildren();
     savedHeaderToggle.setAttribute("aria-expanded", "false");
@@ -765,6 +802,29 @@ function renderSavedSection() {
   savedHeaderToggle.setAttribute("aria-expanded", String(isSavedSectionExpanded));
   savedHeaderCount.hidden = false;
   savedHeaderCount.textContent = `${savedArticles.length}`;
+  if (savedViewLabel) {
+    savedViewLabel.hidden = !isSavedSectionExpanded;
+    if (isSavedSectionExpanded) {
+      const pill = document.createElement("div");
+      pill.className = "active-filter-pill saved-view-pill";
+      pill.textContent = "Saved";
+
+      const removeButton = document.createElement("button");
+      removeButton.type = "button";
+      removeButton.setAttribute("aria-label", "Close saved articles view");
+      removeButton.textContent = "\u00d7";
+      removeButton.addEventListener("click", () => {
+        isSavedSectionExpanded = false;
+        renderSavedSection();
+        renderFeed();
+      });
+
+      pill.appendChild(removeButton);
+      savedViewLabel.replaceChildren(pill);
+    } else {
+      savedViewLabel.replaceChildren();
+    }
+  }
   savedFeedContainer.hidden = !isSavedSectionExpanded;
   savedFeedContainer.replaceChildren(
     ...savedArticles.map((article) => renderCard(article))
@@ -877,6 +937,7 @@ function initializeUi() {
       }
       isSavedSectionExpanded = !isSavedSectionExpanded;
       renderSavedSection();
+      renderFeed();
     });
   }
 
