@@ -7,6 +7,86 @@
   <link rel="canonical" href="https://qabytes.com/">
   <meta property="og:url" content="https://qabytes.com/">
   <link rel="stylesheet" href="styles.css?v=__BUILD_VERSION__">
+  <script type="text/javascript">
+    (function (e, c) {
+      if (!c.__SV) {
+        var l;
+        var h;
+        window.mixpanel = c;
+        c._i = [];
+        c.init = function (q, r, f) {
+          function t(d, a) {
+            var g = a.split(".");
+            if (g.length === 2) {
+              d = d[g[0]];
+              a = g[1];
+            }
+            d[a] = function () {
+              d.push([a].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          }
+          var b = c;
+          if (typeof f !== "undefined") {
+            b = c[f] = [];
+          } else {
+            f = "mixpanel";
+          }
+          b.people = b.people || [];
+          b.toString = function (d) {
+            var a = "mixpanel";
+            if (f !== "mixpanel") {
+              a += "." + f;
+            }
+            if (!d) {
+              a += " (stub)";
+            }
+            return a;
+          };
+          b.people.toString = function () {
+            return b.toString(1) + ".people (stub)";
+          };
+          l = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders start_session_recording stop_session_recording people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+          for (h = 0; h < l.length; h += 1) {
+            t(b, l[h]);
+          }
+          var n = "set set_once union unset remove delete".split(" ");
+          b.get_group = function () {
+            function d(p) {
+              a[p] = function () {
+                b.push([g, [p].concat(Array.prototype.slice.call(arguments, 0))]);
+              };
+            }
+            var a = {};
+            var g = ["get_group"].concat(Array.prototype.slice.call(arguments, 0));
+            for (var m = 0; m < n.length; m += 1) {
+              d(n[m]);
+            }
+            return a;
+          };
+          c._i.push([q, r, f]);
+        };
+        c.__SV = 1.2;
+        var k = e.createElement("script");
+        k.type = "text/javascript";
+        k.async = true;
+        k.src =
+          typeof MIXPANEL_CUSTOM_LIB_URL !== "undefined"
+            ? MIXPANEL_CUSTOM_LIB_URL
+            : e.location.protocol === "file:" &&
+                "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)
+              ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"
+              : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+        e = e.getElementsByTagName("script")[0];
+        e.parentNode.insertBefore(k, e);
+      }
+    })(document, window.mixpanel || []);
+
+    mixpanel.init("f5dd5f958e6022505ed7a49852b80233", {
+      autocapture: false,
+      record_sessions_percent: 0,
+      api_host: "https://api-eu.mixpanel.com",
+    });
+  </script>
 </head>
 <body>
 
@@ -23,11 +103,11 @@
         </svg>
         <span id="saved-header-count" hidden>0</span>
       </button>
-      <button id="filter-header-toggle" type="button" aria-expanded="false" aria-controls="filter-sheet" aria-label="Open filters">
-        <svg class="filter-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
-          <path d="M3 4.5h14l-5.1 5.82v4.36l-3.8 1.82v-6.18L3 4.5Z" fill="currentColor"></path>
+      <button id="read-header-toggle" type="button" aria-expanded="false" aria-label="Toggle read articles">
+        <svg class="read-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+          <path d="M10 1.75a8.25 8.25 0 1 0 8.25 8.25A8.26 8.26 0 0 0 10 1.75Zm3.42 6.54-4.06 4.6a1 1 0 0 1-1.47.05l-1.83-1.83a1 1 0 0 1 1.42-1.41l1.07 1.07 3.31-3.76a1 1 0 1 1 1.56 1.28Z" fill="currentColor"></path>
         </svg>
-        <span id="filter-header-count" hidden>0</span>
+        <span id="read-header-count" hidden>0</span>
       </button>
     </div>
   </div>
@@ -35,33 +115,25 @@
 </header>
 
 <section>
-  <div id="saved-section" hidden aria-live="polite">
-    <div id="saved-view-label" hidden></div>
-    <div id="saved-feed" hidden></div>
+  <div id="filters-panel" aria-live="polite">
+    <button id="filters-panel-toggle" type="button" aria-expanded="false" aria-controls="filters-panel-body">
+      <span class="filters-panel-toggle-label">Filters</span>
+      <span id="filters-panel-count" hidden>0</span>
+      <span class="filters-panel-toggle-icon" aria-hidden="true">+</span>
+    </button>
+    <div id="filters-panel-body" hidden></div>
   </div>
 
   <div id="feed"></div>
 </section>
-
-<div id="filter-sheet-backdrop" hidden></div>
-<div id="filter-sheet" hidden aria-modal="true" role="dialog" aria-labelledby="filter-sheet-title">
-  <div class="filter-sheet-handle" aria-hidden="true"></div>
-  <div class="filter-sheet-header">
-    <div>
-      <strong id="filter-sheet-title">Filters</strong>
-      <span>Filters apply instantly. Tap Done when you're finished.</span>
-    </div>
-    <button id="filter-sheet-close" type="button" aria-label="Close filters">&times;</button>
-  </div>
-  <div id="filter-sheet-body"></div>
-  <div id="filter-sheet-footer"></div>
-</div>
 
 <button id="scroll-top-button" type="button" aria-label="Scroll to top" hidden>
   <span aria-hidden="true">&uarr;</span>
 </button>
 
 <script src="feed_logic.js?v=__BUILD_VERSION__"></script>
+<script src="analytics.js?v=20260513-1"></script>
+<script src="feed_data.js?v=__BUILD_VERSION__"></script>
 <script src="script.js?v=__BUILD_VERSION__"></script>
 </body>
 </html>

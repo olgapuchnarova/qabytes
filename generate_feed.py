@@ -12,6 +12,7 @@ from bs4 import BeautifulSoup
 from openai import OpenAI
 
 OUTPUT_FILE = "feed.json"
+OUTPUT_SCRIPT_FILE = "feed_data.js"
 RAW_FILE = "raw_candidates.json"
 STATE_FILE = "feed_state.json"
 
@@ -762,6 +763,11 @@ def generate_feed():
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(final_output, f, indent=2)
+
+    with open(OUTPUT_SCRIPT_FILE, "w", encoding="utf-8") as f:
+        f.write("window.QABytesFeedData = ")
+        json.dump(final_output, f, indent=2)
+        f.write(";\n")
 
     print("Feed generation complete")
 

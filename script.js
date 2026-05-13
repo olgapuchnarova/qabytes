@@ -12,21 +12,17 @@ const {
   sortLatestInsights,
   getSavedArticles,
 } = globalThis.QABytesFeedLogic;
+const analytics = globalThis.QABytesAnalytics || null;
 
 const feedContainer = document.getElementById("feed");
 const activeFiltersContainer = document.getElementById("active-filters");
-const savedSection = document.getElementById("saved-section");
-const savedViewLabel = document.getElementById("saved-view-label");
 const savedHeaderToggle = document.getElementById("saved-header-toggle");
 const savedHeaderCount = document.getElementById("saved-header-count");
-const filterHeaderToggle = document.getElementById("filter-header-toggle");
-const filterHeaderCount = document.getElementById("filter-header-count");
-const filterSheetBackdrop = document.getElementById("filter-sheet-backdrop");
-const filterSheet = document.getElementById("filter-sheet");
-const filterSheetBody = document.getElementById("filter-sheet-body");
-const filterSheetFooter = document.getElementById("filter-sheet-footer");
-const filterSheetClose = document.getElementById("filter-sheet-close");
-const savedFeedContainer = document.getElementById("saved-feed");
+const readHeaderToggle = document.getElementById("read-header-toggle");
+const readHeaderCount = document.getElementById("read-header-count");
+const filtersPanelToggle = document.getElementById("filters-panel-toggle");
+const filtersPanelCount = document.getElementById("filters-panel-count");
+const filtersPanelBody = document.getElementById("filters-panel-body");
 const scrollTopButton = document.getElementById("scroll-top-button");
 const readCompletionDelayMs = 1180;
 const unreadCompletionDelayMs = 1020;
@@ -50,12 +46,25 @@ let feedArticles = [];
 let availableSources = [];
 let visibleFeedSize = defaultVisibleFeedSize;
 let activeFilter = "All";
-let isSavedSectionExpanded = false;
-let isFilterSheetOpen = false;
+let currentViewMode = "default";
+let isFiltersPanelOpen = false;
 let hasInitializedUi = false;
 let currentFeedSignature = "";
 let lastFeedRefreshAt = 0;
 let refreshInFlight = null;
+let currentFeedGeneratedAt = "";
+let hasTrackedSessionEnd = false;
+const bundledFeedData = globalThis.QABytesFeedData || null;
+
+const scrollDepthMilestones = [25, 50, 75, 90];
+const reachedScrollDepthMilestones = new Set();
+const sessionMetrics = {
+  articlesOpenedCount: 0,
+  articlesMarkedReadCount: 0,
+  articlesSavedCount: 0,
+  filtersUsed: new Set(),
+  maxScrollDepthPercent: 0,
+};
 
 function loadArticleState() {
   try {
@@ -139,6 +148,112 @@ function setSelectedSourceIds(nextSourceIds) {
 function resetSelectedSourceIds() {
   sourcePreferences = { selectedSourceIds: null };
   saveSourcePreferences();
+}
+
+function getSavedCount() {
+  return Object.values(articleState).filter((state) => Boolean(state?.saved)).length;
+}
+
+function getReadCount() {
+  return Object.values(articleState).filter((state) => Boolean(state?.read)).length;
+}
+
+function getSourceCount(items) {
+  return new Set(
+    items.map((article) => article.source_id || article.source || "").filter(Boolean)
+  ).size;
+}
+
+function getNewTodayCount(items) {
+  return items.filter((article) => article.is_new_today).length;
+}
+
+function getVisibleArticleCount() {
+  return getFilteredFeedArticles().length;
+}
+
+function getArticleAnalyticsProperties(article, context = {}) {
+  const state = getArticleState(article.id);
+
+  return {
+    article_id: article.id,
+    article_title: article.title || "",
+    source_id: article.source_id || article.source || "",
+    source_name: article.source_name || article.source || "",
+    category: article.category || "",
+    why_it_matters: article.why_it_matters || "",
+    rank_score:
+      typeof article.rank_score === "number" ? article.rank_score : article.signal || 0,
+    is_new_today: Boolean(article.is_new_today),
+    list_position: Number.isFinite(context.listPosition) ? context.listPosition : null,
+    active_filter: context.activeFilter || activeFilter,
+    view_mode: context.viewMode || currentViewMode,
+    was_read_before: Boolean(state.read),
+    was_saved_before: Boolean(state.saved),
+  };
+}
+
+function recordFilterUsage(filterName) {
+  if (filterName) {
+    sessionMetrics.filtersUsed.add(filterName);
+  }
+}
+
+function trackFilterSelected(filterName, previousFilter) {
+  recordFilterUsage(filterName);
+  analytics?.trackFilterSelected({
+    filter_name: filterName,
+    previous_filter: previousFilter,
+    visible_article_count: getVisibleArticleCount(),
+    view_mode: currentViewMode,
+  });
+}
+
+function getScrollDepthPercent() {
+  const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+  if (scrollHeight <= 0) {
+    return 100;
+  }
+
+  const progress = Math.min(window.scrollY / scrollHeight, 1);
+  return Math.round(progress * 100);
+}
+
+function trackScrollDepthIfNeeded() {
+  const depthPercent = getScrollDepthPercent();
+  sessionMetrics.maxScrollDepthPercent = Math.max(
+    sessionMetrics.maxScrollDepthPercent,
+    depthPercent
+  );
+
+  scrollDepthMilestones.forEach((milestone) => {
+    if (depthPercent < milestone || reachedScrollDepthMilestones.has(milestone)) {
+      return;
+    }
+
+    reachedScrollDepthMilestones.add(milestone);
+    analytics?.trackScrollDepthReached({
+      depth_percent: milestone,
+      active_filter: activeFilter,
+      article_count_visible: getVisibleArticleCount(),
+      view_mode: currentViewMode,
+    });
+  });
+}
+
+function trackSessionEnd() {
+  if (hasTrackedSessionEnd) {
+    return;
+  }
+
+  hasTrackedSessionEnd = true;
+  analytics?.trackSessionEnd({
+    articles_opened_count: sessionMetrics.articlesOpenedCount,
+    articles_marked_read_count: sessionMetrics.articlesMarkedReadCount,
+    articles_saved_count: sessionMetrics.articlesSavedCount,
+    filters_used_count: sessionMetrics.filtersUsed.size,
+    max_scroll_depth_percent: sessionMetrics.maxScrollDepthPercent,
+  });
 }
 
 function syncSavedSnapshotsWithFeed() {
@@ -235,28 +350,47 @@ function createBookmarkIcon() {
 }
 
 function getFilteredFeedArticles() {
-  const selectedSourceIds = getSelectedSourceIdsSet();
-  const sourceFilteredArticles = selectedSourceIds
-    ? filterArticlesBySources(feedArticles, selectedSourceIds)
-    : feedArticles;
+  return getScopedFilteredArticles();
+}
 
+function getDefaultViewArticles() {
+  return selectArticlesWithSourceCap(
+    sortLatestInsights(feedArticles, getArticleState),
+    visibleFeedSize,
+    2
+  );
+}
+
+function getSavedViewArticles() {
+  return sortLatestInsights(getSavedArticles(feedArticles, articleState), getArticleState);
+}
+
+function getReadViewArticles() {
   return sortLatestInsights(
-    filterArticles(sourceFilteredArticles, activeFilter),
+    feedArticles.filter((article) => Boolean(getArticleState(article.id).read)),
     getArticleState
   );
 }
 
-function getVisibleFeedArticles() {
-  const filteredArticles = getFilteredFeedArticles();
-  const selectedSourceIds = getSelectedSourceIdsSet();
-  const isDefaultView =
-    activeFilter === "All" && selectedSourceIds === null;
-
-  if (!isDefaultView) {
-    return filteredArticles.slice(0, visibleFeedSize);
+function getCurrentViewArticles() {
+  if (currentViewMode === "saved") {
+    return getSavedViewArticles();
   }
 
-  return selectArticlesWithSourceCap(filteredArticles, visibleFeedSize, 2);
+  if (currentViewMode === "read") {
+    return getReadViewArticles();
+  }
+
+  return getDefaultViewArticles();
+}
+
+function getScopedFilteredArticles() {
+  const scopedArticles = getCurrentViewArticles();
+  const selectedSourceIds = getSelectedSourceIdsSet();
+  const sourceFilteredArticles = selectedSourceIds
+    ? filterArticlesBySources(scopedArticles, selectedSourceIds)
+    : scopedArticles;
+  return filterArticles(sourceFilteredArticles, activeFilter);
 }
 
 function countActiveFilters() {
@@ -264,7 +398,19 @@ function countActiveFilters() {
   return (selectedSourceIds ? selectedSourceIds.size : 0) + (activeFilter === "All" ? 0 : 1);
 }
 
-function renderCard(article) {
+function getCurrentViewLabel() {
+  if (currentViewMode === "saved") {
+    return "Saved";
+  }
+
+  if (currentViewMode === "read") {
+    return "Read";
+  }
+
+  return null;
+}
+
+function renderCard(article, context = {}) {
   const title = article.title || "";
   const category =
     article.category || article.source_name || article.source || "";
@@ -288,6 +434,10 @@ function renderCard(article) {
     card.target = "_blank";
     card.rel = "noopener noreferrer";
     card.addEventListener("click", () => {
+      sessionMetrics.articlesOpenedCount += 1;
+      analytics?.trackArticleOpened({
+        ...getArticleAnalyticsProperties(article, context),
+      });
       updateArticleState(article.id, { opened: true });
     });
   }
@@ -365,10 +515,17 @@ function renderCard(article) {
     event.preventDefault();
     event.stopPropagation();
 
-    const nextReadState = !getArticleState(article.id).read;
+    const previousState = getArticleState(article.id);
+    const nextReadState = !previousState.read;
+    analytics?.trackArticleMarkedRead({
+      ...getArticleAnalyticsProperties(article, context),
+      previous_read_state: Boolean(previousState.read),
+      new_read_state: nextReadState,
+    });
     updateArticleState(article.id, { read: nextReadState });
 
     if (nextReadState) {
+      sessionMetrics.articlesMarkedReadCount += 1;
       card.classList.add("is-read-pending");
       readButton.classList.add("is-read");
       readText.textContent = "Read";
@@ -378,8 +535,7 @@ function renderCard(article) {
         card.classList.add("is-read-exit");
       }, 320);
       window.setTimeout(() => {
-        renderSavedSection();
-        renderFeed();
+        renderAll();
       }, readCompletionDelayMs);
       return;
     }
@@ -391,8 +547,7 @@ function renderCard(article) {
       card.classList.add("is-unread-exit");
     }, 300);
     window.setTimeout(() => {
-      renderSavedSection();
-      renderFeed();
+      renderAll();
     }, unreadCompletionDelayMs);
   });
 
@@ -422,7 +577,9 @@ function renderCard(article) {
     event.preventDefault();
     event.stopPropagation();
 
-    const nextSavedState = !getArticleState(article.id).saved;
+    const previousState = getArticleState(article.id);
+    const nextSavedState = !previousState.saved;
+    const articleAnalyticsProperties = getArticleAnalyticsProperties(article, context);
     updateArticleState(
       article.id,
       nextSavedState
@@ -438,8 +595,16 @@ function renderCard(article) {
             saved_article: null,
           }
     );
-    renderSavedSection();
-    renderFeed();
+    analytics?.trackArticleSaved({
+      ...articleAnalyticsProperties,
+      previous_saved_state: Boolean(previousState.saved),
+      new_saved_state: nextSavedState,
+      saved_count_after: getSavedCount(),
+    });
+    if (nextSavedState) {
+      sessionMetrics.articlesSavedCount += 1;
+    }
+    renderAll();
   });
 
   actionsRow.append(readAction, saveAction);
@@ -469,8 +634,27 @@ function renderActiveFilters() {
     return;
   }
 
-  const selectedSourceIds = getSelectedSourceIdsSet();
   const nodes = [];
+  const currentViewLabel = getCurrentViewLabel();
+  const selectedSourceIds = getSelectedSourceIdsSet();
+
+  if (currentViewLabel) {
+    const modePill = document.createElement("div");
+    modePill.className = "active-filter-pill active-filter-pill-mode";
+    modePill.textContent = currentViewLabel;
+
+    const removeButton = document.createElement("button");
+    removeButton.type = "button";
+    removeButton.setAttribute("aria-label", `Close ${currentViewLabel.toLowerCase()} view`);
+    removeButton.textContent = "\u00d7";
+    removeButton.addEventListener("click", () => {
+      currentViewMode = "default";
+      renderAll();
+    });
+
+    modePill.appendChild(removeButton);
+    nodes.push(modePill);
+  }
 
   if (selectedSourceIds) {
     availableSources
@@ -485,9 +669,11 @@ function renderActiveFilters() {
         removeButton.setAttribute("aria-label", `Remove ${source.label} source filter`);
         removeButton.textContent = "\u00d7";
         removeButton.addEventListener("click", () => {
+          const previousFilter = `source:${source.label}`;
           const nextSelection = new Set(getSelectedSourceIdsSet() || []);
           nextSelection.delete(source.id);
           setSelectedSourceIds([...nextSelection]);
+          trackFilterSelected("source:all", previousFilter);
           renderAll();
         });
 
@@ -506,7 +692,9 @@ function renderActiveFilters() {
     removeButton.setAttribute("aria-label", `Remove ${activeFilter} topic filter`);
     removeButton.textContent = "\u00d7";
     removeButton.addEventListener("click", () => {
+      const previousFilter = activeFilter;
       activeFilter = "All";
+      trackFilterSelected("All", previousFilter);
       renderAll();
     });
 
@@ -517,25 +705,23 @@ function renderActiveFilters() {
   activeFiltersContainer.replaceChildren(...nodes);
 }
 
-function renderFilterSheet() {
-  if (!filterSheetBody || !filterSheetFooter || !filterHeaderToggle || !filterHeaderCount) {
+function renderFiltersPanel() {
+  if (!filtersPanelBody || !filtersPanelToggle || !filtersPanelCount) {
     return;
   }
 
   const activeFilterCount = countActiveFilters();
-  filterHeaderToggle.setAttribute("aria-expanded", String(isFilterSheetOpen));
-  filterHeaderCount.hidden = activeFilterCount === 0;
-  filterHeaderCount.textContent = `${activeFilterCount}`;
-
-  if (filterSheetBackdrop) {
-    filterSheetBackdrop.hidden = !isFilterSheetOpen;
-  }
-  if (filterSheet) {
-    filterSheet.hidden = !isFilterSheetOpen;
+  filtersPanelToggle.setAttribute("aria-expanded", String(isFiltersPanelOpen));
+  filtersPanelCount.hidden = activeFilterCount === 0;
+  filtersPanelCount.textContent = `${activeFilterCount}`;
+  filtersPanelBody.hidden = !isFiltersPanelOpen;
+  const toggleIcon = filtersPanelToggle.querySelector(".filters-panel-toggle-icon");
+  if (toggleIcon) {
+    toggleIcon.textContent = isFiltersPanelOpen ? "\u2212" : "+";
   }
 
   const availableLabels = new Set(
-    feedArticles.map((article) => article.why_it_matters).filter(Boolean)
+    getCurrentViewArticles().map((article) => article.why_it_matters).filter(Boolean)
   );
   const selectedSourceIds = getSelectedSourceIdsSet();
 
@@ -555,7 +741,9 @@ function renderFilterSheet() {
   allSourcesPill.classList.add(selectedSourceIds === null ? "is-selected" : "is-deselected");
   allSourcesPill.textContent = "All";
   allSourcesPill.addEventListener("click", () => {
+    const previousFilter = selectedSourceIds ? "source:custom" : "source:all";
     resetSelectedSourceIds();
+    trackFilterSelected("source:all", previousFilter);
     renderAll();
   });
   sourceGrid.appendChild(allSourcesPill);
@@ -568,6 +756,11 @@ function renderFilterSheet() {
     pill.classList.add(isSelected ? "is-selected" : "is-deselected");
     pill.textContent = source.label;
     pill.addEventListener("click", () => {
+      const previousFilter = selectedSourceIds?.has(source.id)
+        ? `source:${source.label}`
+        : selectedSourceIds
+          ? "source:custom"
+          : "source:all";
       const nextSelection = new Set(getSelectedSourceIdsSet() || []);
       if (nextSelection.has(source.id)) {
         nextSelection.delete(source.id);
@@ -575,6 +768,7 @@ function renderFilterSheet() {
         nextSelection.add(source.id);
       }
       setSelectedSourceIds([...nextSelection]);
+      trackFilterSelected(`source:${source.label}`, previousFilter);
       renderAll();
     });
     sourceGrid.appendChild(pill);
@@ -601,7 +795,9 @@ function renderFilterSheet() {
       pill.classList.add(label === activeFilter ? "is-selected" : "is-deselected");
       pill.textContent = label;
       pill.addEventListener("click", () => {
-        activeFilter = label;
+        const previousFilter = activeFilter;
+        activeFilter = activeFilter === label ? "All" : label;
+        trackFilterSelected(activeFilter, previousFilter);
         renderAll();
       });
       topicGrid.appendChild(pill);
@@ -610,10 +806,10 @@ function renderFilterSheet() {
   topicSection.appendChild(topicGrid);
 
   const actions = document.createElement("div");
-  actions.className = "filter-sheet-actions";
+  actions.className = "filters-panel-actions";
 
   const actionsLeft = document.createElement("div");
-  actionsLeft.className = "filter-sheet-actions-left";
+  actionsLeft.className = "filters-panel-actions-left";
   const hasSelectedSources = Boolean(selectedSourceIds && selectedSourceIds.size > 0);
   const hasTopicFilter = activeFilter !== "All";
   const hasActiveFilters = hasSelectedSources || hasTopicFilter;
@@ -624,6 +820,7 @@ function renderFilterSheet() {
     clearSourcesButton.className = "filter-sheet-action";
     clearSourcesButton.textContent = "Clear sources";
     clearSourcesButton.addEventListener("click", () => {
+      trackFilterSelected("source:all", "source:custom");
       resetSelectedSourceIds();
       renderAll();
     });
@@ -636,7 +833,9 @@ function renderFilterSheet() {
     clearTopicButton.className = "filter-sheet-action";
     clearTopicButton.textContent = "Clear topic";
     clearTopicButton.addEventListener("click", () => {
+      const previousFilter = activeFilter;
       activeFilter = "All";
+      trackFilterSelected("All", previousFilter);
       renderAll();
     });
     actionsLeft.appendChild(clearTopicButton);
@@ -648,36 +847,20 @@ function renderFilterSheet() {
     clearAllButton.className = "filter-sheet-action";
     clearAllButton.textContent = "Clear all";
     clearAllButton.addEventListener("click", () => {
+      const previousFilter = activeFilter !== "All" ? activeFilter : "source:custom";
       resetSelectedSourceIds();
       activeFilter = "All";
+      trackFilterSelected("All", previousFilter);
       renderAll();
     });
     actionsLeft.appendChild(clearAllButton);
-  }
-
-  if (hasActiveFilters) {
     actions.append(actionsLeft);
   }
-
-  const doneButton = document.createElement("button");
-  doneButton.type = "button";
-  doneButton.className = "filter-sheet-action filter-sheet-done";
-  doneButton.textContent = "Done";
-  doneButton.addEventListener("click", () => {
-    setFilterSheetOpen(false);
-  });
-  actions.append(doneButton);
-
-  filterSheetBody.replaceChildren(sourceSection, topicSection);
-  filterSheetFooter.replaceChildren(actions);
-}
-
-function setFilterSheetOpen(nextState) {
-  isFilterSheetOpen = nextState;
-  if (document.body) {
-    document.body.style.overflow = isFilterSheetOpen ? "hidden" : "";
+  const panelNodes = [sourceSection, topicSection];
+  if (hasActiveFilters) {
+    panelNodes.push(actions);
   }
-  renderFilterSheet();
+  filtersPanelBody.replaceChildren(...panelNodes);
 }
 
 function updateScrollTopButton() {
@@ -690,52 +873,36 @@ function updateScrollTopButton() {
   scrollTopButton.classList.toggle("is-visible", shouldShow);
 }
 
-function createReadDivider(hasUnreadAbove) {
-  const divider = document.createElement("div");
-  divider.className = "feed-divider";
-
-  const lineLeft = document.createElement("span");
-  lineLeft.className = "feed-divider-line";
-
-  const body = document.createElement("div");
-  body.className = "feed-divider-body";
-
-  const label = document.createElement("strong");
-  label.textContent = hasUnreadAbove
-    ? "You're all caught up"
-    : "Everything below has been read";
-
-  const sublabel = document.createElement("span");
-  sublabel.textContent = hasUnreadAbove
-    ? "Read articles continue below"
-    : "Your completed articles continue below";
-
-  body.append(label, sublabel);
-
-  const lineRight = document.createElement("span");
-  lineRight.className = "feed-divider-line";
-
-  divider.append(lineLeft, body, lineRight);
-  return divider;
-}
-
 function createEmptyFeedState() {
   const hasSourceFilter = Boolean(getSelectedSourceIdsSet()?.size);
   const hasTopicFilter = activeFilter !== "All";
+  const viewLabel = getCurrentViewLabel();
   const state = document.createElement("div");
   state.className = "feed-empty-state";
 
   const title = document.createElement("strong");
-  title.textContent =
-    hasSourceFilter || hasTopicFilter
-      ? "No articles match these filters today."
-      : "No articles are available right now.";
+  if (hasSourceFilter || hasTopicFilter) {
+    title.textContent = viewLabel
+      ? `No ${viewLabel.toLowerCase()} articles match these filters.`
+      : "No articles match these filters today.";
+  } else if (viewLabel === "Saved") {
+    title.textContent = "No saved articles yet.";
+  } else if (viewLabel === "Read") {
+    title.textContent = "No read articles yet.";
+  } else {
+    title.textContent = "No articles are available right now.";
+  }
 
   const description = document.createElement("p");
-  description.textContent =
-    hasSourceFilter || hasTopicFilter
-      ? "Try removing a source or topic filter to widen the feed."
-      : "Please check back in a moment while the latest QA reads load in.";
+  if (hasSourceFilter || hasTopicFilter) {
+    description.textContent = "Try removing a source or topic filter to widen the feed.";
+  } else if (viewLabel === "Saved") {
+    description.textContent = "Articles you save will show up here for easy revisiting.";
+  } else if (viewLabel === "Read") {
+    description.textContent = "Articles you mark as read will collect here for later review.";
+  } else {
+    description.textContent = "Please check back in a moment while the latest QA reads load in.";
+  }
 
   state.append(title, description);
   return state;
@@ -746,96 +913,47 @@ function renderFeed() {
     return;
   }
 
-  const hasSavedFeedOpen =
-    isSavedSectionExpanded && getSavedArticles(feedArticles, articleState).length > 0;
-  feedContainer.hidden = hasSavedFeedOpen;
-  if (hasSavedFeedOpen) {
-    return;
-  }
-
-  const filtered = getVisibleFeedArticles();
+  const filtered = getFilteredFeedArticles();
   if (filtered.length === 0) {
     feedContainer.replaceChildren(createEmptyFeedState());
     return;
   }
 
-  const firstReadIndex = filtered.findIndex((article) =>
-    Boolean(getArticleState(article.id).read)
+  feedContainer.replaceChildren(
+    ...filtered.map((article, index) =>
+      renderCard(article, {
+        listPosition: index + 1,
+        activeFilter,
+        viewMode: currentViewMode,
+      })
+    )
   );
-  const nodes = [];
-
-  filtered.forEach((article, index) => {
-    if (index === firstReadIndex) {
-      nodes.push(createReadDivider(firstReadIndex > 0));
-    }
-    nodes.push(renderCard(article));
-  });
-
-  feedContainer.replaceChildren(...nodes);
 }
 
-function renderSavedSection() {
-  if (!savedSection || !savedFeedContainer || !savedHeaderToggle || !savedHeaderCount) {
+function renderViewControls() {
+  if (!savedHeaderToggle || !savedHeaderCount || !readHeaderToggle || !readHeaderCount) {
     return;
   }
 
   const savedArticles = getSavedArticles(feedArticles, articleState);
+  const readCount = feedArticles.filter((article) => Boolean(getArticleState(article.id).read)).length;
 
-  if (savedArticles.length === 0) {
-    savedSection.hidden = true;
-    isSavedSectionExpanded = false;
-    if (savedViewLabel) {
-      savedViewLabel.hidden = true;
-      savedViewLabel.replaceChildren();
-    }
-    savedFeedContainer.hidden = true;
-    savedFeedContainer.replaceChildren();
-    savedHeaderToggle.setAttribute("aria-expanded", "false");
-    savedHeaderToggle.classList.remove("has-saved-items");
-    savedHeaderCount.hidden = true;
-    savedHeaderCount.textContent = "0";
-    return;
-  }
-
-  savedSection.hidden = !isSavedSectionExpanded;
-  savedHeaderToggle.classList.add("has-saved-items");
-  savedHeaderToggle.setAttribute("aria-expanded", String(isSavedSectionExpanded));
-  savedHeaderCount.hidden = false;
+  savedHeaderToggle.classList.toggle("has-saved-items", savedArticles.length > 0);
+  savedHeaderToggle.setAttribute("aria-expanded", String(currentViewMode === "saved"));
+  savedHeaderCount.hidden = savedArticles.length === 0;
   savedHeaderCount.textContent = `${savedArticles.length}`;
-  if (savedViewLabel) {
-    savedViewLabel.hidden = !isSavedSectionExpanded;
-    if (isSavedSectionExpanded) {
-      const pill = document.createElement("div");
-      pill.className = "active-filter-pill saved-view-pill";
-      pill.textContent = "Saved";
 
-      const removeButton = document.createElement("button");
-      removeButton.type = "button";
-      removeButton.setAttribute("aria-label", "Close saved articles view");
-      removeButton.textContent = "\u00d7";
-      removeButton.addEventListener("click", () => {
-        isSavedSectionExpanded = false;
-        renderSavedSection();
-        renderFeed();
-      });
-
-      pill.appendChild(removeButton);
-      savedViewLabel.replaceChildren(pill);
-    } else {
-      savedViewLabel.replaceChildren();
-    }
-  }
-  savedFeedContainer.hidden = !isSavedSectionExpanded;
-  savedFeedContainer.replaceChildren(
-    ...savedArticles.map((article) => renderCard(article))
-  );
+  readHeaderToggle.classList.toggle("has-read-items", readCount > 0);
+  readHeaderToggle.setAttribute("aria-expanded", String(currentViewMode === "read"));
+  readHeaderCount.hidden = readCount === 0;
+  readHeaderCount.textContent = `${readCount}`;
 }
 
 function renderAll() {
   syncSavedSnapshotsWithFeed();
   renderActiveFilters();
-  renderFilterSheet();
-  renderSavedSection();
+  renderFiltersPanel();
+  renderViewControls();
   renderFeed();
 }
 
@@ -854,16 +972,28 @@ function getFeedSignature(data) {
 }
 
 async function fetchFeed() {
-  const cacheBuster = Date.now();
-  const response = await fetch(`./feed.json?v=${feedCacheKey}&t=${cacheBuster}`, {
-    cache: "no-store",
-  });
-
-  if (!response.ok) {
-    throw new Error(`Feed request failed with status ${response.status}`);
+  if (window.location.protocol === "file:" && bundledFeedData) {
+    return bundledFeedData;
   }
 
-  return response.json();
+  const cacheBuster = Date.now();
+  try {
+    const response = await fetch(`./feed.json?v=${feedCacheKey}&t=${cacheBuster}`, {
+      cache: "no-store",
+    });
+
+    if (!response.ok) {
+      throw new Error(`Feed request failed with status ${response.status}`);
+    }
+
+    return response.json();
+  } catch (error) {
+    if (bundledFeedData) {
+      console.warn("Falling back to bundled feed data:", error);
+      return bundledFeedData;
+    }
+    throw error;
+  }
 }
 
 function shouldRefreshFeed(forceRefresh) {
@@ -878,7 +1008,7 @@ function shouldRefreshFeed(forceRefresh) {
   return Date.now() - lastFeedRefreshAt >= feedRefreshThrottleMs;
 }
 
-async function loadFeed({ forceRefresh = false } = {}) {
+async function loadFeed({ forceRefresh = false, reason = "initial" } = {}) {
   if (!shouldRefreshFeed(forceRefresh)) {
     return null;
   }
@@ -906,10 +1036,20 @@ async function loadFeed({ forceRefresh = false } = {}) {
         ? data.default_feed_size
         : defaultVisibleFeedSize;
       currentFeedSignature = nextSignature;
+      currentFeedGeneratedAt = data.generated_at || "";
 
       if (!hasInitializedUi || hasFeedChanged) {
         renderAll();
       }
+
+      analytics?.trackFeedLoaded({
+        article_count: feedArticles.length,
+        source_count: getSourceCount(feedArticles),
+        new_today_count: getNewTodayCount(feedArticles),
+        feed_generated_at: currentFeedGeneratedAt,
+        load_reason: reason,
+        feed_changed: hasFeedChanged,
+      });
 
       hasInitializedUi = true;
       return data;
@@ -925,37 +1065,46 @@ async function loadFeed({ forceRefresh = false } = {}) {
   return refreshInFlight;
 }
 
-function requestFeedRefresh() {
-  loadFeed({ forceRefresh: true }).catch(() => {});
+function requestFeedRefresh(reason = "manual") {
+  loadFeed({ forceRefresh: true, reason }).catch(() => {});
 }
 
 function initializeUi() {
+  analytics?.init({ nextSiteVersion: feedCacheKey });
+  analytics?.trackSessionStart({
+    saved_count: getSavedCount(),
+    read_count: getReadCount(),
+  });
+  analytics?.trackPageView({
+    has_saved_articles: getSavedCount() > 0,
+    saved_count: getSavedCount(),
+    active_filter: activeFilter,
+    view_mode: currentViewMode,
+  });
+
   if (savedHeaderToggle) {
     savedHeaderToggle.addEventListener("click", () => {
-      if (getSavedArticles(feedArticles, articleState).length === 0) {
-        return;
-      }
-      isSavedSectionExpanded = !isSavedSectionExpanded;
-      renderSavedSection();
-      renderFeed();
+      const nextViewMode = currentViewMode === "saved" ? "default" : "saved";
+      analytics?.trackSavedPanelToggled({
+        new_state: nextViewMode === "saved" ? "expanded" : "collapsed",
+        saved_count: getSavedCount(),
+      });
+      currentViewMode = currentViewMode === "saved" ? "default" : "saved";
+      renderAll();
     });
   }
 
-  if (filterHeaderToggle) {
-    filterHeaderToggle.addEventListener("click", () => {
-      setFilterSheetOpen(!isFilterSheetOpen);
+  if (readHeaderToggle) {
+    readHeaderToggle.addEventListener("click", () => {
+      currentViewMode = currentViewMode === "read" ? "default" : "read";
+      renderAll();
     });
   }
 
-  if (filterSheetClose) {
-    filterSheetClose.addEventListener("click", () => {
-      setFilterSheetOpen(false);
-    });
-  }
-
-  if (filterSheetBackdrop) {
-    filterSheetBackdrop.addEventListener("click", () => {
-      setFilterSheetOpen(false);
+  if (filtersPanelToggle) {
+    filtersPanelToggle.addEventListener("click", () => {
+      isFiltersPanelOpen = !isFiltersPanelOpen;
+      renderFiltersPanel();
     });
   }
 
@@ -963,39 +1112,48 @@ function initializeUi() {
     scrollTopButton.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
-    window.addEventListener("scroll", updateScrollTopButton, { passive: true });
+    window.addEventListener("scroll", () => {
+      updateScrollTopButton();
+      trackScrollDepthIfNeeded();
+    }, { passive: true });
     updateScrollTopButton();
+    trackScrollDepthIfNeeded();
   }
 
   window.addEventListener("pageshow", (event) => {
     if (event.persisted) {
-      requestFeedRefresh();
+      requestFeedRefresh("refresh_pageshow");
       return;
     }
 
     if (document.visibilityState === "visible") {
-      requestFeedRefresh();
+      requestFeedRefresh("refresh_pageshow");
     }
   });
 
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "visible") {
-      requestFeedRefresh();
+      requestFeedRefresh("refresh_visibility");
     }
   });
 
   window.addEventListener("focus", () => {
     if (document.visibilityState === "visible") {
-      requestFeedRefresh();
+      requestFeedRefresh("refresh_focus");
     }
   });
 
+  window.addEventListener("pagehide", () => {
+    trackSessionEnd();
+  });
+
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && isFilterSheetOpen) {
-      setFilterSheetOpen(false);
+    if (event.key === "Escape" && isFiltersPanelOpen) {
+      isFiltersPanelOpen = false;
+      renderFiltersPanel();
     }
   });
 }
 
 initializeUi();
-loadFeed().catch(() => {});
+loadFeed({ reason: "initial" }).catch(() => {});
