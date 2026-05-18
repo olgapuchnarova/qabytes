@@ -26,6 +26,9 @@ const filtersPanelBody = document.getElementById("filters-panel-body");
 const scrollTopButton = document.getElementById("scroll-top-button");
 const readCompletionDelayMs = 1180;
 const unreadCompletionDelayMs = 1020;
+const readDismissDelayMs = 760;
+const readListRetentionMs = 30 * 24 * 60 * 60 * 1000;
+const readListMaxItems = 50;
 const taxonomyLabels = [
   "All",
   "Strategic shift",
@@ -109,12 +112,66 @@ function getArticleState(articleId) {
   return articleState[articleId] || { opened: false, read: false };
 }
 
+function pruneReadArticleState(now = Date.now()) {
+  let hasChanges = false;
+  const readEntries = [];
+
+  Object.entries(articleState).forEach(([articleId, state]) => {
+    if (!state || !state.read) {
+      return;
+    }
+
+    const parsedReadAt = Date.parse(state.read_at || "");
+    const readAt = Number.isFinite(parsedReadAt) ? parsedReadAt : now;
+
+    if (!state.read_at) {
+      articleState[articleId] = {
+        ...state,
+        read_at: new Date(readAt).toISOString(),
+      };
+      hasChanges = true;
+    }
+
+    readEntries.push({ articleId, readAt });
+  });
+
+  const expiredArticleIds = new Set(
+    readEntries
+      .filter(({ readAt }) => now - readAt > readListRetentionMs)
+      .map(({ articleId }) => articleId)
+  );
+
+  const overflowArticleIds = new Set(
+    readEntries
+      .filter(({ articleId }) => !expiredArticleIds.has(articleId))
+      .sort((left, right) => right.readAt - left.readAt)
+      .slice(readListMaxItems)
+      .map(({ articleId }) => articleId)
+  );
+
+  [...expiredArticleIds, ...overflowArticleIds].forEach((articleId) => {
+    articleState[articleId] = {
+      ...getArticleState(articleId),
+      read: false,
+      read_at: null,
+    };
+    hasChanges = true;
+  });
+
+  if (hasChanges) {
+    saveArticleState();
+  }
+}
+
 function updateArticleState(articleId, changes) {
   articleState[articleId] = {
     ...getArticleState(articleId),
     ...changes,
   };
   saveArticleState();
+  if (Object.prototype.hasOwnProperty.call(changes, "read")) {
+    pruneReadArticleState();
+  }
 }
 
 function getAllSourceIds() {
@@ -349,6 +406,36 @@ function createBookmarkIcon() {
   return svg;
 }
 
+function createTrashIcon() {
+  const svgNS = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(svgNS, "svg");
+  svg.setAttribute("viewBox", "0 0 24 24");
+  svg.setAttribute("aria-hidden", "true");
+  svg.setAttribute("focusable", "false");
+  svg.setAttribute("class", "trash-icon dismiss-read-icon");
+
+  const paths = [
+    "M3 6h18",
+    "M8 6V4.5A2.5 2.5 0 0 1 10.5 2h3A2.5 2.5 0 0 1 16 4.5V6",
+    "M19 6l-1 14.5A1.6 1.6 0 0 1 16.4 22H7.6A1.6 1.6 0 0 1 6 20.5L5 6",
+    "M10 11v6",
+    "M14 11v6",
+  ];
+
+  paths.forEach((pathData) => {
+    const path = document.createElementNS(svgNS, "path");
+    path.setAttribute("d", pathData);
+    path.setAttribute("fill", "none");
+    path.setAttribute("stroke", "currentColor");
+    path.setAttribute("stroke-width", "2");
+    path.setAttribute("stroke-linecap", "round");
+    path.setAttribute("stroke-linejoin", "round");
+    svg.appendChild(path);
+  });
+
+  return svg;
+}
+
 function getFilteredFeedArticles() {
   return getScopedFilteredArticles();
 }
@@ -366,10 +453,18 @@ function getSavedViewArticles() {
 }
 
 function getReadViewArticles() {
-  return sortLatestInsights(
-    feedArticles.filter((article) => Boolean(getArticleState(article.id).read)),
-    getArticleState
-  );
+  return feedArticles
+    .filter((article) => Boolean(getArticleState(article.id).read))
+    .sort((left, right) => {
+      const leftReadAt = getArticleState(left.id).read_at || "";
+      const rightReadAt = getArticleState(right.id).read_at || "";
+
+      if (leftReadAt !== rightReadAt) {
+        return rightReadAt.localeCompare(leftReadAt);
+      }
+
+      return sortLatestInsights([left, right], getArticleState)[0] === left ? -1 : 1;
+    });
 }
 
 function getCurrentViewArticles() {
@@ -410,6 +505,24 @@ function getCurrentViewLabel() {
   return null;
 }
 
+function findNextVisibleArticleId(articleId) {
+  const visibleArticles = getFilteredFeedArticles();
+  const currentIndex = visibleArticles.findIndex((item) => item.id === articleId);
+  const nextArticle = visibleArticles[currentIndex + 1];
+  return nextArticle?.id || null;
+}
+
+function scrollArticleToTop(articleId) {
+  if (!articleId || !feedContainer) {
+    return;
+  }
+
+  const target = [...feedContainer.querySelectorAll(".card")].find(
+    (card) => card.dataset.articleId === articleId
+  );
+  target?.scrollIntoView({ block: "start", behavior: "smooth" });
+}
+
 function renderCard(article, context = {}) {
   const title = article.title || "";
   const category =
@@ -425,6 +538,7 @@ function renderCard(article, context = {}) {
 
   const card = document.createElement(safeUrl ? "a" : "article");
   card.className = "card";
+  card.dataset.articleId = article.id;
   if (isRead) {
     card.classList.add("is-read");
   }
@@ -517,12 +631,25 @@ function renderCard(article, context = {}) {
 
     const previousState = getArticleState(article.id);
     const nextReadState = !previousState.read;
+    const nextArticleId = nextReadState ? findNextVisibleArticleId(article.id) : null;
     analytics?.trackArticleMarkedRead({
       ...getArticleAnalyticsProperties(article, context),
       previous_read_state: Boolean(previousState.read),
       new_read_state: nextReadState,
     });
-    updateArticleState(article.id, { read: nextReadState });
+    updateArticleState(
+      article.id,
+      nextReadState
+        ? {
+            read: true,
+            read_at:
+              getArticleState(article.id).read_at || new Date().toISOString(),
+          }
+        : {
+            read: false,
+            read_at: null,
+          }
+    );
 
     if (nextReadState) {
       sessionMetrics.articlesMarkedReadCount += 1;
@@ -536,6 +663,7 @@ function renderCard(article, context = {}) {
       }, 320);
       window.setTimeout(() => {
         renderAll();
+        requestAnimationFrame(() => scrollArticleToTop(nextArticleId));
       }, readCompletionDelayMs);
       return;
     }
@@ -608,6 +736,39 @@ function renderCard(article, context = {}) {
   });
 
   actionsRow.append(readAction, saveAction);
+
+  if (currentViewMode === "read" && isRead) {
+    const dismissReadAction = document.createElement("div");
+    dismissReadAction.className = "card-action card-action-dismiss-read";
+
+    const dismissReadButton = document.createElement("button");
+    dismissReadButton.type = "button";
+    dismissReadButton.className = "dismiss-read-toggle";
+    dismissReadButton.setAttribute("aria-label", "Remove from read list");
+    dismissReadButton.appendChild(createTrashIcon());
+
+    const dismissReadText = document.createElement("span");
+    dismissReadText.className = "dismiss-read-toggle-text";
+    dismissReadText.textContent = "Remove";
+    dismissReadAction.append(dismissReadButton, dismissReadText);
+
+    dismissReadButton.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      dismissReadButton.disabled = true;
+      dismissReadButton.setAttribute("aria-label", "Removed from read list");
+      dismissReadText.textContent = "Removed";
+      card.classList.add("is-read-dismissed");
+
+      window.setTimeout(() => {
+        updateArticleState(article.id, { read: false, read_at: null });
+        renderAll();
+      }, readDismissDelayMs);
+    });
+
+    actionsRow.appendChild(dismissReadAction);
+  }
   card.appendChild(actionsRow);
 
   return card;
@@ -950,6 +1111,7 @@ function renderViewControls() {
 }
 
 function renderAll() {
+  pruneReadArticleState();
   syncSavedSnapshotsWithFeed();
   renderActiveFilters();
   renderFiltersPanel();
@@ -1070,6 +1232,7 @@ function requestFeedRefresh(reason = "manual") {
 }
 
 function initializeUi() {
+  pruneReadArticleState();
   analytics?.init({ nextSiteVersion: feedCacheKey });
   analytics?.trackSessionStart({
     saved_count: getSavedCount(),
