@@ -1,87 +1,15 @@
 [
   {
-    "title": "A primer on product management for engineers",
-    "url": "https://increment.com/planning/product-management-for-engineers/",
-    "source": "rss",
-    "source_name": "Increment"
-  },
-  {
-    "title": "Experiences with local models for coding",
-    "url": "https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-experiences.html",
-    "source": "rss",
-    "source_name": "Martin Fowler"
-  },
-  {
-    "title": "Context decay is quietly killing your features before they go live",
-    "url": "https://www.thoughtworks.com/insights/blog/continuous-delivery/Context-decay-is-killing-your-features-before-they-go-live",
-    "source": "rss",
-    "source_name": "Thoughtworks"
-  },
-  {
-    "title": "Podcast: Formal Methods for Every Engineer in an AI-Powered Future",
-    "url": "https://www.infoq.com/podcasts/formal-methods-ai-powered-future/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Testing",
-    "source": "rss",
-    "source_name": "InfoQ"
-  },
-  {
-    "title": "What software makers need to know about the new EU directive",
-    "url": "https://www.tricentis.com/blog/new-eu-product-liability-directive-key-impacts-for-software-makers",
+    "title": "Effective regression testing in the age of AI-generated code",
+    "url": "https://www.tricentis.com/blog/ai-regression-testing-change-based-approach",
     "source": "html",
     "source_name": "Tricentis"
   },
   {
-    "title": "I couldn't find a simple agent framework, so I wrote one",
-    "url": "https://dev.to/anmarhaniv1/i-couldnt-find-a-simple-agent-framework-so-i-wrote-one-39jp",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "How routing keys isolate Kafka consumer tests on a shared broker",
-    "url": "https://thenewstack.io/isolate-kafka-consumer-tests/",
-    "source": "rss",
-    "source_name": "The New Stack"
-  },
-  {
-    "title": "Partnerships can keep open source sustainable\u200b\u200b\u200b\u200b\u200c\ufeff\u200d\ufeff\u200b\u200d\u200b\u200d\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\u200d\u200c\u200d\u200d\u200c\u200c\u200d\u200c\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\u200d\u200b\u200d\u200b\u200d\u200b\ufeff\u200d\u200d\u200b\u200d\u200b\u200d\u200c\ufeff\u200b\ufeff\u200c\u200d\u200b\u200c\u200c\u200d\ufeff\u200d\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200b\u200d\ufeff\u200d\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\ufeff\u200b\u200d\u200b\u200d\u200b\u200d\ufeff\u200b\u200b\u200d\u200b\u200d\u200c\u200d\u200d\u200b\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200d\u200b\u200d\u200b\u200d\u200b\ufeff\u200d\u200d\u200b\u200d\u200b\u200d\u200c\u200d\u200d\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\ufeff\u200b\ufeff\u200d\u200d\u200b\u200d\ufeff\ufeff\u200b\u200d\ufeff\ufeff\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\u200c\u200c\ufeff\u200b\ufeff\u200b\u200d\ufeff\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200b\ufeff\u200c\u200d\u200d\ufeff\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\ufeff\u200b\u200d\ufeff\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200c\u200d\u200c\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200b\u200d\ufeff\ufeff\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200b\u200d\ufeff\ufeff\u200c\u200d\ufeff\u200c\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200c\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\ufeff\u200c\u200d\ufeff\u200d\u200b\ufeff\u200d\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\ufeff\u200c\u200b\ufeff\u200c\u200b\u200b\ufeff\u200d\u200c\u200b\ufeff\u200d\u200c\u200b\ufeff\u200b\u200d\u200b\ufeff\u200b\u200c\u200b\ufeff\u200b\u200d\u200b\ufeff\u200b\u200b\u200b\ufeff\u200b\u200d\u200b\u200d\ufeff\u200c\u200b\ufeff\u200b\u200c\u200c\u200d\u200c\u200d\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200b\u200c\u200b\u200d\ufeff\u200c\u200b\ufeff\u200c\u200b\u200b\ufeff\u200b\u200b\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200c\u200d\u200b\u200d\ufeff\u200c\u200b\ufeff\u200d\u200c\u200c\u200d\u200c\u200d\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200c\u200c\u200d\u200b\u200c\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200d\u200b\u200b\ufeff\u200c\u200c\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200d\u200b\ufeff\u200d\u200b\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200b\u200c\u200b\ufeff\u200b\ufeff\u200c\u200d\u200c\u200b\u200b\ufeff\u200d\ufeff\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\ufeff\u200c\u200c\u200b\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200b\ufeff\u200d\ufeff\u200c\ufeff\u200b\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200b\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\ufeff\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\ufeff\u200c\u200d\u200b\u200d\u200c\u200d\u200b\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200c\u200c\u200c\u200c\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\ufeff\u200b\u200b\ufeff\ufeff\u200c\u200c\u200d\u200d\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\ufeff\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\ufeff\u200c\u200b\u200b\u200c\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\u200d\u200c\u200b\u200c\u200d\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\u200d\u200c\u200b\u200c\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\u200c\u200c\ufeff\u200b\ufeff\u200b\u200d\ufeff\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200b\ufeff\u200c\u200d\u200d\ufeff\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200d\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\ufeff\u200c\u200b\ufeff\u200c\u200b\u200b\ufeff\u200d\u200c\u200b\ufeff\u200d\u200c\u200b\ufeff\u200b\u200d\u200b\ufeff\u200b\u200c\u200b\ufeff\u200b\u200d\u200b\ufeff\u200b\u200b\u200b\ufeff\u200b\u200d\u200b\u200d\ufeff\u200c\u200b\ufeff\u200b\u200c\u200c\u200d\u200c\u200d\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200b\u200c\u200b\u200d\ufeff\u200c\u200b\ufeff\u200c\u200b\u200b\ufeff\u200b\u200b\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200c\u200d\u200b\u200d\ufeff\u200c\u200b\ufeff\u200d\u200c\u200c\u200d\u200c\u200d\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200c\u200c\u200d\u200b\u200c\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200d\u200b\u200b\ufeff\u200c\u200c\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200d\u200b\ufeff\u200d\u200b\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200b\u200c\u200b\ufeff\u200b\ufeff\u200c\u200d\u200c\u200b\u200b\u200d\u200c\u200d\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\ufeff\u200c\u200c\u200b\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200b\u200d\u200c\u200d\u200c\ufeff\u200b\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200b\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\ufeff\u200b\u200c\u200d\u200c\u200c\u200b\u200d\u200c\u200d\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200c\u200d\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200b\u200b\u200c\ufeff\u200c\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200d\u200b\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200b\u200b\u200d\u200b\u200d\u200c\ufeff\ufeff\u200c",
-    "url": "https://stackoverflow.blog/2026/07/24/partnerships-can-keep-open-source-sustainable/",
-    "source": "rss",
-    "source_name": "Stack Overflow Blog"
-  },
-  {
-    "title": "Vibe coding while live streaming",
-    "url": "https://automationpanda.com/2025/08/20/vibe-coding-while-live-streaming/",
-    "source": "rss",
-    "source_name": "Automation Panda"
-  },
-  {
-    "title": "Pfizer is testing a pill that, if successful, could cure Covid-19",
-    "url": "https://montrealgazette.com/news/world/pfizer-is-testing-a-pill-that-if-successful-could-become-first-ever-home-cure-for-covid-19",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Code Review Responses: Add Context When It Counts",
-    "url": "http://testing.googleblog.com/2026/05/code-review-responses-add-context-when.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
-  },
-  {
-    "title": "An IC\u2019s guide to roadmap planning",
-    "url": "https://increment.com/planning/individual-contributors-guide-to-roadmap-planning/",
+    "title": "A primer on product management for engineers",
+    "url": "https://increment.com/planning/product-management-for-engineers/",
     "source": "rss",
     "source_name": "Increment"
-  },
-  {
-    "title": "DSLs Enable Reliable Use of LLMs",
-    "url": "https://martinfowler.com/articles/llm-and-dsls.html",
-    "source": "rss",
-    "source_name": "Martin Fowler"
-  },
-  {
-    "title": "Bridging the gap between platform engineering and business value",
-    "url": "https://www.thoughtworks.com/insights/blog/platforms/bridging-the-gap-between-platform-engineering-and-business-value",
-    "source": "rss",
-    "source_name": "Thoughtworks"
   },
   {
     "title": "Article: Comprehension at AI Speed: Building a Context Store for Evolutionary Architecture",
@@ -90,28 +18,28 @@
     "source_name": "InfoQ"
   },
   {
-    "title": "Effective regression testing in the age of AI-generated code",
-    "url": "https://www.tricentis.com/blog/ai-regression-testing-change-based-approach",
-    "source": "html",
-    "source_name": "Tricentis"
-  },
-  {
-    "title": "Building an Autonomy Error Budget Gateway with SigNoz and OpenTelemetry",
-    "url": "https://dev.to/vaibhav_shukla_20/building-an-autonomy-error-budget-gateway-with-signoz-and-opentelemetry-4ia3",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Stop correcting AI code. Build the system agents need.",
-    "url": "https://thenewstack.io/stop-correcting-ai-code-build-the-system-agents-need/",
+    "title": "The zero-cost fallacy: Open source software in the agentic era",
+    "url": "https://www.thoughtworks.com/insights/blog/open-source/zero-cost-fallacy-open-source-agentic-era",
     "source": "rss",
-    "source_name": "The New Stack"
+    "source_name": "Thoughtworks"
   },
   {
-    "title": "The future of development is full-stack\u200b\u200b\u200b\u200b\u200c\ufeff\u200d\ufeff\u200b\u200d\u200b\u200d\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\u200d\u200c\u200d\u200d\u200c\u200c\u200d\u200c\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\u200d\u200b\u200d\u200b\u200d\u200b\ufeff\u200d\u200d\u200b\u200d\u200b\u200d\u200c\ufeff\u200b\ufeff\u200c\u200d\u200b\u200c\u200c\u200d\ufeff\u200d\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200b\u200d\ufeff\u200d\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\ufeff\u200b\u200d\u200b\u200d\u200b\u200d\ufeff\u200b\u200b\u200d\u200b\u200d\u200c\u200d\u200d\u200b\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200d\u200b\u200d\u200b\u200d\u200b\ufeff\u200d\u200d\u200b\u200d\u200b\u200d\u200c\u200d\u200d\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\ufeff\u200b\ufeff\u200d\u200d\u200b\u200d\ufeff\ufeff\u200b\u200d\ufeff\ufeff\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\u200c\u200c\ufeff\u200b\ufeff\u200b\u200d\ufeff\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200b\ufeff\u200c\u200d\u200d\ufeff\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\ufeff\u200b\u200d\ufeff\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200c\u200d\u200c\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200b\u200d\ufeff\ufeff\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200b\u200d\ufeff\ufeff\u200c\u200d\ufeff\u200c\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200c\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\ufeff\u200c\u200d\ufeff\u200d\u200b\ufeff\u200d\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\ufeff\u200c\u200b\ufeff\u200c\ufeff\u200c\u200d\u200c\u200b\u200b\ufeff\u200b\ufeff\u200c\u200d\u200c\u200d\u200b\ufeff\u200d\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200c\u200b\u200d\ufeff\u200c\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200b\u200b\ufeff\u200d\u200b\u200c\u200d\u200c\u200b\u200b\u200d\ufeff\u200c\u200b\ufeff\u200c\u200b\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200c\u200d\u200b\ufeff\u200c\u200d\u200b\u200d\ufeff\u200c\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200b\u200c\u200b\u200d\ufeff\u200c\u200c\u200d\u200b\ufeff\u200b\ufeff\u200c\u200d\u200c\u200d\u200c\u200b\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200d\u200b\u200c\u200d\u200c\u200b\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200c\u200b\ufeff\u200b\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\u200d\ufeff\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\ufeff\u200c\u200c\u200b\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200b\ufeff\u200d\ufeff\u200c\ufeff\u200b\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200b\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\ufeff\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\ufeff\u200c\u200d\u200b\u200d\u200c\u200d\u200b\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200c\u200c\u200c\u200c\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\ufeff\u200b\u200b\ufeff\ufeff\u200c\u200c\u200d\u200d\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\ufeff\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\ufeff\u200c\u200b\u200b\u200c\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\u200d\u200c\u200b\u200c\u200d\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\u200d\u200c\u200b\u200c\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\u200c\u200c\ufeff\u200b\ufeff\u200b\u200d\ufeff\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200b\ufeff\u200c\u200d\u200d\ufeff\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200d\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\ufeff\u200c\u200b\ufeff\u200c\ufeff\u200c\u200d\u200c\u200b\u200b\ufeff\u200b\ufeff\u200c\u200d\u200c\u200d\u200b\ufeff\u200d\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200c\u200b\u200d\ufeff\u200c\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200b\u200b\ufeff\u200d\u200b\u200c\u200d\u200c\u200b\u200b\u200d\ufeff\u200c\u200b\ufeff\u200c\u200b\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200c\u200d\u200b\ufeff\u200c\u200d\u200b\u200d\ufeff\u200c\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200b\u200c\u200b\u200d\ufeff\u200c\u200c\u200d\u200b\ufeff\u200b\ufeff\u200c\u200d\u200c\u200d\u200c\u200b\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200d\u200b\u200c\u200d\u200c\u200b\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200c\u200b\ufeff\u200b\u200c\u200c\u200d\u200c\u200b\u200b\u200d\u200c\u200d\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\ufeff\u200c\u200c\u200b\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200b\u200d\u200c\u200d\u200c\ufeff\u200b\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200b\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\ufeff\u200b\u200c\u200d\u200c\u200c\u200b\u200d\u200c\u200d\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200c\u200d\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200b\u200b\u200c\ufeff\u200c\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200d\u200b\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200b\u200b\u200d\u200b\u200d\u200c\ufeff\ufeff\u200c",
-    "url": "https://stackoverflow.blog/2026/07/21/the-future-of-development-is-full-stack/",
+    "title": "Testing GPT 4's code-writing capabilities with some real world problems",
+    "url": "https://tylerglaiel.substack.com/p/can-gpt-4-actually-write-code",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Experiences with local models for coding",
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-experiences.html",
     "source": "rss",
-    "source_name": "Stack Overflow Blog"
+    "source_name": "Martin Fowler"
+  },
+  {
+    "title": "One Map Key, One Lookup",
+    "url": "http://testing.googleblog.com/2026/04/one-map-key-one-lookup.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
   },
   {
     "title": "Prioritizing Small Things",
@@ -120,50 +48,14 @@
     "source_name": "Automation Panda"
   },
   {
-    "title": "Accused murderer wins right to check source code of DNA testing kit",
-    "url": "https://www.theregister.com/2021/02/04/dna_testing_software/",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Prefactoring: Clear the Way for Your New Feature",
-    "url": "http://testing.googleblog.com/2026/07/prefactoring-clear-way-for-your-new.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
-  },
-  {
-    "title": "Planning for momentum",
-    "url": "https://increment.com/planning/planning-for-momentum/",
-    "source": "rss",
-    "source_name": "Increment"
-  },
-  {
-    "title": "The Archaeologist\u2019s Copilot",
-    "url": "https://martinfowler.com/articles/archaeologist-copilot.html",
-    "source": "rss",
-    "source_name": "Martin Fowler"
-  },
-  {
-    "title": "The operating system for enterprise AI",
-    "url": "https://www.thoughtworks.com/insights/articles/operating-system-enterprise-ai",
-    "source": "rss",
-    "source_name": "Thoughtworks"
-  },
-  {
-    "title": "Partner spotlight series: How Foulk Consulting transforms QA for energy and utilities with Tricentis",
-    "url": "https://www.tricentis.com/blog/foulk-consulting-tricentis-partner-spotlight",
-    "source": "html",
-    "source_name": "Tricentis"
-  },
-  {
-    "title": "Dual-Tier Memory Architecture for AI Agents: How Local Vector Search Scales to 14,726 Memories Without Pinecone",
-    "url": "https://dev.to/hypernexus/dual-tier-memory-architecture-for-ai-agents-how-local-vector-search-scales-to-14726-memories-2617",
+    "title": "Measuring Real EC2 Idle Time: A CloudWatch Script Walkthrough",
+    "url": "https://dev.to/trigops/measuring-real-ec2-idle-time-a-cloudwatch-script-walkthrough-54ik",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Opus 5 costs a third of the price \u2014 and that\u2019s actually the problem",
-    "url": "https://thenewstack.io/opus-5-agentic-coding-cost/",
+    "title": "MCP\u2019s biggest update removes the machinery many servers were built around",
+    "url": "https://thenewstack.io/mcp-release-candidate-rewrite/",
     "source": "rss",
     "source_name": "The New Stack"
   },
@@ -174,22 +66,10 @@
     "source_name": "Stack Overflow Blog"
   },
   {
-    "title": "The Testing Skyscraper: A Modern Alternative to the Testing Pyramid",
-    "url": "https://automationpanda.com/2025/09/29/the-testing-skyscraper-a-modern-alternative-to-the-testing-pyramid/",
-    "source": "rss",
-    "source_name": "Automation Panda"
-  },
-  {
-    "title": "Facebook Messenger begins testing end-to-end encryption using Signal Protocol",
-    "url": "https://whispersystems.org/blog/facebook-messenger/",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "Construct with Collaborators, Call with Work",
-    "url": "http://testing.googleblog.com/2026/05/construct-with-collaborators-call-with.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
+    "title": "From green checkmarks to real confidence: How qTest and SeaLights close the modern quality gap",
+    "url": "https://www.tricentis.com/blog/qtest-sealights-proof-of-test-coverage",
+    "source": "html",
+    "source_name": "Tricentis"
   },
   {
     "title": "Planning in the dark",
@@ -198,52 +78,10 @@
     "source_name": "Increment"
   },
   {
-    "title": "The zero-cost fallacy: Open source software in the agentic era",
-    "url": "https://www.thoughtworks.com/insights/blog/open-source/zero-cost-fallacy-open-source-agentic-era",
+    "title": "Podcast: Formal Methods for Every Engineer in an AI-Powered Future",
+    "url": "https://www.infoq.com/podcasts/formal-methods-ai-powered-future/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Testing",
     "source": "rss",
-    "source_name": "Thoughtworks"
-  },
-  {
-    "title": "AI-powered test optimization with Tricentis Testim and SeaLights",
-    "url": "https://www.tricentis.com/blog/testim-tricentis-sealights-intelligent-test-optimization",
-    "source": "html",
-    "source_name": "Tricentis"
-  },
-  {
-    "title": "Our LLM Judges Called Human Writing \"AI-Flavored\" 88% of the Time",
-    "url": "https://dev.to/foreverseapp/our-llm-judges-called-human-writing-ai-flavored-88-of-the-time-4g4m",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Microsoft, Nvidia, Meta and 22 others defended open weights. Anthropic and OpenAI didn\u2019t sign.",
-    "url": "https://thenewstack.io/microsoft-nvidia-meta-and-open-weights/",
-    "source": "rss",
-    "source_name": "The New Stack"
-  },
-  {
-    "title": "Your AI is only as responsible as you are\u200b\u200b\u200b\u200b\u200c\ufeff\u200d\ufeff\u200b\u200d\u200b\u200d\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\u200d\u200c\u200d\u200d\u200c\u200c\u200d\u200c\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\u200d\u200b\u200d\u200b\u200d\u200b\ufeff\u200d\u200d\u200b\u200d\u200b\u200d\u200c\ufeff\u200b\ufeff\u200c\u200d\u200b\u200c\u200c\u200d\ufeff\u200d\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200b\u200d\ufeff\u200d\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\ufeff\u200b\u200d\u200b\u200d\u200b\u200d\ufeff\u200b\u200b\u200d\u200b\u200d\u200c\u200d\u200d\u200b\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200d\u200b\u200d\u200b\u200d\u200b\ufeff\u200d\u200d\u200b\u200d\u200b\u200d\u200c\u200d\u200d\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\ufeff\u200b\ufeff\u200d\u200d\u200b\u200d\ufeff\ufeff\u200b\u200d\ufeff\ufeff\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\u200c\u200c\ufeff\u200b\ufeff\u200b\u200d\ufeff\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200b\ufeff\u200c\u200d\u200d\ufeff\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\ufeff\u200b\u200d\ufeff\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200c\u200d\u200c\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200b\u200d\ufeff\ufeff\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200b\u200d\ufeff\ufeff\u200c\u200d\ufeff\u200c\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200c\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\ufeff\u200c\u200d\ufeff\u200d\u200b\ufeff\u200d\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\ufeff\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200c\u200b\ufeff\u200d\u200b\u200b\ufeff\u200c\u200d\u200b\ufeff\u200b\u200b\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200c\u200b\ufeff\u200c\ufeff\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200b\u200d\u200b\u200d\ufeff\u200c\u200b\ufeff\u200c\u200b\u200c\u200d\u200b\u200d\u200c\u200d\u200b\u200c\u200b\ufeff\u200c\u200c\u200b\u200d\ufeff\u200c\u200b\ufeff\u200d\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\u200c\u200c\u200b\u200d\ufeff\u200c\u200b\ufeff\u200b\ufeff\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200d\u200c\u200b\u200b\ufeff\u200d\u200c\u200c\u200d\u200b\u200c\u200b\ufeff\u200d\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\u200d\u200c\u200c\u200d\u200b\u200d\u200b\ufeff\u200d\ufeff\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\ufeff\u200c\u200c\u200b\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200b\ufeff\u200d\ufeff\u200c\ufeff\u200b\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200b\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\ufeff\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\ufeff\u200c\u200d\u200b\u200d\u200c\u200d\u200b\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200c\u200c\u200c\u200c\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\ufeff\u200b\u200b\ufeff\ufeff\u200c\u200c\u200d\u200d\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\ufeff\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\ufeff\u200c\u200b\u200b\u200c\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\u200d\u200c\u200b\u200c\u200d\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\u200d\u200c\u200b\u200c\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\u200c\u200c\ufeff\u200b\ufeff\u200b\u200d\ufeff\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200b\ufeff\u200c\u200d\u200d\ufeff\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200d\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\ufeff\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200c\u200b\ufeff\u200d\u200b\u200b\ufeff\u200c\u200d\u200b\ufeff\u200b\u200b\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200c\u200b\ufeff\u200c\ufeff\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200b\u200d\u200b\u200d\ufeff\u200c\u200b\ufeff\u200c\u200b\u200c\u200d\u200b\u200d\u200c\u200d\u200b\u200c\u200b\ufeff\u200c\u200c\u200b\u200d\ufeff\u200c\u200b\ufeff\u200d\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\u200c\u200c\u200b\u200d\ufeff\u200c\u200b\ufeff\u200b\ufeff\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200d\u200c\u200b\u200b\ufeff\u200d\u200c\u200c\u200d\u200b\u200c\u200b\ufeff\u200d\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\u200d\u200c\u200c\u200d\u200b\u200d\u200b\u200d\u200c\u200d\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\ufeff\u200c\u200c\u200b\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200b\u200d\u200c\u200d\u200c\ufeff\u200b\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200b\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\ufeff\u200b\u200c\u200d\u200c\u200c\u200b\u200d\u200c\u200d\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200c\u200d\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200b\u200b\u200c\ufeff\u200c\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200d\u200b\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200b\u200b\u200d\u200b\u200d\u200c\ufeff\ufeff\u200c",
-    "url": "https://stackoverflow.blog/2026/07/14/your-ai-is-only-as-responsible-as-you-are/",
-    "source": "rss",
-    "source_name": "Stack Overflow Blog"
-  },
-  {
-    "title": "BDD Gherkin Guidelines for AI Coding and Testing",
-    "url": "https://automationpanda.com/2026/04/27/bdd-gherkin-guidelines-for-ai-coding-and-testing/",
-    "source": "rss",
-    "source_name": "Automation Panda"
-  },
-  {
-    "title": "YouTube is testing a more aggressive approach against ad blockers",
-    "url": "https://www.androidpolice.com/youtube-ad-blockers-three-strikes/",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "One Map Key, One Lookup",
-    "url": "http://testing.googleblog.com/2026/04/one-map-key-one-lookup.html",
-    "source": "rss",
-    "source_name": "Google Testing Blog"
+    "source_name": "InfoQ"
   },
   {
     "title": "AI-assisted migration: Critical lessons from the modernization frontlines",
@@ -252,20 +90,98 @@
     "source_name": "Thoughtworks"
   },
   {
-    "title": "Closing AI-generated test gaps with qTest & SeaLights",
-    "url": "https://www.tricentis.com/blog/close-ai-generated-test-gaps-qtest-sealights",
-    "source": "html",
-    "source_name": "Tricentis"
+    "title": "Pfizer is testing a pill that, if successful, could cure Covid-19",
+    "url": "https://montrealgazette.com/news/world/pfizer-is-testing-a-pill-that-if-successful-could-become-first-ever-home-cure-for-covid-19",
+    "source": "hn",
+    "source_name": "Hacker News"
   },
   {
-    "title": "Two coding agents editing the same issue, no merge conflict. Here is how git refs make that work",
-    "url": "https://dev.to/dipankar_sarkar/two-coding-agents-editing-the-same-issue-no-merge-conflict-here-is-how-git-refs-make-that-work-325k",
+    "title": "DSLs Enable Reliable Use of LLMs",
+    "url": "https://martinfowler.com/articles/llm-and-dsls.html",
+    "source": "rss",
+    "source_name": "Martin Fowler"
+  },
+  {
+    "title": "Prefactoring: Clear the Way for Your New Feature",
+    "url": "http://testing.googleblog.com/2026/07/prefactoring-clear-way-for-your-new.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
+  },
+  {
+    "title": "Vibe coding while live streaming",
+    "url": "https://automationpanda.com/2025/08/20/vibe-coding-while-live-streaming/",
+    "source": "rss",
+    "source_name": "Automation Panda"
+  },
+  {
+    "title": "On the idea of turning myself into an AI, and where that leaves the one being overtaken",
+    "url": "https://dev.to/matsumotory/on-the-idea-of-turning-myself-into-an-ai-and-where-that-leaves-the-one-being-overtaken-ic0",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "5 steps to build great service architecture and operational resilience",
-    "url": "https://thenewstack.io/build-resilient-service-architecture/",
+    "title": "5 ways SRE AI agents are set to augment human capabilities",
+    "url": "https://thenewstack.io/sre-ai-agents-capabilities/",
+    "source": "rss",
+    "source_name": "The New Stack"
+  },
+  {
+    "title": "Partnerships can keep open source sustainable\u200b\u200b\u200b\u200b\u200c\ufeff\u200d\ufeff\u200b\u200d\u200b\u200d\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\u200d\u200c\u200d\u200d\u200c\u200c\u200d\u200c\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\u200d\u200b\u200d\u200b\u200d\u200b\ufeff\u200d\u200d\u200b\u200d\u200b\u200d\u200c\ufeff\u200b\ufeff\u200c\u200d\u200b\u200c\u200c\u200d\ufeff\u200d\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200b\u200d\ufeff\u200d\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\ufeff\u200b\u200d\u200b\u200d\u200b\u200d\ufeff\u200b\u200b\u200d\u200b\u200d\u200c\u200d\u200d\u200b\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200d\u200b\u200d\u200b\u200d\u200b\ufeff\u200d\u200d\u200b\u200d\u200b\u200d\u200c\u200d\u200d\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\ufeff\u200b\ufeff\u200d\u200d\u200b\u200d\ufeff\ufeff\u200b\u200d\ufeff\ufeff\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\u200c\u200c\ufeff\u200b\ufeff\u200b\u200d\ufeff\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200b\ufeff\u200c\u200d\u200d\ufeff\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\ufeff\u200b\u200d\ufeff\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200c\u200d\u200c\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200b\u200d\ufeff\ufeff\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200b\u200d\ufeff\ufeff\u200c\u200d\ufeff\u200c\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200c\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\ufeff\u200c\u200d\ufeff\u200d\u200b\ufeff\u200d\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\ufeff\u200c\u200b\ufeff\u200c\u200b\u200b\ufeff\u200d\u200c\u200b\ufeff\u200d\u200c\u200b\ufeff\u200b\u200d\u200b\ufeff\u200b\u200c\u200b\ufeff\u200b\u200d\u200b\ufeff\u200b\u200b\u200b\ufeff\u200b\u200d\u200b\u200d\ufeff\u200c\u200b\ufeff\u200b\u200c\u200c\u200d\u200c\u200d\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200b\u200c\u200b\u200d\ufeff\u200c\u200b\ufeff\u200c\u200b\u200b\ufeff\u200b\u200b\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200c\u200d\u200b\u200d\ufeff\u200c\u200b\ufeff\u200d\u200c\u200c\u200d\u200c\u200d\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200c\u200c\u200d\u200b\u200c\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200d\u200b\u200b\ufeff\u200c\u200c\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200d\u200b\ufeff\u200d\u200b\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200b\u200c\u200b\ufeff\u200b\ufeff\u200c\u200d\u200c\u200b\u200b\ufeff\u200d\ufeff\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\ufeff\u200c\u200c\u200b\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200b\ufeff\u200d\ufeff\u200c\ufeff\u200b\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200b\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\ufeff\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\ufeff\u200c\u200d\u200b\u200d\u200c\u200d\u200b\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200c\u200c\u200c\u200c\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\ufeff\u200b\u200b\ufeff\ufeff\u200c\u200c\u200d\u200d\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\ufeff\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\ufeff\u200c\u200b\u200b\u200c\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\u200d\u200c\u200b\u200c\u200d\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\u200d\u200c\u200b\u200c\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\u200c\u200c\ufeff\u200b\ufeff\u200b\u200d\ufeff\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200b\ufeff\u200c\u200d\u200d\ufeff\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200d\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\ufeff\u200c\u200b\ufeff\u200c\u200b\u200b\ufeff\u200d\u200c\u200b\ufeff\u200d\u200c\u200b\ufeff\u200b\u200d\u200b\ufeff\u200b\u200c\u200b\ufeff\u200b\u200d\u200b\ufeff\u200b\u200b\u200b\ufeff\u200b\u200d\u200b\u200d\ufeff\u200c\u200b\ufeff\u200b\u200c\u200c\u200d\u200c\u200d\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200b\u200c\u200b\u200d\ufeff\u200c\u200b\ufeff\u200c\u200b\u200b\ufeff\u200b\u200b\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200c\u200d\u200b\u200d\ufeff\u200c\u200b\ufeff\u200d\u200c\u200c\u200d\u200c\u200d\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200c\u200c\u200d\u200b\u200c\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200d\u200b\u200b\ufeff\u200c\u200c\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200d\u200b\ufeff\u200d\u200b\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200b\u200c\u200b\ufeff\u200b\ufeff\u200c\u200d\u200c\u200b\u200b\u200d\u200c\u200d\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\ufeff\u200c\u200c\u200b\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200b\u200d\u200c\u200d\u200c\ufeff\u200b\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200b\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\ufeff\u200b\u200c\u200d\u200c\u200c\u200b\u200d\u200c\u200d\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200c\u200d\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200b\u200b\u200c\ufeff\u200c\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200d\u200b\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200b\u200b\u200d\u200b\u200d\u200c\ufeff\ufeff\u200c",
+    "url": "https://stackoverflow.blog/2026/07/24/partnerships-can-keep-open-source-sustainable/",
+    "source": "rss",
+    "source_name": "Stack Overflow Blog"
+  },
+  {
+    "title": "AI in QA: What leading quality experts want every team to know",
+    "url": "https://www.tricentis.com/blog/ai-in-qa-decision-intelligence",
+    "source": "html",
+    "source_name": "Tricentis"
+  },
+  {
+    "title": "Planning for momentum",
+    "url": "https://increment.com/planning/planning-for-momentum/",
+    "source": "rss",
+    "source_name": "Increment"
+  },
+  {
+    "title": "Context decay is quietly killing your features before they go live",
+    "url": "https://www.thoughtworks.com/insights/blog/continuous-delivery/Context-decay-is-killing-your-features-before-they-go-live",
+    "source": "rss",
+    "source_name": "Thoughtworks"
+  },
+  {
+    "title": "Testing Benford's Law",
+    "url": "http://testingbenfordslaw.com",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "The Archaeologist\u2019s Copilot",
+    "url": "https://martinfowler.com/articles/archaeologist-copilot.html",
+    "source": "rss",
+    "source_name": "Martin Fowler"
+  },
+  {
+    "title": "Code Review Responses: Add Context When It Counts",
+    "url": "http://testing.googleblog.com/2026/05/code-review-responses-add-context-when.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
+  },
+  {
+    "title": "BDD Gherkin Guidelines for AI Coding and Testing",
+    "url": "https://automationpanda.com/2026/04/27/bdd-gherkin-guidelines-for-ai-coding-and-testing/",
+    "source": "rss",
+    "source_name": "Automation Panda"
+  },
+  {
+    "title": "Exploring WebAssembly Beyond the Browser: A Cloud Architect's First Look at WASI",
+    "url": "https://dev.to/shubham_shaw_63d2b4bec156/exploring-webassembly-beyond-the-browser-a-cloud-architects-first-look-at-wasi-nfd",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Stop correcting AI code. Build the system agents need.",
+    "url": "https://thenewstack.io/stop-correcting-ai-code-build-the-system-agents-need/",
     "source": "rss",
     "source_name": "The New Stack"
   },
@@ -276,8 +192,26 @@
     "source_name": "Stack Overflow Blog"
   },
   {
-    "title": "Testing GPT 4's code-writing capabilities with some real world problems",
-    "url": "https://tylerglaiel.substack.com/p/can-gpt-4-actually-write-code",
+    "title": "Closing AI-generated test gaps with qTest & SeaLights",
+    "url": "https://www.tricentis.com/blog/close-ai-generated-test-gaps-qtest-sealights",
+    "source": "html",
+    "source_name": "Tricentis"
+  },
+  {
+    "title": "An IC\u2019s guide to roadmap planning",
+    "url": "https://increment.com/planning/individual-contributors-guide-to-roadmap-planning/",
+    "source": "rss",
+    "source_name": "Increment"
+  },
+  {
+    "title": "The operating system for enterprise AI",
+    "url": "https://www.thoughtworks.com/insights/articles/operating-system-enterprise-ai",
+    "source": "rss",
+    "source_name": "Thoughtworks"
+  },
+  {
+    "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
+    "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel/",
     "source": "hn",
     "source_name": "Hacker News"
   },
@@ -288,22 +222,70 @@
     "source_name": "Google Testing Blog"
   },
   {
-    "title": "AI in QA: What leading quality experts want every team to know",
-    "url": "https://www.tricentis.com/blog/ai-in-qa-decision-intelligence",
-    "source": "html",
-    "source_name": "Tricentis"
+    "title": "The Testing Skyscraper: A Modern Alternative to the Testing Pyramid",
+    "url": "https://automationpanda.com/2025/09/29/the-testing-skyscraper-a-modern-alternative-to-the-testing-pyramid/",
+    "source": "rss",
+    "source_name": "Automation Panda"
   },
   {
-    "title": "I turned a photo of my handwriting into a real font, then open-sourced the whole pipeline",
-    "url": "https://dev.to/danilo1/i-turned-a-photo-of-my-handwriting-into-a-real-font-then-open-sourced-the-whole-pipeline-m7m",
+    "title": "Stop Using chmod 777: Understanding Linux File Permissions",
+    "url": "https://dev.to/kai-wen-the-parrot/stop-using-chmod-777-understanding-linux-file-permissions-1630",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Apple testing new App Store design that blurs the line between ads and results",
-    "url": "https://9to5mac.com/2026/01/16/iphone-apple-app-store-search-results-ads-new-design/",
+    "title": "Nvidia, Palantir, Hugging Face join 30 others in race to defend open-weight AI from cyber threats",
+    "url": "https://thenewstack.io/open-secure-ai-alliance/",
+    "source": "rss",
+    "source_name": "The New Stack"
+  },
+  {
+    "title": "Your AI is only as responsible as you are\u200b\u200b\u200b\u200b\u200c\ufeff\u200d\ufeff\u200b\u200d\u200b\u200d\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\u200d\u200c\u200d\u200d\u200c\u200c\u200d\u200c\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\u200d\u200b\u200d\u200b\u200d\u200b\ufeff\u200d\u200d\u200b\u200d\u200b\u200d\u200c\ufeff\u200b\ufeff\u200c\u200d\u200b\u200c\u200c\u200d\ufeff\u200d\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200b\u200d\ufeff\u200d\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\ufeff\u200b\u200d\u200b\u200d\u200b\u200d\ufeff\u200b\u200b\u200d\u200b\u200d\u200c\u200d\u200d\u200b\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200d\u200b\u200d\u200b\u200d\u200b\ufeff\u200d\u200d\u200b\u200d\u200b\u200d\u200c\u200d\u200d\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\ufeff\u200b\ufeff\u200d\u200d\u200b\u200d\ufeff\ufeff\u200b\u200d\ufeff\ufeff\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\u200c\u200c\ufeff\u200b\ufeff\u200b\u200d\ufeff\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200b\ufeff\u200c\u200d\u200d\ufeff\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\ufeff\u200b\u200d\ufeff\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200c\u200d\u200c\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200b\u200d\ufeff\ufeff\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200b\u200d\ufeff\ufeff\u200c\u200d\ufeff\u200c\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200c\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\ufeff\u200c\u200d\ufeff\u200d\u200b\ufeff\u200d\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\ufeff\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200c\u200b\ufeff\u200d\u200b\u200b\ufeff\u200c\u200d\u200b\ufeff\u200b\u200b\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200c\u200b\ufeff\u200c\ufeff\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200b\u200d\u200b\u200d\ufeff\u200c\u200b\ufeff\u200c\u200b\u200c\u200d\u200b\u200d\u200c\u200d\u200b\u200c\u200b\ufeff\u200c\u200c\u200b\u200d\ufeff\u200c\u200b\ufeff\u200d\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\u200c\u200c\u200b\u200d\ufeff\u200c\u200b\ufeff\u200b\ufeff\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200d\u200c\u200b\u200b\ufeff\u200d\u200c\u200c\u200d\u200b\u200c\u200b\ufeff\u200d\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\u200d\u200c\u200c\u200d\u200b\u200d\u200b\ufeff\u200d\ufeff\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\ufeff\u200c\u200c\u200b\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200b\ufeff\u200d\ufeff\u200c\ufeff\u200b\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200b\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\ufeff\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\ufeff\u200c\u200d\u200b\u200d\u200c\u200d\u200b\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200c\u200c\u200c\u200c\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\ufeff\u200b\u200b\ufeff\ufeff\u200c\u200c\u200d\u200d\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\ufeff\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\ufeff\u200c\u200b\u200b\u200c\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\u200d\u200c\u200b\u200c\u200d\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\u200d\u200c\u200b\u200c\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\u200c\u200c\ufeff\u200b\ufeff\u200b\u200d\ufeff\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200b\ufeff\u200c\u200d\u200d\ufeff\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200d\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\ufeff\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200c\u200b\ufeff\u200d\u200b\u200b\ufeff\u200c\u200d\u200b\ufeff\u200b\u200b\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200c\u200b\ufeff\u200c\ufeff\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200b\u200d\u200b\u200d\ufeff\u200c\u200b\ufeff\u200c\u200b\u200c\u200d\u200b\u200d\u200c\u200d\u200b\u200c\u200b\ufeff\u200c\u200c\u200b\u200d\ufeff\u200c\u200b\ufeff\u200d\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\u200c\u200c\u200b\u200d\ufeff\u200c\u200b\ufeff\u200b\ufeff\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200d\u200c\u200b\u200b\ufeff\u200d\u200c\u200c\u200d\u200b\u200c\u200b\ufeff\u200d\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\u200d\u200c\u200c\u200d\u200b\u200d\u200b\u200d\u200c\u200d\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\ufeff\u200c\u200c\u200b\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200b\u200d\u200c\u200d\u200c\ufeff\u200b\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200b\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\ufeff\u200b\u200c\u200d\u200c\u200c\u200b\u200d\u200c\u200d\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200c\u200d\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200b\u200b\u200c\ufeff\u200c\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200d\u200b\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200b\u200b\u200d\u200b\u200d\u200c\ufeff\ufeff\u200c",
+    "url": "https://stackoverflow.blog/2026/07/14/your-ai-is-only-as-responsible-as-you-are/",
+    "source": "rss",
+    "source_name": "Stack Overflow Blog"
+  },
+  {
+    "title": "What software makers need to know about the new EU directive",
+    "url": "https://www.tricentis.com/blog/new-eu-product-liability-directive-key-impacts-for-software-makers",
+    "source": "html",
+    "source_name": "Tricentis"
+  },
+  {
+    "title": "Bridging the gap between platform engineering and business value",
+    "url": "https://www.thoughtworks.com/insights/blog/platforms/bridging-the-gap-between-platform-engineering-and-business-value",
+    "source": "rss",
+    "source_name": "Thoughtworks"
+  },
+  {
+    "title": "Waymo granted permit to begin testing in New York City",
+    "url": "https://www.cnbc.com/2025/08/22/waymo-permit-new-york-city-nyc-rides.html",
     "source": "hn",
     "source_name": "Hacker News"
+  },
+  {
+    "title": "Construct with Collaborators, Call with Work",
+    "url": "http://testing.googleblog.com/2026/05/construct-with-collaborators-call-with.html",
+    "source": "rss",
+    "source_name": "Google Testing Blog"
+  },
+  {
+    "title": "Sequential Testing and the SPRT: How to Stop a Test Early Without Cheating",
+    "url": "https://dev.to/hey_atticus/sequential-testing-and-the-sprt-how-to-stop-a-test-early-without-cheating-2ne7",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Microsoft and Google DeepMind agree on AI control \u2014 but not on who holds it",
+    "url": "https://thenewstack.io/nadella-hassabis-ai-frameworks/",
+    "source": "rss",
+    "source_name": "The New Stack"
+  },
+  {
+    "title": "The future of development is full-stack\u200b\u200b\u200b\u200b\u200c\ufeff\u200d\ufeff\u200b\u200d\u200b\u200d\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\u200d\u200c\u200d\u200d\u200c\u200c\u200d\u200c\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\u200d\u200b\u200d\u200b\u200d\u200b\ufeff\u200d\u200d\u200b\u200d\u200b\u200d\u200c\ufeff\u200b\ufeff\u200c\u200d\u200b\u200c\u200c\u200d\ufeff\u200d\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200b\u200d\ufeff\u200d\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\ufeff\u200b\u200d\u200b\u200d\u200b\u200d\ufeff\u200b\u200b\u200d\u200b\u200d\u200c\u200d\u200d\u200b\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200d\u200b\u200d\u200b\u200d\u200b\ufeff\u200d\u200d\u200b\u200d\u200b\u200d\u200c\u200d\u200d\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\ufeff\u200b\ufeff\u200d\u200d\u200b\u200d\ufeff\ufeff\u200b\u200d\ufeff\ufeff\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\u200c\u200c\ufeff\u200b\ufeff\u200b\u200d\ufeff\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200b\ufeff\u200c\u200d\u200d\ufeff\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\ufeff\u200b\u200d\ufeff\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200c\u200d\u200c\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200b\u200d\ufeff\ufeff\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200b\u200d\ufeff\ufeff\u200c\u200d\ufeff\u200c\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200c\u200c\u200c\u200d\ufeff\u200d\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\u200d\ufeff\ufeff\u200c\u200d\ufeff\u200d\u200b\ufeff\u200d\ufeff\u200c\u200d\u200d\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\ufeff\u200c\u200b\ufeff\u200c\ufeff\u200c\u200d\u200c\u200b\u200b\ufeff\u200b\ufeff\u200c\u200d\u200c\u200d\u200b\ufeff\u200d\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200c\u200b\u200d\ufeff\u200c\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200b\u200b\ufeff\u200d\u200b\u200c\u200d\u200c\u200b\u200b\u200d\ufeff\u200c\u200b\ufeff\u200c\u200b\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200c\u200d\u200b\ufeff\u200c\u200d\u200b\u200d\ufeff\u200c\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200b\u200c\u200b\u200d\ufeff\u200c\u200c\u200d\u200b\ufeff\u200b\ufeff\u200c\u200d\u200c\u200d\u200c\u200b\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200d\u200b\u200c\u200d\u200c\u200b\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200c\u200b\ufeff\u200b\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\u200d\ufeff\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\ufeff\u200c\u200c\u200b\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200b\ufeff\u200d\ufeff\u200c\ufeff\u200b\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200b\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\ufeff\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\ufeff\u200c\u200d\u200b\u200d\u200c\u200d\u200b\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200c\u200c\u200c\u200c\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\ufeff\u200b\u200b\ufeff\ufeff\u200c\u200c\u200d\u200d\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200c\u200b\u200c\ufeff\u200b\u200b\u200c\ufeff\u200b\ufeff\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\ufeff\u200c\u200b\u200b\u200c\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\u200d\u200c\u200b\u200c\u200d\u200b\u200d\u200c\u200c\u200b\ufeff\u200b\u200d\u200c\u200b\u200c\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\u200c\u200c\ufeff\u200b\ufeff\u200b\u200d\ufeff\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200b\ufeff\u200c\u200d\u200d\ufeff\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200c\ufeff\u200b\u200d\ufeff\u200d\u200c\u200d\u200b\ufeff\u200c\u200d\ufeff\ufeff\u200b\u200d\u200c\u200d\u200c\u200d\u200d\u200c\u200c\u200d\u200c\u200b\u200b\ufeff\ufeff\u200c\u200b\ufeff\u200c\ufeff\u200c\u200d\u200c\u200b\u200b\ufeff\u200b\ufeff\u200c\u200d\u200c\u200d\u200b\ufeff\u200d\u200b\u200c\u200d\u200b\u200c\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200c\u200b\u200d\ufeff\u200c\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200b\u200b\ufeff\u200d\u200b\u200c\u200d\u200c\u200b\u200b\u200d\ufeff\u200c\u200b\ufeff\u200c\u200b\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200c\u200d\u200b\ufeff\u200c\u200d\u200b\u200d\ufeff\u200c\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200b\u200c\u200b\u200d\ufeff\u200c\u200c\u200d\u200b\ufeff\u200b\ufeff\u200c\u200d\u200c\u200d\u200c\u200b\u200c\u200d\u200b\u200d\u200b\ufeff\u200c\ufeff\u200b\ufeff\u200d\u200b\u200c\u200d\u200c\u200b\u200b\ufeff\u200b\ufeff\u200b\ufeff\u200d\u200b\u200b\ufeff\u200b\u200c\u200b\ufeff\u200b\u200c\u200c\u200d\u200c\u200b\u200b\u200d\u200c\u200d\u200c\ufeff\u200c\u200b\u200c\ufeff\u200d\u200c\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\ufeff\ufeff\u200c\u200d\u200c\ufeff\u200c\u200c\u200b\u200b\u200c\u200d\ufeff\ufeff\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200c\u200b\u200b\u200d\u200c\u200d\u200c\ufeff\u200b\u200b\u200c\u200d\u200b\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200b\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200b\u200c\u200d\ufeff\u200b\u200c\u200d\u200c\u200c\u200b\u200d\u200c\u200d\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200c\ufeff\u200b\u200d\u200c\ufeff\u200b\ufeff\u200c\ufeff\u200b\u200b\u200c\u200d\u200c\u200c\u200c\u200d\u200b\ufeff\u200c\ufeff\u200c\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200c\u200d\u200c\u200d\u200c\u200c\u200b\ufeff\ufeff\u200c\u200c\ufeff\u200b\u200b\u200c\ufeff\u200c\u200c\u200c\u200d\u200b\u200d\u200c\u200d\ufeff\u200b\u200c\u200d\u200d\u200c\u200c\ufeff\u200b\ufeff\u200c\u200d\u200d\u200b\u200c\u200d\u200c\u200c\u200c\u200d\u200c\u200b\u200b\u200d\u200b\u200d\u200c\ufeff\ufeff\u200c",
+    "url": "https://stackoverflow.blog/2026/07/21/the-future-of-development-is-full-stack/",
+    "source": "rss",
+    "source_name": "Stack Overflow Blog"
   },
   {
     "title": "How Narwal.ai delivers scalable, automated quality engineering with Tricentis",
@@ -312,16 +294,16 @@
     "source_name": "Tricentis"
   },
   {
-    "title": "I built an agent that asks your app what happened to it on SigNoz",
-    "url": "https://dev.to/ibrahimpima/i-built-an-agent-that-asks-your-app-what-happened-to-it-on-signoz-2m3b",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "Waymo now testing its self-driving cars on public roads with no one at the wheel",
-    "url": "https://techcrunch.com/2017/11/07/waymo-now-testing-its-self-driving-cars-on-public-roads-with-no-one-at-the-wheel/",
+    "title": "One of the Biggest At-Home DNA Testing Companies Is Working with the FBI",
+    "url": "https://www.buzzfeednews.com/article/salvadorhernandez/family-tree-dna-fbi-investigative-genealogy-privacy",
     "source": "hn",
     "source_name": "Hacker News"
+  },
+  {
+    "title": "Django 6.0 Tasks com TDD: tr\u00eas paredes que o caminho feliz esconde",
+    "url": "https://dev.to/carvalhocaio/django-60-tasks-com-tdd-tres-paredes-que-o-caminho-feliz-esconde-3e0f",
+    "source": "devto",
+    "source_name": "DEV Community"
   },
   {
     "title": "Partner spotlight series: How Cognizant accelerates enterprise performance engineering with Tricentis NeoLoad",
@@ -330,8 +312,50 @@
     "source_name": "Tricentis"
   },
   {
-    "title": "The Best Approach to Dependency Vulnerability Scanning in CI Pipelines",
-    "url": "https://dev.to/brino666/the-best-approach-to-dependency-vulnerability-scanning-in-ci-pipelines-4m64",
+    "title": "20 lines of code that beat A/B testing every time",
+    "url": "http://stevehanov.ca/blog/index.php?id=132",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Lemonade Second Squeeze: Model Archeology on 2019's GPT-2XL",
+    "url": "https://dev.to/earlgreyhot1701d/lemonade-second-squeeze-model-archeology-on-2019s-gpt-2xl-32jm",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "AI-powered test optimization with Tricentis Testim and SeaLights",
+    "url": "https://www.tricentis.com/blog/testim-tricentis-sealights-intelligent-test-optimization",
+    "source": "html",
+    "source_name": "Tricentis"
+  },
+  {
+    "title": "YouTube is testing a more aggressive approach against ad blockers",
+    "url": "https://www.androidpolice.com/youtube-ad-blockers-three-strikes/",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Stop switching tabs to check coverage: Integrating Codecov into your AI agent's workflow",
+    "url": "https://dev.to/renato_marinho/stop-switching-tabs-to-check-coverage-integrating-codecov-into-your-ai-agents-workflow-2nde",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Partner spotlight series: How Foulk Consulting transforms QA for energy and utilities with Tricentis",
+    "url": "https://www.tricentis.com/blog/foulk-consulting-tricentis-partner-spotlight",
+    "source": "html",
+    "source_name": "Tricentis"
+  },
+  {
+    "title": "We\u2019re working on 1M Covid-19 testing capacity per day",
+    "url": "https://www.billiontoone.com/covid-19",
+    "source": "hn",
+    "source_name": "Hacker News"
+  },
+  {
+    "title": "Why Your Playwright Tests Are Lying to You (And How to Actually Fix Flakiness)",
+    "url": "https://dev.to/araffaesqa/why-your-playwright-tests-are-lying-to-you-and-how-to-actually-fix-flakiness-5hh6",
     "source": "devto",
     "source_name": "DEV Community"
   },
@@ -342,26 +366,8 @@
     "source_name": "Hacker News"
   },
   {
-    "title": "From green checkmarks to real confidence: How qTest and SeaLights close the modern quality gap",
-    "url": "https://www.tricentis.com/blog/qtest-sealights-proof-of-test-coverage",
-    "source": "html",
-    "source_name": "Tricentis"
-  },
-  {
-    "title": "Indirect Prompt Injection: Build a Release-Blocking Test for Web-Enabled AI Agents",
-    "url": "https://dev.to/jfisher4002/indirect-prompt-injection-build-a-release-blocking-test-for-web-enabled-ai-agents-3bfj",
-    "source": "devto",
-    "source_name": "DEV Community"
-  },
-  {
-    "title": "One of the Biggest At-Home DNA Testing Companies Is Working with the FBI",
-    "url": "https://www.buzzfeednews.com/article/salvadorhernandez/family-tree-dna-fbi-investigative-genealogy-privacy",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "From Bug Found to Bug Filed: A Bug-Reporter Skill for Claude Code",
-    "url": "https://dev.to/aswani25/from-bug-found-to-bug-filed-a-bug-reporter-skill-for-claude-code-5ih",
+    "title": "Your Claude Code skill's description is being cut: the 1,536-char cap and the shared listing budget",
+    "url": "https://dev.to/rulestack/your-claude-code-skills-description-is-being-cut-the-1536-char-cap-and-the-shared-listing-budget-4a77",
     "source": "devto",
     "source_name": "DEV Community"
   },
@@ -372,134 +378,134 @@
     "source_name": "Hacker News"
   },
   {
-    "title": "The Dirty Secret Behind AI Agents (Demo \ud83d\ude80)",
-    "url": "https://dev.to/sylwia-lask/the-dirty-secret-behind-ai-agents-demo--273d",
+    "title": "\ud83c\udfe2 Building Enterprise-Ready AI Agents \ud83e\udd16 \u2014 A Practical Field Guide \ud83d\udcda",
+    "url": "https://dev.to/truongpx396/building-enterprise-ready-ai-agents-a-practical-field-guide-441p",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "We\u2019re working on 1M Covid-19 testing capacity per day",
-    "url": "https://www.billiontoone.com/covid-19",
+    "title": "Facebook Messenger begins testing end-to-end encryption using Signal Protocol",
+    "url": "https://whispersystems.org/blog/facebook-messenger/",
     "source": "hn",
     "source_name": "Hacker News"
   },
   {
-    "title": "Hacker News + Reddit r/kubernetes (the compose-as-anti-pattern claim is the debate magnet that earns comments)",
-    "url": "https://dev.to/mikhail_dorokhovich_0c532/hacker-news-reddit-rkubernetes-the-compose-as-anti-pattern-claim-is-the-debate-magnet-that-2ic5",
+    "title": "GitOps at Scale: What Breaks at 200 Repos and 40 Teams",
+    "url": "https://dev.to/aniljaiswal/gitops-at-scale-what-breaks-at-200-repos-and-40-teams-35bf",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Waymo granted permit to begin testing in New York City",
-    "url": "https://www.cnbc.com/2025/08/22/waymo-permit-new-york-city-nyc-rides.html",
+    "title": "Accused murderer wins right to check source code of DNA testing kit",
+    "url": "https://www.theregister.com/2021/02/04/dna_testing_software/",
     "source": "hn",
     "source_name": "Hacker News"
   },
   {
-    "title": "Your Authz Checks the Caller. The Model Picked the Tenant.",
-    "url": "https://dev.to/alex_spinov/your-authz-checks-the-caller-the-model-picked-the-tenant-3bao",
+    "title": "Cherry-picking your hotfix twice is the real pipeline smell",
+    "url": "https://dev.to/webruster/cherry-picking-your-hotfix-twice-is-the-real-pipeline-smell-1i6h",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "20 lines of code that beat A/B testing every time",
-    "url": "http://stevehanov.ca/blog/index.php?id=132",
+    "title": "Apple testing new App Store design that blurs the line between ads and results",
+    "url": "https://9to5mac.com/2026/01/16/iphone-apple-app-store-search-results-ads-new-design/",
     "source": "hn",
     "source_name": "Hacker News"
   },
   {
-    "title": "Building AI Agents for Regulated Industries: The Architecture of \"Prepare, Don't Decide\"",
-    "url": "https://dev.to/ritik_makhija_4a77a468ef1/building-ai-agents-for-regulated-industries-the-architecture-of-prepare-dont-decide-10a9",
+    "title": "Building TNP: Why I Built an Enterprise-Realistic DevOps Lab (Part 0)",
+    "url": "https://dev.to/tnptommy/building-tnp-why-i-built-an-enterprise-realistic-devops-lab-part-0-41ie",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Testing Benford's Law",
-    "url": "http://testingbenfordslaw.com",
-    "source": "hn",
-    "source_name": "Hacker News"
-  },
-  {
-    "title": "\"Our emails are going to spam\" \u2014 a sysadmin's triage order",
-    "url": "https://dev.to/cannypigeons-pc/our-emails-are-going-to-spam-a-sysadmins-triage-order-55ij",
+    "title": "Webhook vs polling for SMS verification codes: what actually breaks in production",
+    "url": "https://dev.to/dogesms/webhook-vs-polling-for-sms-verification-codes-what-actually-breaks-in-production-4dg4",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Building my first MCP server: Spain's weather API and its two-step catch",
-    "url": "https://dev.to/mmillan76/building-my-first-mcp-server-spains-weather-api-and-its-two-step-catch-44fj",
+    "title": "5 Docker Security Mistakes I Learned the Hard Way",
+    "url": "https://dev.to/_eb0609572b9efcf27472066/5-docker-security-mistakes-i-learned-the-hard-way-cj7",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "A Browser Click Is Not Proof: Verifying That Web Apps Actually Work",
-    "url": "https://dev.to/realdone/a-browser-click-is-not-proof-verifying-that-web-apps-actually-work-1lcp",
+    "title": "Catching the Attack Was Not the Same as Detecting the Sequence",
+    "url": "https://dev.to/kenielzep97/catching-the-attack-was-not-the-same-as-detecting-the-sequence-1gik",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "389 Tests Passed. NIST Still Caught the Bug.",
-    "url": "https://dev.to/copyleftdev/389-tests-passed-nist-still-caught-the-bug-37jh",
+    "title": "We were cloning a copy",
+    "url": "https://dev.to/thekilteddev/we-were-cloning-a-copy-2a2p",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "LiteSpeed vs Nginx for WordPress: 3 months of production benchmarks",
-    "url": "https://dev.to/shuki_vaknin/litespeed-vs-nginx-for-wordpress-3-months-of-production-benchmarks-46ab",
+    "title": "Electricity Planning Engine, part 2: A Reader Comment Found a Real Gap in My Test Suite (and How I Fixed It)",
+    "url": "https://dev.to/adeutou/electricity-planning-engine-part-2-a-reader-comment-found-a-real-gap-in-my-test-suite-and-how-i-414m",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Fixing n8n Bedrock Automation: Throttling, Duplicates, Cost Blowouts",
-    "url": "https://dev.to/oleksandr_kuryzhev_42873f/fixing-n8n-bedrock-automation-throttling-duplicates-cost-blowouts-3n74",
+    "title": "From Java Monoliths to LangGraph Agents: What Transfers",
+    "url": "https://dev.to/venkathub/from-java-monoliths-to-langgraph-agents-what-transfers-2l37",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Open-Weight AI Is Having Its Kubernetes Moment \u2014 And Developers Need to Pay Attention",
-    "url": "https://dev.to/jamilxt/open-weight-ai-is-having-its-kubernetes-moment-and-developers-need-to-pay-attention-3n4",
+    "title": "AI-Assisted End-to-End Product Development",
+    "url": "https://dev.to/pedroe/ai-assisted-end-to-end-product-development-2l19",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "I Replaced pytest-xdist With 60 Lines of subprocess.Popen. Here's Why.",
-    "url": "https://dev.to/chenyuan20509/i-replaced-pytest-xdist-with-60-lines-of-subprocesspopen-heres-why-pfo",
+    "title": "The Algorithm Is the Last Decision You Make in Machine Learning",
+    "url": "https://dev.to/nishant_banginwar_80b7dc5/the-algorithm-is-the-last-decision-you-make-in-machine-learning-p0a",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "probatum \u2014 your tests pass. does it actually boot?",
-    "url": "https://dev.to/arcker/probatum-your-tests-pass-does-it-actually-boot-kcp",
+    "title": "The Model Writes, the Judge Measures: Anatomy of an LLM Judge",
+    "url": "https://dev.to/sam_wen_xinfer_ai/the-model-writes-the-judge-measures-anatomy-of-an-llm-judge-2k95",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "When the Mock Is Right and the API Isn't Anymore",
-    "url": "https://dev.to/jeffthoensen/when-the-mock-is-right-and-the-api-isnt-anymore-33ai",
+    "title": "API Testing with Python and pytest: Writing Real Tests Against a Live Mock API",
+    "url": "https://dev.to/azmiyuksel/api-testing-with-python-and-pytest-writing-real-tests-against-a-live-mock-api-4oi7",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "The Test That Only Failed in CI, Never Locally",
-    "url": "https://dev.to/jeffthoensen/the-test-that-only-failed-in-ci-never-locally-4fj3",
+    "title": "The Model Is the Easy Part: What a Real-Time Computer Vision Product Actually Takes",
+    "url": "https://dev.to/nabeelbaghoor/the-model-is-the-easy-part-what-a-real-time-computer-vision-product-actually-takes-4gk7",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Stress-testing my Multi-LLM engine: 93 chunks, 8 models, and one \"Insufficient Balance\" error.",
-    "url": "https://dev.to/nexadiag_nexa_312a4b5f603/stress-testing-my-multi-llm-engine-93-chunks-8-models-and-one-insufficient-balance-error-3078",
+    "title": "Parallel Selenium Tests in Java Without Thread-Safety Bugs",
+    "url": "https://dev.to/shossain/parallel-selenium-tests-in-java-without-thread-safety-bugs-5290",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Building a GitHub App That Reviews Its Own Code: Lessons in Security Hardening",
-    "url": "https://dev.to/shweta_mishra_b3c97874de9/building-a-github-app-that-reviews-its-own-code-lessons-in-security-hardening-4ha7",
+    "title": "The Confidence Tier Model: How to Decide When Your Data Isn't Enough",
+    "url": "https://dev.to/hey_atticus/the-confidence-tier-model-how-to-decide-when-your-data-isnt-enough-27h5",
     "source": "devto",
     "source_name": "DEV Community"
   },
   {
-    "title": "Solon Config & Multi-Environment Management: The Layering Model That Fits in Your Head",
-    "url": "https://dev.to/solonjava/solon-config-multi-environment-management-the-layering-model-that-fits-in-your-head-4o4c",
+    "title": "Permission-Aware RAG: Enforcing Document ACLs at Retrieval Time",
+    "url": "https://dev.to/venkathub/permission-aware-rag-enforcing-document-acls-at-retrieval-time-54a7",
+    "source": "devto",
+    "source_name": "DEV Community"
+  },
+  {
+    "title": "Mi stack de AI coding en 2026: Mejor calidad/precio ahorrativo y competitivo\ud83e\udd73\ufe0f",
+    "url": "https://dev.to/yosoyignicion/mi-stack-de-ai-coding-en-2026-mejor-calidadprecio-ahorrativo-y-competitivo-1273",
     "source": "devto",
     "source_name": "DEV Community"
   }
