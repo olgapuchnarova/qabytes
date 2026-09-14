@@ -86131,7 +86131,7 @@
     "last_shown_at": null,
     "expires_at": "2026-09-13",
     "times_shown": 0,
-    "status": "active",
+    "status": "expired",
     "source": "devto",
     "source_name": "DEV Community",
     "source_id": "devto",
@@ -86153,7 +86153,7 @@
     "last_shown_at": "2026-09-12",
     "expires_at": "2026-09-13",
     "times_shown": 2,
-    "status": "active",
+    "status": "expired",
     "source": "rss",
     "source_name": "The New Stack",
     "source_id": "rss:the-new-stack",
@@ -86176,7 +86176,7 @@
     "last_shown_at": "2026-09-13",
     "expires_at": "2026-09-13",
     "times_shown": 5,
-    "status": "active",
+    "status": "expired",
     "source": "rss",
     "source_name": "The New Stack",
     "source_id": "rss:the-new-stack",
@@ -86199,7 +86199,7 @@
     "last_shown_at": "2026-09-11",
     "expires_at": "2026-09-13",
     "times_shown": 2,
-    "status": "active",
+    "status": "expired",
     "source": "rss",
     "source_name": "The New Stack",
     "source_id": "rss:the-new-stack",
@@ -86222,7 +86222,7 @@
     "last_shown_at": null,
     "expires_at": "2026-09-13",
     "times_shown": 0,
-    "status": "active",
+    "status": "expired",
     "source": "devto",
     "source_name": "DEV Community",
     "source_id": "devto",
@@ -86244,7 +86244,7 @@
     "last_shown_at": "2026-08-30",
     "expires_at": "2026-09-13",
     "times_shown": 1,
-    "status": "active",
+    "status": "expired",
     "source": "devto",
     "source_name": "DEV Community",
     "source_id": "devto",
@@ -86267,7 +86267,7 @@
     "last_shown_at": "2026-08-30",
     "expires_at": "2026-09-13",
     "times_shown": 1,
-    "status": "active",
+    "status": "expired",
     "source": "devto",
     "source_name": "DEV Community",
     "source_id": "devto",
@@ -86290,7 +86290,7 @@
     "last_shown_at": "2026-08-30",
     "expires_at": "2026-09-13",
     "times_shown": 1,
-    "status": "active",
+    "status": "expired",
     "source": "devto",
     "source_name": "DEV Community",
     "source_id": "devto",
@@ -86313,7 +86313,7 @@
     "last_shown_at": null,
     "expires_at": "2026-09-13",
     "times_shown": 0,
-    "status": "active",
+    "status": "expired",
     "source": "devto",
     "source_name": "DEV Community",
     "source_id": "devto",
@@ -86335,7 +86335,7 @@
     "last_shown_at": "2026-08-30",
     "expires_at": "2026-09-13",
     "times_shown": 1,
-    "status": "active",
+    "status": "expired",
     "source": "devto",
     "source_name": "DEV Community",
     "source_id": "devto",
@@ -86358,7 +86358,7 @@
     "last_shown_at": null,
     "expires_at": "2026-09-13",
     "times_shown": 0,
-    "status": "active",
+    "status": "expired",
     "source": "devto",
     "source_name": "DEV Community",
     "source_id": "devto",
@@ -86380,7 +86380,7 @@
     "last_shown_at": null,
     "expires_at": "2026-09-13",
     "times_shown": 0,
-    "status": "active",
+    "status": "expired",
     "source": "devto",
     "source_name": "DEV Community",
     "source_id": "devto",
@@ -86467,9 +86467,9 @@
     "canonical_url": "https://thenewstack.io/openai-cuts-cursor-spacex",
     "title": "OpenAI leaving Cursor: \u201cDevelopers have to be prepared to adapt when it happens.\u201d",
     "first_seen_at": "2026-08-31",
-    "last_shown_at": "2026-09-03",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-14",
-    "times_shown": 2,
+    "times_shown": 3,
     "status": "active",
     "source": "rss",
     "source_name": "The New Stack",
@@ -86483,7 +86483,7 @@
       "The situation underscores the importance of understanding the volatility of corporate partnerships."
     ],
     "takeaway": "Developers should remain agile and ready to pivot in response to changes in corporate relationships.",
-    "rank_score": 4.4368
+    "rank_score": 4.4822
   },
   "69e72a8823902c64": {
     "id": "69e72a8823902c64",
@@ -87158,9 +87158,9 @@
     "canonical_url": "https://thenewstack.io/spacex-nvidia-orbital-ai",
     "title": "SpaceX designed an orbital Vera Rubin. Radiation comes next.",
     "first_seen_at": "2026-09-01",
-    "last_shown_at": "2026-09-04",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-15",
-    "times_shown": 1,
+    "times_shown": 2,
     "status": "active",
     "source": "rss",
     "source_name": "The New Stack",
@@ -87174,7 +87174,7 @@
       "A radiation-tolerant system may be more feasible than fully radiation-hardened components."
     ],
     "takeaway": "The adaptation of AI technology for space applications underscores the need for innovative testing strategies to ensure reliability in extreme conditions.",
-    "rank_score": 4.4552
+    "rank_score": 4.4196
   },
   "99904050c97fe32a": {
     "id": "99904050c97fe32a",
@@ -87272,9 +87272,9 @@
     "canonical_url": "https://stackoverflow.blog/2026/09/01/the-good-ol-days-of-building-java",
     "title": "The good ol\u2019 days of building Java",
     "first_seen_at": "2026-09-01",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-15",
-    "times_shown": 12,
+    "times_shown": 13,
     "status": "active",
     "source": "rss",
     "source_name": "Stack Overflow Blog",
@@ -87288,16 +87288,16 @@
       "The early development of Java involved significant contributions from key individuals."
     ],
     "takeaway": "Understanding the strategic decisions behind Java's development can inform current approaches to building versatile software solutions.",
-    "rank_score": 4.2499
+    "rank_score": 4.451
   },
   "e6e6de2b14c55b7d": {
     "id": "e6e6de2b14c55b7d",
     "canonical_url": "https://thenewstack.io/anthropic-spacex-cursor-compute-openai",
     "title": "SpaceX is in an \u201cenviable position\u201d: why Anthropic is sticking with Cursor as OpenAI cuts access",
     "first_seen_at": "2026-09-01",
-    "last_shown_at": "2026-09-08",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-15",
-    "times_shown": 2,
+    "times_shown": 3,
     "status": "active",
     "source": "rss",
     "source_name": "The New Stack",
@@ -87311,16 +87311,16 @@
       "The evolving dynamics between AI companies reveal the importance of partnerships and resource access."
     ],
     "takeaway": "In the competitive AI landscape, access to compute resources can dictate partnership strategies and influence market positioning.",
-    "rank_score": 4.4283
+    "rank_score": 4.471
   },
   "c36973d3de1eb583": {
     "id": "c36973d3de1eb583",
     "canonical_url": "https://dev.to/debashish_ghosal/9-bugs-that-all-looked-like-a-working-system-25mg",
     "title": "9 Bugs That All Looked Like a Working System",
     "first_seen_at": "2026-09-01",
-    "last_shown_at": "2026-09-10",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-15",
-    "times_shown": 4,
+    "times_shown": 5,
     "status": "active",
     "source": "devto",
     "source_name": "DEV Community",
@@ -87334,7 +87334,7 @@
       "A/B tests should be carefully designed to ensure valid comparisons, and scoring systems must accurately reflect success."
     ],
     "takeaway": "Always validate the integrity of your testing processes to avoid false positives in system performance.",
-    "rank_score": 5.4133
+    "rank_score": 5.3679
   },
   "6a10841509579c16": {
     "id": "6a10841509579c16",
@@ -87828,9 +87828,9 @@
     "canonical_url": "https://thenewstack.io/perplexity-hybrid-compute-mac",
     "title": "Your Mac is now part of Perplexity\u2019s AI infrastructure",
     "first_seen_at": "2026-09-02",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-16",
-    "times_shown": 4,
+    "times_shown": 5,
     "status": "active",
     "source": "rss",
     "source_name": "The New Stack",
@@ -87844,16 +87844,16 @@
       "The feature reflects a broader industry trend towards decentralized AI processing."
     ],
     "takeaway": "The integration of AI processing on local devices could significantly impact QA strategies, emphasizing privacy and cost efficiency.",
-    "rank_score": 4.4821
+    "rank_score": 4.4839
   },
   "49db9a6662d2fb5e": {
     "id": "49db9a6662d2fb5e",
     "canonical_url": "https://martinfowler.com/fragments/2026-09-01.html",
     "title": "Fragments: September  1",
     "first_seen_at": "2026-09-02",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-16",
-    "times_shown": 12,
+    "times_shown": 13,
     "status": "active",
     "source": "rss",
     "source_name": "Martin Fowler",
@@ -87867,7 +87867,7 @@
       "Understanding the principles of Continuous Delivery is essential for adapting to AI-driven workflows."
     ],
     "takeaway": "The role of AI in CI necessitates a reevaluation of verification practices to ensure code quality.",
-    "rank_score": 4.1643
+    "rank_score": 4.1637
   },
   "a601c64bec794389": {
     "id": "a601c64bec794389",
@@ -88585,9 +88585,9 @@
     "canonical_url": "https://www.thoughtworks.com/insights/blog/generative-ai/why-generative-ai-wont-create-ten-x-developers",
     "title": "Why generative AI won't create 10x developers",
     "first_seen_at": "2026-09-03",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-17",
-    "times_shown": 10,
+    "times_shown": 11,
     "status": "active",
     "source": "rss",
     "source_name": "Thoughtworks",
@@ -88601,7 +88601,7 @@
       "Hands-on practice is essential for maintaining cognitive skills and understanding system design."
     ],
     "takeaway": "Prioritizing efficiency through generative AI could compromise software quality and developer mastery.",
-    "rank_score": 4.1135
+    "rank_score": 4.4582
   },
   "0e6013ca4b55d6d1": {
     "id": "0e6013ca4b55d6d1",
@@ -88630,23 +88630,23 @@
     "canonical_url": "https://martinfowler.com/bliki/ParacelsusMaxim.html",
     "title": "Bliki: Paracelsus Maxim",
     "first_seen_at": "2026-09-03",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-17",
-    "times_shown": 11,
+    "times_shown": 12,
     "status": "active",
     "source": "rss",
     "source_name": "Martin Fowler",
     "source_id": "rss:martin-fowler",
     "signal": 4,
     "why_it_matters": "Quality practice",
-    "summary": "The concept of dosage, as articulated by Paracelsus, applies to programming practices, emphasizing that context and quantity can determine whether a practice is beneficial or harmful. This perspective encourages QA engineers to critically evaluate the use of global data and other practices within their projects. Understanding the balance between utility and risk is essential for maintaining quality in software development.",
+    "summary": "The concept of dosage, as articulated by Paracelsus, highlights the importance of context and moderation in programming practices. While certain elements like global data can be beneficial in small amounts, they can lead to significant issues if overused. This principle encourages QA engineers to evaluate the impact of their strategies and tools based on their application and scale.",
     "key_points": [
-      "The effectiveness of programming practices varies with context and dosage.",
-      "Global data can be useful in small amounts but dangerous in excess.",
-      "Critical evaluation of practices is necessary to maintain software quality."
+      "The effectiveness of programming practices often depends on context and dosage.",
+      "Global data can be useful in moderation but may become problematic in excess.",
+      "Evaluating practices through the lens of dosage can lead to better decision-making in QA."
     ],
-    "takeaway": "Always assess the context and dosage of programming practices to ensure they contribute positively to software quality.",
-    "rank_score": 4.0727
+    "takeaway": "Always consider the context and dosage of practices in software development to maintain quality.",
+    "rank_score": 4.2702
   },
   "e3a127483f84cc54": {
     "id": "e3a127483f84cc54",
@@ -88675,9 +88675,9 @@
     "canonical_url": "https://www.thoughtworks.com/insights/articles/stepping_into_autumn",
     "title": "Stepping into autumn: Geopolitical noise, economic realities and the agentic horizon",
     "first_seen_at": "2026-09-03",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-17",
-    "times_shown": 11,
+    "times_shown": 12,
     "status": "active",
     "source": "rss",
     "source_name": "Thoughtworks",
@@ -88691,7 +88691,7 @@
       "The ability to handle real-time data processing is becoming a critical determinant of commercial success."
     ],
     "takeaway": "Enterprises must prioritize strategic architectural changes to leverage the full potential of autonomous AI systems.",
-    "rank_score": 4.065
+    "rank_score": 4.0644
   },
   "334f72a16bee90df": {
     "id": "334f72a16bee90df",
@@ -88764,23 +88764,23 @@
     "canonical_url": "https://martinfowler.com/articles/exploring-gen-ai/an-accidental-blackboard.html",
     "title": "An Accidental Blackboard",
     "first_seen_at": "2026-09-03",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-17",
-    "times_shown": 11,
+    "times_shown": 12,
     "status": "active",
     "source": "rss",
     "source_name": "Martin Fowler",
     "source_id": "rss:martin-fowler",
     "signal": 4,
     "why_it_matters": "AI in QA",
-    "summary": "The article discusses a unique experiment where engineers utilized a shared repository as a blackboard system to enhance collaboration and coordination in building a complex airline IROps system. This approach, which emerged organically, highlights the potential of leveraging AI concepts in engineering practices to improve efficiency and problem-solving. The accidental discovery of this coordination technique underscores the value of adaptive engineering cultures in software development.",
+    "summary": "The article discusses an experiment where engineers utilized a shared repository as a blackboard system to enhance coordination and collaboration while building a complex airline IROps system. This approach led to unexpected efficiencies and insights into agentic engineering practices. The findings highlight the potential of leveraging AI concepts in software development processes.",
     "key_points": [
-      "Engineers used a shared repository to coordinate their work, resembling a blackboard system.",
-      "The approach allowed for real-time visibility of progress and dependencies among team members.",
-      "This experiment illustrates the benefits of agentic engineering and adaptive collaboration in complex problem-solving."
+      "Engineers discovered a blackboard system pattern through collaborative work in a shared repository.",
+      "The approach improved coordination among agents working on different components of a complex system.",
+      "The experiment demonstrated the effectiveness of integrating AI concepts into engineering practices."
     ],
-    "takeaway": "Leveraging collaborative frameworks can significantly enhance team efficiency and problem-solving capabilities in software development.",
-    "rank_score": 4.1667
+    "takeaway": "Leveraging shared spaces for collaboration can enhance problem-solving efficiency in software development.",
+    "rank_score": 4.2214
   },
   "5d991c1a110b0814": {
     "id": "5d991c1a110b0814",
@@ -88810,9 +88810,9 @@
     "canonical_url": "https://stackoverflow.blog/2026/09/03/the-economics-of-agent-scale",
     "title": "The economics of agent scale: tokens, ROI, and building platforms for AI-first teams (Part 2)",
     "first_seen_at": "2026-09-03",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-17",
-    "times_shown": 10,
+    "times_shown": 11,
     "status": "active",
     "source": "rss",
     "source_name": "Stack Overflow Blog",
@@ -88826,16 +88826,16 @@
       "Understanding the least amount of context needed for reliable outcomes is essential for cost-effective AI deployment."
     ],
     "takeaway": "The future of AI in QA lies in optimizing the entire system, not just improving individual models.",
-    "rank_score": 4.2414
+    "rank_score": 4.3498
   },
   "b3dcd4911314a0bd": {
     "id": "b3dcd4911314a0bd",
     "canonical_url": "https://thenewstack.io/google-ships-its-third-gemini-flash-model-in-six-weeks",
     "title": "Google ships its third Gemini Flash model in six weeks",
     "first_seen_at": "2026-09-03",
-    "last_shown_at": "2026-09-08",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-17",
-    "times_shown": 1,
+    "times_shown": 2,
     "status": "active",
     "source": "rss",
     "source_name": "The New Stack",
@@ -88849,7 +88849,7 @@
       "Google's use of agentic loops for model improvement accelerates development."
     ],
     "takeaway": "The rapid evolution of AI models like Gemini Flash 3.8 signals a transformative shift in how QA processes can leverage AI for enhanced efficiency and effectiveness.",
-    "rank_score": 4.4681
+    "rank_score": 4.4568
   },
   "b252a95c40ffac4a": {
     "id": "b252a95c40ffac4a",
@@ -88878,23 +88878,23 @@
     "canonical_url": "https://www.thoughtworks.com/insights/articles/strategic-ai-delivery-platform-modernization",
     "title": "Lessons from platform modernization that every AI program needs",
     "first_seen_at": "2026-09-03",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-17",
-    "times_shown": 10,
+    "times_shown": 11,
     "status": "active",
     "source": "rss",
     "source_name": "Thoughtworks",
     "source_id": "rss:thoughtworks",
     "signal": 4,
     "why_it_matters": "Strategic shift",
-    "summary": "The article emphasizes the importance of aligning AI initiatives with clear business outcomes rather than focusing solely on technology. It outlines a strategic AI delivery framework based on purpose, people, governance, execution, and value, highlighting that successful transformations depend on these pillars.",
+    "summary": "The article emphasizes the importance of aligning AI initiatives with clear business outcomes rather than focusing solely on technology. It outlines a strategic AI delivery framework built on purpose, people, governance, execution, and value, highlighting that successful transformations depend on these pillars.",
     "key_points": [
-      "Successful AI integration requires a shift from technology-led to value-led objectives.",
-      "People are often the biggest barrier to delivery speed, necessitating strong alignment and collaboration.",
-      "Effective governance frameworks can accelerate decision-making and support safe execution of AI initiatives."
+      "Define business outcomes to guide AI initiatives.",
+      "Strong governance frameworks can accelerate decision-making.",
+      "Adopt an incremental approach for risk management and continuous improvement."
     ],
-    "takeaway": "Transformations succeed when AI is used to enhance delivery of business outcomes, not just as a technological upgrade.",
-    "rank_score": 4.0056
+    "takeaway": "Successful AI integration requires a shift from technology-led to value-led transformation.",
+    "rank_score": 4.4952
   },
   "c30fff234fcf7b0f": {
     "id": "c30fff234fcf7b0f",
@@ -88924,9 +88924,9 @@
     "canonical_url": "https://martinfowler.com/rachels-ramblings/code-review.html",
     "title": "Maybe We Shouldn't Be Reviewing All This Code",
     "first_seen_at": "2026-09-03",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-17",
-    "times_shown": 11,
+    "times_shown": 12,
     "status": "active",
     "source": "rss",
     "source_name": "Martin Fowler",
@@ -88940,7 +88940,7 @@
       "Automating certain aspects of code review can free up engineers to focus on more complex issues."
     ],
     "takeaway": "Rethinking the role of code reviews can lead to more effective engineering practices and better team dynamics.",
-    "rank_score": 4.2105
+    "rank_score": 4.0733
   },
   "46feae58cdf06a4c": {
     "id": "46feae58cdf06a4c",
@@ -89412,9 +89412,9 @@
     "canonical_url": "https://dev.to/sumit0rn/memory-is-not-talent-talent-is-pattern-recognition-and-connection-3bea",
     "title": "Memory Is Not Talent: Talent Is Pattern Recognition and Connection",
     "first_seen_at": "2026-09-03",
-    "last_shown_at": "2026-09-09",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-17",
-    "times_shown": 3,
+    "times_shown": 4,
     "status": "active",
     "source": "devto",
     "source_name": "DEV Community",
@@ -89428,7 +89428,7 @@
       "Experience compresses observations into reusable patterns, enhancing problem-solving capabilities."
     ],
     "takeaway": "Mastery in QA requires moving beyond memorization to developing a deep understanding of principles and patterns.",
-    "rank_score": 5.3052
+    "rank_score": 5.3588
   },
   "426511ce6c28e253": {
     "id": "426511ce6c28e253",
@@ -89569,9 +89569,9 @@
     "canonical_url": "https://thenewstack.io/cut-gpu-cold-starts",
     "title": "Cut GPU inference cold start from 8 minutes to less than a minute",
     "first_seen_at": "2026-09-04",
-    "last_shown_at": "2026-09-12",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-18",
-    "times_shown": 3,
+    "times_shown": 4,
     "status": "active",
     "source": "rss",
     "source_name": "The New Stack",
@@ -89585,7 +89585,7 @@
       "Different model sizes exhibit varying bottlenecks, with compilation dominating smaller models and network transfer affecting larger ones."
     ],
     "takeaway": "Addressing multiple layers of bottlenecks in the inference stack is crucial for optimizing performance in AI-driven applications.",
-    "rank_score": 4.4431
+    "rank_score": 4.4956
   },
   "600d0b286f4dd109": {
     "id": "600d0b286f4dd109",
@@ -89614,9 +89614,9 @@
     "canonical_url": "https://thenewstack.io/astra-arc-agi-benchmark",
     "title": "GPT-6 Astra aced the hardest AI benchmark. The asterisk matters more than the score.",
     "first_seen_at": "2026-09-04",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-18",
-    "times_shown": 5,
+    "times_shown": 6,
     "status": "active",
     "source": "rss",
     "source_name": "The New Stack",
@@ -89630,7 +89630,7 @@
       "While Astra shows promise in solving complex problems, it still struggles with reasoning in certain contexts."
     ],
     "takeaway": "As AI models like Astra evolve, understanding the context of their evaluations is crucial for integrating them effectively into QA processes.",
-    "rank_score": 4.4721
+    "rank_score": 4.4813
   },
   "a12e4a12482a1126": {
     "id": "a12e4a12482a1126",
@@ -89659,9 +89659,9 @@
     "canonical_url": "https://stackoverflow.blog/2026/09/03/security-control-and-accessibility-si-2026-6",
     "title": "Elevating security, control, and accessibility: Stack Internal 2026.6",
     "first_seen_at": "2026-09-04",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-18",
-    "times_shown": 10,
+    "times_shown": 11,
     "status": "active",
     "source": "rss",
     "source_name": "Stack Overflow Blog",
@@ -89675,7 +89675,7 @@
       "Integration of automated knowledge-health capabilities to maintain decision-grade knowledge."
     ],
     "takeaway": "Investing in secure and accessible AI tooling is crucial for maintaining trust and efficiency in enterprise environments.",
-    "rank_score": 4.1902
+    "rank_score": 4.4519
   },
   "72594eaab00a3035": {
     "id": "72594eaab00a3035",
@@ -89705,9 +89705,9 @@
     "canonical_url": "https://www.thoughtworks.com/insights/blog/generative-ai/from-specification-to-production-building-enterprise-software-with-agentic-ai",
     "title": "From specification to production: Building enterprise software with agentic AI",
     "first_seen_at": "2026-09-04",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-18",
-    "times_shown": 10,
+    "times_shown": 11,
     "status": "active",
     "source": "rss",
     "source_name": "Thoughtworks",
@@ -89721,7 +89721,7 @@
       "The AI maintains context and consistency, ensuring that generated code aligns with existing architecture and patterns."
     ],
     "takeaway": "The integration of agentic AI into software development could redefine roles in QA and engineering, emphasizing the importance of clear communication and collaboration.",
-    "rank_score": 5.2691
+    "rank_score": 5.2056
   },
   "7d077be7232d1672": {
     "id": "7d077be7232d1672",
@@ -89906,9 +89906,9 @@
     "canonical_url": "https://dev.to/appcpp_9071/seal-the-first-five-commands-before-your-on-call-bot-invents-a-restart-328m",
     "title": "Seal the First Five Commands Before Your On-Call Bot Invents a Restart",
     "first_seen_at": "2026-09-04",
-    "last_shown_at": "2026-09-12",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-18",
-    "times_shown": 6,
+    "times_shown": 7,
     "status": "active",
     "source": "devto",
     "source_name": "DEV Community",
@@ -89922,7 +89922,7 @@
       "Clear definitions of freeze and unfreeze states are crucial for maintaining operational integrity."
     ],
     "takeaway": "Establishing strict protocols for incident response commands can significantly enhance reliability and prevent escalation of issues.",
-    "rank_score": 5.4348
+    "rank_score": 5.3952
   },
   "54c2b58bed3b61cb": {
     "id": "54c2b58bed3b61cb",
@@ -90418,23 +90418,23 @@
     "canonical_url": "https://stackoverflow.blog/2026/09/04/how-to-build-a-secure-by-default-ai-coding-agent",
     "title": "How to build a secure-by-default AI coding agent",
     "first_seen_at": "2026-09-05",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-19",
-    "times_shown": 8,
+    "times_shown": 9,
     "status": "active",
     "source": "rss",
     "source_name": "Stack Overflow Blog",
     "source_id": "rss:stack-overflow-blog",
     "signal": 4,
     "why_it_matters": "Governance risk",
-    "summary": "The discussion highlights the importance of building AI coding agents with security as a foundational principle. It emphasizes that prompts alone cannot ensure security, and strategic acquisitions play a crucial role in securing the AI software supply chain.",
+    "summary": "In a conversation with Greg Jennings, the importance of building AI coding agents with security as a foundational principle is emphasized. Jennings discusses the limitations of relying solely on prompts for security and highlights Anaconda's strategic acquisitions aimed at enhancing the security of the AI software supply chain.",
     "key_points": [
       "Security should be a default consideration in AI coding agents.",
-      "Prompts are not sufficient as security measures.",
-      "Strategic acquisitions can enhance supply chain security."
+      "Prompts alone are insufficient as security measures.",
+      "Strategic acquisitions can strengthen the AI software supply chain."
     ],
-    "takeaway": "Building secure AI systems requires a holistic approach beyond just prompt management.",
-    "rank_score": 4.368
+    "takeaway": "Building secure AI systems requires a comprehensive approach beyond just prompt management.",
+    "rank_score": 4.363
   },
   "368c375d34128b7c": {
     "id": "368c375d34128b7c",
@@ -91536,23 +91536,23 @@
     "canonical_url": "https://www.infoq.com/presentations/ai-agent-testing-evaluation",
     "title": "Presentation: From AI Agent Demo to Production: Automated Testing and Evaluation",
     "first_seen_at": "2026-09-07",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-21",
-    "times_shown": 7,
+    "times_shown": 8,
     "status": "active",
     "source": "rss",
     "source_name": "InfoQ",
     "source_id": "rss:infoq",
     "signal": 4,
     "why_it_matters": "AI in QA",
-    "summary": "Zhou Yu discusses the challenges of transitioning AI agents from demo phases to production, emphasizing the importance of simulation-driven testing to enhance compliance and reliability. By utilizing synthetic user personas and automated CI/CD pipelines, organizations can effectively evaluate multi-turn agents and identify edge cases before deployment.",
+    "summary": "Zhou Yu discusses the challenges of transitioning AI agents from demo phases to production, highlighting the importance of simulation-driven testing to address compliance and reliability issues. By utilizing synthetic user personas and automated CI/CD pipelines, teams can effectively evaluate multi-turn agents and catch edge cases before deployment.",
     "key_points": [
       "95% of AI agents remain in demo phases without delivering real value.",
-      "Simulation-driven testing can address compliance and reliability issues.",
-      "Automated CI/CD pipelines help catch edge cases and scale self-learning workflows."
+      "Simulation-driven testing can enhance compliance and reliability for AI agents.",
+      "Synthetic user personas and automated pipelines help in evaluating agent performance."
     ],
-    "takeaway": "Effective testing strategies are crucial for successfully deploying AI agents in production.",
-    "rank_score": 4.1907
+    "takeaway": "Effective testing strategies are crucial for successfully deploying AI agents in production environments.",
+    "rank_score": 4.4044
   },
   "71f894ae03726688": {
     "id": "71f894ae03726688",
@@ -91626,23 +91626,23 @@
     "canonical_url": "https://www.thoughtworks.com/insights/articles/thoughtworks-combines-ai-works-with-aws-transform-to-modernize-legacy-systems-for-the-ai-era",
     "title": "How Thoughtworks combines AI/works\u2122 with AWS Transform to modernize legacy systems for the AI era",
     "first_seen_at": "2026-09-07",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-21",
-    "times_shown": 7,
+    "times_shown": 8,
     "status": "active",
     "source": "rss",
     "source_name": "Thoughtworks",
     "source_id": "rss:thoughtworks",
     "signal": 4,
     "why_it_matters": "Industry change",
-    "summary": "Thoughtworks and AWS are redefining legacy system modernization by integrating AI capabilities into enterprise architectures. This approach emphasizes the importance of recovering business context from legacy systems to enable AI readiness and continuous evolution.",
+    "summary": "Thoughtworks and AWS are redefining legacy system modernization by integrating AI capabilities into enterprise architectures. This approach emphasizes the importance of preserving business context and operational behavior, enabling organizations to adapt and evolve in the AI era.",
     "key_points": [
-      "Modernization is shifting from mere cloud migration to context recovery of legacy systems.",
-      "AI/works\u2122 and AWS Transform together facilitate incremental modernization while preserving operational behavior.",
-      "Successful enterprises will focus on maintaining business intent and adaptability in their systems."
+      "Modernization is shifting from mere migration to context recovery.",
+      "AI/works\u2122 and AWS Transform provide a framework for incremental legacy system transformation.",
+      "Successful enterprises will focus on preserving enterprise context to enhance AI readiness."
     ],
-    "takeaway": "Legacy transformation is now foundational for enterprise AI success, requiring a focus on context rather than just code.",
-    "rank_score": 4.0414
+    "takeaway": "The future of enterprise AI depends on how well organizations modernize their systems to retain and regenerate business context.",
+    "rank_score": 4.4133
   },
   "c86c592d80917ebb": {
     "id": "c86c592d80917ebb",
@@ -92117,23 +92117,23 @@
     "canonical_url": "https://stackoverflow.blog/2026/09/08/scaling-your-money-safely-with-ai",
     "title": "Scaling your money safely with AI",
     "first_seen_at": "2026-09-08",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-22",
-    "times_shown": 6,
+    "times_shown": 7,
     "status": "active",
     "source": "rss",
     "source_name": "Stack Overflow Blog",
     "source_id": "rss:stack-overflow-blog",
     "signal": 4,
     "why_it_matters": "AI in QA",
-    "summary": "In a recent discussion, Srini Venkatesan, CTO of PayPal, emphasized the importance of validating AI-generated code to ensure security and reliability. He also highlighted the development of autonomous software development life cycle (SDLC) processes that incorporate iterative feedback loops, which can enhance the overall testing strategy.",
+    "summary": "In a recent conversation, Srini Venkatesan, CTO at PayPal, discussed the importance of validating AI-generated code for security and the development of autonomous software development life cycle (SDLC) processes. The focus on iterative feedback loops and enhancing user experience through headless checkout solutions highlights the evolving role of AI in software engineering.",
     "key_points": [
       "Validation of AI-generated deterministic code is crucial for security.",
-      "Iterative feedback loops can improve the SDLC process.",
-      "Creating a seamless headless checkout experience is a priority."
+      "Iterative feedback loops can enhance the development process.",
+      "Creating seamless user experiences is a priority in AI-driven solutions."
     ],
-    "takeaway": "Integrating AI into the QA process requires a strong focus on security validation and continuous feedback.",
-    "rank_score": 4.3157
+    "takeaway": "The integration of AI in software development necessitates a strong focus on security and user experience.",
+    "rank_score": 4.4088
   },
   "c9f8b6ef3fe9fba7": {
     "id": "c9f8b6ef3fe9fba7",
@@ -92184,23 +92184,23 @@
     "canonical_url": "https://www.thoughtworks.com/insights/blog/careers-at-thoughtworks/understanding-thoughtworks-ready-to-hire",
     "title": "Understanding Thoughtworks Ready to Hire: What it means for your application",
     "first_seen_at": "2026-09-08",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-22",
-    "times_shown": 4,
+    "times_shown": 5,
     "status": "active",
     "source": "rss",
     "source_name": "Thoughtworks",
     "source_id": "rss:thoughtworks",
     "signal": 4,
     "why_it_matters": "Leadership signal",
-    "summary": "Thoughtworks' Ready to Hire initiative highlights the importance of maintaining a connection with candidates who have demonstrated their fit within the organization. This approach not only streamlines the hiring process but also reflects a commitment to nurturing talent and fostering a supportive recruitment environment.",
+    "summary": "Thoughtworks' Ready to Hire initiative reflects a strategic approach to talent management in the tech industry. By maintaining a prioritized talent pool, they demonstrate a commitment to candidate engagement and a proactive hiring strategy that aligns with evolving business needs.",
     "key_points": [
-      "Candidates who pass the evaluation process are kept in a prioritized talent pool.",
-      "Ready to Hire provides ongoing communication and updates to candidates.",
-      "The initiative emphasizes the value of candidate skills and time during the hiring process."
+      "Candidates who pass the evaluation process are kept in a talent pool for future opportunities.",
+      "Ready to Hire offers priority status and ongoing communication with the talent team.",
+      "The initiative emphasizes the importance of candidate experience and transparency in recruitment."
     ],
-    "takeaway": "Maintaining a proactive relationship with candidates can enhance the recruitment experience and strengthen organizational culture.",
-    "rank_score": 4.4464
+    "takeaway": "Proactive talent management can enhance candidate engagement and streamline future hiring processes.",
+    "rank_score": 4.1305
   },
   "95b5ef09b9d1c85d": {
     "id": "95b5ef09b9d1c85d",
@@ -92806,23 +92806,23 @@
     "canonical_url": "https://www.thoughtworks.com/insights/blog/generative-ai/how-to-talk-with-ai",
     "title": "How to talk with AI?",
     "first_seen_at": "2026-09-09",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-23",
-    "times_shown": 5,
+    "times_shown": 6,
     "status": "active",
     "source": "rss",
     "source_name": "Thoughtworks",
     "source_id": "rss:thoughtworks",
     "signal": 5,
     "why_it_matters": "AI in QA",
-    "summary": "The article emphasizes the importance of clear communication between humans and AI in software development, advocating for a micro-batch approach to interactions. By focusing on small, formal artifacts generated by AI, engineers can maintain control over the development process and ensure that the AI's interpretations align with human intent.",
+    "summary": "The article emphasizes the importance of clear communication between humans and AI in software development, advocating for a micro-batch approach to interactions. By limiting the complexity of AI-generated outputs, engineers can maintain control, reduce cognitive load, and ensure that AI aligns with human intent throughout the development process.",
     "key_points": [
-      "Natural language is ambiguous; AI needs to respond with formal artifacts.",
-      "Micro-batching interactions reduces cognitive load and enhances understanding.",
-      "Continuous development loops allow for real-time alignment and learning."
+      "Natural language is ambiguous; AI should respond with formal artifacts.",
+      "Micro-batching interactions allows for better oversight and understanding.",
+      "Continuous development loops enhance collaboration and comprehension."
     ],
-    "takeaway": "Effective collaboration with AI in software development requires a shift towards micro-batching interactions to ensure clarity and control.",
-    "rank_score": 5.2652
+    "takeaway": "Adopting a micro-batch approach in AI-assisted development fosters clearer communication and better alignment between human intent and AI outputs.",
+    "rank_score": 5.1662
   },
   "e316e15f02aa50de": {
     "id": "e316e15f02aa50de",
@@ -92918,46 +92918,46 @@
     "canonical_url": "https://martinfowler.com/articles/never-send-slides/need-presentation.html",
     "title": "Do you even need a presentation?",
     "first_seen_at": "2026-09-09",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-23",
-    "times_shown": 5,
+    "times_shown": 6,
     "status": "active",
     "source": "rss",
     "source_name": "Martin Fowler",
     "source_id": "rss:martin-fowler",
     "signal": 4,
     "why_it_matters": "Quality practice",
-    "summary": "The article emphasizes the importance of choosing the right medium for communication in corporate settings, advocating for written documents over presentations for conveying information. It highlights how well-structured writing can enhance understanding and reduce misunderstandings, particularly in asynchronous communication.",
+    "summary": "The article emphasizes the importance of choosing the right medium for communication in corporate settings, suggesting that written documents often convey information more effectively than presentations. It highlights the value of structured writing and the potential pitfalls of relying too heavily on slide decks, which can fragment information and lead to misunderstandings.",
     "key_points": [
       "Presentations should be reserved for storytelling and interaction, not just information delivery.",
-      "Written documents allow for clearer, linear communication and better understanding.",
-      "Infodecks can serve as a middle ground, combining visuals and text for light reading."
+      "Written documents allow for clearer, more structured communication and reduce the risk of misinterpretation.",
+      "Infodecks can serve as a middle ground, combining visuals and text for concise communication."
     ],
-    "takeaway": "Opt for written documents over slide presentations to enhance clarity and comprehension in corporate communication.",
-    "rank_score": 4.0852
+    "takeaway": "Opt for written documents over presentations for clearer communication in most corporate scenarios.",
+    "rank_score": 4.3421
   },
   "b5e2ea2aad2dab4c": {
     "id": "b5e2ea2aad2dab4c",
     "canonical_url": "https://stackoverflow.blog/2026/09/09/java-s-age-is-its-ai-superpower",
     "title": "Java\u2019s age is its AI superpower",
     "first_seen_at": "2026-09-09",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-23",
-    "times_shown": 5,
+    "times_shown": 6,
     "status": "active",
     "source": "rss",
     "source_name": "Stack Overflow Blog",
     "source_id": "rss:stack-overflow-blog",
     "signal": 4,
     "why_it_matters": "AI in QA",
-    "summary": "The discussion highlights how Java's long-standing history contributes to its stability and serves as a rich source of training data for AI coding agents. Markus Eisele emphasizes the advantages of using Java in conjunction with its extensive ecosystem of libraries, which enhances the capabilities of AI-driven development tools.",
+    "summary": "Markus Eisele discusses the advantages of using Java for coding agents, highlighting its stability and extensive ecosystem as key factors that enhance AI capabilities. The conversation emphasizes how Java's long history provides a rich source of training data for AI, making it a powerful choice for developing intelligent coding tools.",
     "key_points": [
-      "Java's historical stability supports AI training.",
-      "A vast ecosystem of libraries enhances AI coding agents.",
-      "Agentic Java can leverage powerful partnerships for improved functionality."
+      "Java's stability stems from its long history, making it a reliable choice for AI development.",
+      "The extensive ecosystem of Java libraries enhances the functionality of coding agents.",
+      "AI tools like IBM's Bob leverage Java's strengths to improve coding efficiency."
     ],
-    "takeaway": "Leveraging Java's strengths can significantly enhance the effectiveness of AI in software development.",
-    "rank_score": 4.164
+    "takeaway": "Java's established presence in the tech landscape significantly boosts the effectiveness of AI-driven coding agents.",
+    "rank_score": 4.3704
   },
   "e194da2985639776": {
     "id": "e194da2985639776",
@@ -93009,23 +93009,23 @@
     "canonical_url": "https://martinfowler.com/fragments/2026-09-08.html",
     "title": "Fragments: September  8",
     "first_seen_at": "2026-09-09",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-23",
-    "times_shown": 5,
+    "times_shown": 6,
     "status": "active",
     "source": "rss",
     "source_name": "Martin Fowler",
     "source_id": "rss:martin-fowler",
     "signal": 4,
     "why_it_matters": "AI in QA",
-    "summary": "The article discusses the implications of AI in software generation and verification, highlighting the risks of prioritizing output over effective measurement and verification. It warns against the potential pitfalls of relying on AI without adequate oversight, leading to a hollow economy where productivity is misrepresented.",
+    "summary": "The article discusses the challenges of measuring productivity in the context of AI-generated outputs, emphasizing the need for effective verification over mere generation. It warns against the pitfalls of relying on AI without understanding the implications of counterfeit utility and the potential for a Hollow Economy in organizations.",
     "key_points": [
       "The shift from routine to measurable versus non-measurable work in automation.",
-      "The danger of counterfeit utility from AI automation without proper verification.",
-      "The need for organizations to prioritize verification over generation to avoid long-term consequences."
+      "The importance of building a history of decisions rather than just outputs.",
+      "Concerns over the authenticity of AI-generated content and its impact on readers."
     ],
-    "takeaway": "Effective AI integration in QA requires a balance between generation and rigorous verification to ensure sustainable productivity.",
-    "rank_score": 4.0106
+    "takeaway": "Organizations must prioritize verification processes to ensure the effectiveness and reliability of AI tools in QA.",
+    "rank_score": 4.0711
   },
   "2d4c5c175f7bec89": {
     "id": "2d4c5c175f7bec89",
@@ -93630,23 +93630,23 @@
     "canonical_url": "https://martinfowler.com/articles/2026-social-traffic.html",
     "title": "Social Media Engagement: summer 2026",
     "first_seen_at": "2026-09-10",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-24",
-    "times_shown": 4,
+    "times_shown": 5,
     "status": "active",
     "source": "rss",
     "source_name": "Martin Fowler",
     "source_id": "rss:martin-fowler",
     "signal": 4,
     "why_it_matters": "Industry change",
-    "summary": "The analysis of social media engagement highlights the shifting landscape of platforms and their effectiveness for content dissemination. LinkedIn emerges as the dominant platform for engagement, while newer platforms like Bluesky and Mastodon struggle to gain traction, prompting a reevaluation of their utility for announcements.",
+    "summary": "The analysis of social media engagement highlights the shifting landscape of platforms and their effectiveness in driving traffic. LinkedIn emerges as the dominant platform for engagement, while newer platforms like Bluesky and Mastodon struggle to gain traction. This reflects broader trends in how professionals interact and share content online.",
     "key_points": [
-      "LinkedIn leads in engagement metrics, followed by X.",
-      "Bluesky and Mastodon show significantly lower engagement, suggesting limited impact.",
-      "The preference for open platforms remains despite lower engagement."
+      "LinkedIn leads in engagement metrics among social media platforms.",
+      "Bluesky and Mastodon show significantly lower engagement and traffic generation.",
+      "The preference for open platforms continues despite lower engagement levels."
     ],
     "takeaway": "Understanding the dynamics of social media engagement is crucial for effectively reaching audiences in a fragmented digital landscape.",
-    "rank_score": 4.4636
+    "rank_score": 4.3681
   },
   "ace6d535c1ce5b05": {
     "id": "ace6d535c1ce5b05",
@@ -94295,23 +94295,23 @@
     "canonical_url": "https://stackoverflow.blog/2026/09/11/ai-cybersecurity-is-a-cat-and-mouse-game",
     "title": "AI cybersecurity is a cat and mouse game",
     "first_seen_at": "2026-09-11",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-25",
-    "times_shown": 3,
+    "times_shown": 4,
     "status": "active",
     "source": "rss",
     "source_name": "Stack Overflow Blog",
     "source_id": "rss:stack-overflow-blog",
     "signal": 4,
-    "why_it_matters": "Industry change",
-    "summary": "The conversation highlights the evolving role of AI in cybersecurity, emphasizing the need for human intelligence alongside automated systems. It suggests that enhancing security measures closer to applications can mitigate vulnerabilities, while resilient code infrastructure is essential for addressing AI-discovered weaknesses.",
+    "why_it_matters": "AI in QA",
+    "summary": "The conversation highlights the evolving role of human intelligence in cybersecurity as AI becomes more prevalent. It emphasizes the importance of integrating security measures closer to applications and building resilient code to mitigate vulnerabilities identified by AI. This reflects a broader trend in the industry towards proactive security strategies.",
     "key_points": [
       "Human intelligence remains crucial in the AI-driven security landscape.",
-      "Shifting security protections closer to applications limits vulnerability probes.",
-      "Building resilient code infrastructure is key to addressing vulnerabilities."
+      "Shifting security protections closer to applications can limit vulnerability probes.",
+      "Building resilient code infrastructure is essential for addressing AI-discovered vulnerabilities."
     ],
-    "takeaway": "The integration of AI in cybersecurity necessitates a strategic balance between automated defenses and human oversight.",
-    "rank_score": 4.1037
+    "takeaway": "Proactive security measures and resilient coding practices are key to navigating the challenges posed by AI in cybersecurity.",
+    "rank_score": 4.3709
   },
   "312991c923d47a3b": {
     "id": "312991c923d47a3b",
@@ -94385,32 +94385,32 @@
     "canonical_url": "https://stackoverflow.blog/2026/09/10/re-introducing-developer-story",
     "title": "(Re)introducing Developer Story",
     "first_seen_at": "2026-09-11",
-    "last_shown_at": "2026-09-13",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-25",
-    "times_shown": 3,
+    "times_shown": 4,
     "status": "active",
     "source": "rss",
     "source_name": "Stack Overflow Blog",
     "source_id": "rss:stack-overflow-blog",
     "signal": 4,
     "why_it_matters": "Industry change",
-    "summary": "Stack Overflow's reintroduction of the Developer Story feature marks a significant shift towards recognizing individual developer contributions in a landscape increasingly dominated by AI and automated solutions. This move aims to enhance the visibility of developers' expertise and career milestones, fostering a more personal connection within the tech community.",
+    "summary": "Stack Overflow is reintroducing the Developer Story feature, which aims to provide a more personalized representation of developers' skills and contributions. This move reflects a growing trend in the industry to emphasize individual developer identities and their unique contributions to the tech community.",
     "key_points": [
-      "Developer Story showcases individual expertise and contributions.",
-      "The feature emphasizes privacy and user control over displayed information.",
-      "It is part of a broader initiative called 'Stack Identity' to verify and highlight technical skills."
+      "The Developer Story showcases individual expertise and contributions.",
+      "It allows developers to highlight their specialties and control their profiles.",
+      "The initiative is part of a broader vision called 'Stack Identity' for verified developer contributions."
     ],
-    "takeaway": "The revival of Developer Story reflects a growing trend to humanize technology platforms, emphasizing the importance of individual contributions in an AI-driven world.",
-    "rank_score": 4.3625
+    "takeaway": "Emphasizing individual developer identities can enhance community engagement and recognition in the tech industry.",
+    "rank_score": 4.3078
   },
   "754527d35c90b3a1": {
     "id": "754527d35c90b3a1",
     "canonical_url": "https://thenewstack.io/shopify-native-ai-agents",
     "title": "Shopify spent years on React Native \u2014 then rebuilt everything in 12 weeks",
     "first_seen_at": "2026-09-11",
-    "last_shown_at": "2026-09-11",
+    "last_shown_at": "2026-09-14",
     "expires_at": "2026-09-25",
-    "times_shown": 1,
+    "times_shown": 2,
     "status": "active",
     "source": "rss",
     "source_name": "The New Stack",
@@ -94424,7 +94424,7 @@
       "AI agents can significantly reduce development time, but testing remains a challenge that requires careful management."
     ],
     "takeaway": "AI is reshaping development strategies, enabling faster transitions and more efficient workflows, but it also necessitates new testing approaches.",
-    "rank_score": 4.4267
+    "rank_score": 4.4868
   },
   "c8916773f6cf37a8": {
     "id": "c8916773f6cf37a8",
@@ -95572,13 +95572,13 @@
     "source_id": "rss:the-new-stack",
     "signal": 4,
     "why_it_matters": "Governance risk",
-    "summary": "The rapid adoption of the Model Context Protocol (MCP) has highlighted significant governance risks related to permissions management in AI systems. As organizations increasingly rely on AI agents, the need for strict access controls and dynamic credential management becomes critical to prevent unauthorized access and data breaches.",
+    "summary": "The shift in understanding MCP security highlights the critical need for a permissions overhaul in AI integrations. As AI agents become more autonomous, the risks associated with inherited permissions and access creep necessitate a reevaluation of security practices.",
     "key_points": [
-      "MCP security issues stem from inadequate permissions rather than infrastructure flaws.",
-      "A significant percentage of businesses lack effective protection measures for AI systems.",
-      "Dynamic, temporary credentials and compartmentalized access are essential for securing AI integrations."
+      "MCP security issues stem from overly broad permissions rather than infrastructure flaws.",
+      "Dynamic, temporary credentials are essential for limiting access and enhancing security.",
+      "AI agents require their own identities and stricter permissions as their lifespan increases."
     ],
-    "takeaway": "Organizations must reassess and tighten permissions for AI agents to mitigate governance risks and enhance security."
+    "takeaway": "Organizations must adopt a proactive approach to permissions management to mitigate security risks associated with AI integrations."
   },
   "69f3a4a930c0015a": {
     "id": "69f3a4a930c0015a",
@@ -95907,13 +95907,13 @@
     "source_id": "devto",
     "signal": 4,
     "why_it_matters": "Quality practice",
-    "summary": "The article emphasizes the distinction between vibe coding and true engineering, highlighting the importance of understanding the code being produced, especially when it involves sensitive data. It argues that while AI can enhance productivity, engineers must remain engaged in the coding process to ensure quality and accountability.",
+    "summary": "The article emphasizes the distinction between 'vibe coding' and true engineering, highlighting the importance of understanding the underlying mechanics of software development. It argues that while AI can assist in coding, a solid grasp of coding principles and best practices is essential for building reliable and secure systems.",
     "key_points": [
-      "Vibe coding lacks the rigor of traditional engineering, especially in critical applications.",
-      "AI should be a tool that complements engineering skills, not a replacement for them.",
-      "Engineers must actively engage with AI-generated code to maintain quality and accountability."
+      "Vibe coding lacks the rigor and accountability of true engineering.",
+      "AI can enhance coding efficiency, but engineers must still understand the code being produced.",
+      "Software development should adhere to defined constraints and quality standards to ensure reliability."
     ],
-    "takeaway": "Understanding the mechanics of software engineering is essential, even when leveraging AI tools."
+    "takeaway": "Understanding the fundamentals of software engineering is crucial, even in an era of AI-assisted coding."
   },
   "e66d5c96e3f13e68": {
     "id": "e66d5c96e3f13e68",
@@ -96061,13 +96061,13 @@
     "source_id": "devto",
     "signal": 4,
     "why_it_matters": "Tooling trend",
-    "summary": "The development of the Huh? app highlights a growing trend in creating tools that enhance communication and information retention in remote work environments. By addressing a common pain point in meetings and calls, it showcases how innovative solutions can improve productivity and engagement.",
+    "summary": "The development of the Huh? app highlights a growing trend in creating tools that enhance communication and information retention in remote work settings. By addressing a common pain point in meetings and lectures, it showcases the potential for innovative solutions that leverage technology to improve productivity.",
     "key_points": [
       "The app captures audio retroactively, allowing users to replay missed moments instantly.",
-      "It prioritizes user privacy by keeping data on-device and requiring explicit actions to save recordings.",
-      "The design focuses on simplicity and ease of use, addressing a specific need in the context of remote communication."
+      "It emphasizes on-device processing for privacy and ease of use.",
+      "The design focuses on user experience, minimizing the friction of recording and playback."
     ],
-    "takeaway": "Innovative tools that enhance communication can significantly improve remote work experiences."
+    "takeaway": "Innovative tools that solve specific communication challenges can significantly enhance productivity in remote work environments."
   },
   "6b784fb170b5fd74": {
     "id": "6b784fb170b5fd74",
@@ -96178,5 +96178,693 @@
       "Monitoring systems should prioritize completeness over convenience to ensure accurate health assessments."
     ],
     "takeaway": "Never let missing evidence masquerade as measured reality in monitoring systems."
+  },
+  "1ce1714fbc867e33": {
+    "id": "1ce1714fbc867e33",
+    "canonical_url": "https://thenewstack.io/ai-agent-trace-debugging",
+    "title": "It passed CI. It passed your evals. The customer still got the wrong answer.",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "rss",
+    "source_name": "The New Stack",
+    "source_id": "rss:the-new-stack",
+    "signal": 4,
+    "why_it_matters": "AI in QA",
+    "summary": "The article highlights the challenges of ensuring AI-driven features deliver accurate results, even when traditional testing metrics indicate success. It emphasizes the need for enhanced observability and testing strategies to address the unique failure modes of AI systems.",
+    "key_points": [
+      "AI agents can fail quietly, returning successful status codes while providing incorrect outputs.",
+      "Observability gaps exist in AI features, necessitating deeper insights beyond conventional metrics.",
+      "Relevance does not equate to validity; ensuring the right context is crucial for accurate AI responses."
+    ],
+    "takeaway": "AI in QA requires a shift in testing strategies to account for the unique challenges posed by AI-driven features."
+  },
+  "040e88de1a9519d3": {
+    "id": "040e88de1a9519d3",
+    "canonical_url": "https://thenewstack.io/pg-99-conf-2026-inference-costs",
+    "title": "Chip Huyen explains how to cut inference costs without new hardware",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "rss",
+    "source_name": "The New Stack",
+    "source_id": "rss:the-new-stack",
+    "signal": 4,
+    "why_it_matters": "Cost implication",
+    "summary": "Chip Huyen emphasizes the importance of optimizing inference costs in AI models, as they can significantly impact the overall profitability of AI projects. By focusing on metrics like goodput and employing techniques such as quantization and distillation, organizations can enhance efficiency without the need for new hardware.",
+    "key_points": [
+      "Inference costs can be 10 to 100 times higher than training costs.",
+      "Optimizing inference involves focusing on latency metrics and goodput.",
+      "Techniques like quantization and distillation can reduce model size and improve performance."
+    ],
+    "takeaway": "Effective inference optimization is crucial for the sustainability of AI projects, making it essential for QA leaders to understand and implement these strategies."
+  },
+  "4ef3ca2f123581e6": {
+    "id": "4ef3ca2f123581e6",
+    "canonical_url": "https://dev.to/gitguardian/inside-the-litellm-hack-153gb-433909-files-2488-organizations-17gf",
+    "title": "Inside the LiteLLM hack: 153GB, 433,909 Files, 2,488 Organizations",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Governance risk",
+    "summary": "The LiteLLM hack highlights significant vulnerabilities in CI/CD environments, exposing sensitive credentials across numerous organizations. The incident underscores the importance of proactive security measures and continuous monitoring to prevent similar breaches.",
+    "key_points": [
+      "Over 118,000 CI runner dumps were compromised in a brief 40-minute window.",
+      "Sensitive credentials, including cloud and API keys, were exfiltrated without proper attribution to organizations.",
+      "The need for continuous secrets detection and inventory management of non-human identities is critical."
+    ],
+    "takeaway": "Organizations must enhance their security posture by implementing continuous monitoring and proactive credential management to mitigate governance risks."
+  },
+  "b58e3476cacd7fd3": {
+    "id": "b58e3476cacd7fd3",
+    "canonical_url": "https://thenewstack.io/cohere-north-translate-sovereignty",
+    "title": "\u201cMachine translation is still broken for most of the world\u2019s languages\u201d: Cohere builds non-reasoning for a reason",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "rss",
+    "source_name": "The New Stack",
+    "source_id": "rss:the-new-stack",
+    "signal": 4,
+    "why_it_matters": "AI in QA",
+    "summary": "Cohere's North Small Translate model highlights a significant advancement in machine translation, particularly for enterprise applications. By focusing on a non-reasoning architecture, it aims to improve translation accuracy and control over sensitive data, addressing ongoing challenges in the field.",
+    "key_points": [
+      "North Small Translate supports 50 languages and offers improved translation performance for complex documents.",
+      "The model's non-reasoning approach allows for a smaller compute footprint and better handling of long-context translations.",
+      "Collaboration with RWS has enhanced the model's real-world translation capabilities."
+    ],
+    "takeaway": "The future of machine translation in QA lies in specialized models that prioritize accuracy and data governance."
+  },
+  "bd03c67280972d5a": {
+    "id": "bd03c67280972d5a",
+    "canonical_url": "https://dev.to/whenitruns/when-falco-runs-out-of-metadata-3i3e",
+    "title": "When Falco Runs Out of Metadata",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 3,
+    "why_it_matters": "Testing strategy",
+    "summary": "The article discusses the implications of absent metadata in Falco 0.44.1, highlighting how it affects alert output and data interpretation. It emphasizes the need for QA teams to be aware of these changes to ensure accurate monitoring and alerting practices.",
+    "key_points": [
+      "Absent metadata can lead to misleading alert outputs.",
+      "Different versions of Falco exhibit varying behaviors regarding metadata.",
+      "QA teams must adapt their testing strategies to account for these changes."
+    ],
+    "takeaway": "Understanding how metadata absence impacts alerting is crucial for effective testing and monitoring."
+  },
+  "ab9bb76fd414676b": {
+    "id": "ab9bb76fd414676b",
+    "canonical_url": "https://dev.to/robertadam987_/ai-is-changing-software-development-faster-than-we-expected-what-comes-next-53mo",
+    "title": "AI Is Changing Software Development Faster Than We Expected. What Comes Next?",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Strategic shift",
+    "summary": "AI is transforming the software development landscape by shifting the focus from code implementation to higher-level decision-making and context engineering. As AI takes on more coding tasks, the bottleneck in software production is moving upstream, emphasizing the need for developers to structure systems for both human and AI understanding.",
+    "key_points": [
+      "AI is evolving from assisting developers to executing complex tasks autonomously.",
+      "The software development process is becoming more about decision-making and context than just writing code.",
+      "AI-generated code can appear correct but may still require rigorous auditing and verification."
+    ],
+    "takeaway": "The future of software development will prioritize context engineering and independent verification to ensure quality and reliability."
+  },
+  "0dc2e5842a1bb653": {
+    "id": "0dc2e5842a1bb653",
+    "canonical_url": "https://thenewstack.io/llm-response-caching-costs",
+    "title": "Why an old caching trick is your secret to lower LLM costs",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "rss",
+    "source_name": "The New Stack",
+    "source_id": "rss:the-new-stack",
+    "signal": 4,
+    "why_it_matters": "Cost implication",
+    "summary": "The article discusses how implementing caching strategies for large language models (LLMs) can significantly reduce costs associated with repeated queries. By utilizing exact-match and semantic search caching techniques, organizations can avoid unnecessary compute expenses while maintaining efficiency in their data processing workflows.",
+    "key_points": [
+      "Caching can prevent repeated charges for identical LLM queries.",
+      "Change detection is crucial to avoid unnecessary recomputation in data pipelines.",
+      "Combining exact-match and semantic search caching optimizes response retrieval."
+    ],
+    "takeaway": "Implementing caching strategies for LLMs can lead to substantial cost savings and improved efficiency."
+  },
+  "fd395c23141c74ed": {
+    "id": "fd395c23141c74ed",
+    "canonical_url": "https://dev.to/abyzgenic/ai-agent-testing-why-a-77-pass-rate-can-mean-53-in-production-3ln",
+    "title": "AI Agent Testing: Why a 77% Pass Rate Can Mean 53% in Production",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "The article highlights the significant discrepancy between per-run pass rates and consistent performance in AI agents, emphasizing the importance of evaluating multiple runs to understand true reliability. It introduces the concept of the 'consistency gap' and suggests practical changes to testing strategies that can improve outcomes in production environments.",
+    "key_points": [
+      "A 77% pass rate can lead to a much lower all-five pass rate of 53%, indicating potential inconsistencies.",
+      "Testing should involve multiple runs to identify flaky cases and improve overall reliability.",
+      "Reporting all-N rates as the primary metric provides a clearer picture of expected performance in production."
+    ],
+    "takeaway": "Adopting a multi-run testing approach is essential for accurately assessing AI agent reliability and preventing production failures."
+  },
+  "3837d35611f3828f": {
+    "id": "3837d35611f3828f",
+    "canonical_url": "https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/ai-ready-data-part-1",
+    "title": "AI-ready data: The anthology - Part 1 of 2",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": "2026-09-14",
+    "expires_at": "2026-09-28",
+    "times_shown": 1,
+    "status": "active",
+    "source": "rss",
+    "source_name": "Thoughtworks",
+    "source_id": "rss:thoughtworks",
+    "signal": 4,
+    "why_it_matters": "AI in QA",
+    "summary": "The article emphasizes the importance of AI-ready data (AIRD) for organizations looking to leverage AI effectively. It highlights that simply migrating data to the cloud is not sufficient; organizations must ensure data quality and governance to achieve meaningful outcomes from AI initiatives.",
+    "key_points": [
+      "Data availability alone does not create a data-first organization.",
+      "High-quality, curated data is essential for effective AI outcomes.",
+      "Robust governance and security measures must be in place before implementing AI."
+    ],
+    "takeaway": "Organizations must prioritize data quality and governance to harness the full potential of AI.",
+    "rank_score": 4.0424
+  },
+  "997c7aa653d68589": {
+    "id": "997c7aa653d68589",
+    "canonical_url": "https://dev.to/onatade_abdulmajeed/week-13-of-100daysofcode-completing-spring-microservices-and-starting-junit-5-50pd",
+    "title": "Week 13 of #100DaysOfCode: Completing Spring Microservices and Starting JUnit 5",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Quality practice",
+    "summary": "The journey of learning about Microservices and transitioning into software testing highlights the importance of continuous learning in engineering. Understanding the role of testing in software development is crucial for delivering reliable applications that meet user expectations.",
+    "key_points": [
+      "The difference between VMs and containers enhances efficiency in Microservices.",
+      "Container orchestration is essential for managing scaling and resource allocation.",
+      "Software testing is integral to ensuring software quality and meeting requirements."
+    ],
+    "takeaway": "Emphasizing software testing as a core component of the development process leads to higher quality outcomes."
+  },
+  "74f2e5131c947171": {
+    "id": "74f2e5131c947171",
+    "canonical_url": "https://dev.to/james_anderson_h/the-steelman-when-an-ai-agent-actually-earns-its-complexity-2ck7",
+    "title": "The Steelman: When an AI Agent Actually Earns Its Complexity",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "AI in QA",
+    "summary": "The article challenges the notion of AI agents as merely complex pipelines, advocating for a clear understanding of when genuine autonomy is necessary. It emphasizes the importance of runtime decision-making in scenarios where external responses dictate the next steps, distinguishing between real agency and scripted workflows.",
+    "key_points": [
+      "Real agency is justified when external responses influence control flow.",
+      "Multi-hop processes, like debugging, require dynamic decision-making that can't be pre-scripted.",
+      "The distinction between genuine autonomy and fixed pipelines is crucial for effective AI implementation."
+    ],
+    "takeaway": "Understanding when to deploy true AI autonomy can lead to more effective and efficient testing strategies."
+  },
+  "3b66c33ea3c6af70": {
+    "id": "3b66c33ea3c6af70",
+    "canonical_url": "https://dev.to/pqalabs/a-silently-dropped-webhook-recovered-five-minutes-later-a-reconciliation-drill-you-can-run-locally-k1f",
+    "title": "A silently dropped webhook, recovered five minutes later: a reconciliation drill you can run locally",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Reliability lesson",
+    "summary": "The article discusses the challenges of webhook delivery in payment systems and presents a local drill to simulate and recover from dropped webhooks. It emphasizes the importance of reconciliation processes to ensure that local states align with provider states, highlighting a critical aspect of reliability in payment systems.",
+    "key_points": [
+      "Webhooks can be unreliable, leading to discrepancies between payment status and order fulfillment.",
+      "A reconciliation drill can help identify and recover from dropped webhooks effectively.",
+      "The timing of reconciliation is crucial and should be tailored to the provider's retry policies."
+    ],
+    "takeaway": "Implementing a robust reconciliation strategy is essential for maintaining reliability in payment processing systems."
+  },
+  "04114820d1e229d6": {
+    "id": "04114820d1e229d6",
+    "canonical_url": "https://dev.to/marcosomma/empty-is-not-a-state-58n8",
+    "title": "Empty Is Not a State",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Reliability lesson",
+    "summary": "The article emphasizes the importance of distinguishing between different states of system responses, particularly when polling external feeds. By categorizing outcomes such as absence, failure, and uncertainty, teams can implement more effective monitoring and alerting strategies, ultimately enhancing system reliability.",
+    "key_points": [
+      "Differentiate between absence, failure, and uncertainty in system responses.",
+      "Implement specific retry policies and alerts based on distinct failure modes.",
+      "Historical data is crucial for making informed decisions about system behavior."
+    ],
+    "takeaway": "Explicitly categorizing failure modes improves system reliability and response strategies."
+  },
+  "ecb083f326333cac": {
+    "id": "ecb083f326333cac",
+    "canonical_url": "https://dev.to/codepy_1473/i-watched-osreplace-fail-for-48-hours-the-tempfile-lived-on-another-device-4j30",
+    "title": "I Watched os.replace Fail for 48 Hours. The Tempfile Lived on Another Device",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Reliability lesson",
+    "summary": "This article highlights the critical importance of understanding filesystem behavior when implementing atomic file operations. The author's experience with os.replace reveals how assumptions about atomicity can lead to significant issues in production environments, especially when dealing with multiple filesystems.",
+    "key_points": [
+      "os.replace is not atomic across different filesystems, leading to potential data corruption.",
+      "Creating temporary files on the same filesystem as the target is essential for ensuring atomic writes.",
+      "Testing should include checks for filesystem differences to prevent silent failures."
+    ],
+    "takeaway": "Always verify filesystem compatibility when implementing atomic file operations to avoid unexpected failures."
+  },
+  "16a8af52252b8d5c": {
+    "id": "16a8af52252b8d5c",
+    "canonical_url": "https://dev.to/neeraj_singhi_golang/cgo-is-a-deployment-contract-shared-libraries-binary-portability-and-the-hidden-operational-debt-3l8f",
+    "title": "cgo Is a Deployment Contract: Shared Libraries, Binary Portability, and the Hidden Operational Debt",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Governance risk",
+    "summary": "The article highlights the complexities and risks associated with using cgo in Go applications, emphasizing that it introduces significant operational debt and complicates deployment strategies. Teams must consider runtime dependencies, cross-compilation challenges, and security implications when integrating C libraries, which can lead to governance risks if not managed properly.",
+    "key_points": [
+      "cgo introduces runtime dependencies that can lead to compatibility issues across different environments.",
+      "Using cgo complicates cross-compilation and increases the operational overhead of maintaining multiple build environments.",
+      "Security scanning must extend beyond Go modules to include underlying C libraries, adding complexity to compliance efforts."
+    ],
+    "takeaway": "Integrating cgo requires careful consideration of operational risks and governance challenges that can impact deployment and security."
+  },
+  "ed2147889b99caf9": {
+    "id": "ed2147889b99caf9",
+    "canonical_url": "https://dev.to/devopsdaily/preview-environments-from-a-pr-label-to-teardown-12bo",
+    "title": "Preview environments: from a PR label to teardown",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "The article discusses the implementation and benefits of preview environments in the pull request lifecycle, emphasizing their role in enhancing the review process. It highlights the importance of automation and the need for effective teardown processes to maintain resource efficiency.",
+    "key_points": [
+      "Preview environments provide temporary URLs for pull requests, facilitating easier reviews.",
+      "Automation plays a crucial role in managing the lifecycle of these environments, from creation to teardown.",
+      "Understanding the cost implications and isolation scores of different environment setups is essential for effective testing strategy."
+    ],
+    "takeaway": "Implementing preview environments can significantly streamline the review process while ensuring resource management and cost efficiency."
+  },
+  "3bf8ae1de79fe6e7": {
+    "id": "3bf8ae1de79fe6e7",
+    "canonical_url": "https://dev.to/gili_yohanan_b46da9587564/how-we-golden-tested-israeli-payroll-math-so-the-law-not-a-config-screen-does-the-calculating-1lik",
+    "title": "How we golden-tested Israeli payroll math (so the law, not a config screen, does the calculating)",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": "2026-09-14",
+    "expires_at": "2026-09-28",
+    "times_shown": 1,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 5,
+    "why_it_matters": "Quality practice",
+    "summary": "This article highlights an innovative approach to payroll compliance by embedding legal statutes directly into the code, eliminating the risks associated with manual configuration. The use of golden tests ensures that any changes in the law are immediately reflected in the software, promoting accuracy and reliability in payroll calculations.",
+    "key_points": [
+      "The law is encoded as pure functions, ensuring accuracy and compliance.",
+      "Golden tests provide a robust mechanism to verify that calculations align with legal requirements.",
+      "A drift-guard system prevents discrepancies between different implementations of the same law."
+    ],
+    "takeaway": "Embedding legal statutes directly into code with golden tests significantly enhances the reliability of compliance software.",
+    "rank_score": 5.0735
+  },
+  "503b9d935a60b208": {
+    "id": "503b9d935a60b208",
+    "canonical_url": "https://dev.to/hackmamba/how-to-add-a-verification-loop-to-your-ai-agent-in-30-minutes-4530",
+    "title": "How to Add a Verification Loop to Your AI Agent in 30 Minutes",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": "2026-09-14",
+    "expires_at": "2026-09-28",
+    "times_shown": 1,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "AI in QA",
+    "summary": "The article emphasizes the importance of implementing a verification loop in AI agents to ensure the quality of outputs. By separating the responsibilities of output generation and verification, teams can avoid the pitfalls of self-checking mechanisms that may overlook critical requirements.",
+    "key_points": [
+      "A verification loop introduces a separate decision-maker for output evaluation.",
+      "Using a four-value done condition provides more nuanced feedback than a binary pass/fail.",
+      "This approach enhances the reliability of AI-generated outputs in software development."
+    ],
+    "takeaway": "Separating output generation from verification is crucial for maintaining quality in AI-driven processes.",
+    "rank_score": 4.4169
+  },
+  "88a92683a2e62a48": {
+    "id": "88a92683a2e62a48",
+    "canonical_url": "https://dev.to/webdeveloperhyper/ai-avatar-v20-cursor-avatar-notification-avatar-voxel-avatar-4dd2",
+    "title": "AI Avatar v20, Cursor Avatar, Notification Avatar (Voxel Avatar)\ud83e\uddca",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": "2026-09-14",
+    "expires_at": "2026-09-28",
+    "times_shown": 1,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "AI in QA",
+    "summary": "The introduction of AI Avatar v20 showcases innovative uses of AI in enhancing developer experience through interactive avatars and idle game mechanics. This reflects a growing trend of integrating AI tools into everyday coding environments, promoting engagement and productivity.",
+    "key_points": [
+      "AI Avatar now includes a cozy voxel flower garden idle game mode, enhancing user interaction.",
+      "The addition of Notification Avatar helps users stay informed about coding assistant statuses, improving workflow.",
+      "The transition to an Electron desktop app expands the avatar's usability beyond browser extensions."
+    ],
+    "takeaway": "Integrating AI into development tools can significantly enhance user experience and productivity.",
+    "rank_score": 4.3532
+  },
+  "d36c6e4d39d5a2c5": {
+    "id": "d36c6e4d39d5a2c5",
+    "canonical_url": "https://dev.to/semihbugrasezer/an-openapi-diff-is-a-judgement-call-not-a-line-diff-470p",
+    "title": "An OpenAPI diff is a judgement call, not a line diff",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "The article emphasizes the importance of nuanced judgment in evaluating OpenAPI diffs, highlighting that not all changes warrant the same response. It advocates for a structured approach to categorizing changes to improve the reliability of API contracts and reduce the risk of breaking client applications.",
+    "key_points": [
+      "API responses can be misleadingly successful while breaking client contracts.",
+      "A structured classification of changes (breaking, potentially breaking, additive, documentation) enhances review processes.",
+      "Automated tools can assist in monitoring API changes, but human oversight remains crucial for nuanced decisions."
+    ],
+    "takeaway": "Effective API change management requires a balance of automation and human judgment to ensure client compatibility."
+  },
+  "abc47a20bcbfd2b9": {
+    "id": "abc47a20bcbfd2b9",
+    "canonical_url": "https://dev.to/saaro_net/ebpf-in-kubernetes-2026-from-kernel-feature-to-standard-infrastructure-5cj9",
+    "title": "eBPF in Kubernetes 2026: From Kernel Feature to Standard Infrastructure",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Tooling trend",
+    "summary": "eBPF has transitioned from a niche kernel feature to a critical infrastructure technology for Kubernetes, significantly enhancing performance and observability. With its adoption by major cloud providers and tools like Cilium and OpenTelemetry, eBPF is reshaping how DevOps teams manage networking and security in cloud-native environments.",
+    "key_points": [
+      "67% of Kubernetes teams use eBPF-based tools in production.",
+      "Cilium has become the standard CNI for major managed Kubernetes services, offering significant performance improvements.",
+      "OpenTelemetry eBPF Instrumentation captures telemetry data without code changes, enhancing observability."
+    ],
+    "takeaway": "Now is the time for DevOps teams to integrate eBPF into their Kubernetes strategies to leverage its performance and observability benefits."
+  },
+  "6b2f8192d0300f0d": {
+    "id": "6b2f8192d0300f0d",
+    "canonical_url": "https://dev.to/kielltampubolon/my-scanner-passed-until-i-built-a-harness-that-lied-to-it-on-purpose-4a9n",
+    "title": "My Scanner Passed Until I Built a Harness That Lied to It on Purpose",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "The article highlights the importance of rigorously testing security scanners to ensure they detect vulnerabilities accurately. By creating a harness that intentionally challenges the scanner, the author uncovers critical blind spots and emphasizes the need for continuous validation in testing strategies.",
+    "key_points": [
+      "Security tools often go untested for their detection capabilities.",
+      "Creating a harness can reveal both tool limitations and user errors.",
+      "Continuous integration can enforce ongoing validation of detection rules."
+    ],
+    "takeaway": "A detector that knows its weaknesses is more reliable than one that claims full coverage."
+  },
+  "588b640f4a679e85": {
+    "id": "588b640f4a679e85",
+    "canonical_url": "https://dev.to/sefara/playwright-email-verification-can-pass-for-the-wrong-reason-six-checks-for-a-trustworthy-test-20nd",
+    "title": "Playwright email verification can pass for the wrong reason: six checks for a trustworthy test",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "The article highlights a critical oversight in email verification testing, where the success message can be misleading if not properly validated against the correct account. By emphasizing the importance of verifying the identity behind the success message, it encourages QA engineers to adopt a more rigorous testing approach that goes beyond surface-level checks.",
+    "key_points": [
+      "Testing success messages without verifying the underlying identity can lead to false positives.",
+      "Implementing additional assertions can enhance the reliability of email verification tests.",
+      "Starting with a fresh inbox for each test run is crucial for accurate results."
+    ],
+    "takeaway": "Ensure that your tests validate not just the success message but also the identity associated with it to avoid misleading results."
+  },
+  "b89b17dbc9d006de": {
+    "id": "b89b17dbc9d006de",
+    "canonical_url": "https://dev.to/kiita1302/six-bugs-that-taught-me-how-to-build-an-ai-agent-that-doesnt-fall-over-3mpp",
+    "title": "Six Bugs That Taught Me How to Build an AI Agent That Doesn't Fall Over",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Reliability lesson",
+    "summary": "The article highlights critical lessons learned from real-world failures encountered while running an unattended AI agent. It emphasizes the importance of anticipating failure modes and implementing robust monitoring and error handling to ensure reliability in long-running systems.",
+    "key_points": [
+      "Unattended systems require careful consideration of potential blocking calls.",
+      "Concurrent processes can lead to resource conflicts, necessitating deduplication checks.",
+      "Budget tracking per feature can prevent resource starvation from unexpected usage spikes."
+    ],
+    "takeaway": "Building resilient systems involves learning from failures and proactively addressing potential issues before they occur."
+  },
+  "437330b6315d3c1c": {
+    "id": "437330b6315d3c1c",
+    "canonical_url": "https://dev.to/dev_kiran/shift-left-code-review-how-qodo-turns-your-coding-agent-into-its-own-first-reviewer-58fc",
+    "title": "Shift Left Code Review: How Qodo Turns Your Coding Agent Into Its Own First Reviewer",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "AI in QA",
+    "summary": "The introduction of Qodo's Agentic Toolbox represents a significant shift in how code reviews can be integrated into the development process, particularly with AI coding agents. By enabling independent reviews during the coding phase, teams can catch issues earlier and improve code quality before the PR stage.",
+    "key_points": [
+      "Qodo allows coding agents to receive independent reviews while coding, rather than waiting for a PR.",
+      "The toolbox helps agents access relevant rules and context, enhancing their understanding before making changes.",
+      "This approach reduces the burden on developers by addressing basic issues before the PR is opened."
+    ],
+    "takeaway": "Integrating independent code reviews into the coding workflow can significantly enhance code quality and efficiency."
+  },
+  "b8e4ecc09b38b7ac": {
+    "id": "b8e4ecc09b38b7ac",
+    "canonical_url": "https://dev.to/remdore/a-container-is-just-a-process-with-a-few-private-views-i-built-one-in-thirty-lines-26di",
+    "title": "A container is just a process with a few private views. I built one in thirty lines.",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Quality practice",
+    "summary": "The article demystifies the concept of containers by illustrating how they function as isolated processes with specific resource views. It emphasizes the simplicity of creating a container using kernel features like namespaces and control groups, highlighting the importance of understanding these fundamentals for effective software testing and deployment.",
+    "key_points": [
+      "Containers are essentially isolated processes with private views of resources.",
+      "Namespaces provide isolation, while control groups (cgroups) manage resource limits.",
+      "Understanding the underlying mechanics of containers can enhance testing strategies and deployment practices."
+    ],
+    "takeaway": "A deep understanding of containers can improve quality practices in software development and testing."
+  },
+  "00454929a9aaee56": {
+    "id": "00454929a9aaee56",
+    "canonical_url": "https://dev.to/dannwaneri/i-found-two-bugs-in-a-hackathons-judging-tool-neither-explained-why-i-lost-2l4f",
+    "title": "I Found Two Bugs in a Hackathon's Judging Tool. Neither Explained Why I Lost.",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "The author's experience in a hackathon highlights the importance of understanding both the scoring criteria and the implicit expectations of originality in submissions. Despite having a technically sound product, the failure to modify the base model led to disqualification, emphasizing the need for a comprehensive testing strategy that includes both visible and hidden evaluation metrics.",
+    "key_points": [
+      "Understanding scoring formulas is crucial for success in competitive environments.",
+      "Implicit expectations, such as originality, can significantly impact outcomes.",
+      "Technical correctness alone may not suffice; modifications and innovations are often necessary."
+    ],
+    "takeaway": "Always consider the unseen criteria in evaluation processes to ensure your submission meets all expectations."
+  },
+  "6e30940277b52bea": {
+    "id": "6e30940277b52bea",
+    "canonical_url": "https://dev.to/kenielzep97/my-harness-used-one-label-for-three-different-failures-2gc3",
+    "title": "My Harness Used One Label for Three Different Failures.",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": "2026-09-14",
+    "expires_at": "2026-09-28",
+    "times_shown": 1,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "The article highlights the importance of precise labeling in failure reporting within software testing. It illustrates how a single label can obscure the true nature of multiple distinct failures, leading to potential misinterpretations and inefficiencies in debugging.",
+    "key_points": [
+      "A single failure label can encompass multiple distinct issues, causing confusion.",
+      "Refactoring failure reporting can improve clarity and debugging efficiency.",
+      "Different failure registries can lead to silent failures, which are detrimental to the testing process."
+    ],
+    "takeaway": "Clear and specific labeling in failure reporting is crucial for effective debugging and maintaining software quality.",
+    "rank_score": 4.3968
+  },
+  "0f4e107e4fa94297": {
+    "id": "0f4e107e4fa94297",
+    "canonical_url": "https://dev.to/naw103/agent-orchestrators-and-agent-coordinators-are-not-the-same-layer-5gek",
+    "title": "Agent orchestrators and agent coordinators are not the same layer",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Tooling trend",
+    "summary": "The article distinguishes between agent orchestrators and agent coordinators, highlighting their different roles and functionalities in managing multiple coding agents. Understanding these distinctions is crucial for optimizing workflows and improving collaboration among agents in software development.",
+    "key_points": [
+      "Orchestrators control the execution of agents, while coordinators provide oversight without interrupting ongoing processes.",
+      "The authority of orchestrators is imperative, whereas coordinators operate on an evidentiary basis.",
+      "The design choices of coordinators prevent locking mechanisms, allowing for more efficient concurrent operations."
+    ],
+    "takeaway": "Recognizing the differences between orchestrators and coordinators can enhance the effectiveness of multi-agent systems in software development."
+  },
+  "d2abd222c287913a": {
+    "id": "d2abd222c287913a",
+    "canonical_url": "https://dev.to/snehasishkonger/ab-testing-backend-logic-pricing-rules-eligibility-and-thresholds-5ghc",
+    "title": "A/B Testing Backend Logic: Pricing Rules, Eligibility, and Thresholds",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": null,
+    "expires_at": "2026-09-28",
+    "times_shown": 0,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Testing strategy",
+    "summary": "The article highlights the critical differences between A/B testing for UI elements and backend logic, particularly in pricing and eligibility. It emphasizes the need for deterministic assignment and traceability in backend experiments to ensure valid results and accountability.",
+    "key_points": [
+      "Backend logic tests require sticky assignment across all customer interactions to avoid noise in results.",
+      "Traceability of decision-making is essential for both regulatory compliance and understanding customer outcomes.",
+      "Interaction effects between multiple experiments can lead to misleading results if not properly accounted for."
+    ],
+    "takeaway": "Understanding the nuances of backend A/B testing is crucial for maintaining integrity and trust in decision-making processes."
+  },
+  "d661aa7238887bc2": {
+    "id": "d661aa7238887bc2",
+    "canonical_url": "https://dev.to/synfinity-dynamics-pvt-ltd/what-happens-when-an-ai-agent-gets-stuck-in-a-loop-504d",
+    "title": "What Happens When an AI Agent Gets Stuck in a Loop?",
+    "first_seen_at": "2026-09-14",
+    "last_shown_at": "2026-09-14",
+    "expires_at": "2026-09-28",
+    "times_shown": 1,
+    "status": "active",
+    "source": "devto",
+    "source_name": "DEV Community",
+    "source_id": "devto",
+    "signal": 4,
+    "why_it_matters": "Reliability lesson",
+    "summary": "AI agents can encounter significant issues when they get stuck in loops, leading to inefficiencies and potential system failures. Understanding the causes and implementing safeguards can help ensure that AI-driven processes remain effective and reliable.",
+    "key_points": [
+      "AI agents can get stuck in loops, causing excessive resource consumption.",
+      "Implementing maximum iteration limits and defining completion criteria are essential safeguards.",
+      "Observability and tracking repeated actions can help diagnose and prevent issues."
+    ],
+    "takeaway": "Establishing clear boundaries and monitoring agent behavior is crucial for maintaining the reliability of AI systems.",
+    "rank_score": 4.3508
   }
 }
